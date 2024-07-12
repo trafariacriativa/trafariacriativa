@@ -304,13 +304,13 @@ p {
     
 
 
-  .image {
+.image {
     position: relative;
     width: 150%;
     height: auto;
 }
 
-  #main {
+#main {
     margin-top: -150px;
     padding-left: 0px;
     padding-right: 0px;
@@ -343,9 +343,10 @@ p {
 
 
 .text {
+    position: relative;
     float: left;
-    padding-right: 25px;
     padding-left: 50px;
+    padding-right: 50px;
     font-size: 80%;
     z-index: 0;
 }
