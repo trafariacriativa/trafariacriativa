@@ -344,7 +344,8 @@ p {
 
 .text {
     float: left;
-    padding: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
     font-size: 80%;
     z-index: 0;
 }
