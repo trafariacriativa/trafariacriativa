@@ -13,12 +13,11 @@ body {
 
 
 #main {
-    margin-top: -50px;
+    margin-top: -200px;
     padding-left: 200px;
     padding-right: 200px;
 
 }
-
 
 
 h1, h2, h4 {
@@ -27,6 +26,7 @@ h1, h2, h4 {
     font-style: normal;
     font-size: 11em;
 }
+
 
 h2 {
     font-size: 6em;
@@ -41,6 +41,7 @@ h3 {
     font-size: 4.5em;
 }
 
+
 h3.special {
     font-family: "novecento-sans-wide", sans-serif;
     font-weight: 700;
@@ -48,9 +49,11 @@ h3.special {
     margin-top: -30px;
 }
 
+
 h4 {
     font-size: 4em;
 }
+
 
 h4.special {
     font-weight: 200;
@@ -90,7 +93,7 @@ p {
     float: right;
     padding-right: 150px;
     margin-top: -15px;
-    font-size: 130%;
+    font-size: 145%;
 
 }
 
@@ -105,10 +108,12 @@ p {
     margin-bottom: -20px;
 }
 
+
 .date h2 span {
     font-weight: 200;
     font-size: 0.5em;
 }
+
 
 .local {
     text-align: center;
@@ -156,7 +161,7 @@ p {
     width: 20%;
     height: auto;
     transform: rotate(90deg);
-    top: 400px;
+    top: 500px;
     left: -150px;
     z-index: -1;
     position: fixed;
@@ -166,7 +171,7 @@ p {
 .image-circle-gray {
     width: 5%;
     height: auto;
-    bottom: 200px;
+    bottom: 100px;
     left: 100px;
     position: fixed;
     z-index: -1;
@@ -197,7 +202,7 @@ p {
     width: 15%;
     height: auto;
     transform: rotate(270deg);
-    top: 700px;
+    top: 800px;
     left: -100px;
     z-index: -2;
     position: fixed;
@@ -224,12 +229,14 @@ p {
 .text-title h4 {
     font-size: 2.5em;
     margin-bottom: 15px;
+    z-index: 0;
 }
 
 .text-paragraph h4 {
     font-size: 1.5em;
     margin-bottom: 15px;
     margin-top: 25px;
+    z-index: 0;
 }
 
 .text-paragraph p span {
@@ -285,3 +292,196 @@ p {
     height: auto;
 
   }
+
+  @media only screen and (max-width: 1280px) {
+   
+ 
+}
+ 
+
+
+  @media only screen and (max-width: 768px) {
+    
+
+
+  .image {
+    position: relative;
+    width: 150%;
+    height: auto;
+}
+
+  #main {
+    margin-top: -200px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+
+.program {
+    float: right;
+    padding: 50px;
+    margin-top: 100px;
+    font-size: 100%;
+
+}
+
+
+.title {
+    position: relative;
+    float: left;
+    margin-top: 1px;
+    padding-left: 50px;
+    font-size: 70%;
+    z-index: 0;
+}
+
+.text-paragraph h4 {
+    z-index: 0;
+}
+
+
+.text {
+    float: left;
+    padding: 50px;
+    font-size: 80%;
+    z-index: 0;
+}
+
+.img-mais {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    margin-right: 20px;
+
+}
+
+
+.img-tecno {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grade {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    transform: rotate(90deg);
+    top: 400px;
+    left: -125px;
+    z-index: -2;
+    position: fixed;
+    
+}
+
+.image-circle-gray {
+    width: 5%;
+    height: auto;
+    bottom: 400px;
+    left: 25px;
+    position: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.image-mais2 {
+    width: 25%;
+    height: auto;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.image-m-circle {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    transform: rotate(270deg);
+    top: 600px;
+    left: -120px;
+    z-index: -2;
+    position: fixed;
+    
+}
+
+
+.image-point1 {
+    display: flex;
+    width: 75%;
+    height: auto;
+    right: -200px;
+    top: 200px;
+    transform: rotate(270deg);
+    position: fixed;
+    z-index: -1;
+}
+
+.image-point2 {
+    display: flex;
+    width: 75%;
+    height: auto;
+    right: -100px;
+    bottom: 0;
+    transform: rotate(270deg);
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+.dates-information {
+    display: flex;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.dates {
+    float: left;
+}
+
+.dates h6 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+.information { 
+    float: right;
+    margin-left: 50px;
+}
+
+.information h6 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+
+
+
+#footer {
+    padding: 50px;
+    margin-left: 100px;
+}
+
+.apoios {
+    margin-top: 50px;
+    position: relative;
+    float: right;
+    max-width: 120%;
+
+  }
+
+}
