@@ -82,19 +82,26 @@ p {
     font-size: 20px;
 }
 
+.email-link {
+    color: black; /* Define a cor do texto como preto */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+
 
 .image {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
 
 .program {
     float: right;
     padding-right: 150px;
     margin-top: -15px;
     font-size: 145%;
-
 }
 
 
@@ -134,6 +141,13 @@ p {
     z-index: 0;
 }
 
+.span-e {
+    display: inline-block;
+    color: transparent; /* Cor do texto */
+      -webkit-text-stroke: 1px black; /* Contorno preto */
+      text-shadow: 2px black; /* Contorno preto */
+  }
+
 .title h1 {
     margin-top: -40px;
     margin-bottom: -20px;
@@ -147,7 +161,9 @@ p {
     display: flex;
     align-items: left;
     justify-content: left;
+    gap: 20px;
 }
+
 
 .image-container{
     display: flex;
@@ -158,11 +174,10 @@ p {
 
 .image-grade {
     position: absolute;
-    width: 20%;
+    width: 17%;
     height: auto;
-    transform: rotate(90deg);
-    top: 500px;
-    left: -150px;
+    top: 25%;
+    left: 0px;
     z-index: -1;
     position: fixed;
     
@@ -171,7 +186,7 @@ p {
 .image-circle-gray {
     width: 5%;
     height: auto;
-    bottom: 100px;
+    bottom: 2%;
     left: 100px;
     position: fixed;
     z-index: -1;
@@ -188,42 +203,45 @@ p {
 
 .image-point1 {
     display: flex;
-    width: 30%;
+    width: 20%;
     height: auto;
-    right: -100px;
-    top: 50px;
-    transform: rotate(270deg);
+    right: 0;
+    top: 10%;
     position: fixed;
     z-index: -1;
 }
+
+
+.image-point2 {
+    display: flex;
+    width: 20%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+}
+
 
 .image-m-circle {
     position: absolute;
     width: 15%;
     height: auto;
-    transform: rotate(270deg);
-    top: 800px;
+    bottom: -25%;
     left: -100px;
     z-index: -2;
     position: fixed;
     
 }
 
-.image-point2 {
-    display: flex;
-    width: 50%;
-    height: auto;
-    right: -300px;
-    bottom: 0;
-    transform: rotate(270deg);
-    position: fixed;
-    z-index: -1;
-}
 
 
 .text {
     float: left;
-    padding: 150px;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-right: 150px;
+    padding-left: 150px;
 }
 
 .text-title h4 {
@@ -246,7 +264,9 @@ p {
 
 .dates-information {
     display: flex;
-    float: left;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-top: 5%;
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -262,8 +282,8 @@ p {
 }
 
 .information { 
-    float: right;
-    margin-left: 300px;
+    float: left;
+    margin-left: 0;
 }
 
 .information h6 {
@@ -275,29 +295,40 @@ p {
 .img-mais {
     width: 100px;
     height: 100px;
-    margin-top: 25px;
-    margin-right: 20px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 #footer {
-    padding: 350px;
-    margin: 2em;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 50px;
 }
 
 .apoios {
-    position: relative;
     float: right;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-
   }
 
-  @media only screen and (max-width: 600px) {
-   
- 
+  
+
+
+  @media (max-width: 1366px) {
+
+
+    #main {
+        padding-top: 125px;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+    }
+    
 }
- 
 
 
   @media only screen and (max-width: 768px) {
@@ -305,57 +336,76 @@ p {
 
 
 .image {
-    position: relative;
-    width: 150%;
-    height: auto;
-}
+        width: 100%;
+    }
+
 
 #main {
-    margin-top: -150px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
 
 }
 
 
 .program {
-    float: right;
-    padding: 50px;
-    margin-top: 150px;
-    font-size: 100%;
-    z-index: 0;
+        float: right;
+        padding-bottom: 25px;
+        padding-right: 50px;
+        padding-left: 50px;
+        font-size: 95%;
 
 }
+
+.img-mais {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 .title {
-    position: relative;
-    float: left;
-    margin-top: 15px;
+    float: none;
+    padding-right: 50px;
     padding-left: 50px;
-    font-size: 70%;
+    font-size: 65%;
     z-index: 0;
 }
 
-.text-paragraph h4 {
-    z-index: 0;
+
+.title h1 {
+    margin-top: -30px;
+    margin-bottom: -15px;
 }
+
 
 
 .text {
-    position: relative;
-    float: left;
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 80%;
+    font-size: 50%;
+    z-index: 0;
+}
+
+.text-title h4 {
+    font-size: 3em;
+
+}
+
+
+.text-paragraph h4 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-top: 15px;
     z-index: 0;
 }
 
 .img-mais {
     width: 80px;
     height: 80px;
-    margin-top: 15px;
-    margin-right: 20px;
 
 }
 
@@ -364,6 +414,7 @@ p {
     display: flex;
     align-items: left;
     justify-content: left;
+    gap: 10px;
 }
 
 .image-container{
@@ -375,12 +426,11 @@ p {
 
 .image-grade {
     position: absolute;
-    width: 45%;
+    width: 25%;
     height: auto;
-    transform: rotate(90deg);
-    top: 400px;
+    top: 200px;
     left: -125px;
-    z-index: -2;
+    z-index: 0;
     position: fixed;
     
 }
@@ -388,7 +438,7 @@ p {
 .image-circle-gray {
     width: 5%;
     height: auto;
-    bottom: 400px;
+    bottom: 200px;
     left: 25px;
     position: fixed;
     opacity: 0.5;
@@ -406,12 +456,10 @@ p {
 
 .image-m-circle {
     position: absolute;
-    width: 35%;
+    width: 8%;
     height: auto;
-    transform: rotate(270deg);
-    top: 600px;
-    left: -120px;
-    z-index: -2;
+    top: 450px;
+    left: 0px;
     position: fixed;
     
 }
@@ -419,72 +467,164 @@ p {
 
 .image-point1 {
     display: flex;
-    width: 75%;
+    width: 25%;
     height: auto;
-    right: -200px;
-    top: 200px;
-    transform: rotate(270deg);
+    right: 0px;
+    top: 50px;
     position: fixed;
     z-index: -1;
 }
 
 .image-point2 {
     display: flex;
-    width: 75%;
+    width: 50%;
     height: auto;
-    right: -100px;
+    right: 0;
     bottom: 0;
-    transform: rotate(270deg);
     position: fixed;
     z-index: -1;
 }
 
 
-
 .dates-information {
     display: flex;
-    float: left;
+    justify-content: flex-start;
+    gap: 10%;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 
-
-.dates {
+.dates, .information {
     float: left;
-}
 
-.dates h6 {
-    font-weight: 600;
-    font-size: 2em;
-    margin-top: 15px;
 }
-
-.information { 
-    float: left;
-    margin-left: 50px;
-}
-
-.information h6 {
-    font-weight: 600;
-    font-size: 2em;
-    margin-top: 15px;
-}
-
 
 
 
 #footer {
-    padding: 50px;
-    margin-left: 100px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 
-.apoios {
-    margin-top: 50px;
-    position: relative;
-    float: right;
-    max-width: 120%;
+
+
+@media (max-width: 480px) {
+    .image {
+        width: 100%; /* Ajuste o tamanho para telas muito pequenas */
+    
+    }
+
+
+    #main {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-wrap: wrap;
+        padding-top: 125px;
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    
+    
+.program {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: 85%;
+
+}
+
+    .title {
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        font-size: 55%;
+        z-index: 0;
+    }
+
+.text {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+    
+.image-grade {
+    position: absolute;
+    width: 14%;
+    height: auto;
+    top: 15%;
+    left: 0px;
+    z-index: -1;
+    position: fixed;
+    
+}
+
+
+.image-circle-gray {
+    width: 10%;
+    height: auto;
+    bottom: 20%;
+    left: 25px;
+    position: fixed;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+
+.image-m-circle {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    top: 25%;
+    left: 0px;
+    position: fixed;
+    
+}
+
+
+
+.image-point2 {
+    display: flex;
+    width: 50%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+    .dates-information {
+        display: block;
+        justify-content: space-between;
+        margin-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    
+    .dates, .information {
+        float: none;
+    
+    }
+    
+    
+    
+    #footer {
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+    
+    }
+    
+    
+
+
+}
 
   }
-
-}
