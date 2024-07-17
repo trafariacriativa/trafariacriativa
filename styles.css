@@ -11,6 +11,25 @@ body {
 }
 
 
+.btn-language {
+    border: none;
+    color: white;
+    position: absolute;
+    display: flex;
+    right: 0;
+    background-color: rgba(18, 18, 18, 0.2);
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    margin-right: 300px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+}
+
 
 #main {
     margin-top: -200px;
@@ -318,8 +337,15 @@ p {
   
 
 
-  @media (max-width: 1366px) {
+  
+  @media (min-width: 769px) and (max-width: 1366px) {
 
+
+    .btn-language {
+        margin-right: 100px;
+        margin-top: 50px;
+
+    }
 
     #main {
         padding-top: 125px;
@@ -338,10 +364,30 @@ p {
 .image {
         width: 100%;
     }
-
+    
+.btn-language {
+    border: none;
+    color: white;
+    position: absolute;
+    display: flex;
+    right: 0;
+    background-color: rgba(18, 18, 18, 0.2);
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    margin-right: 25px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    }
+    
+    
 
 #main {
-    padding-top: 125px;
+    padding-top: 200px;
     padding-left: 25px;
     padding-right: 25px;
 
@@ -512,17 +558,28 @@ p {
 
 
 @media (max-width: 480px) {
-    .image {
+
+.image {
         width: 100%; /* Ajuste o tamanho para telas muito pequenas */
     
     }
 
+    .btn-language {
+        margin-right: 15px;
+        margin-top: 15px;
+        padding-top: 5px;
+        padding-right: 7px;
+        padding-bottom: 5px;
+        padding-left: 7px;
+        font-size: 1em;
+        }
+    
 
     #main {
         padding-left: 15px;
         padding-right: 15px;
         flex-wrap: wrap;
-        padding-top: 125px;
+        padding-top: 200px;
         flex-direction: column;
         align-items: center;
      
