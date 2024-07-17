@@ -14,8 +14,8 @@ body {
 
 #main {
     margin-top: -200px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
 
 }
 
@@ -174,7 +174,7 @@ p {
 
 .image-grade {
     position: absolute;
-    width: 15%;
+    width: 17%;
     height: auto;
     top: 25%;
     left: 0px;
