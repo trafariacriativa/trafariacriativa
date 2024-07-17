@@ -1,0 +1,697 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+body {
+    background: radial-gradient(circle at left, white, rgba(18, 18, 18, 0.1));
+    background-position: 25% 75%;
+    background-size: 200%;
+}
+
+.btn-language {
+        border: none;
+        color: white;
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        background-color: rgba(18, 18, 18, 0.2);
+        padding-top: 10px;
+        padding-right: 12px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        right: 0;
+        margin-right: 300px;
+        margin-top: 50px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+
+
+#main {
+    margin-top: -200px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+}
+
+
+h1, h2, h4 {
+    font-family: "novecento-sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 11em;
+}
+
+
+h2 {
+    font-size: 6em;
+    margin: 0px;
+}
+
+
+h3 { 
+    font-family: "novecento-sans-wide", sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    font-size: 3.7em;
+}
+
+
+h3.special {
+    font-family: "novecento-sans-wide", sans-serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: -30px;
+}
+
+
+h4 {
+    font-size: 4em;
+}
+
+
+h4.special {
+    font-weight: 200;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "novecento-sans-narrow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3em;
+    letter-spacing: 1.5px;
+}
+
+h6 {
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+
+
+p {
+    font-family: 'museo-slab';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.email-link {
+    color: black; /* Define a cor do texto como preto */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+
+
+.image {
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+
+.program {
+    float: right;
+    padding-right: 150px;
+    margin-top: -15px;
+    font-size: 145%;
+}
+
+
+.date {
+    text-align: justify;
+}
+
+.date h2 {
+    font-size: 4em;
+    word-spacing: -15px;
+    margin-bottom: -20px;
+}
+
+
+.date h2 span {
+    /*font-weight: 200;*/
+    font-size: 0.15em;
+}
+
+
+.local {
+    text-align: center;
+    margin-top: -15px;
+}
+
+.local h6 {
+    margin-top: -8px;
+    margin-bottom: -5px;
+    font-size: 1.5em;
+}
+
+
+.title {
+    position: relative;
+    float: left;
+    padding-left: 150px;
+    z-index: 0;
+}
+
+.span-e {
+    display: inline-block;
+    color: transparent; /* Cor do texto */
+      -webkit-text-stroke: 1px black; /* Contorno preto */
+      text-shadow: 2px black; /* Contorno preto */
+  }
+
+.title h1 {
+    margin-top: -40px;
+    margin-bottom: -20px;
+}
+
+.title h4 {
+    margin-left: 10px;
+}
+
+.img-tecno {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+}
+
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grade {
+    position: absolute;
+    width: 17%;
+    height: auto;
+    top: 25%;
+    left: 0px;
+    z-index: -1;
+    position: fixed;
+    
+}
+
+.image-circle-gray {
+    width: 5%;
+    height: auto;
+    bottom: 2%;
+    left: 100px;
+    position: fixed;
+    z-index: -1;
+}
+
+.image-mais2 {
+    width: 10%;
+    height: auto;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.image-point1 {
+    display: flex;
+    width: 20%;
+    height: auto;
+    right: 0;
+    top: 10%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.image-point2 {
+    display: flex;
+    width: 20%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.image-m-circle {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    bottom: -25%;
+    left: -100px;
+    z-index: -2;
+    position: fixed;
+    
+}
+
+
+
+.text {
+    float: left;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.text-title h4 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    z-index: 0;
+}
+
+.text-paragraph h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    z-index: 0;
+}
+
+.text-paragraph p span {
+   font-style: italic;
+}
+
+
+.dates-information {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-top: 5%;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.dates {
+    float: left;
+}
+
+.dates h6 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+.information { 
+    float: left;
+    margin-left: 0;
+}
+
+
+.information h6 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+.img-mais {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 50px;
+}
+
+.apoios {
+    float: right;
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+
+  @media (min-width: 769px) and (max-width: 1366px) {
+
+
+    .btn-language {
+        margin-right: 100px;
+        margin-top: 50px;
+
+    }
+
+    
+    #main {
+        padding-top: 125px;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+    }
+    
+}
+
+
+  @media only screen and (max-width: 768px) {
+    
+
+.image {
+        width: 100%;
+    }
+
+
+
+#main {
+    padding-top: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.btn-language {
+    border: none;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(18, 18, 18, 0.2);
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+.program {
+        float: right;
+        padding-bottom: 25px;
+        padding-right: 50px;
+        padding-left: 50px;
+        font-size: 95%;
+
+}
+
+.img-mais {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.title {
+    float: none;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 65%;
+    z-index: 0;
+}
+
+
+.title h1 {
+    margin-top: -30px;
+    margin-bottom: -15px;
+}
+
+
+
+.text {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 50%;
+    z-index: 0;
+}
+
+.text-title h4 {
+    font-size: 3em;
+
+}
+
+
+.text-paragraph h4 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    z-index: 0;
+}
+
+.img-mais {
+    width: 80px;
+    height: 80px;
+
+}
+
+
+.img-tecno {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grade {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 200px;
+    left: -125px;
+    z-index: 0;
+    position: fixed;
+    
+}
+
+.image-circle-gray {
+    width: 5%;
+    height: auto;
+    bottom: 200px;
+    left: 25px;
+    position: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.image-mais2 {
+    width: 25%;
+    height: auto;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.image-m-circle {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    top: 450px;
+    left: 0px;
+    position: fixed;
+    
+}
+
+
+.image-point1 {
+    display: flex;
+    width: 25%;
+    height: auto;
+    right: 0px;
+    top: 50px;
+    position: fixed;
+    z-index: -1;
+}
+
+.image-point2 {
+    display: flex;
+    width: 50%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.dates-information {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.dates, .information {
+    float: left;
+
+}
+
+
+.date h2 {
+    font-size: 4em;
+    word-spacing: -8px;
+    margin-bottom: -20px;
+}
+
+
+#footer {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+
+
+@media (max-width: 480px) {
+    .image {
+        width: 100%; /* Ajuste o tamanho para telas muito pequenas */
+    
+    }
+
+    .btn-language {
+        margin-right: 15px;
+        margin-top: 15px;
+        padding-top: 5px;
+        padding-right: 7px;
+        padding-bottom: 5px;
+        padding-left: 7px;
+        font-size: 1em;
+        }
+    
+    #main {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-wrap: wrap;
+        padding-top: 200px;
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    
+    
+.program {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: 85%;
+
+}
+
+    .title {
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        font-size: 55%;
+        z-index: 0;
+    }
+
+.text {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+    
+.image-grade {
+    position: absolute;
+    width: 14%;
+    height: auto;
+    top: 15%;
+    left: 0px;
+    z-index: -1;
+    position: fixed;
+    
+}
+
+
+.image-circle-gray {
+    width: 10%;
+    height: auto;
+    bottom: 20%;
+    left: 25px;
+    position: fixed;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+
+.image-m-circle {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    top: 25%;
+    left: 0px;
+    position: fixed;
+    
+}
+
+
+
+.image-point2 {
+    display: flex;
+    width: 50%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+    .dates-information {
+        display: block;
+        justify-content: space-between;
+        margin-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    
+    .dates, .information {
+        float: none;
+    
+    }
+    
+    
+    
+    #footer {
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+    
+    }
+    
+    
+
+
+}
+
+  }
+
+
