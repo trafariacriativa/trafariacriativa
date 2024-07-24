@@ -338,8 +338,11 @@ p {
     height: auto;
   }
 
-  
+.insta {
+    padding-top: 50px;
+    text-align: right;
 
+}
 
   @media (min-width: 769px) and (max-width: 1366px) {
 
