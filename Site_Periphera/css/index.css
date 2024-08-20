@@ -273,8 +273,8 @@ p {
 
 .countdown {
     font-family: "IBM Plex Mono", monospace, serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 3vw;
     color: #fff;
     position: absolute;
     padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
@@ -569,7 +569,6 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
-
     background: rgba(18, 18, 18, 0.8); /* Barra cinza transparente */
     display: block;
     align-items: center;
@@ -887,11 +886,12 @@ p {
     }
 
     .countdown {
-        font-size: 20px; /* Tamanho reduzido da fonte do countdown */
+        font-size: 2.5vh; /* Tamanho reduzido da fonte do countdown */
         position: static; /* Remove o posicionamento absoluto */
         transform: none; /* Remove a transformação de centralização */
         padding: 0;
         margin-top: 5px; /* Espaço entre countdown e logo */
+        margin-right: 15px;
         text-align: center;
     }
 
@@ -1132,11 +1132,12 @@ p {
 }
 
 .countdown {
-    font-size: 20px; /* Tamanho reduzido da fonte do countdown */
+    font-size: 2.25vh; /* Tamanho reduzido da fonte do countdown */
     position: static; /* Remove o posicionamento absoluto */
     transform: none; /* Remove a transformação de centralização */
     padding: 0;
     margin-top: 5px; /* Espaço entre countdown e logo */
+    margin-right: 15px;
     text-align: center;
 }
 
@@ -1382,7 +1383,7 @@ p {
 }
 
 .countdown {
-    font-size: 20px; /* Tamanho reduzido da fonte do countdown */
+    font-size: 2.5vh; /* Tamanho reduzido da fonte do countdown */
     position: static; /* Remove o posicionamento absoluto */
     transform: none; /* Remove a transformação de centralização */
     padding: 0;
@@ -1550,16 +1551,89 @@ p {
 
 @media only screen and (min-width: 1780px) {
 
+
+    .countdown {
+        font-size: 2vw;
+    }
+    
+
+    .content-section h2 {
+        font-size: 2.5vw;
+
+    }   
+
      /* slides */
 
+     .title-container {
+        top: 40%;
+     }
+
      .title {
-        font-size: 6vw; /* Tamanho do título */
+        font-size: 8vmin; /* Tamanho do título */
     }
 
     .subtitle {
-        font-size: 5vh; /* Tamanho do subtítulo */
-        letter-spacing: 0.025em;
+        line-height: 1em;
+        font-size: 6vmin; /* Tamanho do subtítulo */
     }
+
+
+
+
+/* notícias */
+
+.content-section {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.content-section h2 {
+    font-size: 2.5vw;
+    color: rgb(56, 56, 56);
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas */
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.column {
+    width: 600px;
+    height: 350px;
+    position: relative;
+}
+
+
+/* imersão */
+.left-side h2 {
+    font-size: 7vh; /* Tamanho reduzido do título */
+}
+
+
+/* talks */
+
+.text-side h2 {
+    font-size: 7vh; /* Tamanho reduzido do título */
+}
+
+/* residências */
+.text-side-yellow h3 {
+    font-size: 6vh; /* Tamanho reduzido do título */
+}
+
+
+/* apoios */
+
+.white-section {
+    height: 400px;
+}
+
+
+
 
 }
 
