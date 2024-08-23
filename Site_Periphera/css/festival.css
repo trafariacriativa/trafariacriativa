@@ -425,9 +425,21 @@ p, li {
     line-height: 2;
 }
 
-li {
-  line-height: 2;
+
+ul {
+  list-style-position: outside; /* Garante que o bullet fique fora do texto */
+  
 }
+
+
+
+li {
+  margin-left: 15px; /* Move o texto para a direita */
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+
+
 
 
 /* slideshow */
@@ -486,6 +498,7 @@ video {
     width: 100%;
     max-width: 960px; /* Largura máxima do vídeo */
     height: auto;
+    padding-bottom: 40px;
 }
 
 
@@ -536,51 +549,54 @@ video {
 }
 
 
+
 /* apoios */
 
 .white-section {
-    width: 100%;
-    height: 250px;
-    background-color: #FFF; /* Fundo branco */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 250px;
+  background-color: #FFF; /* Fundo branco */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .white-section .text-info {
-    width: 40%;
-    flex: 1;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left; /* Alinha o texto à esquerda */
-    color: rgb(56, 56, 56); /* Texto em preto */
+  width: 40%;
+  flex: 1;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Alinha o texto à esquerda */
+  color: rgb(56, 56, 56); /* Texto em preto */
 }
 
 .white-section .text-info p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    font-weight: 300;
-    color: rgb(56, 56, 56);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: rgb(56, 56, 56);
 }
 
 .white-section .image-side {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    padding-right: 40px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  padding-right: 40px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .white-section .image-side img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain; /* A imagem se adapta ao tamanho da div */
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* A imagem se adapta ao tamanho da div */
 }
+
+
 
 
 
@@ -628,9 +644,27 @@ video {
 }
 
 
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
+
+
+.text-section {
+  padding: 40px;
+  
+}
+
+
+.text-section p, li{
+  font-size: 1.5vh;
+  
+}
+
+
+
+.text-section h3{
+font-size: 2vh;
+}
 
 }
 
@@ -698,9 +732,23 @@ video {
 
 .content-container{
   width: 100%;
-  padding: 20px; /* Ajusta o padding */
+  padding: 40px; /* Ajusta o padding */
   box-sizing: border-box;
 }
+
+
+
+.text-section p, li{
+  font-size: 1.5vh;
+  
+}
+
+
+
+.text-section h3{
+font-size: 2vh;
+}
+
 
 
   h2 {
@@ -717,37 +765,9 @@ video {
 }
 
 
-
-  /* apoios */
-  .white-section {
-    flex-direction: column; /* Alinha texto e imagem verticalmente */
-    height: auto; /* Ajusta a altura automaticamente */
-  }
-
-  .white-section .text-info {
-    width: 100%; /* Ocupa a largura total */
-    padding: 15px 0 25px 0; /* Ajusta o padding */
-    text-align: center; /* Centraliza o texto */
-  }
-
-  .white-section .text-info p {
-    font-size: 14px; /* Ajusta o tamanho da fonte */
-  }
-
-  .white-section .image-side {
-    width: 100%; /* Ocupa a largura total */
-    padding-right: 0; /* Remove o padding */
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-  }
-
-  .white-section .image-side img {
-    width: 100%; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-
-
+.white-section .text-info p {
+  font-size: 1.25vmax; /* Ajusta o tamanho da fonte */
+}
 
 
 @media only screen and (max-width: 479px) {
@@ -816,6 +836,21 @@ video {
   }
 
 
+
+  .text-section p, li{
+       font-size: 1.5vh;
+
+  }
+  
+
+
+  .text-section h3{
+    font-size: 2vh;
+}
+
+
+
+
   /* texto */
 
   .content-container{
@@ -832,9 +867,44 @@ video {
   
   
 .gallery {
-  grid-template-columns: 1fr; /* 1 coluna na galeria em telas muito pequenas */
+  max-width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+    grid-gap: 5px; /* Reduz o espaço entre as imagens */
+    margin: 0;
   
 }
 
-  
+
+  /* apoios */
+  .white-section {
+    flex-direction: column; /* Alinha texto e imagem verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .white-section .text-info {
+    width: 100%; /* Ocupa a largura total */
+    padding: 15px 0 25px 0; /* Ajusta o padding */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .white-section .text-info p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .white-section .image-side {
+    width: 100%; /* Ocupa a largura total */
+    padding-right: 0; /* Remove o padding */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+
+  .white-section .image-side img {
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+
+
+
 }

@@ -540,3 +540,315 @@ video {
     object-fit: contain; /* A imagem se adapta ao tamanho da div */
 }
 
+
+
+
+
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+
+  /* navbar */
+  .navbar {
+    height: 100px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 90%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+ 
+  /* texto */
+
+.content-container{
+  width: 100%;
+  padding: 20px; /* Ajusta o padding */
+  box-sizing: border-box;
+}
+
+
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
+
+
+.text-section {
+  padding: 40px;
+  
+}
+
+
+.text-section p, li{
+  font-size: 1.5vh;
+  
+}
+
+
+
+.text-section h3{
+font-size: 2vh;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+
+  /* navbar */
+  .navbar {
+    height: 90px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .navbar .logo {
+    font-size: 20px; /* Aumenta o tamanho do logo */
+    padding-left: 20px; /* Ajusta o padding à esquerda */
+  }
+
+  .rotating-icon img {
+    width: 35px; /* Ajusta o tamanho do ícone */
+    height: 35px;
+  }
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      width: 240px;
+      height: 200px;
+      top: 90px;
+
+  }
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 85%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+
+
+  .image-title {
+    font-size: 3.5vw; /* Ajusta o tamanho do título */
+    bottom: 30px; /* Ajusta o alinhamento */
+  }
+
+  
+  /* texto */
+
+.content-container{
+  width: 100%;
+  padding: 40px; /* Ajusta o padding */
+  box-sizing: border-box;
+}
+
+
+
+.text-section p, li{
+  font-size: 1.5vh;
+  
+}
+
+
+
+.text-section h3{
+font-size: 2vh;
+}
+
+
+
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
+}
+
+
+  
+
+.gallery {
+  grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
+}
+
+
+.white-section .text-info p {
+  font-size: 1.25vmax; /* Ajusta o tamanho da fonte */
+}
+
+
+@media only screen and (max-width: 479px) {
+
+  /* navbar */
+  .navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar .logo {
+      font-size: 18px; /* Tamanho reduzido do logo */
+      padding-left: 10px; /* Remove padding à esquerda */
+  }
+
+  .rotating-icon img {
+      width: 30px; /* Reduz o tamanho do ícone */
+      height: 30px;
+  }
+
+  .burger {
+      font-size: 28px; /* Tamanho reduzido do ícone do menu */
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      top: 80px;
+      width: 100%;
+      left: 0;
+      background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .menu.active, .menu.sticky {
+      right: 0; /* Ajusta o menu para a posição visível */
+
+  }
+
+
+
+
+  .image-container {
+      height: 250px; /* Reduzido para telas menores */
+      padding: 0; /* Remove qualquer padding */
+      box-sizing: border-box; /* Garante que padding não afete a largura total */
+  }
+
+  .title-container {
+      width: 90%; /* Ajustado para largura menor em telas pequenas */
+      padding: 0 10px; /* Adicionado padding lateral para ajuste */
+      text-align: center; /* Centraliza o texto para telas menores */
+      margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+  .image-title {
+      font-size: 8vw; /* Ajustado para maior responsividade em telas menores */
+      bottom: 20px; /* Ajustado para melhor alinhamento em telas menores */
+  }
+
+
+
+  .text-section p, li{
+       font-size: 1.5vh;
+
+  }
+  
+
+
+  .text-section h3{
+    font-size: 2vh;
+}
+
+
+
+
+  /* texto */
+
+  .content-container{
+    width: 100%;
+    padding: 20px; /* Ajusta o padding */
+    box-sizing: border-box;
+  }
+  
+  
+    h2 {
+      font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+    }
+
+  
+  
+.gallery {
+  max-width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+    grid-gap: 5px; /* Reduz o espaço entre as imagens */
+    margin: 0;
+  
+}
+
+
+  /* apoios */
+  .white-section {
+    flex-direction: column; /* Alinha texto e imagem verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .white-section .text-info {
+    width: 100%; /* Ocupa a largura total */
+    padding: 15px 0 25px 0; /* Ajusta o padding */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .white-section .text-info p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .white-section .image-side {
+    width: 100%; /* Ocupa a largura total */
+    padding-right: 0; /* Remove o padding */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+
+  .white-section .image-side img {
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+
+
+
+}
