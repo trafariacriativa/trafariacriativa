@@ -426,11 +426,14 @@ p {
 
 .title-container {
     position: absolute;
-    top: 175px;
+    top: 150px;
     left: 64px;
+    width: 40%;
     z-index: 10; /* Garante que o título fique acima das imagens do slider */
 
 }
+
+
 
 .title-container a {
     text-decoration: none; /* Remove o sublinhado */
@@ -459,7 +462,7 @@ p {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vw;
+    font-size: 3.5vmin;
     color: white; /* Cor do texto do subtítulo */
 
 }
@@ -853,509 +856,238 @@ p {
 
 
 
+@media only screen and (min-width: 1780px) {
 
 
+    .slider {
+        width: 100%;
+        height: 500px; /* Altura ajustada para 450px */
 
-/* Ajustes específicos para telas menores */
-
-
-@media only screen and (max-width: 479px) {
-
-    /* navbar */
-    .navbar {
-        height: 80px;
-        flex-direction: column; /* Alinha os elementos verticalmente */
-        align-items: flex-start; /* Alinha os itens à esquerda */
-        padding: 10px; /* Ajusta o padding */
-    }
-
-    .navbar .logo {
-        font-size: 18px; /* Tamanho reduzido do logo */
-        padding-left: 0; /* Remove padding à esquerda */
-        margin-bottom: 5px; /* Espaço entre logo e countdown */
-    }
-
-    .rotating-icon img {
-        width: 30px; /* Reduz o tamanho do ícone */
-        height: 30px;
-    }
-
-    .countdown-wrapper {
-        width: 100%; /* Ocupa toda a largura disponível */
-        padding: 0;
     }
 
     .countdown {
-        font-size: 2.5vmax; /* Tamanho reduzido da fonte do countdown */
-        position: static; /* Remove o posicionamento absoluto */
-        transform: none; /* Remove a transformação de centralização */
-        padding: 0;
-        margin-top: 5px; /* Espaço entre countdown e logo */
-        margin-right: 15px;
-        text-align: center;
+        font-size: 2vw;
+    }
+    
+
+    .content-section h2 {
+        font-size: 2.5vw;
+
+    }   
+
+     /* slides */
+     
+
+     .title-container {
+        top: 30%;
+        width: 50%;
+     }
+
+     .title {
+        font-size: 7vmin; /* Tamanho do título */
     }
 
-    .burger {
-        font-size: 28px; /* Tamanho reduzido do ícone do menu */
-        position: fixed;
-        right: 10px;
-        top: 10px;
+    .subtitle {
+        line-height: 1em;
+        font-size: 4vmin; /* Tamanho do subtítulo */
     }
 
+
+
+
+/* notícias */
+
+.content-section {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.content-section h2 {
+    font-size: 2.5vw;
+    color: rgb(56, 56, 56);
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas */
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.column {
+    width: 600px;
+    height: 350px;
+    position: relative;
+}
+
+
+/* imersão */
+.left-side h2 {
+    font-size: 7vh; /* Tamanho reduzido do título */
+}
+
+
+/* talks */
+
+.text-side h2 {
+    font-size: 7vh; /* Tamanho reduzido do título */
+}
+
+/* residências */
+.text-side-yellow h3 {
+    font-size: 6vh; /* Tamanho reduzido do título */
+}
+
+
+/* apoios */
+
+.white-section {
+    height: 400px;
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 760px) and (max-width: 1023px) {
+
+
+
+
+
+    /* navbar */
+    
+    
     /* menu */
     .menu {
-        width: 100%;
-        left: 0;
-        height: 190px;
+        width: 320px;
+        height: 225px;
         background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+        margin-right: 10px;
     }
 
     .menu.active, .menu.sticky {
         right: 20px; /* Ajusta o menu para a posição visível */
     }
 
-    /* programa */
-
-    
-    .box-content {
-        padding: 12px;
-        text-align: center;
-    }
-
-    .box {
-        width: 80%;
-        height: auto; /* Altura reduzida da caixa */
-        left: 50%;
-        transform: translateX(-50%);
-        top: 100px; /* Ajusta a posição no topo */
-    }
-
-    
-
-    .box-title {
-        font-size: 9.5vmin; /* Tamanho reduzido do título */
-    }
-
-    .box-subtitle {
-        font-size: 10vmin; /* Tamanho reduzido do subtítulo */
-        margin-top: 1rem; /* Reduz o espaço entre as linhas */
-    }
-
-    .box-date {
-        font-size: 2vmax; /* Tamanho reduzido da data */
-        margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-        margin-bottom: 1rem;
-    }
-
-    .cta-button {
-        width: 100%;
-        height: 50%; /* Altura reduzida do botão */
-        line-height: 36px; /* Centraliza verticalmente o texto */
-        font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
-    }
-
-    /* slides */
-
-    
-    /* Centralização do Título e Subtítulo */
-    .title-container {
-        position: absolute; /* Necessário para que o top funcione */
-        top: 375px; /* Ajusta a posição vertical do container */
-        display: flex; /* Usa Flexbox para layout horizontal */
-        align-items: center; /* Alinha os itens no centro verticalmente */
-        justify-content: center; /* Centraliza os itens horizontalmente */
-        text-align: center;
-        width: 100%; /* Garante que o contêiner use a largura total */
-        left: 0;
-    }
-
-    .title, .subtitle {
-        margin: 0; /* Remove margens adicionais */
-        display: inline-block; /* Garante que o título e o subtítulo fiquem na mesma linha */
-    }
-
-    .title {
-        font-size: 9vmin; /* Tamanho do título */
-    }
-
-    .subtitle {
-        font-size: 7vmin; /* Tamanho do subtítulo */
-        letter-spacing: 0.025em;
-    }
-
-    .indicators {
-        bottom: 20%;
-    }
-
-    .indicator {
-        width: 12px; /* Tamanho reduzido dos indicadores */
-        height: 12px;
-    }
-
-    /* notícias */
-    .content-section {
-        height: 260px; /* Altura reduzida da seção de notícias */
-        padding: 20px 0;
-    }
-
-    .content-section h2 {
-        font-size: 20px; /* Tamanho reduzido do título das notícias */
-    }
-
-    .columns {
-        height: 200px;
-        display: flex;
-        flex-direction: row; /* Empilha as colunas verticalmente */
-        gap: 10px; /* Espaçamento reduzido entre colunas */
-    }
-
-    .column {
-        width: 100%; /* Largura total para colunas */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
-
-    .overlay-section h3 {
-        font-size: 18px; /* Tamanho reduzido do título do overlay */
-    }
-
-    .overlay-section p {
-        font-size: 12px; /* Tamanho reduzido do texto do overlay */
-    }
-
-    /* imersão */
-    .left-side {
-        padding: 20px; /* Ajusta o padding para telas menores */
-    }
-
-    .left-side h2 {
-        font-size: 9vmin; /* Tamanho reduzido do título */
-    }
-
-    .left-side p {
-        font-size: 3.5vw; /* Tamanho reduzido do texto */
-    }
-
-    /* talks */
-    .text-side {
-        padding: 20px;
-    }
-
-    .text-side h2 {
-        font-size: 9vmin; /* Tamanho reduzido do título */
-    }
-
-    .text-side p {
-        font-size: 3.5vw; /* Tamanho reduzido do texto */
-    }
-
-    /* residências */
-    .yellow-content {
-        flex-direction: row; /* Alinha o conteúdo verticalmente */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
-
-    .yellow-content .text-side, 
-    .yellow-content .image-side {
-        width: 100%; /* Ocupa a largura total */
-    }
-
-    .text-side-yellow h3 {
-        font-size: 8vmin; /* Tamanho reduzido do título */
-    }
-
-    .text-side-yellow p {
-        font-size: 3vw; /* Tamanho reduzido do texto */
-    }
-
-    .text-side-yellow {
-        padding: 20px; /* Ajusta o padding para telas menores */
-    }
-
-    .yellow-content .image-side img {
-        height: 200px; /* Define uma altura fixa para a imagem */
-    }
-
-    /* apoios */
-    .white-section {
-        flex-direction: column; /* Alinha texto e imagem verticalmente */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
-
-    .white-section .text-info {
-        width: 100%; /* Ocupa a largura total */
-        padding: 10px 0 20px 0;
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .white-section .text-info p {
-        font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
-    }
-
-    .white-section .image-side {
-        width: 100%; /* Ocupa a largura total */
-        padding-right: 0; /* Remove o padding */
-        display: flex;
-        justify-content: center; /* Centraliza a imagem horizontalmente */
-        align-items: center; /* Centraliza a imagem verticalmente */
-    }
-
-    .white-section .image-side img {
-        width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
-        height: auto; /* Mantém a proporção da imagem */
-    }
-}
 
 
-@media only screen and (min-width: 480px) and (max-width: 639px) {
 
- /* navbar */
- .navbar {
-    height: 80px;
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    align-items: flex-start; /* Alinha os itens à esquerda */
-    padding: 10px; /* Ajusta o padding */
-}
 
-.navbar .logo {
-    font-size: 18px; /* Tamanho reduzido do logo */
-    padding-left: 0; /* Remove padding à esquerda */
-    margin-bottom: 5px; /* Espaço entre logo e countdown */
-}
-
-.rotating-icon img {
-    width: 30px; /* Reduz o tamanho do ícone */
-    height: 30px;
-}
-
-.countdown-wrapper {
-    width: 100%; /* Ocupa toda a largura disponível */
-    padding: 0;
-}
 
 .countdown {
-    font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
-    position: static; /* Remove o posicionamento absoluto */
-    transform: none; /* Remove a transformação de centralização */
-    padding: 0;
-    margin-top: 5px; /* Espaço entre countdown e logo */
-    margin-right: 15px;
+    font-size: 3.5vw;
+    color: #fff;
+    padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
+    right: 15%;
+    transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
+}
+
+
+/* programa */
+
+    
+.box-content {
+    padding: 12px;
     text-align: center;
 }
 
-.burger {
-    font-size: 28px; /* Tamanho reduzido do ícone do menu */
-    position: fixed;
-    right: 10px;
-    top: 10px;
-
+.box {
+    width: 45%;
+    height: auto; /* Altura reduzida da caixa */
+    top: 100px; /* Ajusta a posição no topo */
 }
 
 
-    /* menu */
-    .menu {
-        width: 50%;
-        height: 190px;
-        background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
-        margin-right: -5px;
-    }
 
-    .menu.active, .menu.sticky {
-        right: 20px; /* Ajusta o menu para a posição visível */
-    }
+.box-title {
+    font-size: 6vmin; /* Tamanho reduzido do título */
+}
+
+.box-subtitle {
+    font-size: 6vmin; /* Tamanho reduzido do subtítulo */
+    margin-top: 15px; /* Reduz o espaço entre as linhas */
+}
+
+.box-date {
+    font-size: 3.5vmin; /* Tamanho reduzido da data */
+    margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    width: 100%;
+    height: 40px; /* Altura reduzida do botão */
+    line-height: 2.5rem; /* Centraliza verticalmente o texto */
+    font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
+}
 
 
-    /* programa */
-
-    
-    .box-content {
-        padding: 12px;
-        text-align: center;
-    }
-
-    .box {
-        width: 75%;
-        height: auto; /* Altura reduzida da caixa */
-        left: 50%;
-        transform: translateX(-50%);
-        top: 100px; /* Ajusta a posição no topo */
-    }
-
-    
-
-    
-    .box-title {
-        font-size: 4.5vmax; /* Tamanho reduzido do título */
-    }
-
-    .box-subtitle {
-        font-size: 5vmax; /* Tamanho reduzido do subtítulo */
-        margin-top: 1rem; /* Reduz o espaço entre as linhas */
-    }
-
-    .box-date {
-        font-size: 2.5vmax; /* Tamanho reduzido da data */
-        margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-        margin-bottom: 1rem;
-    }
-
-    .cta-button {
-        width: 100%;
-        height: 50%; /* Altura reduzida do botão */
-        line-height: 36px; /* Centraliza verticalmente o texto */
-        font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
-    }
-
-    /* slides */
-
-    
     /* Centralização do Título e Subtítulo */
     .title-container {
-        top: 82%;
+        left: 40px;
+        bottom: 55%;
         display: flex; /* Usa Flexbox para layout horizontal */
-        justify-content: center; /* Centraliza os itens horizontalmente */
-        width: 100%; /* Garante que o contêiner use a largura total */
-        left: 0;
+        justify-content: left; /* Centraliza os itens horizontalmente */
+        width: 40%; /* Garante que o contêiner use a largura total */
+        left: 40px;
+
     }
 
-    .title, .subtitle {
-        margin: 0; /* Remove margens adicionais */
-        display: inline-block; /* Garante que o título e o subtítulo fiquem na mesma linha */
-    }
-
-    .title {
-        font-size: 9vmin; /* Tamanho do título */
-    }
-
+   
     .subtitle {
-        font-size: 7vmin; /* Tamanho do subtítulo */
-        letter-spacing: 0.025em;
+        font-size: 3.25vmin;
+
     }
 
-    .indicators {
-        bottom: 20%;
-    }
-
-    .indicator {
-        width: 12px; /* Tamanho reduzido dos indicadores */
-        height: 12px;
-    }
+/* imersão */
 
 
-    /* notícias */
-    .content-section {
-        height: 230px; /* Altura reduzida da seção de notícias */
-        padding: 20px 0;
-        margin-bottom: 50px;
-    }
+.left-side p {
+    font-size: 1.1em; /* Tamanho reduzido do texto */
+}
 
-    .content-section h2 {
-        font-size: 26px; /* Tamanho reduzido do título das notícias */
-            }
+/* talks */
 
-    .columns {
-        height: 200px;
-        display: flex;
-        flex-direction: row; /* Empilha as colunas verticalmente */
-        gap: 10px; /* Espaçamento reduzido entre colunas */
-    }
 
-    .column {
-        width: 100%; /* Largura total para colunas */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
+.text-side p {
+    font-size: 1.1em; /* Tamanho reduzido do texto */
+}
 
-    .overlay-section h3 {
-        font-size: 18px; /* Tamanho reduzido do título do overlay */
-    }
+/* residências */
 
-    .overlay-section p {
-        font-size: 12px; /* Tamanho reduzido do texto do overlay */
-    }
 
-    /* imersão */
-    .left-side {
-        padding: 20px; /* Ajusta o padding para telas menores */
-    }
 
-    .left-side h2 {
-        font-size: 9vmin; /* Tamanho reduzido do título */
-    }
+.text-side-yellow h3 {
+    font-size: 4vh; /* Tamanho reduzido do título */
+}
 
-    .left-side p {
-        font-size: 1em; /* Tamanho reduzido do texto */
-    }
+.text-side-yellow p {
+    font-size: 1em; /* Tamanho reduzido do texto */
+}
 
-    /* talks */
-    .text-side {
-        padding: 20px;
-    }
+.yellow-content .image-side img {
+    height: 300px; /* Define uma altura fixa para a imagem */
+}
 
-    .text-side h2 {
-        font-size: 9vmin; /* Tamanho reduzido do título */
-    }
 
-    .text-side p {
-        font-size: 1em; /* Tamanho reduzido do texto */
-    }
+.text-side-yellow p {
+    font-size: 1.05em; /* Tamanho reduzido do texto */
+}
 
-    /* residências */
-    .yellow-content {
-        flex-direction: row; /* Alinha o conteúdo verticalmente */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
+     
 
-    .yellow-content .text-side, 
-    .yellow-content .image-side {
-        width: 100%; /* Ocupa a largura total */
-    }
-
-    .text-side-yellow h3 {
-        font-size: 8vim; /* Tamanho reduzido do título */
-    }
-
-    .text-side-yellow p {
-        font-size: 0.8em; /* Tamanho reduzido do texto */
-    }
-
-    .text-side-yellow {
-        padding: 20px; /* Ajusta o padding para telas menores */
-    }
-
-    .yellow-content .image-side img {
-        height: 200px; /* Define uma altura fixa para a imagem */
-    }
-
-    /* apoios */
-    .white-section {
-        flex-direction: column; /* Alinha texto e imagem verticalmente */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
-
-    .white-section .text-info {
-        width: 100%; /* Ocupa a largura total */
-        padding: 10px 0 20px 0;
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .white-section .text-info p {
-        font-size: 0.7em; /* Ajusta o tamanho da fonte para telas menores */
-    }
-
-    .white-section .image-side {
-        width: 100%; /* Ocupa a largura total */
-        padding-right: 0; /* Remove o padding */
-        display: flex;
-        justify-content: center; /* Centraliza a imagem horizontalmente */
-        align-items: center; /* Centraliza a imagem verticalmente */
-    }
-
-    .white-section .image-side img {
-        width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
-        height: auto; /* Mantém a proporção da imagem */
-    }
-
+.yellow-content {
+    flex-direction: row; /* Alinha o conteúdo verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+}
 
 }
+
 
     @media only screen and (min-width: 640px) and (max-width: 759px) {
 
@@ -1455,10 +1187,21 @@ p {
     /* Centralização do Título e Subtítulo */
     .title-container {
         left: 40px;
+        bottom: 55%;
+        display: flex; /* Usa Flexbox para layout horizontal */
+        justify-content: left; /* Centraliza os itens horizontalmente */
+        width: 40%; /* Garante que o contêiner use a largura total */
+        left: 40px;
 
     }
 
    
+    .subtitle-container {
+        font-size: 3.25vmin;
+
+    }
+
+
 /* notícias */
 
 .content-section {
@@ -1569,208 +1312,513 @@ p {
 
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1023px) {
 
-
-
-
+@media only screen and (min-width: 480px) and (max-width: 639px) {
 
     /* navbar */
-    
-    
+    .navbar {
+       height: 80px;
+       flex-direction: column; /* Alinha os elementos verticalmente */
+       align-items: flex-start; /* Alinha os itens à esquerda */
+       padding: 10px; /* Ajusta o padding */
+   }
+   
+   .navbar .logo {
+       font-size: 18px; /* Tamanho reduzido do logo */
+       padding-left: 0; /* Remove padding à esquerda */
+       margin-bottom: 5px; /* Espaço entre logo e countdown */
+   }
+   
+   .rotating-icon img {
+       width: 30px; /* Reduz o tamanho do ícone */
+       height: 30px;
+   }
+   
+   .countdown-wrapper {
+       width: 100%; /* Ocupa toda a largura disponível */
+       padding: 0;
+   }
+   
+   .countdown {
+       font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
+       position: static; /* Remove o posicionamento absoluto */
+       transform: none; /* Remove a transformação de centralização */
+       padding: 0;
+       margin-top: 5px; /* Espaço entre countdown e logo */
+       margin-right: 15px;
+       text-align: center;
+   }
+   
+   .burger {
+       font-size: 28px; /* Tamanho reduzido do ícone do menu */
+       position: fixed;
+       right: 10px;
+       top: 10px;
+   
+   }
+   
+   
+       /* menu */
+       .menu {
+           width: 50%;
+           height: 190px;
+           background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+           margin-right: -5px;
+       }
+   
+       .menu.active, .menu.sticky {
+           right: 20px; /* Ajusta o menu para a posição visível */
+       }
+   
+   
+       /* programa */
+   
+       
+       .box-content {
+           padding: 12px;
+           text-align: center;
+       }
+   
+       .box {
+           width: 75%;
+           height: auto; /* Altura reduzida da caixa */
+           left: 50%;
+           transform: translateX(-50%);
+           top: 100px; /* Ajusta a posição no topo */
+       }
+   
+       
+   
+       
+       .box-title {
+           font-size: 4.5vmax; /* Tamanho reduzido do título */
+       }
+   
+       .box-subtitle {
+           font-size: 5vmax; /* Tamanho reduzido do subtítulo */
+           margin-top: 1rem; /* Reduz o espaço entre as linhas */
+       }
+   
+       .box-date {
+           font-size: 2.5vmax; /* Tamanho reduzido da data */
+           margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
+           margin-bottom: 1rem;
+       }
+   
+       .cta-button {
+           width: 100%;
+           height: 50%; /* Altura reduzida do botão */
+           line-height: 36px; /* Centraliza verticalmente o texto */
+           font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
+       }
+   
+       /* slides */
+   
+       
+       /* Centralização do Título e Subtítulo */
+       .title-container {
+           top: 80%;
+           display: flex; /* Usa Flexbox para layout horizontal */
+           justify-content: center; /* Centraliza os itens horizontalmente */
+           width: 100%; /* Garante que o contêiner use a largura total */
+           left: 0;
+       }
+   
+       .title, .subtitle {
+           margin: 0; /* Remove margens adicionais */
+text-align: center;
+       }
+   
+       .title {
+        margin: 0;
+           font-size: 6vmin; /* Tamanho do título */
+       }
+   
+       .subtitle {
+           font-size: 3.5vmin; /* Tamanho do subtítulo */
+           letter-spacing: -0.025em;
+       }
+   
+
+       
+       .indicators {
+           bottom: 22%;
+       }
+   
+       .indicator {
+           width: 12px; /* Tamanho reduzido dos indicadores */
+           height: 12px;
+       }
+   
+   
+       /* notícias */
+       .content-section {
+           height: 230px; /* Altura reduzida da seção de notícias */
+           padding: 20px 0;
+           margin-bottom: 50px;
+       }
+   
+       .content-section h2 {
+           font-size: 26px; /* Tamanho reduzido do título das notícias */
+               }
+   
+       .columns {
+           height: 200px;
+           display: flex;
+           flex-direction: row; /* Empilha as colunas verticalmente */
+           gap: 10px; /* Espaçamento reduzido entre colunas */
+       }
+   
+       .column {
+           width: 100%; /* Largura total para colunas */
+           height: auto; /* Ajusta a altura automaticamente */
+       }
+   
+       .overlay-section h3 {
+           font-size: 18px; /* Tamanho reduzido do título do overlay */
+       }
+   
+       .overlay-section p {
+           font-size: 12px; /* Tamanho reduzido do texto do overlay */
+       }
+   
+       /* imersão */
+       .left-side {
+           padding: 20px; /* Ajusta o padding para telas menores */
+       }
+   
+       .left-side h2 {
+           font-size: 9vmin; /* Tamanho reduzido do título */
+       }
+   
+       .left-side p {
+           font-size: 1em; /* Tamanho reduzido do texto */
+       }
+   
+       /* talks */
+       .text-side {
+           padding: 20px;
+       }
+   
+       .text-side h2 {
+           font-size: 9vmin; /* Tamanho reduzido do título */
+       }
+   
+       .text-side p {
+           font-size: 1em; /* Tamanho reduzido do texto */
+       }
+   
+       /* residências */
+       .yellow-content {
+           flex-direction: row; /* Alinha o conteúdo verticalmente */
+           height: auto; /* Ajusta a altura automaticamente */
+       }
+   
+       .yellow-content .text-side, 
+       .yellow-content .image-side {
+           width: 100%; /* Ocupa a largura total */
+       }
+   
+       .text-side-yellow h3 {
+           font-size: 8vim; /* Tamanho reduzido do título */
+       }
+   
+       .text-side-yellow p {
+           font-size: 0.8em; /* Tamanho reduzido do texto */
+       }
+   
+       .text-side-yellow {
+           padding: 20px; /* Ajusta o padding para telas menores */
+       }
+   
+       .yellow-content .image-side img {
+           height: 200px; /* Define uma altura fixa para a imagem */
+       }
+   
+       /* apoios */
+       .white-section {
+           flex-direction: column; /* Alinha texto e imagem verticalmente */
+           height: auto; /* Ajusta a altura automaticamente */
+       }
+   
+       .white-section .text-info {
+           width: 100%; /* Ocupa a largura total */
+           padding: 10px 0 20px 0;
+           text-align: center; /* Centraliza o texto */
+       }
+   
+       .white-section .text-info p {
+           font-size: 0.7em; /* Ajusta o tamanho da fonte para telas menores */
+       }
+   
+       .white-section .image-side {
+           width: 100%; /* Ocupa a largura total */
+           padding-right: 0; /* Remove o padding */
+           display: flex;
+           justify-content: center; /* Centraliza a imagem horizontalmente */
+           align-items: center; /* Centraliza a imagem verticalmente */
+       }
+   
+       .white-section .image-side img {
+           width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
+           height: auto; /* Mantém a proporção da imagem */
+       }
+   
+   
+   }
+   
+
+/* Ajustes específicos para telas menores */
+
+
+@media only screen and (max-width: 479px) {
+
+    /* navbar */
+    .navbar {
+        height: 80px;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .navbar .logo {
+        font-size: 18px; /* Tamanho reduzido do logo */
+        padding-top: 5px;
+        padding-left: 0; /* Remove padding à esquerda */
+
+    }
+
+    .rotating-icon img {
+        width: 30px; /* Reduz o tamanho do ícone */
+        height: 30px;
+    }
+
+    .countdown-wrapper {
+        width: 100%; /* Ocupa toda a largura disponível */
+        padding: 0;
+    }
+
+    .countdown {
+        font-size: 2.5vmax; /* Tamanho reduzido da fonte do countdown */
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a transformação de centralização */
+        padding: 0;
+        margin-top: 5px; /* Espaço entre countdown e logo */
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .burger {
+        font-size: 28px; /* Tamanho reduzido do ícone do menu */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
     /* menu */
     .menu {
-        width: 320px;
-        height: 225px;
+        width: 100%;
+        left: 0;
+        height: 190px;
         background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
-        margin-right: 10px;
     }
 
     .menu.active, .menu.sticky {
         right: 20px; /* Ajusta o menu para a posição visível */
     }
 
-
-
-
-
-
-.countdown {
-    font-size: 3.5vw;
-    color: #fff;
-    padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
-    right: 15%;
-    transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
-}
-
-
-/* programa */
+    /* programa */
 
     
-.box-content {
-    padding: 12px;
-    text-align: center;
-}
-
-.box {
-    width: 45%;
-    height: auto; /* Altura reduzida da caixa */
-    top: 100px; /* Ajusta a posição no topo */
-}
-
-
-
-.box-title {
-    font-size: 6vmin; /* Tamanho reduzido do título */
-}
-
-.box-subtitle {
-    font-size: 6vmin; /* Tamanho reduzido do subtítulo */
-    margin-top: 15px; /* Reduz o espaço entre as linhas */
-}
-
-.box-date {
-    font-size: 3.5vmin; /* Tamanho reduzido da data */
-    margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-    margin-bottom: 1.5rem;
-}
-
-.cta-button {
-    width: 100%;
-    height: 40px; /* Altura reduzida do botão */
-    line-height: 2.5rem; /* Centraliza verticalmente o texto */
-    font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
-}
-
-
-
-/* imersão */
-
-
-.left-side p {
-    font-size: 1.1em; /* Tamanho reduzido do texto */
-}
-
-/* talks */
-
-
-.text-side p {
-    font-size: 1.1em; /* Tamanho reduzido do texto */
-}
-
-/* residências */
-
-
-
-.text-side-yellow h3 {
-    font-size: 4vh; /* Tamanho reduzido do título */
-}
-
-.text-side-yellow p {
-    font-size: 1em; /* Tamanho reduzido do texto */
-}
-
-.yellow-content .image-side img {
-    height: 300px; /* Define uma altura fixa para a imagem */
-}
-
-
-.text-side-yellow p {
-    font-size: 1.05em; /* Tamanho reduzido do texto */
-}
-
-     
-
-.yellow-content {
-    flex-direction: row; /* Alinha o conteúdo verticalmente */
-    height: auto; /* Ajusta a altura automaticamente */
-}
-
-}
-
-@media only screen and (min-width: 1780px) {
-
-
-    .countdown {
-        font-size: 2vw;
+    .box-content {
+        padding: 12px;
+        text-align: center;
     }
+
+    .box {
+        width: 80%;
+        height: auto; /* Altura reduzida da caixa */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px; /* Ajusta a posição no topo */
+    }
+
     
 
-    .content-section h2 {
-        font-size: 2.5vw;
+    .box-title {
+        font-size: 9.5vmin; /* Tamanho reduzido do título */
+    }
 
-    }   
+    .box-subtitle {
+        font-size: 10vmin; /* Tamanho reduzido do subtítulo */
+        margin-top: 1rem; /* Reduz o espaço entre as linhas */
+    }
 
-     /* slides */
+    .box-date {
+        font-size: 2vmax; /* Tamanho reduzido da data */
+        margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
+        margin-bottom: 1rem;
+    }
 
-     .title-container {
-        top: 40%;
-     }
+    .cta-button {
+        width: 100%;
+        height: 50%; /* Altura reduzida do botão */
+        line-height: 36px; /* Centraliza verticalmente o texto */
+        font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
+    }
 
-     .title {
-        font-size: 8vmin; /* Tamanho do título */
+    /* slides */
+
+    
+    /* Centralização do Título e Subtítulo */
+    .title-container {
+        position: absolute; /* Necessário para que o top funcione */
+        top: 375px; /* Ajusta a posição vertical do container */
+        display: flex; /* Usa Flexbox para layout horizontal */
+        align-items: center; /* Alinha os itens no centro verticalmente */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        text-align: center;
+        width: 100%; /* Garante que o contêiner use a largura total */
+        left: 0;
+    }
+
+    .title, .subtitle {
+        margin: 0; /* Remove margens adicionais */
+        display: inline-block; /* Garante que o título e o subtítulo fiquem na mesma linha */
+    }
+
+    .title {
+        font-size: 6.5vmin; /* Tamanho do título */
     }
 
     .subtitle {
-        line-height: 1em;
-        font-size: 6vmin; /* Tamanho do subtítulo */
+        font-size: 4vmin; /* Tamanho do subtítulo */
+        letter-spacing: -0.05em;
+    }
+
+    .indicators {
+        bottom: 20%;
+    }
+
+    .indicator {
+        width: 12px; /* Tamanho reduzido dos indicadores */
+        height: 12px;
+    }
+
+    /* notícias */
+    .content-section {
+        height: 260px; /* Altura reduzida da seção de notícias */
+        padding: 20px 0;
+    }
+
+    .content-section h2 {
+        font-size: 20px; /* Tamanho reduzido do título das notícias */
+    }
+
+    .columns {
+        height: 200px;
+        display: flex;
+        flex-direction: row; /* Empilha as colunas verticalmente */
+        gap: 10px; /* Espaçamento reduzido entre colunas */
+    }
+
+    .column {
+        width: 100%; /* Largura total para colunas */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .overlay-section {
+        padding: 8px; /* Tamanho reduzido do título do overlay */
     }
 
 
+    .overlay-section h3 {
+        font-size: 1.3vh; /* Tamanho reduzido do título do overlay */
+    }
 
+    .overlay-section p {
+        font-size: 12px; /* Tamanho reduzido do texto do overlay */
+    }
 
-/* notícias */
+    /* imersão */
+    .left-side {
+        padding: 20px; /* Ajusta o padding para telas menores */
+    }
 
-.content-section {
-    width: 100%;
-    height: 450px;
-    margin-bottom: 50px;
-}
+    .left-side h2 {
+        font-size: 9vmin; /* Tamanho reduzido do título */
+    }
 
-.content-section h2 {
-    font-size: 2.5vw;
-    color: rgb(56, 56, 56);
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
+    .left-side p {
+        font-size: 3.5vw; /* Tamanho reduzido do texto */
+    }
 
-.columns {
-    display: flex;
-    justify-content: center; /* Centraliza as colunas */
-    gap: 40px; /* Espaçamento entre as colunas */
-}
+    /* talks */
+    .text-side {
+        padding: 20px;
+    }
 
-.column {
-    width: 600px;
-    height: 350px;
-    position: relative;
-}
+    .text-side h2 {
+        font-size: 9vmin; /* Tamanho reduzido do título */
+    }
 
+    .text-side p {
+        font-size: 3.5vw; /* Tamanho reduzido do texto */
+    }
 
-/* imersão */
-.left-side h2 {
-    font-size: 7vh; /* Tamanho reduzido do título */
-}
+    /* residências */
+    .yellow-content {
+        flex-direction: row; /* Alinha o conteúdo verticalmente */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
 
+    .yellow-content .text-side, 
+    .yellow-content .image-side {
+        width: 100%; /* Ocupa a largura total */
+    }
 
-/* talks */
+    .text-side-yellow h3 {
+        font-size: 8vmin; /* Tamanho reduzido do título */
+    }
 
-.text-side h2 {
-    font-size: 7vh; /* Tamanho reduzido do título */
-}
+    .text-side-yellow p {
+        font-size: 3vw; /* Tamanho reduzido do texto */
+    }
 
-/* residências */
-.text-side-yellow h3 {
-    font-size: 6vh; /* Tamanho reduzido do título */
-}
+    .text-side-yellow {
+        padding: 20px; /* Ajusta o padding para telas menores */
+    }
 
+    .yellow-content .image-side img {
+        height: 200px; /* Define uma altura fixa para a imagem */
+    }
 
-/* apoios */
+    /* apoios */
+    .white-section {
+        flex-direction: column; /* Alinha texto e imagem verticalmente */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
 
-.white-section {
-    height: 400px;
-}
+    .white-section .text-info {
+        width: 100%; /* Ocupa a largura total */
+        padding: 10px 0 20px 0;
+        text-align: center; /* Centraliza o texto */
+    }
 
+    .white-section .text-info p {
+        font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+    }
 
+    .white-section .image-side {
+        width: 100%; /* Ocupa a largura total */
+        padding-right: 0; /* Remove o padding */
+        display: flex;
+        justify-content: center; /* Centraliza a imagem horizontalmente */
+        align-items: center; /* Centraliza a imagem verticalmente */
+    }
 
+    .white-section .image-side img {
+        width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
+        height: auto; /* Mantém a proporção da imagem */
+    }
 }
