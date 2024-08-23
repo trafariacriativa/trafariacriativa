@@ -1673,7 +1673,7 @@ text-align: center;
     /* Centralização do Título e Subtítulo */
     .title-container {
         position: absolute; /* Necessário para que o top funcione */
-        top: 80%; /* Ajusta a posição vertical do container */
+        top: 375px; /* Ajusta a posição vertical do container */
         display: flex; /* Usa Flexbox para layout horizontal */
         align-items: center; /* Alinha os itens no centro verticalmente */
         justify-content: center; /* Centraliza os itens horizontalmente */
@@ -1688,17 +1688,16 @@ text-align: center;
     }
 
     .title {
-        font-size: 6vmin; /* Tamanho do título */
-
+        font-size: 6.5vmin; /* Tamanho do título */
     }
 
     .subtitle {
-        font-size: 3.5vmin; /* Tamanho do subtítulo */
+        font-size: 4vmin; /* Tamanho do subtítulo */
         letter-spacing: -0.05em;
     }
 
     .indicators {
-        bottom: 25%;
+        bottom: 20%;
     }
 
     .indicator {
