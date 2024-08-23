@@ -209,7 +209,7 @@ h2 {
 
 
 p, li {
-     margin-bottom: 30px;
+    margin-bottom: 30px;
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 500;
     font-size: 1.25vw;
@@ -377,6 +377,18 @@ p, li {
     pointer-events: none; /* Permite interação com os elementos abaixo */
 }
 
+
+.title-container {
+  position: absolute;
+  bottom: 0; /* Coloca a div de título na parte inferior da imagem */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para centralizar */
+  width: 960px; /* Largura máxima do título */
+  text-align: left; /* Centraliza o texto */
+  padding: 0 0; /* Adiciona espaçamento lateral se necessário */
+}
+
+
 .image-title {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -386,20 +398,22 @@ p, li {
     bottom: 75px; /* Coloca o título colado na margem de baixo */
 }
 
-.title-container {
-    position: absolute;
-    bottom: 0; /* Coloca a div de título na parte inferior da imagem */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta a posição para centralizar */
-    width: 960px; /* Largura máxima do título */
-    text-align: left; /* Centraliza o texto */
-    padding: 0 0; /* Adiciona espaçamento lateral se necessário */
-}
-
-
-
 
 /* texto */
+.text-present {
+  width: 960px;
+  height: auto;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 20px 0px; /* Adiciona espaçamento ao redor do conteúdo */
+}
+
+.text-present p {
+  font-weight: 400;
+  font-size: 1.25vw;
+  margin-bottom: 40px; /* Espaçamento entre o texto e o slideshow */
+  color: rgba(18, 18, 18);
+  line-height: 2;
+}
 
 /* Estilo das abas */
 .tab {
@@ -468,7 +482,7 @@ p, li {
 .arrow {
   display: inline-block;
   transform: rotate(-90deg);
-  font-size: 2vh;
+  font-size: 5vh;
 }
 
 
@@ -559,3 +573,429 @@ p, li {
     object-fit: contain; /* A imagem se adapta ao tamanho da div */
 }
 
+
+
+@media only screen and (max-width: 479px) {
+
+  /* navbar */
+  .navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar .logo {
+      font-size: 18px; /* Tamanho reduzido do logo */
+      padding-left: 10px; /* Remove padding à esquerda */
+  }
+
+  .rotating-icon img {
+      width: 30px; /* Reduz o tamanho do ícone */
+      height: 30px;
+  }
+
+  .burger {
+      font-size: 28px; /* Tamanho reduzido do ícone do menu */
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      top: 80px;
+      width: 100%;
+      left: 0;
+      background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .menu.active, .menu.sticky {
+      right: 0; /* Ajusta o menu para a posição visível */
+
+  }
+
+
+
+
+  .image-container {
+      height: 250px; /* Reduzido para telas menores */
+      padding: 0; /* Remove qualquer padding */
+      box-sizing: border-box; /* Garante que padding não afete a largura total */
+  }
+
+  .title-container {
+      width: 90%; /* Ajustado para largura menor em telas pequenas */
+      padding: 0 10px; /* Adicionado padding lateral para ajuste */
+      text-align: center; /* Centraliza o texto para telas menores */
+      margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+  .image-title {
+      font-size: 8vw; /* Ajustado para maior responsividade em telas menores */
+      bottom: 20px; /* Ajustado para melhor alinhamento em telas menores */
+  }
+
+
+/* texto */
+.text-present {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text-present p {
+  font-size: 1.5vh;
+  margin: 0;
+}
+
+h2{
+  font-size: 2vh;
+}
+
+ /* apoios */
+ .white-section {
+  flex-direction: column; /* Alinha texto e imagem verticalmente */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+.white-section .text-info {
+  width: 100%; /* Ocupa a largura total */
+  padding: 10px 0 20px 0;
+  text-align: center; /* Centraliza o texto */
+}
+
+.white-section .text-info p {
+  font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+}
+
+.white-section .image-side {
+  width: 100%; /* Ocupa a largura total */
+  padding-right: 0; /* Remove o padding */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.white-section .image-side img {
+  width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+/* Estilo das abas */
+.tab {
+  width: 100%; /* Abas ocupam 100% da largura da página */
+  height: 100px;
+  font-size: 4rem; /* Tamanho XXL para o texto */
+}
+
+
+.arrow {
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 3vh;
+}
+
+
+ /* Estilo do conteúdo das abas */
+ .tab-content {
+  display: none; /* Inicialmente escondido */
+  width: 100%;
+  padding: 10px; /* Reduzido o padding para telas menores */
+  box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.day1-content {
+  background-color: rgb(245, 245, 220);
+}
+
+.day2-content {
+  background-color: rgb(255, 235, 205);
+}
+
+.day3-content {
+  background-color: #FFD700;
+}
+
+.content-wrapper {
+  width: 100%; /* Ajustado para ocupar 100% da largura disponível */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  background-color: inherit; /* Usa a cor do tab-content */
+  padding: 10px; /* Reduzido o padding para telas menores */
+  box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.schedule {
+  font-size: 1.5vh;
+  box-sizing: border-box;
+}
+
+
+.session {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  margin-bottom: 20px; /* Espaçamento entre as sessões */
+  padding: 0; /* Espaçamento interno para melhor visualização */
+  }
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+
+  /* navbar */
+  .navbar {
+    height: 90px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .navbar .logo {
+    font-size: 20px; /* Aumenta o tamanho do logo */
+    padding-left: 20px; /* Ajusta o padding à esquerda */
+  }
+
+  .rotating-icon img {
+    width: 35px; /* Ajusta o tamanho do ícone */
+    height: 35px;
+  }
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      width: 240px;
+      height: 200px;
+      top: 90px;
+
+  }
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 85%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+
+
+  .image-title {
+    font-size: 7vw; /* Ajusta o tamanho do título */
+    bottom: 30px; /* Ajusta o alinhamento */
+  }
+
+  /* texto */
+  .text-present {
+    width: 100%;
+    padding: 20px; /* Ajusta o padding */
+    box-sizing: border-box;
+  }
+
+  .text-present p {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+    margin: 0;
+    padding: 20px;
+  }
+
+
+  h2 {
+    font-size: 2.5vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
+  /* apoios */
+  .white-section {
+    flex-direction: column; /* Alinha texto e imagem verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .white-section .text-info {
+    width: 100%; /* Ocupa a largura total */
+    padding: 15px 0 25px 0; /* Ajusta o padding */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .white-section .text-info p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .white-section .image-side {
+    width: 100%; /* Ocupa a largura total */
+    padding-right: 0; /* Remove o padding */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+
+  .white-section .image-side img {
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  /* Estilo das abas */
+  .tab {
+    width: 100%; /* Abas ocupam 100% da largura da página */
+    height: 120px; /* Ajusta a altura das abas */
+    font-size: 5rem; /* Ajusta o tamanho do texto */
+  }
+
+  .arrow {
+    font-size: 4vh; /* Ajusta o tamanho da seta */
+  }
+
+  /* Estilo do conteúdo das abas */
+  .tab-content {
+    padding: 15px; /* Ajusta o padding */
+  }
+
+  .content-wrapper {
+    width: 100%; /* Ajusta a largura */
+    padding: 15px; /* Ajusta o padding */
+  }
+
+  .schedule {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+  }
+
+  .session {
+    margin-bottom: 15px; /* Ajusta o espaçamento entre as sessões */
+    padding: 10px 0; /* Ajusta o padding */
+  }
+
+}
+
+
+
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+
+  /* navbar */
+  .navbar {
+    height: 100px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 90%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+ 
+  /* texto */
+  .text-present {
+    width: 100%;
+    padding: 20px; /* Ajusta o padding */
+    box-sizing: border-box;
+  }
+
+  .text-present p {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+    margin: 0;
+    padding: 20px;
+  }
+
+
+  h2 {
+    font-size: 2.5vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
+  /* apoios */
+  .white-section {
+    flex-direction: column; /* Alinha texto e imagem verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .white-section .text-info {
+    width: 100%; /* Ocupa a largura total */
+    padding: 15px 0 25px 0; /* Ajusta o padding */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .white-section .text-info p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .white-section .image-side {
+    width: 100%; /* Ocupa a largura total */
+    padding-right: 0; /* Remove o padding */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+
+  .white-section .image-side img {
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  /* Estilo das abas */
+  .tab {
+    width: 100%; /* Abas ocupam 100% da largura da página */
+    height: 120px; /* Ajusta a altura das abas */
+    font-size: 5rem; /* Ajusta o tamanho do texto */
+  }
+
+  .arrow {
+    font-size: 4vh; /* Ajusta o tamanho da seta */
+  }
+
+  /* Estilo do conteúdo das abas */
+  .tab-content {
+    padding: 15px; /* Ajusta o padding */
+  }
+
+  .content-wrapper {
+    width: 100%; /* Ajusta a largura */
+    padding: 15px; /* Ajusta o padding */
+  }
+
+  .schedule {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+  }
+
+  .session {
+    margin-bottom: 15px; /* Ajusta o espaçamento entre as sessões */
+    padding: 10px 0; /* Ajusta o padding */
+  }
+
+}
