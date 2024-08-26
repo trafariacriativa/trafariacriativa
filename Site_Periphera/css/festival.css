@@ -678,25 +678,24 @@ video {
 }
 
 
-h2 {
-  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-}
-
 
 .text-section {
   padding: 40px;
-  
-}
-h2 {
-  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-}
 
+
+}
+  
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+  
+  
 
 .text-section h3{
   font-size: 2.5vh;
   }
 
-  
+
 .text-section p, li{
   font-size: 2vh;
   
@@ -896,18 +895,6 @@ font-size: 2.5vh;
 
 
 
-  .text-section p, li{
-       font-size: 1.75vh;
-
-  }
-  
-
-
-  .text-section h3{
-    font-size: 2vh;
-}
-
-
 
 
   /* texto */
@@ -917,13 +904,29 @@ font-size: 2.5vh;
     padding: 20px; /* Ajusta o padding */
     box-sizing: border-box;
   }
-  
-  
-    h2 {
-      font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-    }
+
+
+    
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
+
+
+  .text-section h3{
+    font-size: 2vh;
+}
+
+
+
+.text-section p, li{
+  font-size: 1.75vh;
+
+}
+
 
   
+
   
 .gallery {
   max-width: 100%;
@@ -932,6 +935,7 @@ font-size: 2.5vh;
     margin: 0;
   
 }
+
 
 
   /* apoios */
