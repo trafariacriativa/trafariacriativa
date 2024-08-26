@@ -208,11 +208,11 @@ h2 {
 }
 
 
-p, li {
+p {
     margin-bottom: 30px;
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 500;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     color: rgb(255, 255, 255, 0.7);
 
 }
@@ -404,6 +404,123 @@ p, li {
   line-height: 2;
 }
 
+
+/* Grelha Locais */
+.local-container {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 700;
+  font-size: 1.5vh;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  position: relative; /* Necessário para posicionamento absoluto da caixa expansível */
+  margin-bottom: 100px;
+}
+
+.coluna {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.coluna-1 {
+  background-color: rgba(139, 0, 0, 0.2);
+}
+
+.coluna-2 {
+  background-color: rgba(139, 0, 0, 0.4);
+}
+
+.coluna-3 {
+  background-color: rgba(139, 0, 0, 0.6);
+}
+
+
+/* Estilo para a coluna selecionada */
+.coluna.selected {
+  background-color: rgba(139, 0, 0);
+  color: white; /* Cor do texto para contraste */
+}
+
+/* Ajuste o posicionamento da caixa expansível */
+.conteudo-expansivel {
+  display: none;
+  background-color:white;
+  padding: 20px;
+  width: 920px; /* Ocupa toda a largura do container */
+  transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%; /* Posiciona a caixa expansível abaixo da linha de colunas */
+  left: 0;
+  z-index: 1;
+}
+
+
+/* Adiciona margem superior ao tab-wrapper quando a caixa expansível está visível */
+.tab-wrapper.tab-shift {
+  margin-top: 200px; /* Desloca o tab-wrapper para baixo */
+  transition: margin-top 0.5s ease; /* Suaviza a transição do deslocamento */
+}
+
+
+
+
+.conteudo-expansivel table {
+  width: 100%;
+  border-collapse: collapse; /* Remove espaços entre bordas das células */
+}
+
+.conteudo-expansivel th, .conteudo-expansivel td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Define a largura das colunas */
+.conteudo-expansivel td:first-child,
+.conteudo-expansivel th:first-child {
+    width: 20%; /* 30% de largura para a primeira coluna */
+}
+
+/* Margem específica para a segunda coluna */
+.conteudo-expansivel td:nth-child(2),
+.conteudo-expansivel th:nth-child(2) {
+    width: 80%; /* 70% de largura para a segunda coluna */
+  padding-left: 20px; /* Margem maior à esquerda para a segunda coluna */
+  font-size: 1.5vh;
+  font-weight: 400;
+}
+
+
+/* Ajuste o padding conforme necessário para espaçamento */
+.conteudo-expansivel td:first-child {
+  padding-left: 5px; /* Menor margem à esquerda para a primeira coluna */
+}
+
+.conteudo-expansivel td:nth-child(2) {
+  padding-left: 20px; /* Maior margem à esquerda para a segunda coluna */
+}
+
+.conteudo-expansivel th {
+  font-size: 1.5vh;
+}
+
+.tab-wrapper {
+  transition: margin-top 0.5s ease; /* Adiciona transição para o deslocamento */
+}
+
+.tab-shift {
+  margin-top: 200px; /* Ajusta a margem superior para deslocar o conteúdo */
+}
+
+
+
+
+
 /* Estilo das abas */
 .tab {
     width: 100%; /* Abas ocupam 100% da largura da página */
@@ -503,6 +620,17 @@ p, li {
     margin-left: 20px; /* Espaçamento à esquerda da descrição */
 }
 
+
+.map-container {
+  text-align: center; /* Centraliza o conteúdo do contêiner */
+  margin-top: 100px; /* Espaço acima do mapa, ajuste conforme necessário */
+  margin-bottom: 100px;
+}
+
+.map-container iframe {
+  display: inline-block; /* Faz com que o iframe se comporte como um bloco inline */
+  max-width: 100%; /* Garante que o iframe não exceda a largura do contêiner */
+}
 
 
 

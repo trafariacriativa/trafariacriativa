@@ -406,7 +406,7 @@ p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
     font-size: 1.5vw;
-    margin-bottom: 40px; /* Espaçamento entre o texto e o slideshow */
+    margin-bottom: 80px; /* Espaçamento entre o texto e o slideshow */
 }
 
 .section-title {
@@ -550,6 +550,40 @@ video {
 
 
 
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter h2 {
+  margin: 10px 0 0;
+  font-size: 32px;
+  color: #333;
+  padding-bottom: 16px;
+}
+
+.counter .number {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(18, 18, 18, 0.5);
+}
+
+.counter i {
+  font-size: 28px;
+  color: rgba(139, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+
 /* apoios */
 
 .white-section {
@@ -653,20 +687,26 @@ h2 {
   padding: 40px;
   
 }
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
 
 
+.text-section h3{
+  font-size: 2.5vh;
+  }
+
+  
 .text-section p, li{
-  font-size: 1.5vh;
+  font-size: 2vh;
   
 }
 
 
 
-.text-section h3{
-font-size: 2vh;
-}
 
 }
+
 
 
 
@@ -739,14 +779,14 @@ font-size: 2vh;
 
 
 .text-section p, li{
-  font-size: 1.5vh;
+  font-size: 2vh;
   
 }
 
 
 
 .text-section h3{
-font-size: 2vh;
+font-size: 2.5vh;
 }
 
 
@@ -764,6 +804,25 @@ font-size: 2vh;
   grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
 }
 
+.dashboard {
+  flex-direction: row; /* Alinha os contadores horizontalmente */
+  flex-wrap: wrap; /* Permite que os contadores quebrem linha se necessário */
+  gap: 50px; /* Espaçamento moderado entre os contadores */
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+.counter h2 {
+  font-size: 28px; /* Tamanho da fonte ajustado para tablets */
+}
+
+.counter .number {
+  font-size: 42px; /* Tamanho da fonte ajustado para tablets */
+}
+
+.counter i {
+  font-size: 26px; /* Tamanho do ícone ajustado para tablets */
+}
 
 .white-section .text-info p {
   font-size: 1.25vmax; /* Ajusta o tamanho da fonte */
@@ -838,7 +897,7 @@ font-size: 2vh;
 
 
   .text-section p, li{
-       font-size: 1.5vh;
+       font-size: 1.75vh;
 
   }
   
@@ -904,7 +963,25 @@ font-size: 2vh;
     height: auto; /* Mantém a proporção da imagem */
   }
 
+  .dashboard {
+    flex-direction: column; /* Alinha os contadores verticalmente */
+    gap: 50px; /* Espaçamento reduzido entre os contadores */
+    padding: 10px;
+    margin-bottom: 100px;
+  }
 
+  .counter h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .counter .number {
+    font-size: 36px; /* Reduz o tamanho da fonte do número */
+
+  }
+
+  .counter i {
+    font-size: 24px; /* Reduz o tamanho do ícone */
+  }
 
 
 }
