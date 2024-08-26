@@ -602,7 +602,8 @@ p {
 
 }
 
-.session {
+
+session {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px; /* Espaçamento entre as sessões */
@@ -619,6 +620,7 @@ p {
     flex: 1; /* Usa o espaço restante */
     margin-left: 20px; /* Espaçamento à esquerda da descrição */
 }
+
 
 
 .map-container {
@@ -900,6 +902,27 @@ p {
   }
 
 
+  .local-container {
+    width: 100%; /* Ocupa a largura total da tela */
+    flex-direction: column; /* Alinha as colunas verticalmente */
+  }
+
+  .conteudo-expansivel {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .tab-wrapper.tab-shift {
+    margin-top: 150px; /* Ajusta a margem superior para tablets */
+  }
+
+  .conteudo-expansivel th,
+  .conteudo-expansivel td {
+    font-size: 2vh; /* Ajusta o tamanho da fonte para tablets */
+  }
+
+
+
   /* Estilo das abas */
   .tab {
     width: 100%; /* Abas ocupam 100% da largura da página */
@@ -911,6 +934,9 @@ p {
     font-size: 4vh; /* Ajusta o tamanho da seta */
   }
 
+
+
+  
   /* Estilo do conteúdo das abas */
   .tab-content {
     padding: 15px; /* Ajusta o padding */
@@ -1012,6 +1038,31 @@ p {
 
   }
 
+
+  .local-container {
+    width: 100%; /* Ocupa a largura total da tela */
+    flex-direction: column; /* Alinha as colunas verticalmente */
+    margin-bottom: 60px;
+  }
+
+  .coluna {
+    padding: 8px;
+  }
+
+  .conteudo-expansivel {
+    width: 100%;
+    padding: 10px;
+    position: static; /* Altera para posição estática em vez de absoluta */
+  }
+
+  .conteudo-expansivel th,
+  .conteudo-expansivel td {
+    font-size: 2.25vh; /* Ajusta o tamanho da fonte para mobile */
+  }
+
+  .tab-wrapper.tab-shift {
+    margin-top: 60px; /* Ajusta a margem superior para mobile */
+  }
 
 
 
