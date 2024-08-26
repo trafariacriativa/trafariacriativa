@@ -80,6 +80,28 @@
  <div class="text-present">
     <p>Ao longo de 3 dias haverá palestras, workshops, show cases de projectos e empresas, masterclasses, mesas redondas, diversas performances, site specificae, artistas, makers tecnológicos e empresários que o irão inspirar.</p>
  </div>
+
+ <div class="local-container">
+
+    <div class="coluna coluna-1" onclick="toggleContent(event)">
+        Convento dos Capuchos
+
+    </div>
+    <div class="coluna coluna-2" onclick="toggleContent(event)">
+        Presídio da Trafaria
+
+    </div>
+    <div class="coluna coluna-3" onclick="toggleContent(event)">
+        Casino da Trafaria
+    </div>
+
+    <div class="conteudo-expansivel">
+        <p>Aqui está o conteúdo expandido para Lugar 3. Informação ou detalhes adicionais são mostrados aqui.</p>
+    </div>
+
+</div>
+
+
  
 <!-- Abas e seus conteúdos -->
 <div class="tab-wrapper">
@@ -262,6 +284,22 @@
 
 
 
+            <!-- Adicionando o Mapa do Google Maps -->
+            <div class="map-container">
+                <h3>Localização</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999134571975!2d-9.144156484576147!3d38.69387647923187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab23456789abc%3A0x1234567890abcdef!2sPres%C3%ADdio+da+Trafaria!5e0!3m2!1sen!2spt!4v1693092295655!5m2!1sen!2spt" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            
 <hr class="final-line">
 
 
@@ -277,7 +315,7 @@
             </div>
         </div>
         
-        <script src="js/contador.js"></script>
+        <script src="js/local.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/collapse.js"></script>
 
