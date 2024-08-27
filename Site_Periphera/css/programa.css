@@ -409,7 +409,7 @@ p {
 .local-container {
   font-family: "IBM Plex Mono", monospace, serif;
   font-weight: 700;
-  font-size: 1.5vh;
+  font-size: 1.75vh;
   width: 960px;
   margin: 0 auto;
   display: flex;
@@ -451,10 +451,10 @@ p {
   padding: 20px;
   width: 920px; /* Ocupa toda a largura do container */
   transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
-  max-height: 0;
-  overflow: hidden;
+  height: auto;
+  overflow: visible;
   opacity: 0;
-  position: absolute;
+  position: static;
   top: 100%; /* Posiciona a caixa expansível abaixo da linha de colunas */
   left: 0;
   z-index: 1;
@@ -489,7 +489,7 @@ p {
 /* Margem específica para a segunda coluna */
 .conteudo-expansivel td:nth-child(2),
 .conteudo-expansivel th:nth-child(2) {
-    width: 80%; /* 70% de largura para a segunda coluna */
+  width: 80%; /* 70% de largura para a segunda coluna */
   padding-left: 20px; /* Margem maior à esquerda para a segunda coluna */
   font-size: 1.5vh;
   font-weight: 400;
@@ -603,7 +603,7 @@ p {
 }
 
 
-session {
+.session {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px; /* Espaçamento entre as sessões */
@@ -883,6 +883,70 @@ session {
     bottom: 30px; /* Ajusta o alinhamento */
   }
 
+
+
+
+  .local-container {
+    width: 100%; /* Ocupa a largura total da tela */
+    flex-direction: column; /* Alinha as colunas verticalmente */
+    margin-bottom: 60px;
+    font-size: 2.25vh;
+  }
+
+  .coluna {
+    width: 90%; /* Reduz a largura das colunas para criar margens laterais */
+    margin: 0 auto; /* Centraliza as colunas */
+    padding: 8px;
+  }
+
+
+
+  .conteudo-expansivel {
+    width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
+    padding: 20px 0;
+    position: static; /* Altera para posição estática em vez de absoluta */
+    margin: 0 auto; /* Centraliza o conteúdo expansível */
+  }
+
+
+
+  .conteudo-expansivel th {
+    font-size: 2.25vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px 8px;
+    
+  }
+
+  .conteudo-expansivel td {
+    font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
+  }
+
+
+  .tab-wrapper.tab-shift {
+    margin-top: 60px; /* Ajusta a margem superior para mobile */
+  }
+
+
+
+/* Define a largura das colunas */
+.conteudo-expansivel td:first-child,
+.conteudo-expansivel th:first-child {
+    width: 30%; /* 30% de largura para a primeira coluna */
+}
+
+/* Margem específica para a segunda coluna */
+.conteudo-expansivel td:nth-child(2),
+.conteudo-expansivel th:nth-child(2) {
+    width: 70%; /* 70% de largura para a segunda coluna */
+  padding-left: 20px; /* Margem maior à esquerda para a segunda coluna */
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+
+
+
+
   /* texto */
   .text-present {
     width: 100%;
@@ -898,28 +962,9 @@ session {
 
 
   h2 {
-    font-size: 2.5vh; /* Ajusta o tamanho da fonte do h2 */
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
   }
 
-
-  .local-container {
-    width: 100%; /* Ocupa a largura total da tela */
-    flex-direction: column; /* Alinha as colunas verticalmente */
-  }
-
-  .conteudo-expansivel {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .tab-wrapper.tab-shift {
-    margin-top: 150px; /* Ajusta a margem superior para tablets */
-  }
-
-  .conteudo-expansivel th,
-  .conteudo-expansivel td {
-    font-size: 2vh; /* Ajusta o tamanho da fonte para tablets */
-  }
 
 
 
