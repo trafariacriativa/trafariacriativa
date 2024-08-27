@@ -67,6 +67,35 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <td>12:00-13:00</td>
                                     <td>Atividade 4</td>
                                 </tr>
+                                <tr>
+                                    <td>11:00-12:00</td>
+                                    <td>Atividade 3</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00-13:00</td>
+                                    <td>Atividade 4</td>
+                                </tr><tr>
+                                    <td>11:00-12:00</td>
+                                    <td>Atividade 3</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00-13:00</td>
+                                    <td>Atividade 4</td>
+                                </tr><tr>
+                                    <td>11:00-12:00</td>
+                                    <td>Atividade 3</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00-13:00</td>
+                                    <td>Atividade 4</td>
+                                </tr><tr>
+                                    <td>11:00-12:00</td>
+                                    <td>Atividade 3</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00-13:00</td>
+                                    <td>Atividade 4</td>
+                                </tr>
                                 <!-- Adicione mais linhas conforme necessário -->
                             </tbody>
                         </table>
@@ -100,10 +129,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             expandableContent.innerHTML = contentHTML;
-            expandableContent.style.display = 'block';
-            expandableContent.style.maxHeight = '200px'; /* Ajuste conforme o conteúdo */
-            expandableContent.style.opacity = '1';
-            tabWrapper.classList.add('tab-shift'); // Adiciona a classe de deslocamento
+expandableContent.style.display = 'block';
+expandableContent.style.maxHeight = expandableContent.scrollHeight + 'px'; // Ajusta para a altura do conteúdo
+expandableContent.style.opacity = '1';
+tabWrapper.classList.add('tab-shift'); // Adiciona a classe de deslocamento
         }
     }
 
