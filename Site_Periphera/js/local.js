@@ -150,7 +150,7 @@ tabWrapper.classList.add('tab-shift'); // Adiciona a classe de deslocamento
     });
 
     // Fecha todos os conteúdos quando rolar a página
-    document.addEventListener('scroll', function() {
+    document.addEventListener('none', function() {
         closeAllContents();
     });
 });
