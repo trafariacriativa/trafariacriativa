@@ -203,20 +203,20 @@ body, html {
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 6vw;
+    font-size: 5vh;
 
 }
 
 h3 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 800;
-    font-size: 2em;
+    font-size: 3vh;
 }
 
 p {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 2vh;
 
 }
 
@@ -536,7 +536,7 @@ p {
 }
 
 .content-section h2 {
-    font-size: 26px;
+    font-size: 3.5vh;
     color: rgb(56, 56, 56);
     margin-top: 5px;
     margin-bottom: 25px;
@@ -762,7 +762,7 @@ p {
     margin: 0;
     margin-bottom: 10px;
     font-weight: 300;
-    font-size: 4vw;
+    font-size: 5vh;
     text-decoration-line: underline;
     color: rgb(56, 56, 56);
 }
@@ -830,7 +830,7 @@ p {
 }
 
 .white-section .text-info p {
-    font-size: 1.2rem;
+    font-size: 18px;
     margin-bottom: 10px;
     font-weight: 300;
     color: rgb(56, 56, 56);
@@ -870,11 +870,6 @@ p {
     }
     
 
-    .content-section h2 {
-        font-size: 2.5vw;
-
-    }   
-
      /* slides */
      
 
@@ -904,7 +899,7 @@ p {
 }
 
 .content-section h2 {
-    font-size: 2.5vw;
+    font-size: 4vh;
     color: rgb(56, 56, 56);
     margin-top: 5px;
     margin-bottom: 25px;
@@ -923,21 +918,15 @@ p {
 }
 
 
-/* imersão */
-.left-side h2 {
-    font-size: 7vh; /* Tamanho reduzido do título */
+/* imersão talks */
+.left-side, .text-side h2 {
+    font-size: 6vh; /* Tamanho reduzido do título */
 }
 
-
-/* talks */
-
-.text-side h2 {
-    font-size: 7vh; /* Tamanho reduzido do título */
-}
 
 /* residências */
 .text-side-yellow h3 {
-    font-size: 6vh; /* Tamanho reduzido do título */
+    font-size: 5vh; /* Tamanho reduzido do título */
 }
 
 
@@ -1048,14 +1037,14 @@ p {
 
 
 .left-side p {
-    font-size: 1.1em; /* Tamanho reduzido do texto */
+    font-size: 2vh; /* Tamanho reduzido do texto */
 }
 
 /* talks */
 
 
 .text-side p {
-    font-size: 1.1em; /* Tamanho reduzido do texto */
+    font-size: 2vh; /* Tamanho reduzido do texto */
 }
 
 /* residências */
@@ -1067,7 +1056,7 @@ p {
 }
 
 .text-side-yellow p {
-    font-size: 1em; /* Tamanho reduzido do texto */
+    font-size: 2vh; /* Tamanho reduzido do texto */
 }
 
 .yellow-content .image-side img {
@@ -1076,7 +1065,7 @@ p {
 
 
 .text-side-yellow p {
-    font-size: 1.05em; /* Tamanho reduzido do texto */
+    font-size: 18px; /* Tamanho reduzido do texto */
 }
 
      
@@ -1197,7 +1186,7 @@ p {
 
    
     .subtitle-container {
-        font-size: 3.25vmin;
+        font-size: 5vh;
 
     }
 
@@ -1209,7 +1198,7 @@ p {
 }
 
 .content-section h2 {
-    font-size: 26px; /* Tamanho reduzido do título das notícias */
+    font-size: 3vh; /* Tamanho reduzido do título das notícias */
 }
 
 .columns {
@@ -1217,11 +1206,11 @@ p {
 }
 
 .overlay-section h3 {
-    font-size: 18px; /* Tamanho reduzido do título do overlay */
+    font-size: 1.75vh; /* Tamanho reduzido do título do overlay */
 }
 
 .overlay-section p {
-    font-size: 12px; /* Tamanho reduzido do texto do overlay */
+    font-size: 1.5vh; /* Tamanho reduzido do texto do overlay */
 }
 
 /* imersão */
@@ -1230,11 +1219,11 @@ p {
 }
 
 .left-side h2 {
-    font-size: 9vmin; /* Tamanho reduzido do título */
+    font-size: 4vh; /* Tamanho reduzido do título */
 }
 
 .left-side p {
-    font-size: 1.1em; /* Tamanho reduzido do texto */
+    font-size: 2vh; /* Tamanho reduzido do texto */
 }
 
 /* talks */
@@ -1243,11 +1232,11 @@ p {
 }
 
 .text-side h2 {
-    font-size: 9vmin; /* Tamanho reduzido do título */
+    font-size: 4vh; /* Tamanho reduzido do título */
 }
 
 .text-side p {
-    font-size: 1.1em; /* Tamanho reduzido do texto */
+    font-size: 2vh; /* Tamanho reduzido do texto */
 }
 
 /* residências */
@@ -1262,11 +1251,11 @@ p {
 }
 
 .text-side-yellow h3 {
-    font-size: 8vmin; /* Tamanho reduzido do título */
+    font-size: 3.5vh; /* Tamanho reduzido do título */
 }
 
 .text-side-yellow p {
-    font-size: 1em; /* Tamanho reduzido do texto */
+    font-size: 2vh; /* Tamanho reduzido do texto */
 }
 
 .text-side-yellow {
@@ -1293,7 +1282,7 @@ p {
     }
 
     .white-section .text-info p {
-        font-size: 0.9em; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
     }
 
     .white-section .image-side {
@@ -1435,7 +1424,7 @@ text-align: center;
        }
    
        .subtitle {
-           font-size: 3.5vmin; /* Tamanho do subtítulo */
+           font-size: 1.75vh; /* Tamanho do subtítulo */
            letter-spacing: -0.025em;
        }
    
@@ -1459,7 +1448,7 @@ text-align: center;
        }
    
        .content-section h2 {
-           font-size: 26px; /* Tamanho reduzido do título das notícias */
+           font-size: 3vh; /* Tamanho reduzido do título das notícias */
                }
    
        .columns {
@@ -1475,11 +1464,11 @@ text-align: center;
        }
    
        .overlay-section h3 {
-           font-size: 18px; /* Tamanho reduzido do título do overlay */
+           font-size: 2.25vh; /* Tamanho reduzido do título do overlay */
        }
    
        .overlay-section p {
-           font-size: 12px; /* Tamanho reduzido do texto do overlay */
+           font-size: 1.75vh; /* Tamanho reduzido do texto do overlay */
        }
    
        /* imersão */
@@ -1488,11 +1477,11 @@ text-align: center;
        }
    
        .left-side h2 {
-           font-size: 9vmin; /* Tamanho reduzido do título */
+           font-size: 3.5vh; /* Tamanho reduzido do título */
        }
    
        .left-side p {
-           font-size: 1em; /* Tamanho reduzido do texto */
+           font-size: 2vh; /* Tamanho reduzido do texto */
        }
    
        /* talks */
@@ -1501,11 +1490,11 @@ text-align: center;
        }
    
        .text-side h2 {
-           font-size: 9vmin; /* Tamanho reduzido do título */
+           font-size: 3vh; /* Tamanho reduzido do título */
        }
    
        .text-side p {
-           font-size: 1em; /* Tamanho reduzido do texto */
+           font-size: 2vh; /* Tamanho reduzido do texto */
        }
    
        /* residências */
@@ -1520,11 +1509,11 @@ text-align: center;
        }
    
        .text-side-yellow h3 {
-           font-size: 8vim; /* Tamanho reduzido do título */
+           font-size: 2.5vh; /* Tamanho reduzido do título */
        }
    
        .text-side-yellow p {
-           font-size: 0.8em; /* Tamanho reduzido do texto */
+           font-size: 2vh; /* Tamanho reduzido do texto */
        }
    
        .text-side-yellow {
@@ -1548,7 +1537,7 @@ text-align: center;
        }
    
        .white-section .text-info p {
-           font-size: 0.7em; /* Ajusta o tamanho da fonte para telas menores */
+           font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
        }
    
        .white-section .image-side {
@@ -1763,7 +1752,7 @@ text-align: center;
     }
 
     .text-side p {
-        font-size: 1.5vh; /* Tamanho reduzido do texto */
+        font-size: 1.75vh; /* Tamanho reduzido do texto */
     }
 
     /* residências */
@@ -1782,7 +1771,7 @@ text-align: center;
     }
 
     .text-side-yellow p {
-        font-size: 1.5vh; /* Tamanho reduzido do texto */
+        font-size: 1.75vh; /* Tamanho reduzido do texto */
     }
 
     .text-side-yellow {
