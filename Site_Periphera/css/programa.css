@@ -405,6 +405,8 @@ p {
 }
 
 
+
+
 /* Grelha Locais */
 .local-container {
   font-family: "IBM Plex Mono", monospace, serif;
@@ -444,6 +446,7 @@ p {
   color: white; /* Cor do texto para contraste */
 }
 
+
 /* Ajuste o posicionamento da caixa expansível */
 .conteudo-expansivel {
   display: none;
@@ -452,9 +455,9 @@ p {
   width: 920px; /* Ocupa toda a largura do container */
   transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
   height: auto;
-  overflow: visible;
+  overflow: hidden;
   opacity: 0;
-  position: static;
+  position: absolute;
   top: 100%; /* Posiciona a caixa expansível abaixo da linha de colunas */
   left: 0;
   z-index: 1;
@@ -483,13 +486,13 @@ p {
 /* Define a largura das colunas */
 .conteudo-expansivel td:first-child,
 .conteudo-expansivel th:first-child {
-    width: 20%; /* 30% de largura para a primeira coluna */
+    width: 30%; /* 30% de largura para a primeira coluna */
 }
 
 /* Margem específica para a segunda coluna */
 .conteudo-expansivel td:nth-child(2),
 .conteudo-expansivel th:nth-child(2) {
-  width: 80%; /* 70% de largura para a segunda coluna */
+  width: 70%; /* 70% de largura para a segunda coluna */
   padding-left: 20px; /* Margem maior à esquerda para a segunda coluna */
   font-size: 1.5vh;
   font-weight: 400;
@@ -506,7 +509,7 @@ p {
 }
 
 .conteudo-expansivel th {
-  font-size: 1.5vh;
+  font-size: 1.75vh;
 }
 
 .tab-wrapper {
@@ -746,6 +749,11 @@ p {
     font-size: 2.5vh; /* Ajusta o tamanho da fonte do h2 */
   }
 
+
+
+
+
+
   /* Estilo das abas */
   .tab {
     width: 100%; /* Abas ocupam 100% da largura da página */
@@ -886,6 +894,10 @@ p {
 
 
 
+
+
+
+
   .local-container {
     width: 100%; /* Ocupa a largura total da tela */
     flex-direction: column; /* Alinha as colunas verticalmente */
@@ -902,6 +914,7 @@ p {
 
 
   .conteudo-expansivel {
+    box-sizing: border-box;
     width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
     padding: 20px 0;
     position: static; /* Altera para posição estática em vez de absoluta */
@@ -928,20 +941,27 @@ p {
 
 
 
-/* Define a largura das colunas */
-.conteudo-expansivel td:first-child,
-.conteudo-expansivel th:first-child {
-    width: 30%; /* 30% de largura para a primeira coluna */
+.conteudo-expansivel th, .conteudo-expansivel td {
+display: block; /* Cada célula se torna um bloco completo */
+width: 100%; /* As células ocupam 100% da largura */
+box-sizing: border-box; /* Para garantir que padding e largura funcionem bem */
 }
 
-/* Margem específica para a segunda coluna */
-.conteudo-expansivel td:nth-child(2),
-.conteudo-expansivel th:nth-child(2) {
-    width: 70%; /* 70% de largura para a segunda coluna */
-  padding-left: 20px; /* Margem maior à esquerda para a segunda coluna */
-  font-size: 2vh;
-  font-weight: 400;
+.conteudo-expansivel td:first-child, .conteudo-expansivel th:first-child {
+padding-left: 5px; /* Mantém o padding para a primeira célula */
+box-sizing: border-box;
+width: 100%;
+margin-top: 5px;
 }
+
+.conteudo-expansivel td:nth-child(2), .conteudo-expansivel th:nth-child(2) {
+padding-left: 5px; /* Reduz o padding para a segunda célula */
+box-sizing: border-box;
+width: 100%;
+font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
+}
+
+
 
 
 
@@ -988,6 +1008,7 @@ p {
   }
 
   .content-wrapper {
+    box-sizing: border-box;
     width: 100%; /* Ajusta a largura */
     padding: 15px; /* Ajusta o padding */
   }
@@ -1123,6 +1144,7 @@ p {
 
 
   .conteudo-expansivel {
+    box-sizing: border-box;
     width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
     padding: 20px 40px;
     position: static; /* Altera para posição estática em vez de absoluta */
