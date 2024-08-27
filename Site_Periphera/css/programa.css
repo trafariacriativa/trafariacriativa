@@ -1046,19 +1046,44 @@ session {
   }
 
   .coluna {
+    width: 80%; /* Reduz a largura das colunas para criar margens laterais */
+    margin: 0 auto; /* Centraliza as colunas */
     padding: 8px;
   }
 
+
+
+/* Define a largura das colunas */
+.conteudo-expansivel td:first-child,
+.conteudo-expansivel th:first-child {
+    width: 35%; /* 30% de largura para a primeira coluna */
+}
+
+/* Margem específica para a segunda coluna */
+.conteudo-expansivel td:nth-child(2),
+.conteudo-expansivel th:nth-child(2) {
+    width: 65%; /* 70% de largura para a segunda coluna */
+}
+
   .conteudo-expansivel {
-    width: 100%;
-    padding: 10px;
+    width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
+    padding: 20px 40px;
     position: static; /* Altera para posição estática em vez de absoluta */
+    margin: 0 auto; /* Centraliza o conteúdo expansível */
   }
 
-  .conteudo-expansivel th,
-  .conteudo-expansivel td {
+
+
+  .conteudo-expansivel th {
     font-size: 2.25vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
   }
+
+  .conteudo-expansivel td {
+    font-size: 1.75vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
+  }
+
 
   .tab-wrapper.tab-shift {
     margin-top: 60px; /* Ajusta a margem superior para mobile */
@@ -1087,19 +1112,22 @@ session {
 
 /* texto */
 .text-present {
+  box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 30px;
   box-sizing: border-box;
 }
+
+
+h2{
+  font-size: 2vh;
+}
+
 
 .text-present p {
   font-size: 1.5vh;
   margin: 0;
-}
-
-h2{
-  font-size: 2vh;
 }
 
 
@@ -1174,7 +1202,7 @@ h2{
 }
 
 .white-section .text-info p {
-  font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+  font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
 }
 
 .white-section .image-side {
