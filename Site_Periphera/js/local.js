@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>09:00 - 10:00</td>
+                                    <td>09:00-10:00</td>
                                     <td>Atividade 1</td>
                                 </tr>
                                 <tr>
-                                    <td>10:00 - 11:00</td>
+                                    <td>10:00-11:00</td>
                                     <td>Atividade 2</td>
                                 </tr>
                                 <!-- Adicione mais linhas conforme necessário -->
@@ -60,11 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>11:00 - 12:00</td>
+                                    <td>11:00-12:00</td>
                                     <td>Atividade 3</td>
                                 </tr>
                                 <tr>
-                                    <td>12:00 - 13:00</td>
+                                    <td>12:00-13:00</td>
                                     <td>Atividade 4</td>
                                 </tr>
                                 <!-- Adicione mais linhas conforme necessário -->
@@ -83,11 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>13:00 - 14:00</td>
+                                    <td>13:00-14:00</td>
                                     <td>Atividade 5</td>
                                 </tr>
                                 <tr>
-                                    <td>14:00 - 15:00</td>
+                                    <td>14:00-15:00</td>
                                     <td>Atividade 6</td>
                                 </tr>
                                 <!-- Adicione mais linhas conforme necessário -->
