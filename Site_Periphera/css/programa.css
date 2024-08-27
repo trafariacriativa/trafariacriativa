@@ -1039,58 +1039,6 @@ session {
   }
 
 
-  .local-container {
-    width: 100%; /* Ocupa a largura total da tela */
-    flex-direction: column; /* Alinha as colunas verticalmente */
-    margin-bottom: 60px;
-  }
-
-  .coluna {
-    width: 80%; /* Reduz a largura das colunas para criar margens laterais */
-    margin: 0 auto; /* Centraliza as colunas */
-    padding: 8px;
-  }
-
-
-
-/* Define a largura das colunas */
-.conteudo-expansivel td:first-child,
-.conteudo-expansivel th:first-child {
-    width: 35%; /* 30% de largura para a primeira coluna */
-}
-
-/* Margem específica para a segunda coluna */
-.conteudo-expansivel td:nth-child(2),
-.conteudo-expansivel th:nth-child(2) {
-    width: 65%; /* 70% de largura para a segunda coluna */
-}
-
-  .conteudo-expansivel {
-    width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
-    padding: 20px 40px;
-    position: static; /* Altera para posição estática em vez de absoluta */
-    margin: 0 auto; /* Centraliza o conteúdo expansível */
-  }
-
-
-
-  .conteudo-expansivel th {
-    font-size: 2.25vh; /* Ajusta o tamanho da fonte para mobile */
-    padding: 4px;
-  }
-
-  .conteudo-expansivel td {
-    font-size: 1.75vh; /* Ajusta o tamanho da fonte para mobile */
-    padding: 4px;
-  }
-
-
-  .tab-wrapper.tab-shift {
-    margin-top: 60px; /* Ajusta a margem superior para mobile */
-  }
-
-
-
   .image-container {
       height: 250px; /* Reduzido para telas menores */
       padding: 0; /* Remove qualquer padding */
@@ -1110,6 +1058,83 @@ session {
   }
 
 
+
+  /* locais */
+
+
+  .local-container {
+    width: 100%; /* Ocupa a largura total da tela */
+    flex-direction: column; /* Alinha as colunas verticalmente */
+    margin-bottom: 60px;
+    font-size: 2.25vh;
+  }
+
+  .coluna {
+    width: 80%; /* Reduz a largura das colunas para criar margens laterais */
+    margin: 0 auto; /* Centraliza as colunas */
+    padding: 8px;
+  }
+
+
+
+  .conteudo-expansivel {
+    width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
+    padding: 20px 40px;
+    position: static; /* Altera para posição estática em vez de absoluta */
+    margin: 0 auto; /* Centraliza o conteúdo expansível */
+  }
+
+
+
+  .conteudo-expansivel th {
+    font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
+  }
+
+  .conteudo-expansivel td {
+    font-size: 1.75vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
+  }
+
+
+  .tab-wrapper.tab-shift {
+    margin-top: 60px; /* Ajusta a margem superior para mobile */
+  }
+
+
+
+  .conteudo-expansivel table {
+    display: block; /* Faz com que a tabela se comporte como um bloco em telas pequenas */
+}
+
+.conteudo-expansivel tr {
+  display: block; /* Cada linha se tornará um bloco separado */
+}
+
+
+.conteudo-expansivel th, .conteudo-expansivel td {
+  display: block; /* Cada célula se torna um bloco completo */
+  width: 100%; /* As células ocupam 100% da largura */
+  box-sizing: border-box; /* Para garantir que padding e largura funcionem bem */
+}
+
+.conteudo-expansivel td:first-child, .conteudo-expansivel th:first-child {
+  padding-left: 5px; /* Mantém o padding para a primeira célula */
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.conteudo-expansivel td:nth-child(2), .conteudo-expansivel th:nth-child(2) {
+  padding-left: 5px; /* Reduz o padding para a segunda célula */
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.75vh; /* Ajusta o tamanho da fonte para mobile */
+}
+
+
+
+
 /* texto */
 .text-present {
   box-sizing: border-box;
@@ -1126,7 +1151,7 @@ h2{
 
 
 .text-present p {
-  font-size: 1.5vh;
+  font-size: 1.75vh;
   margin: 0;
 }
 
@@ -1175,7 +1200,7 @@ h2{
 }
 
 .schedule {
-  font-size: 1.5vh;
+  font-size: 1.75vh;
   box-sizing: border-box;
 }
 
