@@ -136,6 +136,8 @@ tabWrapper.classList.add('tab-shift'); // Adiciona a classe de deslocamento
         }
     }
 
+
+    
     // Adiciona o evento de clique para cada coluna
     allColumns.forEach(function(coluna) {
         coluna.addEventListener('click', function(event) {
