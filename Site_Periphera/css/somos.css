@@ -205,13 +205,14 @@ h1 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 2.5vh;
 }
 
 
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 6vh;
 
 }
 
@@ -481,14 +482,14 @@ h1 {
 
 
 .speaker-info h2 {
-  font-size: 1.25rem;
+  font-size: 2vh;
   margin: 0;
 
 }
 
 
 .speaker-info p {
-  font-size: 1rem;
+  font-size: 1.75vh;
 }
 
 /* Efeito ao passar o mouse sobre a caixa toda */
@@ -508,6 +509,7 @@ h1 {
   margin-top: 50px; /* Espaçamento acima da linha */
   width: 100%; /* Ocupa toda a largura da página */
 }
+
 
 
 /* apoios */
@@ -533,7 +535,7 @@ h1 {
 }
 
 .white-section .text-info p {
-  font-size: 1.2rem;
+  font-size: 18px;
   margin-bottom: 10px;
   font-weight: 300;
   color: rgb(56, 56, 56);
@@ -703,28 +705,6 @@ font-size: 2vh;
 
 
 
-.text-section p, li{
-  font-size: 1.5vh;
-  
-}
-
-
-
-.text-section h3{
-font-size: 2vh;
-}
-
-
-
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
-
-}
-
-
-  
-
 .gallery {
   grid-template-columns: repeat(2, 1fr); /* 2 colunas na galeria em telas menores */
 }
@@ -732,12 +712,36 @@ font-size: 2vh;
 
 
 
-.white-section .text-info p {
-  font-size: 1.25vmax; /* Ajusta o tamanho da fonte */
+  /* apoios */
+  .white-section {
+    flex-direction: column; /* Alinha texto e imagem verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .white-section .text-info {
+    width: 100%; /* Ocupa a largura total */
+    padding: 15px 0 25px 0; /* Ajusta o padding */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .white-section .text-info p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .white-section .image-side {
+    width: 100%; /* Ocupa a largura total */
+    padding-right: 0; /* Remove o padding */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+
+  .white-section .image-side img {
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
 }
-
-
-
 
 @media only screen and (max-width: 479px) {
 
@@ -805,24 +809,6 @@ font-size: 2vh;
   }
 
 
-  h1 {
-    font-size: 2.75vh;
-  }
-
-  /*
-  .text-section p, li{
-       font-size: 1.5vh;
-
-  }
-  
-
-
-  .text-section h3{
-    font-size: 2vh;
-}
-
-
-*/
 
   /* texto */
 
