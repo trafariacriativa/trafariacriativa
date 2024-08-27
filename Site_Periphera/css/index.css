@@ -1733,11 +1733,11 @@ text-align: center;
 
 
     .overlay-section h3 {
-        font-size: 1.3vh; /* Tamanho reduzido do título do overlay */
+        font-size: 1.5vh; /* Tamanho reduzido do título do overlay */
     }
 
     .overlay-section p {
-        font-size: 12px; /* Tamanho reduzido do texto do overlay */
+        font-size: 1vh; /* Tamanho reduzido do texto do overlay */
     }
 
     /* imersão */
@@ -1746,11 +1746,11 @@ text-align: center;
     }
 
     .left-side h2 {
-        font-size: 9vmin; /* Tamanho reduzido do título */
+        font-size: 3.5vh; /* Tamanho reduzido do título */
     }
 
     .left-side p {
-        font-size: 3.5vw; /* Tamanho reduzido do texto */
+        font-size: 1.5vh; /* Tamanho reduzido do texto */
     }
 
     /* talks */
@@ -1759,11 +1759,11 @@ text-align: center;
     }
 
     .text-side h2 {
-        font-size: 9vmin; /* Tamanho reduzido do título */
+        font-size: 3.5vh; /* Tamanho reduzido do título */
     }
 
     .text-side p {
-        font-size: 3.5vw; /* Tamanho reduzido do texto */
+        font-size: 1.5vh; /* Tamanho reduzido do texto */
     }
 
     /* residências */
@@ -1778,11 +1778,11 @@ text-align: center;
     }
 
     .text-side-yellow h3 {
-        font-size: 8vmin; /* Tamanho reduzido do título */
+        font-size: 2.75vh; /* Tamanho reduzido do título */
     }
 
     .text-side-yellow p {
-        font-size: 3vw; /* Tamanho reduzido do texto */
+        font-size: 1.5vh; /* Tamanho reduzido do texto */
     }
 
     .text-side-yellow {
@@ -1806,7 +1806,7 @@ text-align: center;
     }
 
     .white-section .text-info p {
-        font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
     }
 
     .white-section .image-side {

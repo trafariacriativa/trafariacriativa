@@ -208,7 +208,7 @@ h1{
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 3vh;
 
 }
 
@@ -216,7 +216,7 @@ h2 {
 p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 1.25vw;
+    font-size: 1.75vw;
 
 }
 
@@ -272,17 +272,6 @@ p, li {
   color: inherit;
 }
 
-
-.countdown {
-  font-family: "IBM Plex Mono", monospace, serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
-  right: 230px;
-  transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
-}
 
 
 .logo:hover {
@@ -584,6 +573,9 @@ video {
 }
 
 
+
+
+
 /* apoios */
 
 .white-section {
@@ -607,7 +599,7 @@ video {
 }
 
 .white-section .text-info p {
-  font-size: 1.2rem;
+  font-size: 18px;
   margin-bottom: 10px;
   font-weight: 300;
   color: rgb(56, 56, 56);
@@ -776,6 +768,16 @@ video {
 }
 
 
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
+
+
+.text-section h3{
+  font-size: 2.5vh;
+  }
+  
+  
 
 .text-section p, li{
   font-size: 2vh;
@@ -784,17 +786,8 @@ video {
 
 
 
-.text-section h3{
-font-size: 2.5vh;
-}
 
 
-
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
-
-}
 
 
   
@@ -823,10 +816,38 @@ font-size: 2.5vh;
   font-size: 26px; /* Tamanho do ícone ajustado para tablets */
 }
 
-.white-section .text-info p {
-  font-size: 1.25vmax; /* Ajusta o tamanho da fonte */
-}
 
+  /* apoios */
+  .white-section {
+    flex-direction: column; /* Alinha texto e imagem verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .white-section .text-info {
+    width: 100%; /* Ocupa a largura total */
+    padding: 15px 0 25px 0; /* Ajusta o padding */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .white-section .text-info p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .white-section .image-side {
+    width: 100%; /* Ocupa a largura total */
+    padding-right: 0; /* Remove o padding */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+
+  .white-section .image-side img {
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  
+}
 
 @media only screen and (max-width: 479px) {
 
