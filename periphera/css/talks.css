@@ -931,6 +931,7 @@ font-size: 2.5vh;
       font-size: 1.75vh;
     }
     
+    
 .gallery {
   grid-template-columns: 1fr; /* 1 coluna na galeria em telas muito pequenas */
 }
