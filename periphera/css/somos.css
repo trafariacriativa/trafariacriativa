@@ -609,6 +609,9 @@ h1 {
 /* Estilo para o título */
 
 
+
+
+
 h2 {
   font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
 }
@@ -630,6 +633,21 @@ h2 {
 .text-section h3{
 font-size: 2.5vh;
 }
+
+
+
+.speaker-info h2 {
+  font-size: 3vh;
+  margin: 0;
+
+}
+
+
+.speaker-info p {
+  font-size: 2vh;
+}
+
+
 
 }
 
@@ -703,6 +721,18 @@ font-size: 2.5vh;
   box-sizing: border-box;
 }
 
+
+
+.speaker-info h2 {
+  font-size: 3vh;
+  margin: 0;
+
+}
+
+
+.speaker-info p {
+  font-size: 2vh;
+}
 
 
 .gallery {
@@ -823,6 +853,32 @@ font-size: 2.5vh;
     }
 
   
+
+
+
+.text-section p, li{
+  font-size: 1.75vh;
+  
+}
+
+
+
+.text-section h3{
+font-size: 2vh;
+}
+
+
+.speaker-info h2 {
+  font-size: 2.5vh;
+  margin: 0;
+
+}
+
+
+.speaker-info p {
+  font-size: 1.75vh;
+}
+
   
 .gallery {
   grid-template-columns: 1fr; /* 1 coluna na galeria em telas muito pequenas */
