@@ -426,7 +426,7 @@ p {
 
 .title-container {
     position: absolute;
-    top: 150px;
+    top: 125px;
     left: 64px;
     width: 45%;
     z-index: 10; /* Garante que o título fique acima das imagens do slider */
@@ -1067,7 +1067,7 @@ p {
         display: flex; /* Usa Flexbox para layout horizontal */
         justify-content: left; /* Centraliza os itens horizontalmente */
         width: 40%; /* Garante que o contêiner use a largura total */
-        top: 100px;
+        top: 125px;
 
     }
 
