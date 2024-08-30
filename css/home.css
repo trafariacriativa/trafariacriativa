@@ -1071,24 +1071,50 @@ p {
 
     }
 
+    .title{
+        font-size: 5.25vh;
+    }
    
     .subtitle {
-        font-size: 3.25vmin;
+        font-size: 3vh;
 
     }
 
+
+    .content-section h2 {
+        font-size: 3vh;
+
+    }
+
+
+    .overlay-section h3{
+        font-size: 2.5vh;
+    }
+
+    .overlay-section p{
+        font-size: 1.6vh;
+    }
+
+
 /* imersão */
 
+.left-side h2{
+    font-size: 4vh;
+}
 
 .left-side p {
-    font-size: 2vh; /* Tamanho reduzido do texto */
+    font-size: 1.75vh; /* Tamanho reduzido do texto */
 }
 
 /* talks */
 
 
+.text-side h2{
+    font-size: 4vh;
+}
+
 .text-side p {
-    font-size: 2vh; /* Tamanho reduzido do texto */
+    font-size: 1.75vh; /* Tamanho reduzido do texto */
 }
 
 /* residências */
@@ -1096,12 +1122,9 @@ p {
 
 
 .text-side-yellow h3 {
-    font-size: 4vh; /* Tamanho reduzido do título */
+    font-size: 3.5vh; /* Tamanho reduzido do título */
 }
 
-.text-side-yellow p {
-    font-size: 2vh; /* Tamanho reduzido do texto */
-}
 
 .yellow-content .image-side img {
     height: 300px; /* Define uma altura fixa para a imagem */
@@ -1109,7 +1132,7 @@ p {
 
 
 .text-side-yellow p {
-    font-size: 18px; /* Tamanho reduzido do texto */
+    font-size: 1.6vh; /* Tamanho reduzido do texto */
 }
 
      
@@ -1344,6 +1367,10 @@ p {
 
 
 }
+
+
+
+
 
 
 @media only screen and (min-width: 480px) and (max-width: 639px) {
