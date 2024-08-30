@@ -1067,7 +1067,7 @@ p {
         display: flex; /* Usa Flexbox para layout horizontal */
         justify-content: left; /* Centraliza os itens horizontalmente */
         width: 40%; /* Garante que o contêiner use a largura total */
-        left: 40px;
+        top: 125px;
 
     }
 
