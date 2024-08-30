@@ -487,6 +487,24 @@ p, li {
 
 
 
+@media only screen and (min-width: 1780px) {
+
+  .image-title {
+    font-size: 5vh;
+  }
+  
+
+
+h2 {
+    font-size: 3vh;
+  }
+  
+p {
+    font-size: 2vh;
+  }
+  
+  }
+
 
 
 

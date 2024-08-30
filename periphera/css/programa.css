@@ -706,6 +706,47 @@ h3{
 
 
 
+
+@media only screen and (min-width: 1780px) {
+
+  .image-title {
+    font-size: 5vh;
+  }
+    
+  .text-present p {
+    font-size: 2vh;
+  }
+
+  .local-container{
+    font-size: 2.25vh;
+  }
+
+  .conteudo-expansivel th {
+    font-size: 2.5vh;
+  }
+
+  .conteudo-expansivel td:first-child {
+    font-size: 2vh;
+  }
+
+
+  .conteudo-expansivel td:nth-child(2), .conteudo-expansivel th:nth-child(2) {
+    font-size: 2vh;
+  }
+
+  h2 {
+    font-size: 2.5vh;
+  }
+
+  .schedule {
+    font-size: 2vh;
+  }
+  
+  }
+
+
+
+
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
 
   /* navbar */

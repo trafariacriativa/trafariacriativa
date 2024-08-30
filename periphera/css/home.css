@@ -1,0 +1,1857 @@
+/* .ibm-plex-mono-thin {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 700;
+    font-size: 7vh;
+
+}
+
+h3 {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 800;
+    font-size: 3vh;
+}
+
+p {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 400;
+    font-size: 2.5vh;
+
+}
+
+/* navbar */
+
+/* Ícone rotativo */
+.rotating-icon {
+    display: inline-block;
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha verticalmente ao meio */
+    animation: rotateBackAndForth 2s ease-in-out infinite;
+}
+
+.rotating-icon img {
+    width: 40px; /* Ajuste o tamanho do SVG conforme necessário */
+    height: 40px;
+}
+
+/* Animação de rotação vai e volta */
+@keyframes rotateBackAndForth {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: rgba(18, 18, 18, 0.3); /* Cor com transparência */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: #fff;
+    position: fixed; /* Torna a barra de navegação fixa no topo */
+    top: 0; /* Posiciona a barra no topo da página */
+    left: 0;
+    z-index: 9999; /* Garante que a barra de navegação fique acima de outros elementos */
+}
+
+.navbar .logo {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 40px;
+}
+
+
+.countdown {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 800;
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
+    right: 230px;
+    transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
+}
+
+.burger {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    position: relative; /* Mantém o ícone de menu na posição correta */
+    right: 32px; /* Ajusta o ícone de menu para a posição desejada */
+}
+
+/* menu */
+
+.menu {
+    width: 300px;
+    height: 204px;
+    background: rgba(210, 209, 209, 0.8); /* Cor com transparência */
+    position: fixed;
+    top: 100px;
+    right: 422px;
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    z-index: 1900;
+    transition: all 0.3s ease; /* Transição suave para a mudança de posição */
+}
+
+/* Estilo do menu quando a rolagem atinge 450px */
+.menu.sticky {
+    position: fixed;
+    top: 100px; /* Ou outro valor conforme necessário */
+    right: 36px;
+    background: rgba(210, 209, 209, 0.9); /* Pode ajustar a cor conforme necessário */
+}
+
+.menu.active {
+    display: flex; /* Exibe o menu ao clicar no burger */
+}
+
+
+.menu a {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem; /* Tamanho da fonte para os links */
+    transition: color 0.3s;
+  }
+  
+
+.menu a:hover {
+    color: #ddd; /* Cor de destaque ao passar o mouse */
+}
+
+/* programa */
+
+/* Estilo para tornar a caixa inteira clicável */
+.box-link {
+    display: block; /* Faz com que o link envolva a caixa completamente */
+    text-decoration: none; /* Remove o sublinhado do link */
+    z-index: 1000;
+}
+
+.box {
+    width: 390px;
+    height: 300px;
+    background: rgba(18, 18, 18, 0.5); /* Cor com transparência */
+    position: absolute; /* Necessário para o z-index */
+    right: 32px;
+    z-index: 1100; /* Z-index maior que o do slider */
+    top: 100px; /* Margin-top para afastar a caixa da barra de navegação fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaça o conteúdo e o botão */
+}
+
+
+.box-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.box-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem; /* Ajuste o tamanho conforme necessário */
+    color: #ffffff; /* Cor do texto */
+    margin: 0;
+}
+
+.box-subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 4rem; /* Ajuste o tamanho conforme necessário */
+    line-height: 0.2em;
+    color: #ffffff; /* Cor do texto */
+    margin: 0;
+    margin-top: 16px; /* Espaço entre as linhas */
+}
+
+.box-date {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
+    line-height: 0.2em;
+    color: #ffffff; /* Cor do texto */
+    margin-top: 68px; /* Espaço abaixo do subtítulo */
+}
+
+
+.cta-button {
+    display: block;
+    width: 390px;
+    height: 56px;
+    background-color: rgb(245, 245, 220);
+    color: rgb(56, 56, 56);
+    text-align: center;
+    line-height: 56px; /* Centraliza verticalmente o texto */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2rem; /* Ajuste conforme necessário */
+    text-decoration: none;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+/*slide*/
+
+.slider {
+    width: 100%;
+    height: 450px; /* Altura ajustada para 450px */
+    background-color: darkred;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.title-container {
+    position: absolute;
+    top: 150px;
+    left: 64px;
+    width: 40%;
+    z-index: 10; /* Garante que o título fique acima das imagens do slider */
+
+}
+
+
+
+.title-container a {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.title-container a:hover {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+
+.title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 10vh;
+    letter-spacing: 0.05em;
+    color: white; /* Cor do texto do título */
+    margin: 0;
+
+}
+
+.title a:hover {
+    color: rgba(18, 18, 18, 0.5);
+}
+
+.subtitle {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+    color: white; /* Cor do texto do subtítulo */
+
+}
+
+.subtitle a:hover {
+    color: rgba(18, 18, 18, 0.5);
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Inicialmente fora da tela */
+    background-size: cover; /* Ajusta a imagem para cobrir o slide */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: left 1s ease; /* Transição suave para mover entre slides */
+}
+
+.slide.active {
+    left: 0; /* Slide visível */
+}
+
+.slide.next {
+    left: -100%; /* Slide que será movido para fora */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.8); /* Cor com transparência */
+    pointer-events: none; /* Permite interação com os elementos abaixo */
+}
+
+.indicators {
+    position: absolute;
+    bottom: 48px; /* Padding bottom de 48px */
+    display: flex;
+    gap: 12px; /* Espaço entre os quadrados */
+}
+
+.indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 0%; /* Faz os quadrados serem circulares */
+    background-color: white; /* Cor padrão */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+.indicator.active {
+    background-color: gray; /* Cor do quadrado para a imagem visível */
+}
+
+
+
+
+/* notícias */
+
+.content-section {
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    font-size: 4.5vh;
+    color: rgb(56, 56, 56);
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas */
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.column {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre a área da coluna */
+}
+
+.overlay-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(18, 18, 18, 0.8); /* Barra cinza transparente */
+    display: block;
+    align-items: center;
+    color: white;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+
+.overlay-section h3 {
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+    text-align: left;
+
+}
+
+.overlay-section p {
+    margin-top: 4px;
+    color: white;
+    text-align: left;
+}
+
+
+
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.column a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.column a:hover .image-wrapper::before {
+    background-color: rgba(139, 0, 0, 0.5)
+}
+
+/*imersão*/
+
+.split-section {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background-color: rgb(245, 245, 220);
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    /*align-items: center;  Centraliza o conteúdo verticalmente */
+}
+
+.left-side {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho */
+}
+
+
+.left-side h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    text-decoration-line: underline;
+    color: rgb(56, 56, 56);
+}
+
+.left-side p {
+    color: rgb(56, 56, 56);
+}
+
+.left-side a {
+    text-decoration: none;
+    color: #fff; /* Cor branca para o link */
+}
+
+.left-side a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+.right-side {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-start; /* Encosta a imagem à esquerda */
+    align-items: center;
+    overflow: hidden;
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir a área disponível */
+}
+
+
+/*talks*/
+
+
+
+.split-section-yellow {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background-color: rgb(255, 235, 205);
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+
+}
+
+.image-side {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-end; /* Encosta a imagem à direita */
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+}
+
+
+
+
+.text-side {
+    /* width: 50%; */
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-side h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    text-decoration-line: underline;
+    color: rgb(56, 56, 56);
+}
+
+.text-side p {
+    color: rgb(56, 56, 56);
+}
+
+.text-side a {
+    text-decoration: none;
+    color: #000; /* Link em preto */
+}
+
+.text-side a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+/* residencias */
+
+
+.yellow-content {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD700; /* Fundo amarelo */
+}
+
+
+.yellow-content .text-side {
+    flex: 2; /* Ocupa mais espaço para o texto */
+    padding-left: 0px; /* Mantém o espaçamento igual ao das outras divs */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: rgb(56, 56, 56); /* Texto em preto */
+    height: 100%;
+}
+
+.text-side-yellow h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 6vh;
+    text-decoration-line: underline;
+    color: rgb(56, 56, 56);
+}
+
+
+.text-side-yellow {
+    /* width: 50%; */
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-side-yellow p {
+    color: rgb(56, 56, 56);
+}
+
+.text-side-yellow a {
+    text-decoration: none;
+    color: #000; /* Link em preto */
+}
+
+.text-side-yellow a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+.yellow-content .image-side {
+    flex: 1; /* Ocupa menos espaço para a imagem */
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+    align-items: center;
+    overflow: hidden;
+}
+
+.yellow-content .image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /* Garante que a imagem fique dentro da área disponível */
+}
+
+
+/* apoios */
+
+.white-section {
+    width: 100%;
+    height: 250px;
+    background-color: #FFF; /* Fundo branco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-section .text-info {
+    width: 40%;
+    flex: 1;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Alinha o texto à esquerda */
+    color: rgb(56, 56, 56); /* Texto em preto */
+}
+
+.white-section .text-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: rgb(56, 56, 56);
+}
+
+.white-section .image-side {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    padding-right: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.white-section .image-side img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* A imagem se adapta ao tamanho da div */
+}
+
+
+
+
+@media only screen and (min-width: 1780px) {
+
+
+    .slider {
+        width: 100%;
+        height: 500px; /* Altura ajustada para 450px */
+
+    }
+
+    .countdown {
+        font-size: 2vw;
+    }
+    
+
+     /* slides */
+     
+
+     .title-container {
+        top: 30%;
+        width: 50%;
+     }
+
+     .title {
+        font-size: 7vh; /* Tamanho do título */
+    }
+
+    .subtitle {
+        line-height: 1.5em;
+        font-size: 4vh; /* Tamanho do subtítulo */
+    }
+
+
+
+
+/* notícias */
+
+.content-section {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.content-section h2 {
+    font-size: 3.5vh;
+    color: rgb(56, 56, 56);
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+
+.overlay-section h3 {
+    font-size: 2.5vh;
+}
+
+.overlay-section p {
+    font-size: 2vh;
+}
+
+
+
+.columns {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas */
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.column {
+    width: 600px;
+    height: 350px;
+    position: relative;
+}
+
+
+/* imersão talks */
+
+
+.split-section {
+    height: 550px;
+}
+
+
+.left-side h2 {
+    font-size: 5vh; /* Tamanho reduzido do título */
+}
+
+
+.left-side p {
+    font-size: 2vh; /* Tamanho reduzido do título */
+}
+
+.split-section-yellow {
+    height: 550px;
+}
+
+.text-side h2 {
+    font-size: 5vh; /* Tamanho reduzido do título */
+}
+
+
+.text-side p {
+    font-size: 2vh; /* Tamanho reduzido do título */
+}
+
+
+
+
+
+
+/* residências */
+.text-side-yellow h3 {
+    font-size: 4vh; /* Tamanho reduzido do título */
+}
+
+.text-side-yellow p {
+    font-size: 2vh; /* Tamanho reduzido do título */
+}
+
+/* apoios */
+
+.white-section {
+    height: 400px;
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 760px) and (max-width: 1023px) {
+
+
+
+
+
+    /* navbar */
+    
+    
+    /* menu */
+    .menu {
+        width: 320px;
+        height: 225px;
+        background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+        margin-right: 10px;
+    }
+
+    .menu.active, .menu.sticky {
+        right: 20px; /* Ajusta o menu para a posição visível */
+    }
+
+
+
+
+
+
+.countdown {
+    font-size: 3.5vw;
+    color: #fff;
+    padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
+    right: 15%;
+    transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
+}
+
+
+/* programa */
+
+    
+.box-content {
+    padding: 12px;
+    text-align: center;
+}
+
+.box {
+    width: 45%;
+    height: auto; /* Altura reduzida da caixa */
+    top: 100px; /* Ajusta a posição no topo */
+}
+
+
+
+.box-title {
+    font-size: 6vmin; /* Tamanho reduzido do título */
+}
+
+.box-subtitle {
+    font-size: 6vmin; /* Tamanho reduzido do subtítulo */
+    margin-top: 15px; /* Reduz o espaço entre as linhas */
+}
+
+.box-date {
+    font-size: 3.5vmin; /* Tamanho reduzido da data */
+    margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    width: 100%;
+    height: 40px; /* Altura reduzida do botão */
+    line-height: 2.5rem; /* Centraliza verticalmente o texto */
+    font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
+}
+
+
+    /* Centralização do Título e Subtítulo */
+    .title-container {
+        left: 40px;
+        bottom: 55%;
+        display: flex; /* Usa Flexbox para layout horizontal */
+        justify-content: left; /* Centraliza os itens horizontalmente */
+        width: 40%; /* Garante que o contêiner use a largura total */
+        left: 40px;
+
+    }
+
+   
+    .subtitle {
+        font-size: 3.25vmin;
+
+    }
+
+/* imersão */
+
+
+.left-side p {
+    font-size: 2vh; /* Tamanho reduzido do texto */
+}
+
+/* talks */
+
+
+.text-side p {
+    font-size: 2vh; /* Tamanho reduzido do texto */
+}
+
+/* residências */
+
+
+
+.text-side-yellow h3 {
+    font-size: 4vh; /* Tamanho reduzido do título */
+}
+
+.text-side-yellow p {
+    font-size: 2vh; /* Tamanho reduzido do texto */
+}
+
+.yellow-content .image-side img {
+    height: 300px; /* Define uma altura fixa para a imagem */
+}
+
+
+.text-side-yellow p {
+    font-size: 18px; /* Tamanho reduzido do texto */
+}
+
+     
+
+.yellow-content {
+    flex-direction: row; /* Alinha o conteúdo verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+}
+
+}
+
+
+    @media only screen and (min-width: 640px) and (max-width: 759px) {
+
+        
+    
+/* navbar */
+
+
+.navbar {
+    height: 80px;
+    padding: 10px;
+    justify-content:space-between;
+    align-items: center;
+    color: #fff;
+    position: fixed; /* Torna a barra de navegação fixa no topo */
+    top: 0; /* Posiciona a barra no topo da página */
+    left: 0;
+    z-index: 9999; /* Garante que a barra de navegação fique acima de outros elementos */
+}
+
+.navbar .logo {
+    font-size: 18px;
+    padding-left: 10px; /* Remove padding à esquerda */
+    
+}
+
+.rotating-icon img {
+    width: 30px; /* Reduz o tamanho do ícone */
+    height: 30px;
+}
+
+
+.countdown {
+    font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
+    position: static; /* Remove o posicionamento absoluto */
+    transform: none; /* Remove a transformação de centralização */
+    margin-right: 15px;
+    text-align: center;
+}
+
+    /* menu */
+    .menu {
+        width: 315px;
+        height: 200px;
+        background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+        margin-right: 0;
+    }
+
+    .menu.active, .menu.sticky {
+        right: 20px; /* Ajusta o menu para a posição visível */
+    }
+
+
+
+
+  /* programa */
+
+    
+  .box-content {
+    padding: 12px;
+    text-align: center;
+}
+
+.box {
+    width: 45%;
+    height: auto; /* Altura reduzida da caixa */
+    top: 100px; /* Ajusta a posição no topo */
+}
+
+
+
+.box-title {
+    font-size: 6vmin; /* Tamanho reduzido do título */
+}
+
+.box-subtitle {
+    font-size: 6vmin; /* Tamanho reduzido do subtítulo */
+    margin-top: 15px; /* Reduz o espaço entre as linhas */
+}
+
+.box-date {
+    font-size: 3.5vmin; /* Tamanho reduzido da data */
+    margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    width: 100%;
+    height: 40px; /* Altura reduzida do botão */
+    line-height: 2.5rem; /* Centraliza verticalmente o texto */
+    font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
+}
+
+    /* slides */
+
+    
+    /* Centralização do Título e Subtítulo */
+    .title-container {
+        left: 40px;
+        bottom: 55%;
+        display: flex; /* Usa Flexbox para layout horizontal */
+        justify-content: left; /* Centraliza os itens horizontalmente */
+        width: 40%; /* Garante que o contêiner use a largura total */
+        left: 40px;
+
+    }
+
+   
+    .subtitle-container {
+        font-size: 5vh;
+
+    }
+
+
+/* notícias */
+
+.content-section {
+    margin-bottom: 0;
+}
+
+.content-section h2 {
+    font-size: 3vh; /* Tamanho reduzido do título das notícias */
+}
+
+.columns {
+    gap: 10px; /* Espaçamento reduzido entre colunas */
+}
+
+.overlay-section h3 {
+    font-size: 1.75vh; /* Tamanho reduzido do título do overlay */
+}
+
+.overlay-section p {
+    font-size: 1.5vh; /* Tamanho reduzido do texto do overlay */
+}
+
+/* imersão */
+.left-side {
+    padding: 20px; /* Ajusta o padding para telas menores */
+}
+
+.left-side h2 {
+    font-size: 4vh; /* Tamanho reduzido do título */
+}
+
+.left-side p {
+    font-size: 2vh; /* Tamanho reduzido do texto */
+}
+
+/* talks */
+.text-side {
+    padding: 20px;
+}
+
+.text-side h2 {
+    font-size: 4vh; /* Tamanho reduzido do título */
+}
+
+.text-side p {
+    font-size: 2vh; /* Tamanho reduzido do texto */
+}
+
+/* residências */
+.yellow-content {
+    flex-direction: row; /* Alinha o conteúdo verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+}
+
+.yellow-content .text-side, 
+.yellow-content .image-side {
+    width: 100%; /* Ocupa a largura total */
+}
+
+.text-side-yellow h3 {
+    font-size: 3.5vh; /* Tamanho reduzido do título */
+}
+
+.text-side-yellow p {
+    font-size: 2vh; /* Tamanho reduzido do texto */
+}
+
+.text-side-yellow {
+    padding: 20px; /* Ajusta o padding para telas menores */
+}
+
+.yellow-content .image-side img {
+    height: 200px; /* Define uma altura fixa para a imagem */
+}
+
+     
+
+ 
+     /* apoios */
+     .white-section {
+        flex-direction: column; /* Alinha texto e imagem verticalmente */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .white-section .text-info {
+        width: 100%; /* Ocupa a largura total */
+        padding: 10px 0 20px 0;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .white-section .text-info p {
+        font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .white-section .image-side {
+        width: 100%; /* Ocupa a largura total */
+        padding-right: 0; /* Remove o padding */
+        display: flex;
+        justify-content: center; /* Centraliza a imagem horizontalmente */
+        align-items: center; /* Centraliza a imagem verticalmente */
+    }
+
+    .white-section .image-side img {
+        width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+
+    /* navbar */
+    .navbar {
+       height: 80px;
+       flex-direction: column; /* Alinha os elementos verticalmente */
+       align-items: flex-start; /* Alinha os itens à esquerda */
+       padding: 10px; /* Ajusta o padding */
+   }
+   
+   .navbar .logo {
+       font-size: 18px; /* Tamanho reduzido do logo */
+       padding-left: 0; /* Remove padding à esquerda */
+       margin-bottom: 5px; /* Espaço entre logo e countdown */
+   }
+   
+   .rotating-icon img {
+       width: 30px; /* Reduz o tamanho do ícone */
+       height: 30px;
+   }
+   
+   .countdown-wrapper {
+       width: 100%; /* Ocupa toda a largura disponível */
+       padding: 0;
+   }
+   
+   .countdown {
+       font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
+       position: static; /* Remove o posicionamento absoluto */
+       transform: none; /* Remove a transformação de centralização */
+       padding: 0;
+       margin-top: 5px; /* Espaço entre countdown e logo */
+       margin-right: 15px;
+       text-align: center;
+   }
+   
+   .burger {
+       font-size: 28px; /* Tamanho reduzido do ícone do menu */
+       position: fixed;
+       right: 10px;
+       top: 10px;
+   
+   }
+   
+   
+       /* menu */
+       .menu {
+           width: 50%;
+           height: 190px;
+           background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+           margin-right: -5px;
+       }
+   
+       .menu.active, .menu.sticky {
+           right: 20px; /* Ajusta o menu para a posição visível */
+       }
+   
+   
+       /* programa */
+   
+       
+       .box-content {
+           padding: 12px;
+           text-align: center;
+       }
+   
+       .box {
+           width: 75%;
+           height: auto; /* Altura reduzida da caixa */
+           left: 50%;
+           transform: translateX(-50%);
+           top: 100px; /* Ajusta a posição no topo */
+       }
+   
+       
+   
+       
+       .box-title {
+           font-size: 4.5vmax; /* Tamanho reduzido do título */
+       }
+   
+       .box-subtitle {
+           font-size: 5vmax; /* Tamanho reduzido do subtítulo */
+           margin-top: 1rem; /* Reduz o espaço entre as linhas */
+       }
+   
+       .box-date {
+           font-size: 2.5vmax; /* Tamanho reduzido da data */
+           margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
+           margin-bottom: 1rem;
+       }
+   
+       .cta-button {
+           width: 100%;
+           height: 50%; /* Altura reduzida do botão */
+           line-height: 36px; /* Centraliza verticalmente o texto */
+           font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
+       }
+   
+       /* slides */
+   
+       
+       /* Centralização do Título e Subtítulo */
+       .title-container {
+           top: 80%;
+           display: flex; /* Usa Flexbox para layout horizontal */
+           justify-content: center; /* Centraliza os itens horizontalmente */
+           width: 100%; /* Garante que o contêiner use a largura total */
+           left: 0;
+       }
+   
+       .title, .subtitle {
+           margin: 0; /* Remove margens adicionais */
+text-align: center;
+       }
+   
+       .title {
+        margin: 0;
+           font-size: 6vmin; /* Tamanho do título */
+       }
+   
+       .subtitle {
+           font-size: 1.75vh; /* Tamanho do subtítulo */
+           letter-spacing: -0.025em;
+       }
+   
+
+       
+       .indicators {
+           bottom: 22%;
+       }
+   
+       .indicator {
+           width: 12px; /* Tamanho reduzido dos indicadores */
+           height: 12px;
+       }
+   
+   
+       /* notícias */
+       .content-section {
+           height: 230px; /* Altura reduzida da seção de notícias */
+           padding: 20px 0;
+           margin-bottom: 50px;
+       }
+   
+       .content-section h2 {
+           font-size: 3vh; /* Tamanho reduzido do título das notícias */
+               }
+   
+       .columns {
+           height: 200px;
+           display: flex;
+           flex-direction: row; /* Empilha as colunas verticalmente */
+           gap: 10px; /* Espaçamento reduzido entre colunas */
+       }
+   
+       .column {
+           width: 100%; /* Largura total para colunas */
+           height: auto; /* Ajusta a altura automaticamente */
+       }
+   
+       .overlay-section h3 {
+           font-size: 2.25vh; /* Tamanho reduzido do título do overlay */
+       }
+   
+       .overlay-section p {
+           font-size: 1.75vh; /* Tamanho reduzido do texto do overlay */
+       }
+   
+       /* imersão */
+       .left-side {
+           padding: 20px; /* Ajusta o padding para telas menores */
+       }
+   
+       .left-side h2 {
+           font-size: 3.5vh; /* Tamanho reduzido do título */
+       }
+   
+       .left-side p {
+           font-size: 2vh; /* Tamanho reduzido do texto */
+       }
+   
+       /* talks */
+       .text-side {
+           padding: 20px;
+       }
+   
+       .text-side h2 {
+           font-size: 3vh; /* Tamanho reduzido do título */
+       }
+   
+       .text-side p {
+           font-size: 2vh; /* Tamanho reduzido do texto */
+       }
+   
+       /* residências */
+       .yellow-content {
+           flex-direction: row; /* Alinha o conteúdo verticalmente */
+           height: auto; /* Ajusta a altura automaticamente */
+       }
+   
+       .yellow-content .text-side, 
+       .yellow-content .image-side {
+           width: 100%; /* Ocupa a largura total */
+       }
+   
+       .text-side-yellow h3 {
+           font-size: 2.5vh; /* Tamanho reduzido do título */
+       }
+   
+       .text-side-yellow p {
+           font-size: 2vh; /* Tamanho reduzido do texto */
+       }
+   
+       .text-side-yellow {
+           padding: 20px; /* Ajusta o padding para telas menores */
+       }
+   
+       .yellow-content .image-side img {
+           height: 200px; /* Define uma altura fixa para a imagem */
+       }
+   
+       /* apoios */
+       .white-section {
+           flex-direction: column; /* Alinha texto e imagem verticalmente */
+           height: auto; /* Ajusta a altura automaticamente */
+       }
+   
+       .white-section .text-info {
+           width: 100%; /* Ocupa a largura total */
+           padding: 10px 0 20px 0;
+           text-align: center; /* Centraliza o texto */
+       }
+   
+       .white-section .text-info p {
+           font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+       }
+   
+       .white-section .image-side {
+           width: 100%; /* Ocupa a largura total */
+           padding-right: 0; /* Remove o padding */
+           display: flex;
+           justify-content: center; /* Centraliza a imagem horizontalmente */
+           align-items: center; /* Centraliza a imagem verticalmente */
+       }
+   
+       .white-section .image-side img {
+           width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
+           height: auto; /* Mantém a proporção da imagem */
+       }
+   
+   
+   }
+   
+
+/* Ajustes específicos para telas menores */
+
+
+@media only screen and (max-width: 479px) {
+
+    /* navbar */
+    .navbar {
+        height: 80px;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .navbar .logo {
+        font-size: 18px; /* Tamanho reduzido do logo */
+        padding-top: 5px;
+        padding-left: 0; /* Remove padding à esquerda */
+
+    }
+
+    .rotating-icon img {
+        width: 30px; /* Reduz o tamanho do ícone */
+        height: 30px;
+    }
+
+    .countdown-wrapper {
+        width: 100%; /* Ocupa toda a largura disponível */
+        padding: 0;
+    }
+
+    .countdown {
+        font-size: 2.5vmax; /* Tamanho reduzido da fonte do countdown */
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a transformação de centralização */
+        padding: 0;
+        margin-top: 5px; /* Espaço entre countdown e logo */
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .burger {
+        font-size: 28px; /* Tamanho reduzido do ícone do menu */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    /* menu */
+    .menu {
+        width: 100%;
+        left: 0;
+        height: 190px;
+        background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+    }
+
+    .menu.active, .menu.sticky {
+        right: 20px; /* Ajusta o menu para a posição visível */
+    }
+
+    /* programa */
+
+    
+    .box-content {
+        padding: 12px;
+        text-align: center;
+    }
+
+    .box {
+        width: 80%;
+        height: auto; /* Altura reduzida da caixa */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px; /* Ajusta a posição no topo */
+    }
+
+    
+
+    .box-title {
+        font-size: 9.5vmin; /* Tamanho reduzido do título */
+    }
+
+    .box-subtitle {
+        font-size: 10vmin; /* Tamanho reduzido do subtítulo */
+        margin-top: 1rem; /* Reduz o espaço entre as linhas */
+    }
+
+    .box-date {
+        font-size: 2vmax; /* Tamanho reduzido da data */
+        margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
+        margin-bottom: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        height: 50%; /* Altura reduzida do botão */
+        line-height: 36px; /* Centraliza verticalmente o texto */
+        font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
+    }
+
+    /* slides */
+
+    
+    /* Centralização do Título e Subtítulo */
+    .title-container {
+        position: absolute; /* Necessário para que o top funcione */
+        top: 375px; /* Ajusta a posição vertical do container */
+        display: flex; /* Usa Flexbox para layout horizontal */
+        align-items: center; /* Alinha os itens no centro verticalmente */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        text-align: center;
+        width: 100%; /* Garante que o contêiner use a largura total */
+        left: 0;
+    }
+
+    .title, .subtitle {
+        margin: 0; /* Remove margens adicionais */
+        display: inline-block; /* Garante que o título e o subtítulo fiquem na mesma linha */
+    }
+
+    .title {
+        font-size: 6.5vmin; /* Tamanho do título */
+    }
+
+    .subtitle {
+        font-size: 4vmin; /* Tamanho do subtítulo */
+        letter-spacing: -0.05em;
+    }
+
+    .indicators {
+        bottom: 20%;
+    }
+
+    .indicator {
+        width: 12px; /* Tamanho reduzido dos indicadores */
+        height: 12px;
+    }
+
+    /* notícias */
+    .content-section {
+        height: 260px; /* Altura reduzida da seção de notícias */
+        padding: 20px 0;
+    }
+
+    .content-section h2 {
+        font-size: 20px; /* Tamanho reduzido do título das notícias */
+    }
+
+    .columns {
+        height: 200px;
+        display: flex;
+        flex-direction: row; /* Empilha as colunas verticalmente */
+        gap: 10px; /* Espaçamento reduzido entre colunas */
+    }
+
+    .column {
+        width: 100%; /* Largura total para colunas */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .overlay-section {
+        padding: 8px; /* Tamanho reduzido do título do overlay */
+    }
+
+
+    .overlay-section h3 {
+        font-size: 1.5vh; /* Tamanho reduzido do título do overlay */
+    }
+
+    .overlay-section p {
+        font-size: 1vh; /* Tamanho reduzido do texto do overlay */
+    }
+
+    /* imersão */
+    .left-side {
+        padding: 20px; /* Ajusta o padding para telas menores */
+    }
+
+    .left-side h2 {
+        font-size: 3.5vh; /* Tamanho reduzido do título */
+    }
+
+    .left-side p {
+        font-size: 1.75vh; /* Tamanho reduzido do texto */
+    }
+
+    /* talks */
+    .text-side {
+        padding: 20px;
+    }
+
+    .text-side h2 {
+        font-size: 3.5vh; /* Tamanho reduzido do título */
+    }
+
+    .text-side p {
+        font-size: 1.75vh; /* Tamanho reduzido do texto */
+    }
+
+    /* residências */
+    .yellow-content {
+        flex-direction: row; /* Alinha o conteúdo verticalmente */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .yellow-content .text-side, 
+    .yellow-content .image-side {
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    .text-side-yellow h3 {
+        font-size: 2.75vh; /* Tamanho reduzido do título */
+    }
+
+    .text-side-yellow p {
+        font-size: 1.75vh; /* Tamanho reduzido do texto */
+    }
+
+    .text-side-yellow {
+        padding: 20px; /* Ajusta o padding para telas menores */
+    }
+
+    .yellow-content .image-side img {
+        height: 200px; /* Define uma altura fixa para a imagem */
+    }
+
+    /* apoios */
+    .white-section {
+        flex-direction: column; /* Alinha texto e imagem verticalmente */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .white-section .text-info {
+        width: 100%; /* Ocupa a largura total */
+        padding: 10px 0 20px 0;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .white-section .text-info p {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .white-section .image-side {
+        width: 100%; /* Ocupa a largura total */
+        padding-right: 0; /* Remove o padding */
+        display: flex;
+        justify-content: center; /* Centraliza a imagem horizontalmente */
+        align-items: center; /* Centraliza a imagem verticalmente */
+    }
+
+    .white-section .image-side img {
+        width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
