@@ -931,12 +931,10 @@ h3{
   }
 
 
-
   .image-title {
-    font-size: 7vw; /* Ajusta o tamanho do título */
-    bottom: 30px; /* Ajusta o alinhamento */
-  }
-
+    font-size: 3.5vw;
+    bottom: 30px;
+}
 
 
 
