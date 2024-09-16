@@ -197,18 +197,16 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(255, 235, 205);
 
 }
 
-h1{
-  bottom: 0;
-}
 
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 5vh;
-    
+    font-size: 3vh;
+
 }
 
 
@@ -216,7 +214,7 @@ p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
     font-size: 2.5vh;
-    
+
 }
 
 
@@ -273,6 +271,16 @@ p, li {
 }
 
 
+.countdown {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
+  right: 230px;
+  transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
+}
 
 
 .logo:hover {
@@ -334,7 +342,7 @@ p, li {
 
 
 .menu a:hover {
-    color: rgba(18, 18, 18, 0.3); /* Cor de destaque ao passar o mouse */
+    color: #ddd; /* Cor de destaque ao passar o mouse */
 }
 
 
@@ -342,6 +350,7 @@ p, li {
 .menu a.active {
   color: rgba(18, 18, 18, 0.6); /* Cor para o link da página atual */
 }
+
 
 /*imagem topo*/
 
@@ -369,8 +378,8 @@ p, li {
 }
 
 .image-title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     font-size: 3.5vw;
     color: white; /* Cor do texto do subtítulo */
     position: absolute;
@@ -384,59 +393,114 @@ p, li {
     transform: translateX(-50%); /* Ajusta a posição para centralizar */
     width: 960px; /* Largura máxima do título */
     text-align: left; /* Centraliza o texto */
-    padding: 0 20px; /* Adiciona espaçamento lateral se necessário */
+    padding: 0 0; /* Adiciona espaçamento lateral se necessário */
 }
+
+
+
 
 /* texto */
-.content-container {
-    width: 960px;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0px 0px; /* Adiciona espaçamento ao redor do conteúdo */
+
+/* Container */
+.container {
+  width: 960px;
+  margin: 0 auto; /* Centraliza o container */
+  padding: 50px;
+}
+
+/* Estilo para o título */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Layout da galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 colunas de largura igual */
+  gap: 40px; /* Espaço entre os itens */
+}
+
+/* Estilo para cada orador */
+.speaker {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  overflow: hidden;
+  text-decoration: none; /* Remove sublinhado dos links */
+  transition: transform 0.3s;
+  position: relative;
+}
+
+/* Envolvente da imagem */
+.image-wrapper {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+/* Estilo para as imagens */
+.speaker img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Suaviza a transição do overlay */
+}
+
+/* Overlay vermelho sobre a imagem */
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5); /* Overlay vermelho com 50% de opacidade */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Suaviza a transição do overlay */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.image-wrapper:hover::before {
+  opacity: 1; /* Torna o overlay visível ao passar o mouse */
+}
+
+/* Informações do orador */
+.speaker-info {
+  padding: 20px;
+  flex: 1; /* Permite que o texto ocupe o espaço restante */
+  color: rgb(56, 56, 56);
+  z-index: 1; /* Garante que o texto fique acima do overlay */
+}
+
+.speaker-info h2 {
+  font-size: 3vh;
+  margin: 0;
+
+}
+
+.speaker-info p {
+  font-size: 2.5vh;
+}
+
+/* Efeito ao passar o mouse sobre a caixa toda */
+.speaker:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho da caixa ao passar o mouse */
 }
 
 
-.image-before-text {
-  margin-top: 50px; /* Espaçamento abaixo da imagem */
-}
-
-.image-before-text img {
-  width: 100%; /* Ajuste a largura da imagem conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
-  max-width: 100%; /* Garante que a imagem não exceda a largura da div */
-}
-
-.text-section {
-    font-family: "IBM Plex Mono", monospace, serif;
-    font-weight: 400;
-    font-size: 2.5vh;
-    margin-bottom: 40px; /* Espaçamento entre o texto e o slideshow */
-}
-
-.section-title {
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    margin-top: 50px;
-    font-family: "IBM Plex Mono", monospace, serif;
-    font-weight: 700;
-    font-size: 2.5vh; /* Ajuste conforme necessário */
-    margin-bottom: 20px;
-}
-
-.section-text {
-    line-height: 2;
-}
 
 
+
+/* linha final */
 
 .final-line {
-    border: none;
-    height: 2px; /* Espessura da linha */
-    background-color: rgb(56, 56, 56); /* Cor da linha */
-    margin-top: 50px; /* Espaçamento acima da linha */
-    width: 100%; /* Ocupa toda a largura da página */
+  border: none;
+  height: 2px; /* Espessura da linha */
+  margin-top: 50px; /* Espaçamento acima da linha */
+  width: 100%; /* Ocupa toda a largura da página */
 }
+
 
 /* apoios */
 
@@ -489,6 +553,28 @@ p, li {
 
 
 
+@media only screen and (min-width: 1780px) {
+
+  .image-title {
+    font-size: 5vh;
+  }
+  
+.container h1 {
+  font-size: 3vh;
+}
+
+  .speaker-info h2 {
+    font-size: 2.5vh;
+  }
+  
+  .speaker-info p {
+    font-size: 2vh;
+  }
+  
+  }
+
+
+  
 
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
@@ -527,16 +613,28 @@ p, li {
  
   /* texto */
 
-.content-container{
-  width: 100%;
+.container{
+  width: 960px;
   padding: 20px; /* Ajusta o padding */
   box-sizing: border-box;
 }
 
 
+/* Estilo para o título */
 
-.text-section p {
-  padding-top: 30px;
+
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
+
+
+.text-section {
+  padding: 40px;
+  
+}
+
+
+.text-section p, li{
   font-size: 2vh;
   
 }
@@ -544,23 +642,72 @@ p, li {
 
 
 .text-section h3{
-font-size: 2.5vh;
-}
-
-
-.image-before-text{
-  margin-top: 30px;
- }
-
- .text-section h2{
-  padding-top: 20px;
-  font-size: 3vh;
+font-size: 2,5vh;
 }
 
 
 
+/* Layout da galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 colunas de largura igual */
+  gap: 30px; /* Espaço entre os itens */
+}
+
+
+
+/* apoios */
+
+.white-section {
+  width: 100%;
+  height: 250px;
+  background-color: #FFF; /* Fundo branco */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-section .text-info {
+  width: 40%;
+  flex: 1;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Alinha o texto à esquerda */
+  color: rgb(56, 56, 56); /* Texto em preto */
+}
+
+.white-section .text-info p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: rgb(56, 56, 56);
+}
+
+.white-section .image-side {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  padding-right: 40px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.white-section .image-side img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* A imagem se adapta ao tamanho da div */
+}
+
+
+
 
 }
+
+
 
 
 
@@ -624,17 +771,15 @@ font-size: 2.5vh;
   
   /* texto */
 
-.content-container{
+.container{
   width: 100%;
   padding: 40px; /* Ajusta o padding */
-  padding-bottom: 10px;
   box-sizing: border-box;
 }
 
 
 
-.text-section p {
-  padding-top: 20px;
+.text-section p, li{
   font-size: 2vh;
   
 }
@@ -646,31 +791,46 @@ font-size: 2.5vh;
 }
 
 
-.image-before-text{
-  margin-top: 30px;
- }
 
- .text-section h2{
-  padding-top: 20px;
-  font-size: 3vh;
-}
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
 
 
 
   
 
 .gallery {
-  grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
+  grid-template-columns: repeat(2, 1fr); /* 1 coluna na galeria em telas muito pequenas */
+  gap: 25px;
 }
+
+
+/* Informações do orador */
+
+.speaker-info h2 {
+  font-size: 3vh;
+  margin: 0;
+
+}
+
+.speaker-info p {
+  font-size: 2vh;
+}
+
+/* Efeito ao passar o mouse sobre a caixa toda */
+.speaker:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho da caixa ao passar o mouse */
+}
+
 
 
 .white-section .text-info p {
-  font-size: 14px; /* Ajusta o tamanho da fonte */
+  font-size: 2vh; /* Ajusta o tamanho da fonte */
 }
 
 
 }
-
 
 
 
@@ -740,37 +900,31 @@ font-size: 2.5vh;
   }
 
 
-  .text-section {
-    margin-bottom: 0;
+  h1 {
+    font-size: 2.75vh;
   }
 
-  .text-section p{
-    padding-top: 20px;
-       font-size: 1.75vh;
+
+  
+  /*
+  .text-section p, li{
+       font-size: 1.5vh;
 
   }
   
- .image-before-text{
-  margin-top: 30px;
- }
 
- .text-section h2{
-  padding-top: 20px;
-  font-size: 3vh;
-}
 
   .text-section h3{
     font-size: 2vh;
 }
 
 
-
+*/
 
   /* texto */
 
-  .content-container{
+  .container{
     width: 100%;
-    padding: 20px; /* Ajusta o padding */
     box-sizing: border-box;
   }
   
@@ -779,15 +933,32 @@ font-size: 2.5vh;
       font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
     }
 
+    h3{
+      font-size: 2vh;
+    }
+
+    p{
+      font-size: 1.75vh;
+    }
   
-  
+
+
+    .speaker-info h2 {
+      font-size: 2.5vh;
+ 
+    
+    }
+    
+    
+    .speaker-info p {
+      font-size: 1.75vh;
+    }
+    
 .gallery {
-  max-width: 100%;
-    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
-    grid-gap: 5px; /* Reduz o espaço entre as imagens */
-    margin: 0;
-  
+  grid-template-columns: 1fr; /* 1 coluna na galeria em telas muito pequenas */
 }
+
+
 
 
   /* apoios */
@@ -819,7 +990,6 @@ font-size: 2.5vh;
     height: auto; /* Mantém a proporção da imagem */
   }
 
-
-
+  
 
 }
