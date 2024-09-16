@@ -197,7 +197,6 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(210, 209, 209, 0.2);
 
 }
 
@@ -205,12 +204,13 @@ h1{
   bottom: 0;
 }
 
-
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
     font-size: 5vh;
 
+    text-align: center;
+    
 }
 
 
@@ -218,8 +218,9 @@ p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
     font-size: 2.5vh;
-
+    
 }
+
 
 /* navbar */
 
@@ -275,6 +276,7 @@ p, li {
 
 
 
+
 .logo:hover {
   font-size: calc(1.5rem + 3px); /* Aumenta em 3px ao passar o mouse */
   text-decoration: none; /* Mantém sem sublinhado */
@@ -322,6 +324,7 @@ p, li {
     display: flex; /* Exibe o menu ao clicar no burger */
 }
 
+
 .menu a {
   color: rgb(56, 56, 56);
   text-decoration: none;
@@ -330,6 +333,7 @@ p, li {
   font-size: 1.25rem; /* Tamanho da fonte para os links */
   transition: color 0.3s;
 }
+
 
 .menu a:hover {
     color: rgba(18, 18, 18, 0.3); /* Cor de destaque ao passar o mouse */
@@ -392,23 +396,34 @@ p, li {
     padding: 0px 0px; /* Adiciona espaçamento ao redor do conteúdo */
 }
 
+
+.image-before-text {
+  margin-top: 50px; /* Espaçamento abaixo da imagem */
+}
+
+.image-before-text img {
+  width: 100%; /* Ajuste a largura da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; /* Garante que a imagem não exceda a largura da div */
+}
+
 .text-section {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 1.5vw;
-    margin-bottom: 80px; /* Espaçamento entre o texto e o slideshow */
+    font-size: 2.5vh;
+    margin-bottom: 40px; /* Espaçamento entre o texto e o slideshow */
 }
 
 .section-title {
-  margin-top: 100px;
     margin-bottom: 10px;
+    padding: 100px;
 }
 
 .section-subtitle {
-    margin-top: 75px;
+    margin-top: 50px;
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 2vw; /* Ajuste conforme necessário */
+    font-size: 2.5vh; /* Ajuste conforme necessário */
     margin-bottom: 20px;
 }
 
@@ -417,166 +432,16 @@ p, li {
 }
 
 
-ul {
-  list-style-position: outside; /* Garante que o bullet fique fora do texto */
-  
-}
-
-
-
-li {
-  margin-left: 15px; /* Move o texto para a direita */
-  line-height: 2em;
-  margin-bottom: 1em;
-}
-
-
-
-
-/* slideshow */
-
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Altura ajustável conforme necessário */
-    overflow: hidden;
-}
-
-.slideshow-slide {
-    display: none; /* Inicialmente escondido */
-    width: 100%;
-    height: 100%;
-}
-
-.slideshow-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra toda a área da div */
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.video-container {
-    margin-top: 40px; /* Espaçamento entre o slideshow e o vídeo */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-video {
-    width: 100%;
-    max-width: 960px; /* Largura máxima do vídeo */
-    height: auto;
-    padding-bottom: 40px;
-}
-
-
-/* galeria */
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas na galeria */
-  grid-gap: 10px; /* Espaço entre as imagens */
-  max-width: 960px;
-  margin: 0 auto; /* Centraliza a galeria na página */
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  background-color: #ddd;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Garante que a imagem preencha o espaço */
-  display: block;
-}
-
-/* Estilos para imagens com tamanhos e disposições variadas */
-.gallery-item.wide {
-  grid-column: span 2; /* Ocupa duas colunas */
-}
-
-.gallery-item.tall {
-  grid-row: span 2; /* Ocupa duas linhas */
-}
-
-.gallery-item.large {
-  grid-column: span 2; /* Ocupa duas colunas */
-  grid-row: span 2; /* Ocupa duas linhas */
-}
-
-/* linha final */
 
 .final-line {
-  border: none;
-  height: 2px; /* Espessura da linha */
-  margin-top: 50px; /* Espaçamento acima da linha */
-  width: 100%; /* Ocupa toda a largura da página */
+    margin: 0 auto;
+    border: none;
+    height: 2px; /* Espessura da linha */
+    background-color: rgb(56, 56, 56); /* Cor da linha */
+    margin-top: 50px; /* Espaçamento acima da linha */
+    margin-left: calc(-50vw + 50%);
+    width: 100vw; /* Usa toda a largura da viewport */
 }
-
-
-
-.dashboard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  padding: 20px;
-  padding-bottom: 100px;
-}
-
-.counter {
-  text-align: center;
-}
-
-.counter h2 {
-  margin: 10px 0 0;
-  font-size: 32px;
-  color: #333;
-  padding-bottom: 16px;
-}
-
-.counter .number {
-  font-family: "Poppins", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: rgba(18, 18, 18, 0.5);
-}
-
-.counter i {
-  font-size: 28px;
-  color: rgba(139, 0, 0, 0.8);
-  margin-bottom: 10px;
-}
-
-
-
-
 
 /* apoios */
 
@@ -587,6 +452,8 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: calc(-50vw + 50%);
+  width: 100vw; /* Usa toda a largura da viewport */
 }
 
 .white-section .text-info {
@@ -623,6 +490,10 @@ video {
   max-width: 100%;
   object-fit: contain; /* A imagem se adapta ao tamanho da div */
 }
+
+
+
+
 
 
 
@@ -672,46 +543,32 @@ video {
 
 
 
-.text-section {
-  padding: 40px;
-
-
+.text-section p {
+  padding-top: 30px;
+  font-size: 2vh;
+  
 }
-  
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
-  
-  
+
+
 
 .text-section h3{
-  font-size: 2.5vh;
-  }
-
-
-.text-section p, li{
-  font-size: 2vh;
-  
+font-size: 2.5vh;
 }
 
 
+.image-before-text{
+  margin-top: 30px;
+ }
 
-
+ .text-section h2{
+  padding-top: 20px;
+  font-size: 3vh;
 }
 
-@media only screen and (min-width: 1780px) {
-
-.image-title {
-  font-size: 5vh;
+.section-title h2{
+  padding: 0;
 }
 
-.section-title {
-  font-size: 3.5vh;
-}
-
-p, li {
-  font-size: 2vh;
-}
 
 }
 
@@ -780,29 +637,33 @@ p, li {
 .content-container{
   width: 100%;
   padding: 40px; /* Ajusta o padding */
+  padding-bottom: 10px;
   box-sizing: border-box;
 }
 
 
-h2 {
-  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-}
 
-
-.text-section h3{
-  font-size: 2.5vh;
-  }
-  
-  
-
-.text-section p, li{
+.text-section p {
+  padding-top: 20px;
   font-size: 2vh;
   
 }
 
 
 
+.text-section h3{
+font-size: 2.5vh;
+}
 
+
+.image-before-text{
+  margin-top: 30px;
+ }
+
+ .text-section h2{
+  padding-top: 20px;
+  font-size: 3vh;
+}
 
 
 
@@ -812,58 +673,16 @@ h2 {
   grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
 }
 
-.dashboard {
-  flex-direction: row; /* Alinha os contadores horizontalmente */
-  flex-wrap: wrap; /* Permite que os contadores quebrem linha se necessário */
-  gap: 50px; /* Espaçamento moderado entre os contadores */
-  padding: 15px;
-  margin-bottom: 100px;
-}
 
-.counter h2 {
-  font-size: 28px; /* Tamanho da fonte ajustado para tablets */
-}
-
-.counter .number {
-  font-size: 42px; /* Tamanho da fonte ajustado para tablets */
-}
-
-.counter i {
-  font-size: 26px; /* Tamanho do ícone ajustado para tablets */
+.white-section .text-info p {
+  font-size: 14px; /* Ajusta o tamanho da fonte */
 }
 
 
-  /* apoios */
-  .white-section {
-    flex-direction: column; /* Alinha texto e imagem verticalmente */
-    height: auto; /* Ajusta a altura automaticamente */
-  }
-
-  .white-section .text-info {
-    width: 100%; /* Ocupa a largura total */
-    padding: 15px 0 25px 0; /* Ajusta o padding */
-    text-align: center; /* Centraliza o texto */
-  }
-
-  .white-section .text-info p {
-    font-size: 14px; /* Ajusta o tamanho da fonte */
-  }
-
-  .white-section .image-side {
-    width: 100%; /* Ocupa a largura total */
-    padding-right: 0; /* Remove o padding */
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-  }
-
-  .white-section .image-side img {
-    width: 100%; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-
-  
 }
+
+
+
 
 @media only screen and (max-width: 479px) {
 
@@ -931,6 +750,34 @@ h2 {
   }
 
 
+  .text-section {
+    margin-bottom: 0;
+  }
+
+  .text-section p{
+    padding-top: 20px;
+       font-size: 1.75vh;
+
+  }
+  
+ .image-before-text{
+  margin-top: 30px;
+ }
+
+ .text-section h2{
+  padding-top: 20px;
+  font-size: 3vh;
+}
+
+  .text-section h3{
+    font-size: 2vh;
+}
+
+.section-title{
+  padding: 0;
+}
+
+
 
 
 
@@ -941,29 +788,13 @@ h2 {
     padding: 20px; /* Ajusta o padding */
     box-sizing: border-box;
   }
-
-
-    
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
-
-
-
-  .text-section h3{
-    font-size: 2vh;
-}
-
-
-
-.text-section p, li{
-  font-size: 1.75vh;
-
-}
-
+  
+  
+    h2 {
+      font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+    }
 
   
-
   
 .gallery {
   max-width: 100%;
@@ -972,7 +803,6 @@ h2 {
     margin: 0;
   
 }
-
 
 
   /* apoios */
@@ -1004,25 +834,7 @@ h2 {
     height: auto; /* Mantém a proporção da imagem */
   }
 
-  .dashboard {
-    flex-direction: column; /* Alinha os contadores verticalmente */
-    gap: 50px; /* Espaçamento reduzido entre os contadores */
-    padding: 10px;
-    margin-bottom: 100px;
-  }
 
-  .counter h2 {
-    font-size: 24px; /* Reduz o tamanho da fonte do título */
-  }
-
-  .counter .number {
-    font-size: 36px; /* Reduz o tamanho da fonte do número */
-
-  }
-
-  .counter i {
-    font-size: 24px; /* Reduz o tamanho do ícone */
-  }
 
 
 }
