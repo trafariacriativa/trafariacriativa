@@ -646,6 +646,86 @@ h3{
   max-width: 100%; /* Garante que o iframe não exceda a largura do contêiner */
 }
 
+ /* Centralizar o conteúdo e limitar a largura a 960px */
+        .container {
+          max-width: 960px;
+          margin: 0 auto; /* Centraliza o container horizontalmente */
+          padding: 0 20px; /* Pequeno padding para evitar que o conteúdo encoste nas laterais */
+      }
+
+
+.container h3{
+    text-align: center; /* Centraliza o conteúdo do contêiner */
+        margin-bottom: 40px;
+}
+
+
+
+
+/* Container para as imagens */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.image-row img {
+  width: 100%;
+  height: auto;
+}
+
+
+ /* Container para as imagens */
+.image-col {
+  position: relative; /* Necessário para posicionar o overlay */
+  flex: 1;
+  margin: 5px;
+  max-width: 30%;
+  height: 250px;
+  overflow: hidden;
+}
+
+/* Estilo das imagens com cover */
+.image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease; /* Transição suave na imagem ao hover */
+}
+
+/* Efeito hover para zoom suave na imagem */
+.image-col:hover img {
+  transform: scale(1.1); /* Leve zoom na imagem ao passar o mouse */
+}
+
+/* Overlay que será visível ao hover */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente escuro */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transição suave do overlay */
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* Exibir o overlay ao passar o rato */
+.image-col:hover .image-overlay {
+  opacity: 1; /* Torna o overlay visível */
+}
+
+
 
 /* linha final */
 
@@ -654,6 +734,7 @@ h3{
     height: 2px; /* Espessura da linha */
     background-color: rgb(56, 56, 56); /* Cor da linha */
     width: 100%; /* Ocupa toda a largura da página */
+    margin-top: 50px;
   }
   
   
@@ -1067,6 +1148,7 @@ font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
   }
 
 
+
   /* apoios */
   .white-section {
     flex-direction: column; /* Alinha texto e imagem verticalmente */
@@ -1102,6 +1184,27 @@ font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
 
 
 
+  
+    /* Responsividade: Empilhar imagens em telas pequenas */
+    @media (max-width: 768px) {
+      .image-col {
+          max-width: 100%; /* Imagens ocupam 100% da largura em telas menores */
+          height: auto; /* Define a altura automática */
+      }
+  
+        
+      .image-row {
+        flex-direction: column;
+    }
+
+
+      .image-col img {
+          width: 100%; /* Garante que as imagens ocupem toda a largura do container */
+          height: 250px; /* Define uma altura fixa consistente */
+          object-fit: cover; /* Assegura que a imagem cubra todo o espaço */
+          object-position: center; /* Centraliza a imagem */
+      }
+  }
 
 
 @media only screen and (max-width: 479px) {
