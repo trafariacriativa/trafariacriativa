@@ -583,7 +583,7 @@ p {
 
 .overlay-section h3 {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     color: white;
     text-align: left;
 
@@ -616,7 +616,7 @@ p {
 }
 
 .column a:hover .image-wrapper::before {
-    background-color: rgba(139, 0, 0, 0.5)
+    background-color: rgba(255, 235, 205, 0.3)
 }
 
 /*imersão*/
@@ -1827,7 +1827,7 @@ text-align: center;
 
 
     .overlay-section h3 {
-        font-size: 1.75vh; /* Tamanho reduzido do título do overlay */
+        font-size: 1.5vh; /* Tamanho reduzido do título do overlay */
     }
 
     .overlay-section p {
