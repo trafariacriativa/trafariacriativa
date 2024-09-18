@@ -618,7 +618,7 @@ h1 {
 /* Layout da galeria */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 colunas de largura igual */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
   gap: 30px; /* Espaço entre os itens */
 }
 
@@ -668,28 +668,6 @@ h1 {
   box-sizing: border-box;
 }
 
-
-/* Estilo para o título */
-
-
-
-
-
-.text-section {
-  padding: 40px;
-  
-}
-
-
-.text-section p, li {
-  font-size: 2vh;
-}
-
-
-
-.text-section h3 {
-font-size: 2.5vh;
-}
 
 
 
