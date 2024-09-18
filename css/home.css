@@ -1831,6 +1831,15 @@ text-align: center;
         text-align: center;
     }
 
+
+    .language-link {
+        font-size: 16px;
+        margin-right: 20px; /* Espaçamento de 20px entre o link e o burger */
+        position: absolute;
+        right: 52px; /* Ajuste conforme necessário para alinhar corretamente */
+        padding-top: 8px;
+    }
+
     .burger {
         font-size: 28px; /* Tamanho reduzido do ícone do menu */
         position: fixed;
