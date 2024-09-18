@@ -418,6 +418,7 @@ p, li {
 .section-title {
     margin-bottom: 10px;
     padding: 100px;
+    font-size: 4vh;
 }
 
 .section-subtitle {
