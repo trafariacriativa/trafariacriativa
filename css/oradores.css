@@ -205,8 +205,6 @@ body, html {
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 3vh;
-
 }
 
 
@@ -474,13 +472,13 @@ h1 {
 }
 
 .speaker-info h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
 
 }
 
 .speaker-info p {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 /* Efeito ao passar o mouse sobre a caixa toda */
@@ -674,9 +672,7 @@ h1 {
 /* Estilo para o título */
 
 
-h2 {
-  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-}
+
 
 
 .text-section {
@@ -685,15 +681,14 @@ h2 {
 }
 
 
-.text-section p, li{
+.text-section p, li {
   font-size: 2vh;
-  
 }
 
 
 
-.text-section h3{
-font-size: 2,5vh;
+.text-section h3 {
+font-size: 2.5vh;
 }
 
 
@@ -710,7 +705,6 @@ font-size: 2,5vh;
 .speaker-info h2 {
   font-size: 28px;
   margin: 0;
-
 }
 
 .speaker-info p {
@@ -832,10 +826,6 @@ font-size: 2.5vh;
 }
 
 
-
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
 
 
 
@@ -1012,9 +1002,7 @@ font-size: 2.5vh;
   }
   
   
-    h2 {
-      font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-    }
+
 
     h3{
       font-size: 2vh;
