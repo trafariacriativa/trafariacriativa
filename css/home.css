@@ -1556,14 +1556,6 @@ p {
    }
    
 
-   
-   .language-link {
-    font-size: 16px;
-    margin-right: 15px; /* Espaçamento de 20px entre o link e o burger */
-    position: absolute;
-    padding-top: 10px;
-}
-
    .burger {
        font-size: 28px; /* Tamanho reduzido do ícone do menu */
        position: fixed;
