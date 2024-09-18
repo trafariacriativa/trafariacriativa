@@ -403,9 +403,9 @@ p, li {
 
 /* Container */
 .container {
-  width: 960px;
+  width: 80%;
   margin: 0 auto; /* Centraliza o container */
-  padding: 50px;
+  padding-top: 50px;
 }
 
 /* Estilo para o título */
@@ -417,7 +417,7 @@ h1 {
 /* Layout da galeria */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 colunas de largura igual */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
   gap: 40px; /* Espaço entre os itens */
 }
 
@@ -474,13 +474,13 @@ h1 {
 }
 
 .speaker-info h2 {
-  font-size: 3vh;
+  font-size: 32px;
   margin: 0;
 
 }
 
 .speaker-info p {
-  font-size: 2.5vh;
+  font-size: 28px;
 }
 
 /* Efeito ao passar o mouse sobre a caixa toda */
@@ -505,6 +505,7 @@ h1 {
 
 
 
+/* apoios */
 
 /* Seção principal */
 .white-section {
@@ -514,7 +515,7 @@ h1 {
   flex-direction: row; /* Alinhar itens lado a lado */
   align-items: center;
   justify-content: space-between; /* Espaço entre os elementos */
-  padding: 20px; /* Adiciona espaçamento interno */
+  padding: 0px; /* Adiciona espaçamento interno */
   gap: 20px; /* Espaço entre os itens */
 }
 
@@ -570,7 +571,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* Quebrar linha para muitos logotipos */
-  gap: 5px; /* Espaço entre as caixas dos logotipos */
+  gap: 20px; /* Espaço entre as caixas dos logotipos */
   padding: 0 20px; /* Adiciona padding lateral */
 }
 
@@ -595,7 +596,18 @@ h1 {
 
 
 
-  
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+
+
+/* Layout da galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 colunas de largura igual */
+  gap: 30px; /* Espaço entre os itens */
+}
+
+
+}
 
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
@@ -676,6 +688,18 @@ font-size: 2,5vh;
 }
 
 
+
+.speaker-info h2 {
+  font-size: 28px;
+  margin: 0;
+
+}
+
+.speaker-info p {
+  font-size: 24px;
+}
+
+
 /* ------- apoios ------- */
 
 .white-section {
@@ -689,7 +713,7 @@ font-size: 2,5vh;
   width: 100%; /* Ocupar 100% da largura no modo responsivo */
   text-align: center;
   font-size: 14px;
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 .white-section .image-side {
@@ -800,21 +824,22 @@ font-size: 2.5vh;
   
 
 .gallery {
-  grid-template-columns: repeat(2, 1fr); /* 1 coluna na galeria em telas muito pequenas */
-  gap: 25px;
+  grid-template-columns: repeat(1, 1fr); /* 1 coluna na galeria em telas muito pequenas */
+  gap: 50px;
 }
+
 
 
 /* Informações do orador */
 
 .speaker-info h2 {
-  font-size: 3vh;
+  font-size: 28px;
   margin: 0;
 
 }
 
 .speaker-info p {
-  font-size: 2vh;
+  font-size: 24px;
 }
 
 /* Efeito ao passar o mouse sobre a caixa toda */
@@ -983,20 +1008,23 @@ font-size: 2.5vh;
   
 
 
-    .speaker-info h2 {
-      font-size: 2.5vh;
- 
-    
-    }
-    
-    
-    .speaker-info p {
-      font-size: 1.75vh;
-    }
+   /* Informações do orador */
+
+.speaker-info h2 {
+  font-size: 24px;
+  margin: 0;
+
+}
+
+.speaker-info p {
+  font-size: 20px;
+}
     
 
 .gallery {
   grid-template-columns: 1fr; /* 1 coluna na galeria em telas muito pequenas */
+  gap: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 

@@ -518,7 +518,7 @@ p, li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* Quebrar linha para muitos logotipos */
-  gap: 5px; /* Espaço entre as caixas dos logotipos */
+  gap: 20px; /* Espaço entre as caixas dos logotipos */
   padding: 0 20px; /* Adiciona padding lateral */
 }
 
