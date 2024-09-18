@@ -211,8 +211,6 @@ h2 {
 p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 2.5vh;
-
 }
 
 
@@ -619,7 +617,7 @@ h1 {
 
   
 
-@media only screen and (min-width: 1200px) and (max-width: 1780px) {
+@media only screen and (min-width: 1201px) and (max-width: 1780px) {
 
 
 /* Layout da galeria */
@@ -697,7 +695,7 @@ h1 {
 }
 
 .speaker-info p {
-  font-size: 24px;
+  font-size: 120x;
 }
 
 
@@ -802,22 +800,6 @@ h1 {
 }
 
 
-
-.text-section p, li{
-  font-size: 2vh;
-  
-}
-
-
-
-.text-section h3{
-font-size: 2.5vh;
-}
-
-
-
-
-
   
 
 .gallery {
@@ -827,17 +809,15 @@ font-size: 2.5vh;
 
 
 
-/* Informações do orador */
-
 .speaker-info h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin: 0;
-
 }
 
 .speaker-info p {
-  font-size: 24px;
+  font-size: 20px;
 }
+
 
 /* Efeito ao passar o mouse sobre a caixa toda */
 .speaker:hover {
@@ -962,27 +942,6 @@ font-size: 2.5vh;
   }
 
 
-  h1 {
-    font-size: 2.75vh;
-  }
-
-
-  
-  /*
-  .text-section p, li{
-       font-size: 1.5vh;
-
-  }
-  
-
-
-  .text-section h3{
-    font-size: 2vh;
-}
-
-
-*/
-
   /* texto */
 
   .container{
@@ -997,24 +956,11 @@ font-size: 2.5vh;
       font-size: 2vh;
     }
 
-    p{
-      font-size: 1.75vh;
-    }
-  
 
 
    /* Informações do orador */
 
-.speaker-info h2 {
-  font-size: 24px;
-  margin: 0;
 
-}
-
-.speaker-info p {
-  font-size: 20px;
-}
-    
 
 .gallery {
   grid-template-columns: 1fr; /* 1 coluna na galeria em telas muito pequenas */
