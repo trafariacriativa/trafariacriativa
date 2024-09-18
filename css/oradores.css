@@ -594,7 +594,7 @@ h1 {
 
 
 
-@media only screen and (min-width: 1780px) {
+@media only screen and (min-width: 1781px) {
 
   .image-title {
     font-size: 5vh;
@@ -604,15 +604,22 @@ h1 {
     font-size: 3.5vh;
   }
   
-  p, li {
-    font-size: 2vh;
+
+  .speaker-info h2 {
+    font-size: 28px;
+    margin: 0;
+  
   }
   
+  .speaker-info p {
+    font-size: 24px;
+  }
+
   }
 
   
 
-@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+@media only screen and (min-width: 1200px) and (max-width: 1780px) {
 
 
 /* Layout da galeria */
@@ -621,6 +628,10 @@ h1 {
   grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
   gap: 30px; /* Espaço entre os itens */
 }
+
+
+
+
 
 
 }
