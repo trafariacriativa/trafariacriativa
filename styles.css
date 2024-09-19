@@ -11,7 +11,7 @@ body {
 }
 
 
-
+/* 
 .scrolling-bar {
     background-color:rgb(139, 0, 0);
     position: relative;
@@ -39,20 +39,20 @@ body {
 
 
 
-/* Ícone rotativo */
+/* Ícone rotativo 
 .rotating-icon {
     display: inline-block;
-    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
-    vertical-align: middle; /* Alinha verticalmente ao meio */
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto 
+    vertical-align: middle; /* Alinha verticalmente ao meio 
     animation: rotateBackAndForth 2s ease-in-out infinite;
 }
 
 .rotating-icon img {
-    width: 60px; /* Ajuste o tamanho do SVG conforme necessário */
+    width: 60px; /* Ajuste o tamanho do SVG conforme necessário 
     height: 60px;
 }
 
-/* Animação de rotação vai e volta */
+/* Animação de rotação vai e volta 
 @keyframes rotateBackAndForth {
     0% {
         transform: rotate(0deg);
@@ -74,7 +74,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+*/
 
 
 .btn-language {
