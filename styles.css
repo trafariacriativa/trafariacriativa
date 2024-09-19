@@ -11,6 +11,72 @@ body {
 }
 
 
+
+.scrolling-bar {
+    background-color:rgb(139, 0, 0);
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 700;
+    font-size: 44px;
+    white-space: nowrap;
+    color: white;
+}
+
+
+.scrolling-text span{
+    font-weight: 200;
+    font-size: 36px;
+}
+
+
+
+/* Ícone rotativo */
+.rotating-icon {
+    display: inline-block;
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha verticalmente ao meio */
+    animation: rotateBackAndForth 2s ease-in-out infinite;
+}
+
+.rotating-icon img {
+    width: 60px; /* Ajuste o tamanho do SVG conforme necessário */
+    height: 60px;
+}
+
+/* Animação de rotação vai e volta */
+@keyframes rotateBackAndForth {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.scrolling-bar a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .btn-language {
     border: none;
     color: white;
