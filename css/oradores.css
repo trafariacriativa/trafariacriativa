@@ -406,8 +406,11 @@ p, li {
 
 /* Estilo para o título */
 h1 {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 700;
   text-align: center;
   color: #333;
+  padding-bottom: 20px;
 }
 
 /* Layout da galeria */
