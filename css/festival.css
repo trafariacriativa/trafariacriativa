@@ -479,7 +479,7 @@ li {
 }
 
 .video-container {
-    margin-top: 200px; /* Espaçamento entre o slideshow e o vídeo */
+    margin-top: 100px; /* Espaçamento entre o slideshow e o vídeo */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -489,7 +489,7 @@ video {
     width: 100%;
     max-width: 960px; /* Largura máxima do vídeo */
     height: auto;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 
