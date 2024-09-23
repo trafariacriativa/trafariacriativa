@@ -479,7 +479,7 @@ li {
 }
 
 .video-container {
-    margin-top: 100px; /* Espaçamento entre o slideshow e o vídeo */
+    margin-top: 200px; /* Espaçamento entre o slideshow e o vídeo */
     width: 100%;
     display: flex;
     justify-content: center;
