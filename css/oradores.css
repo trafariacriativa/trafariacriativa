@@ -806,8 +806,8 @@ h1 {
   
 
 .gallery {
-  grid-template-columns: repeat(1, 1fr); /* 1 coluna na galeria em telas muito pequenas */
-  gap: 50px;
+  grid-template-columns: repeat(2, 1fr); /* 1 coluna na galeria em telas muito pequenas */
+  gap: 25px;
 }
 
 
