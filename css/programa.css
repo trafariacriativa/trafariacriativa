@@ -756,7 +756,7 @@ h3{
 
 /* Textos informativos na esquerda */
 .white-section .text-info {
-  width: 25%; /* Ocupar 40% da largura */
+  width: 10%; /* Ocupar 40% da largura */
   padding-left: 40px;
   display: flex;
   flex-direction: column;
@@ -788,7 +788,7 @@ h3{
 
 /* Seção de apoios */
 .white-section .support-logos {
-  width: 25%; /* Ocupar 30% da largura */
+  width: 40%; /* Ocupar 30% da largura */
   text-align: right;
   margin-top: 20px;
 }
@@ -812,8 +812,8 @@ h3{
 
 /* Estilo fixo para a caixa de cada logotipo */
 .white-section .logo-box {
-  width: 75px; /* Largura fixa da caixa */
-  height: 50px; /* Altura fixa da caixa */
+  width: 60px; /* Largura fixa da caixa */
+  height: 60px; /* Altura fixa da caixa */
   display: flex;
   justify-content: center;
   align-items: center;
