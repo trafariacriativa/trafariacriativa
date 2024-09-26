@@ -563,6 +563,30 @@ p, li {
 
 
 
+@media only screen and (min-width: 1780px) {
+
+ 
+
+  .image-title {
+    font-size: 5vh;
+  }
+  
+
+h2 {
+    font-size: 3vh;
+  }
+  
+h3 {
+  font-size: 2.1vh;
+}
+
+p {
+    font-size: 2vh;
+  }
+  
+  }
+
+
 
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
@@ -661,24 +685,6 @@ font-size: 2.5vh;
 
 
 
-
-
-@media only screen and (min-width: 1780px) {
-
-  .image-title {
-    font-size: 5vh;
-  }
-  
-
-h2 {
-    font-size: 3.5vh;
-  }
-  
-p {
-    font-size: 2vh;
-  }
-  
-  }
 
 
 
@@ -783,7 +789,7 @@ font-size: 2.5vh;
 /* ------- apoios ------- */
 
 .white-section {
-  flex-direction: column; /* Elementos em coluna */
+ /* flex-direction: column;  Elementos em coluna */
   align-items: center;
   width: 100%;
   box-sizing: border-box;
