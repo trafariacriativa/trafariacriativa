@@ -399,9 +399,15 @@ p, li {
     margin-bottom: 80px; /* Espaçamento entre o texto e o slideshow */
 }
 
-.section-title {
+.section-title{
+  font-size: 4vh;
   margin-top: 100px;
-    margin-bottom: 10px;
+}
+
+.section-name {
+  font-size: 2.5vh;
+  padding-bottom: 20px;
+
 }
 
 .section-subtitle {
@@ -411,6 +417,19 @@ p, li {
     font-size: 2.5vh; /* Ajuste conforme necessário */
     margin-bottom: 20px;
 }
+
+.section-note {
+  padding-top: 20px;
+  font-size: 2vh;
+}
+
+
+.section-text span {
+  padding-bottom: 20px;
+  font-size: 1.75vh;
+}
+
+
 
 .section-text {
     line-height: 2;
@@ -497,10 +516,11 @@ video {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas na galeria */
+  grid-template-columns: repeat(1, 1fr); /* 4 colunas na galeria */
   grid-gap: 10px; /* Espaço entre as imagens */
   max-width: 960px;
   margin: 0 auto; /* Centraliza a galeria na página */
+  padding-bottom: 80px;
 }
 
 .gallery-item {
@@ -779,12 +799,22 @@ video {
 }
 
 .section-title {
-  font-size: 3.5vh;
+  font-size: 5vh;
+}
+
+.section-title h3{
+  font-size: 2vh;
+}
+
+.section-name h5 {
+  font-size: 2vh;
 }
 
 p, li {
   font-size: 2vh;
 }
+
+
 
 }
 
