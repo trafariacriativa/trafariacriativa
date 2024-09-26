@@ -413,7 +413,7 @@ p, li {
   padding: 0 30px 20px 30px;
   position: relative;
   z-index: 2; /* Garante que o texto se sobrepõe à imagem */
-  background-color: rgba(139, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
+  background-color: rgba(139, 0, 0, 0.7); /* Fundo semi-transparente para o texto */
   color: white;
 }
 
