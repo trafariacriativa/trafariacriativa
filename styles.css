@@ -391,6 +391,39 @@ p {
     align-items: center;
 }
 
+
+.pdf-section {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.pdf-section h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pdf-link {
+    display: inline-block;
+    padding: 10px 0px;
+    color: rgba(18, 18, 18);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pdf-link:hover {
+    color: rgba(18, 18, 18, 0.5);
+}
+
+
+
+.insta {
+    padding-top: 50px;
+    text-align: right;
+
+}
+
+
+
 #footer {
     padding-top: 100px;
     padding-left: 150px;
@@ -399,7 +432,15 @@ p {
     position: relative;
     width: 100%;
     bottom: 50px;
+    z-index: 1;
+    
 }
+
+
+#footer * {
+    pointer-events: none; /* Garante que todos os elementos filhos também não sejam clicáveis */
+}
+
 
 .apoios {
     float: right;
@@ -409,11 +450,6 @@ p {
 
   
 
-  .insta {
-    padding-top: 50px;
-    text-align: right;
-
-}
   
   @media (min-width: 769px) and (max-width: 1366px) {
 
@@ -707,6 +743,7 @@ p {
 }
 
 
+}
 
 @media (max-width: 480px) {
 
@@ -859,4 +896,4 @@ p {
 
 }
 
-  }
+  
