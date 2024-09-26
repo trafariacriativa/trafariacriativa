@@ -464,6 +464,7 @@ p, li {
 
 
 
+
 /* apoios */
 
 /* Seção principal */
@@ -552,6 +553,7 @@ p, li {
   object-fit: contain; /* Ajusta o logotipo ao tamanho da caixa */
   transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
 }
+
 
 
 
