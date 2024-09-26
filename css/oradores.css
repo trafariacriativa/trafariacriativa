@@ -547,7 +547,7 @@ h1 {
 
 .white-section .image-side img {
   width: auto;
-  max-height: 200px; /* Limita a altura da imagem */
+  max-height: 150px; /* Limita a altura da imagem */
   object-fit: contain;
 }
 
