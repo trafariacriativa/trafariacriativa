@@ -206,7 +206,6 @@ h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
     font-size: 3vw;
-    hyphens: auto;
 
 }
 
@@ -216,7 +215,7 @@ h3 {
   font-weight: 600;
   font-style: normal;
   font-size: 2vh;
-  hyphens: auto;
+
 }
 
 p, li {
