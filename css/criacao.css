@@ -197,37 +197,29 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(245, 245, 220);
+    background-color: rgba(210, 209, 209, 0.2);
 
+}
+
+h1{
+  bottom: 0;
 }
 
 
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 5vh;
 
 }
 
-
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.75vh;
-
-}
 
 p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 1.5vh;
- 
+    font-size: 2.5vh;
 
 }
-
-
-
 
 /* navbar */
 
@@ -339,9 +331,8 @@ p, li {
   transition: color 0.3s;
 }
 
-
 .menu a:hover {
-    color: #ddd; /* Cor de destaque ao passar o mouse */
+    color: rgba(18, 18, 18, 0.3); /* Cor de destaque ao passar o mouse */
 }
 
 
@@ -376,8 +367,8 @@ p, li {
 }
 
 .image-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
     font-size: 3.5vw;
     color: white; /* Cor do texto do subtítulo */
     position: absolute;
@@ -391,68 +382,155 @@ p, li {
     transform: translateX(-50%); /* Ajusta a posição para centralizar */
     width: 960px; /* Largura máxima do título */
     text-align: left; /* Centraliza o texto */
-    padding: 0 0; /* Adiciona espaçamento lateral se necessário */
+    padding: 0 20px; /* Adiciona espaçamento lateral se necessário */
 }
-
-
-
 
 /* texto */
-
-
-.container-imersao {
-  width: 960px;
-  margin: 50px auto 0 auto; /* Centraliza o conteúdo na página */
-  display: flex;
-  position: relative;
+.content-container {
+    width: 960px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0px 0px; /* Adiciona espaçamento ao redor do conteúdo */
 }
 
 .text-section {
-  margin-top: 100px;
-  width: 60%; /* O texto ocupa 60% da largura do container */
-  padding: 0 30px 20px 30px;
-  position: relative;
-  z-index: 2; /* Garante que o texto se sobrepõe à imagem */
-  background-color: rgba(139, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
-  color: white;
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin-bottom: 80px; /* Espaçamento entre o texto e o slideshow */
 }
 
-.image-container-imersao {
-  width: 100%; /* A imagem ocupa 40% da largura do container */
-  position: relative;
+.section-title {
+  margin-top: 60px;
+    margin-bottom: 10px;
 }
 
-.image-container-imersao img {
+.section-subtitle {
+    margin-top: 75px;
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 700;
+    font-size: 2vw; /* Ajuste conforme necessário */
+    margin-bottom: 20px;
+}
+
+.section-text {
+    line-height: 2;
+}
+
+
+ul {
+  list-style-position: outside; /* Garante que o bullet fique fora do texto */
+  
+}
+
+
+
+li {
+  margin-left: 15px; /* Move o texto para a direita */
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+
+
+
+
+/* slideshow */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura ajustável conforme necessário */
+    overflow: hidden;
+}
+
+.slideshow-slide {
+    display: none; /* Inicialmente escondido */
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área da div */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-container {
+    margin-top: 100px; /* Espaçamento entre o slideshow e o vídeo */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 960px; /* Largura máxima do vídeo */
+    height: auto;
+    padding-bottom: 20px;
+}
+
+
+/* galeria */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas na galeria */
+  grid-gap: 10px; /* Espaço entre as imagens */
+  max-width: 960px;
+  margin: 0 auto; /* Centraliza a galeria na página */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o espaço */
   display: block;
-  object-fit: cover; /* Garante que a imagem cubra toda a área */
-  position: relative;
-  z-index: 1;
 }
 
-/* Sobreposição parcial do texto sobre a imagem */
-.text-section {
-  margin-right: -150px; /* Ajuste o valor para controlar quanto do texto sobrepõe a imagem */
+/* Estilos para imagens com tamanhos e disposições variadas */
+.gallery-item.wide {
+  grid-column: span 2; /* Ocupa duas colunas */
 }
 
-
-.reverse .text-section {
-  margin-left: -150px; /* Ajuste o valor para controlar quanto do texto sobrepõe a imagem */
-  margin-right: 0; /* Remove margem direita para alinhar corretamente */
+.gallery-item.tall {
+  grid-row: span 2; /* Ocupa duas linhas */
 }
 
-
-.text-section-link {
-  text-decoration: none;
-  color: inherit; /* Mantém a cor original do texto */
-  display: block; /* Faz o link se comportar como um bloco */
+.gallery-item.large {
+  grid-column: span 2; /* Ocupa duas colunas */
+  grid-row: span 2; /* Ocupa duas linhas */
 }
 
-.text-section-link:hover {
-  cursor: pointer; /* Adiciona o cursor de link ao passar o mouse */
-}
-
+/* linha final */
 
 .final-line {
   border: none;
@@ -460,6 +538,42 @@ p, li {
   margin-top: 50px; /* Espaçamento acima da linha */
   width: 100%; /* Ocupa toda a largura da página */
 }
+
+
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter h2 {
+  margin: 10px 0 0;
+  font-size: 32px;
+  color: #333;
+  padding-bottom: 16px;
+}
+
+.counter .number {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(18, 18, 18, 0.5);
+}
+
+.counter i {
+  font-size: 28px;
+  color: rgba(139, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
 
 
 
@@ -557,22 +671,6 @@ p, li {
 
 
 
-@media only screen and (min-width: 1780px) {
-
-  .image-title {
-    font-size: 5vh;
-  }
-  
-
-h2 {
-    font-size: 3.5vh;
-  }
-  
-p {
-    font-size: 2vh;
-  }
-  
-  }
 
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
@@ -612,21 +710,28 @@ p {
   /* texto */
 
 .content-container{
-  width: 960px;
+  width: 100%;
   padding: 20px; /* Ajusta o padding */
   box-sizing: border-box;
 }
 
 
-h2 {
-  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-}
-
 
 .text-section {
   padding: 40px;
-  
+
+
 }
+  
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+  
+  
+
+.text-section h3{
+  font-size: 2.5vh;
+  }
 
 
 .text-section p, li{
@@ -636,8 +741,49 @@ h2 {
 
 
 
-.text-section h3{
-font-size: 2.5vh;
+
+/* ------- apoios ------- */
+
+.white-section {
+  flex-direction: column; /* Elementos em coluna */
+  align-items: center;
+}
+
+.white-section .text-info,
+.white-section .image-side,
+.white-section .support-logos {
+  width: 100%; /* Ocupar 100% da largura no modo responsivo */
+  text-align: center;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.white-section .image-side {
+  margin-bottom: 20px; /* Espaço entre a imagem e a seção de logotipos */
+}
+
+.white-section .support-logos {
+  margin-top: 0; /* Remover margem no topo */
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1780px) {
+
+.image-title {
+  font-size: 5vh;
+}
+
+.section-title {
+  font-size: 3.5vh;
+}
+
+p, li {
+  font-size: 2vh;
 }
 
 }
@@ -704,13 +850,23 @@ font-size: 2.5vh;
   
   /* texto */
 
-.container-imersao{
+.content-container{
   width: 100%;
   padding: 40px; /* Ajusta o padding */
   box-sizing: border-box;
 }
 
 
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
+
+
+.text-section h3{
+  font-size: 2.5vh;
+  }
+  
+  
 
 .text-section p, li{
   font-size: 2vh;
@@ -719,25 +875,86 @@ font-size: 2.5vh;
 
 
 
-.text-section h3{
-font-size: 2.5vh;
-}
 
 
-
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
-
-}
 
 
   
 
-.white-section .text-info p {
-  font-size: 14px; /* Ajusta o tamanho da fonte */
+.gallery {
+  grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
 }
 
+.dashboard {
+  flex-direction: row; /* Alinha os contadores horizontalmente */
+  flex-wrap: wrap; /* Permite que os contadores quebrem linha se necessário */
+  gap: 50px; /* Espaçamento moderado entre os contadores */
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+.counter h2 {
+  font-size: 28px; /* Tamanho da fonte ajustado para tablets */
+}
+
+.counter .number {
+  font-size: 42px; /* Tamanho da fonte ajustado para tablets */
+}
+
+.counter i {
+  font-size: 26px; /* Tamanho do ícone ajustado para tablets */
+}
+
+
+  
+/* ------- apoios ------- */
+
+.white-section {
+  flex-direction: column; /* Elementos em coluna */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.white-section .text-info,
+.white-section .image-side,
+.white-section .support-logos {
+  width: 100%; /* Ocupar 100% da largura no modo responsivo */
+  text-align: center;
+  font-size: 12px;
+  padding: 0 20px;
+  box-sizing: border-box; /* Garante que padding esteja dentro da largura */
+
+}
+
+
+.white-section .image-side {
+  max-width: 100%; /* Limita a largura máxima ao viewport */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center; /* Centraliza a imagem verticalmente */
+  margin-bottom: 20px; /* Espaço entre a imagem e a seção de logotipos */
+  overflow: hidden; /* Evita que o conteúdo exceda o container */
+  height: auto; /* A altura será definida pelo conteúdo */
+  box-sizing: border-box;
+}
+
+.white-section .image-side img {
+  width: auto; /* A largura será ajustada automaticamente */
+  max-width: 100%; /* Limita a largura ao container */
+  max-height: 100%; /* Evita que a altura ultrapasse o container */
+  object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
+}
+
+.white-section .support-logos {
+  margin-top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+  
+}
 
 @media only screen and (max-width: 479px) {
 
@@ -805,17 +1022,23 @@ font-size: 2.5vh;
   }
 
 
-  .text-section{
-    padding: 20px;
+
+
+
+  /* texto */
+
+  .content-container{
     width: 100%;
+    padding: 20px; /* Ajusta o padding */
+    box-sizing: border-box;
   }
 
 
-  .text-section p, li{
-       font-size: 1.75vh;
-
+    
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
   }
-  
+
 
 
   .text-section h3{
@@ -824,32 +1047,36 @@ font-size: 2.5vh;
 
 
 
+.text-section p, li{
+  font-size: 1.75vh;
 
-  /* texto */
+}
 
-  .container-imersao{
-    width: 100%;
-    padding: 20px; /* Ajusta o padding */
-    box-sizing: border-box;
-  }
-  
-  
-    h2 {
-      font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-    }
 
   
+
+  
+.gallery {
+  max-width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+    grid-gap: 5px; /* Reduz o espaço entre as imagens */
+    margin: 0;
+  
+}
+
 
 
   /* apoios */
   .white-section {
+    box-sizing: border-box;
+    width: 100%;
     flex-direction: column; /* Alinha texto e imagem verticalmente */
     height: auto; /* Ajusta a altura automaticamente */
   }
 
   .white-section .text-info {
     width: 100%; /* Ocupa a largura total */
-    padding: 13px 0 25px 0; /* Ajusta o padding */
+    padding: 15px 0 25px 0; /* Ajusta o padding */
     text-align: center; /* Centraliza o texto */
   }
 
@@ -858,6 +1085,7 @@ font-size: 2.5vh;
   }
 
   .white-section .image-side {
+    box-sizing: border-box;
     width: 100%; /* Ocupa a largura total */
     padding-right: 0; /* Remove o padding */
     display: flex;
@@ -870,7 +1098,36 @@ font-size: 2.5vh;
     height: auto; /* Mantém a proporção da imagem */
   }
 
+  
+.white-section .support-logos {
+  margin-top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+
+
+ /* dashboard */
+
+  .dashboard {
+    flex-direction: column; /* Alinha os contadores verticalmente */
+    gap: 50px; /* Espaçamento reduzido entre os contadores */
+    padding: 10px;
+    margin-bottom: 100px;
+  }
+
+  .counter h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .counter .number {
+    font-size: 36px; /* Reduz o tamanho da fonte do número */
+
+  }
+
+  .counter i {
+    font-size: 24px; /* Reduz o tamanho do ícone */
+  }
 
 
 }
