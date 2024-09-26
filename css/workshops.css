@@ -214,14 +214,14 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 2vh;
+  font-size: 2vw;
 
 }
 
 p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 2vh;
+    font-size: 2vw;
  
 
 }
@@ -441,6 +441,18 @@ p, li {
   margin-left: -150px; /* Ajuste o valor para controlar quanto do texto sobrepõe a imagem */
   margin-right: 0; /* Remove margem direita para alinhar corretamente */
 }
+
+
+.text-section-link {
+  text-decoration: none;
+  color: inherit; /* Mantém a cor original do texto */
+  display: block; /* Faz o link se comportar como um bloco */
+}
+
+.text-section-link:hover {
+  cursor: pointer; /* Adiciona o cursor de link ao passar o mouse */
+}
+
 
 .final-line {
   border: none;
