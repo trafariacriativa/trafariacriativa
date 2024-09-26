@@ -400,12 +400,12 @@ p, li {
 }
 
 .section-title{
-  font-size: 4vh;
+  font-size: 5vh;
   margin-top: 100px;
 }
 
 .section-name {
-  font-size: 2.5vh;
+  font-size: 3vh;
   padding-bottom: 20px;
 
 }
@@ -420,7 +420,7 @@ p, li {
 
 .section-note {
   padding-top: 20px;
-  font-size: 2vh;
+  font-size: 2.25vh;
 }
 
 
