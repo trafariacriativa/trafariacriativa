@@ -197,27 +197,37 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(245, 245, 220);
 
 }
 
-h1{
-  bottom: 0;
-}
 
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 5vh;
-    
+    font-size: 5vw;
+    hyphens: auto;
+
 }
 
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.75vh;
+  hyphens: auto;
+}
 
 p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 2.5vh;
-    
+    font-size: 2vw;
+ 
+
 }
+
+
 
 
 /* navbar */
@@ -274,7 +284,6 @@ p, li {
 
 
 
-
 .logo:hover {
   font-size: calc(1.5rem + 3px); /* Aumenta em 3px ao passar o mouse */
   text-decoration: none; /* Mantém sem sublinhado */
@@ -322,7 +331,6 @@ p, li {
     display: flex; /* Exibe o menu ao clicar no burger */
 }
 
-
 .menu a {
   color: rgb(56, 56, 56);
   text-decoration: none;
@@ -334,7 +342,7 @@ p, li {
 
 
 .menu a:hover {
-    color: rgba(18, 18, 18, 0.3); /* Cor de destaque ao passar o mouse */
+    color: #ddd; /* Cor de destaque ao passar o mouse */
 }
 
 
@@ -369,8 +377,8 @@ p, li {
 }
 
 .image-title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     font-size: 3.5vw;
     color: white; /* Cor do texto do subtítulo */
     position: absolute;
@@ -384,107 +392,156 @@ p, li {
     transform: translateX(-50%); /* Ajusta a posição para centralizar */
     width: 960px; /* Largura máxima do título */
     text-align: left; /* Centraliza o texto */
-    padding: 0 20px; /* Adiciona espaçamento lateral se necessário */
+    padding: 0 0; /* Adiciona espaçamento lateral se necessário */
 }
+
+
+
 
 /* texto */
-.content-container {
-    width: 960px;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0px 0px; /* Adiciona espaçamento ao redor do conteúdo */
-}
 
 
-.image-before-text {
-  margin-top: 50px; /* Espaçamento abaixo da imagem */
-}
-
-.image-before-text img {
-  width: 100%; /* Ajuste a largura da imagem conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
-  max-width: 100%; /* Garante que a imagem não exceda a largura da div */
+.container-imersao {
+  width: 960px;
+  margin: 50px auto 0 auto; /* Centraliza o conteúdo na página */
+  display: flex;
+  position: relative;
 }
 
 .text-section {
-    font-family: "IBM Plex Mono", monospace, serif;
-    font-weight: 400;
-    font-size: 2.5vh;
-    margin-bottom: 40px; /* Espaçamento entre o texto e o slideshow */
+  margin-top: 100px;
+  width: 60%; /* O texto ocupa 60% da largura do container */
+  padding: 0 30px 20px 30px;
+  position: relative;
+  z-index: 2; /* Garante que o texto se sobrepõe à imagem */
+  background-color: rgba(139, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
+  color: white;
 }
 
-.section-title {
-  margin-bottom: 10px;
-  font-size: vh;
+.image-container-imersao {
+  width: 100%; /* A imagem ocupa 40% da largura do container */
+  position: relative;
+}
+
+.image-container-imersao img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Garante que a imagem cubra toda a área */
+  position: relative;
+  z-index: 1;
+}
+
+/* Sobreposição parcial do texto sobre a imagem */
+.text-section {
+  margin-right: -150px; /* Ajuste o valor para controlar quanto do texto sobrepõe a imagem */
 }
 
 
-.section-subtitle {
-    margin-top: 50px;
-    font-family: "IBM Plex Mono", monospace, serif;
-    font-weight: 700;
-    font-size: 2.5vh; /* Ajuste conforme necessário */
-    margin-bottom: 20px;
+.reverse .text-section {
+  margin-left: -150px; /* Ajuste o valor para controlar quanto do texto sobrepõe a imagem */
+  margin-right: 0; /* Remove margem direita para alinhar corretamente */
 }
-
-.section-text {
-    line-height: 2;
-}
-
-
 
 .final-line {
-    border: none;
-    height: 2px; /* Espessura da linha */
-    background-color: rgb(56, 56, 56); /* Cor da linha */
-    margin-top: 50px; /* Espaçamento acima da linha */
-    width: 100%; /* Ocupa toda a largura da página */
+  border: none;
+  height: 2px; /* Espessura da linha */
+  margin-top: 50px; /* Espaçamento acima da linha */
+  width: 100%; /* Ocupa toda a largura da página */
 }
+
+
+
 
 /* apoios */
 
+/* Seção principal */
 .white-section {
-    width: 100%;
-    height: 250px;
-    background-color: #FFF; /* Fundo branco */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #FFF; /* Fundo branco */
+  display: flex;
+  flex-direction: row; /* Alinhar itens lado a lado */
+  align-items: center;
+  justify-content: space-between; /* Espaço entre os elementos */
+  padding: 20px; /* Adiciona espaçamento interno */
+  gap: 20px; /* Espaço entre os itens */
 }
 
+/* Textos informativos na esquerda */
 .white-section .text-info {
-    width: 40%;
-    flex: 1;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left; /* Alinha o texto à esquerda */
-    color: rgb(56, 56, 56); /* Texto em preto */
+  width: 10%; /* Ocupar 40% da largura */
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Alinha o texto à esquerda */
+  color: rgb(56, 56, 56); /* Texto em preto */
 }
 
 .white-section .text-info p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    color: rgb(56, 56, 56);
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: rgb(56, 56, 56);
 }
 
+/* Ajustes na image-side */
 .white-section .image-side {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    padding-right: 40px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 50%; /* Ocupar 30% da largura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .white-section .image-side img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain; /* A imagem se adapta ao tamanho da div */
+  width: auto;
+  max-height: 200px; /* Limita a altura da imagem */
+  object-fit: contain;
 }
+
+/* Seção de apoios */
+.white-section .support-logos {
+  width: 40%; /* Ocupar 30% da largura */
+  text-align: right;
+  margin-top: 20px;
+}
+
+.white-section .support-logos h3 {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(56, 56, 56);
+}
+
+/* Container para os logotipos */
+.white-section .logos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Quebrar linha para muitos logotipos */
+  gap: 20px; /* Espaço entre as caixas dos logotipos */
+  padding: 0 20px; /* Adiciona padding lateral */
+}
+
+/* Estilo fixo para a caixa de cada logotipo */
+.white-section .logo-box {
+  width: 60px; /* Largura fixa da caixa */
+  height: 60px; /* Altura fixa da caixa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Fundo claro para padronizar os logotipos */
+  overflow: hidden; /* Garante que o conteúdo se encaixe na caixa */
+}
+
+.white-section .logos-container img {
+  max-height: 100%; /* A imagem não pode ultrapassar a altura da caixa */
+  max-width: 100%; /* A imagem não pode ultrapassar a largura da caixa */
+  object-fit: contain; /* Ajusta o logotipo ao tamanho da caixa */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
 
 
 
@@ -496,9 +553,8 @@ p, li {
   }
   
 
-
 h2 {
-    font-size: 3vh;
+    font-size: 3.5vh;
   }
   
 p {
@@ -506,9 +562,6 @@ p {
   }
   
   }
-
-
-
 
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
@@ -548,15 +601,24 @@ p {
   /* texto */
 
 .content-container{
-  width: 100%;
+  width: 960px;
   padding: 20px; /* Ajusta o padding */
   box-sizing: border-box;
 }
 
 
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
 
-.text-section p {
-  padding-top: 30px;
+
+.text-section {
+  padding: 40px;
+  
+}
+
+
+.text-section p, li{
   font-size: 2vh;
   
 }
@@ -566,19 +628,6 @@ p {
 .text-section h3{
 font-size: 2.5vh;
 }
-
-
-.image-before-text{
-  margin-top: 30px;
- }
-
- .text-section h2{
-  padding-top: 20px;
-  font-size: 3vh;
-}
-
-
-
 
 }
 
@@ -644,17 +693,15 @@ font-size: 2.5vh;
   
   /* texto */
 
-.content-container{
+.container-imersao{
   width: 100%;
   padding: 40px; /* Ajusta o padding */
-  padding-bottom: 10px;
   box-sizing: border-box;
 }
 
 
 
-.text-section p {
-  padding-top: 20px;
+.text-section p, li{
   font-size: 2vh;
   
 }
@@ -666,32 +713,19 @@ font-size: 2.5vh;
 }
 
 
-.image-before-text{
-  margin-top: 30px;
- }
 
- .text-section h2{
-  padding-top: 20px;
-  font-size: 3vh;
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
 }
-
 
 
   
 
-.gallery {
-  grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
-}
-
-
 .white-section .text-info p {
   font-size: 14px; /* Ajusta o tamanho da fonte */
 }
-
-
-}
-
-
 
 
 @media only screen and (max-width: 479px) {
@@ -760,24 +794,18 @@ font-size: 2.5vh;
   }
 
 
-  .text-section {
-    margin-bottom: 0;
+  .text-section{
+    padding: 20px;
+    width: 100%;
   }
 
-  .text-section p{
-    padding-top: 20px;
+
+  .text-section p, li{
        font-size: 1.75vh;
 
   }
   
- .image-before-text{
-  margin-top: 30px;
- }
 
- .text-section h2{
-  padding-top: 20px;
-  font-size: 3vh;
-}
 
   .text-section h3{
     font-size: 2vh;
@@ -788,7 +816,7 @@ font-size: 2.5vh;
 
   /* texto */
 
-  .content-container{
+  .container-imersao{
     width: 100%;
     padding: 20px; /* Ajusta o padding */
     box-sizing: border-box;
@@ -800,14 +828,6 @@ font-size: 2.5vh;
     }
 
   
-  
-.gallery {
-  max-width: 100%;
-    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
-    grid-gap: 5px; /* Reduz o espaço entre as imagens */
-    margin: 0;
-  
-}
 
 
   /* apoios */
@@ -818,7 +838,7 @@ font-size: 2.5vh;
 
   .white-section .text-info {
     width: 100%; /* Ocupa a largura total */
-    padding: 15px 0 25px 0; /* Ajusta o padding */
+    padding: 13px 0 25px 0; /* Ajusta o padding */
     text-align: center; /* Centraliza o texto */
   }
 
