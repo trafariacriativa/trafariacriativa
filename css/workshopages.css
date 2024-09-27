@@ -594,6 +594,25 @@ video {
 }
 
 
+.custom-button {
+  background-color: rgba(139, 0, 0, 0.8); /* Cor de fundo */
+  border: none;              /* Remove borda */
+  color: white;              /* Cor do texto */
+  padding: 15px 32px;        /* Espaçamento interno */
+  text-align: center;        /* Alinhamento do texto */
+  text-decoration: none;     /* Remove sublinhado */
+  display: inline-block;     /* Permite ajustar o tamanho */
+  font-size: 18px;           /* Tamanho da fonte */
+  margin: 30px 2px;          /* Espaçamento externo */
+  cursor: pointer;           /* Muda o cursor para "mão" ao passar o mouse */
+  border-radius: 8px;        /* Arredonda os cantos */
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-button:hover {
+  background-color: rgba(139, 0, 0, 0.5); /* Cor ao passar o mouse */
+  color: black;
+}
 
 
 
