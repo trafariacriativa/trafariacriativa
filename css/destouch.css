@@ -409,6 +409,20 @@ p, li {
 
 }
 
+
+
+.section-name a{
+  text-decoration: none;
+  background-color: rgb(139, 0, 0);
+  color: white;
+}
+
+
+.section-name a:hover{
+  text-decoration: none;
+  background-color: rgb(139, 0, 0, 0.5);
+}
+
 .section-subtitle {
     margin-top: 75px;
     font-family: "IBM Plex Mono", monospace, serif;
