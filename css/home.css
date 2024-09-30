@@ -555,14 +555,14 @@ p {
     background-color: #ffffff;
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .content-section h2 {
     font-size: 3.5vh;
     color: rgb(56, 56, 56);
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .columns {
@@ -971,8 +971,8 @@ p {
 .content-section h2 {
     font-size: 3.5vh;
     color: rgb(56, 56, 56);
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -1413,10 +1413,12 @@ p {
 
 .content-section {
     margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .content-section h2 {
     font-size: 3vh; /* Tamanho reduzido do título das notícias */
+
 }
 
 .columns {
@@ -1684,12 +1686,14 @@ text-align: center;
        /* notícias */
        .content-section {
            height: 230px; /* Altura reduzida da seção de notícias */
-           padding: 20px 0;
-           margin-bottom: 50px;
+           padding-bottom: 20px 0;
+           margin-bottom: 70px;
        }
    
        .content-section h2 {
            font-size: 3vh; /* Tamanho reduzido do título das notícias */
+           margin-top: 10px;
+           margin-bottom: 30px;
                }
    
        .columns {
@@ -1957,11 +1961,14 @@ text-align: center;
     /* notícias */
     .content-section {
         height: 260px; /* Altura reduzida da seção de notícias */
-        padding: 20px 0;
+        padding: 15px 0;
+        margin-bottom: 25px;
     }
 
     .content-section h2 {
         font-size: 20px; /* Tamanho reduzido do título das notícias */
+        margin-bottom: 25px;
+        margin-top: 10px;
     }
 
     .columns {
