@@ -1,232 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/favtrafaria.png" type="image/png">
-    <link rel="stylesheet" href="https://use.typekit.net/dre7fig.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/images/SVG/favicon.svg" type="image/svg">
+    <title>Periphera | Machina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
 
-
-    <title>Residência Arte + Tecnologia da Trafaria</title>
 
 </head>
-
 <body>
 
+    
+        <!-- barra de navegação -->
 
-
-
-    <div id="header">
-
-
-           <div class="scrolling-bar">
-            
-               <a href="https://trafariacriativa.art/periphera.html">
-                <div class="scrolling-text">
-                    <div class="rotating-icon">
-                        <img src="images/SVG/engrena.svg" alt="Icone Rotativo">
-                    </div>
-                    Periphera | <span>Festival de Arte e Tecnologia da Trafaria</span>
+        <div class="navbar">
+            <div class="logo">
+                <!-- Ícone SVG rotativo -->
+                <div class="rotating-icon">
+                    <img src="images/engrena.svg" alt="Icone Rotativo">
                 </div>
-            </a>
+                Periphera | Machina
+            </div>
+            <div class="countdown-wrapper">
+                <div class="countdown" id="countdown"></div>
+            </div>
 
+            <div class="language-link">
+                <a href="periphera_en.html" target="_blank">EN</a>
+            </div>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
         </div>
-         
-            
         
-        <img class="image" src="images/SVG/circulos.svg" alt="">
+          <!--  
+        <div class="navbar">
+            <div class="logo">Periphera | Machina</div>
+            <div class="countdown-wrapper">
+                <div class="countdown" id="countdown"></div>
+            </div>
+            <div class="burger" onclick="toggleMenu()">☰</div>
+        </div>-->
 
-        <button class="btn-language" onclick="window.location.href='page_en.html'">EN</button>
+            <!-- menu -->
+
+            <div class="menu">
+                <a href="/periphera/festival.html">FESTIVAL</a>
+                <a href="/periphera/somos.html">QUEM SOMOS</a>
+                <a href="/periphera/programa.html">PROGRAMA</a>
+                <a href="/periphera/exposicao.html">EXPOSIÇÃO</a>
+                <a href="/periphera/oradores.html">PARTICIPANTES</a>
+                <a href="/periphera/oficinas.html">WORKSHOPS</a>
+            </div>
+            
+
+
+        <a href="/periphera/programa.html" class="box-link">
+
+
+
+    <div class="box">
+        <!-- Conteúdo da caixa vai aqui -->
+        <div class="box-content">
+            <div class="box-title">PROGRAMA</div>
+            <div class="box-subtitle">2024</div>
+            <div class="box-date">8 A 10 DE NOVEMBRO</div>
+        </div>
+
+         <!-- Call to Action Button 
+        <a href="seu-link-aqui.html" class="cta-button">INSCREVA-SE</a>-->
 
     </div>
 
-      
+            <!-- slider -->
 
-        <div class="image-container">
-
-            <img class="image-grade" src="images/SVG/grade.svg" alt=""></div>
-            <img class="image-circle-gray" src="images/SVG/circulos_cinzentos.svg" alt=""></div>
-            <img class="image-mais2" src="images/SVG/mais2.svg" alt=""></div>
-            <img class="image-m-circle" src="images/SVG/meio_circulo.svg" alt=""></div>
-            <img class="image-point1" src="images/SVG/pontas1.svg" alt=""></div>
-            <img class="image-point2" src="images/SVG/pontas2.svg" alt=""></div>
-    
+    <div class="slider">
+        <div class="title-container">
+            <a href="/periphera/festival.html">
+            <div class="title">Periphera</div>
+            <div class="subtitle">Festival de Arte e Tecnologia da Trafaria</div>
+            </a>
         </div>
-    
-
-       
-
-  
-
-
-    <div id="main">
-
-
-
-
-        <div class="program">
-
-            <div class="date">
-
-                <h2>7 <span>a</span> 21</h2>
-
-                <h5>outubro</h5>
-
-                <h3 class="special">2024</h3>
-
-            </div>
-
-
-            <div class="local">
-
-
-                <HR></HR>
-
-                <h6>Presídio da Trafaria<br> e espaços adjacentes</h6>
-
-                <HR></HR>
-
-
-
-            </div>
-
+        <div class="slide active" style="background-image: url('images/talks.jpg');"></div>
+        <div class="slide" style="background-image: url('images/showcase.jpg');"></div>
+        <div class="overlay"></div>
+        <div class="indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
         </div>
+    </div>
 
+        <!-- notícias -->
 
-
-
-        
-        <div class="title">
-
-
-            <h3>RESIDÊNCIA</h3>
-
-            <h1>ART<span class="span-e">E</span></h1>
-
-            <div class="img-tecno">
-                <div style="display:flex; align-items: center;">
-                    <img class="img-mais" src="images/SVG/mais1.svg" alt="">
+    <div class="content-section">
+        <h2>Eventos § Notícias</h2>
+        <div class="columns">
+            <div class="column">
+                <a href="https://info.execed.fct.unl.pt/bridge-talks-art-science-and-technology" target="_blank">
+                <div class="image-wrapper">
+                    <img src="images/Bridge-Talks.webp" alt="Bridge-Talks">
+                    <div class="overlay-section">
+                        <h3>Bridge Talk @ FCT NOVA</h3>
+                        <p><!--Arte e Tecnologia--></p>
+                    </div>
                 </div>
-                    
-                <div class="tecno">
-                    <h4>TECNOLOGIA</h4>
-                    <h4 class="special">DA TRAFARIA</h4>
-                </div>
+                </a>
             </div>
-        
+            <div class="column">
+                <a href="/periphera/oficinas.html" target="_blank">
+                <div class="image-wrapper">
+                    <img src="images/trafaria_artedigital.jpg" alt="Trafaria">
+                    <div class="overlay-section">
+                        <h3>Workshops</h3>
+                        <p></p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://trafariacriativa.art/" target="_blank">
+                <div class="image-wrapper">
+                    <img src="images/residencia.jpg" alt="Residência Artística">
+                    <div class="overlay-section">
+                        <h3>Residências artísticas</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+
+
+            <!-- imersão -->
+
+<div class="split-section">
+    <div class="left-side">
+        <a href="periphera/exposicao.html">
+            <h2>Exposição</h2>
+        </a>
+        <p>Exposição dos resultados da residência e dos artistas convidados<br>
+
+            <br>Inspira-te,
+            <br>Comunica,
+            <br>Cria,
+            <br>Participa.
+        </p>
+
+    </div>
+    <div class="right-side">
+        <img src="images/showcase.jpg" alt="Descrição da imagem">
+    </div>
+</div>
+
+        <!-- talks -->
+
+<div class="split-section-yellow">
+    <div class="image-side">
+        <img src="images/talks.jpg" alt="Descrição da imagem">
+    </div>
+    <div class="text-side">
+        <a href="periphera/talks.html">
+            <h2>Talks</h2>
+        </a>
+        <p>Conversas e painéis com artistas, curadores, empresas  e associações.</p>
+    </div>
+</div>
+
+
+        <!-- residencias -->
+
+
+<div class="yellow-section-link">
+           <div class="yellow-content">
+            <div class="text-side-yellow">
+                <a href="https://trafariacriativa.art/" target="_blank">
+                <h3>Residências</h3>
+            </a>
+                <p>Residências artísticas inseridas no programa do Festival de Arte Digital da Trafaria 2024</p>
+            </div>
+            <div class="image-side">
+                <img src="images/pontas1.svg" alt="Descrição da imagem">
+            </div>
         </div>
 
+</div>
 
-        <div class="text">
+         <!-- apoios -->
+          
+<div class="white-section">
+    <div class="text-info">
+        <p></p>
+        <p></p>
+    </div>
 
-            <div class="text-title">
+    <div class="image-side">
+        <img src="/images/logotipos/logotipos.png" alt="Apoios principais">
+    </div>
 
-                <h4>Residências artísticas inseridas no programa do Festival de Arte Digital da Trafaria 2024</h4>
-
+    <!-- Título e logotipos dentro da mesma div -->
+    <div class="support-logos">
+        <h3>Partners</h3>
+        <div class="logos-container">
+            <div class="logo-box">
+                <img src="/images/logotipos/apd.jpeg" alt="Associação Portuguesa de Designers">
             </div>
-
-            <div class="text-paragraph">
-
-            <p>Nesta residência procuramos juntar o que parece dividido, combinando experiências de arte e tecnologia, de
-                modo a refletir sobre os processos de concepção, encontrar métodos de trabalho, ter impacto local e
-                visibilidade global. A história da arte também é uma história de tecnologias e essas tecnologias permitem
-                novas manifestações artísticas. Pretendemos explorar o diálogo entre Arte e Tecnologia, promovendo a criação
-                e desenvolvimento de propostas artísticas diferenciadas que problematizam e explorem a relação entre a
-                sociedade, o indivíduo, a arte e a tecnologia.</p>
-            <p>Os participantes devem procurar colaborações internas e externas, indo além dos seus interesses e
-                experiência anterior, identificando temas locais importantes, que serão naturalmente relevantes em outras
-                geografias. Enquanto algumas criações tecnológicas têm aplicações práticas imediatas, a arte pode
-                transcender
-                essa necessidade. A arte pode provocar surpresa, reflexão e abrir novas perspetivas.</p>
-
-            <h4>Residência</h4>
-
-            <p>Convidam-se recém-licenciados e mestres, doutorandos e outros estudantes de arte, estudos artísticos, media
-                digitais, design, engenharia informática, eletrotécnica, mecânica, ou áreas afins, para participar nesta
-                residência. Podem também candidatar-se participantes com outras formações, desde que tenham experiência
-                artística e/ou tecnológica relevante, por exemplo em performance, computação física, sensores,
-                microprocessadores, imagem, áudio e vídeo.</p>
-            <p>Oito participantes serão selecionados e receberão uma bolsa de 1000€ para o desenvolvimento e produção de
-                uma proposta artística com componentes tecnológicos. Prevê-se ainda a disponibilização adicional de
-                equipamento para a fase de desenvolvimento e de exposição.</p>
-            <p>A residência terá lugar na Trafaria, incluindo espaços de trabalho e espaço para exposição e decorre de 7 a
-                21 de Outubro de 2024.</p>
-            <p>O trabalho será desenvolvido em regime diurno, mas com flexibilidade, por exemplo para aulas e outros
-                compromissos académicos. Prevê-se a realização de atividades pontuais, incluindo workshops ou cursos curtos
-                durante a realização da residência.</p>
-            </p>
-
-            <h4>Apresentação</h4>
-            <p>Os participantes devem mostrar os resultados, processos ou protótipos numa apresentação/exposição a realizar
-                no final da residência no <a href="https://trafariacriativa.art/periphera.html">Festival de Arte e Tecnologia da Trafaria</a>, de 8 a 10 de novembro de 2024.</p>
-
-            <h4>Candidaturas</h4>
-            <p>As candidaturas devem ser enviadas por email para <strong>trafariacriativa@gmail.com</strong> e incluir <span>Portfólio</span>, CV resumido e carta
-                de motivação, até 5 de setembro. Adicionalmente, as candidaturas podem conter uma proposta concreta de
-                projeto em desenvolvimento ou a desenvolver. As propostas não devem apenas usar tecnologia, mas também
-                refletir sobre seu impacto na sociedade e na cultura, especialmente na Trafaria.
-
+            <div class="logo-box">
+                <img src="/images/logotipos/E2T.png" alt="E2Tech">
             </div>
-
-
-        </div>
-
-
-
-        <div class="dates-information">
-
-            <div class="dates">
-
-                <h6>Até 5 de setembro</h6>
-                <p>Submissão de propostas</p>
-                <h6>23 de setembro</h6>
-                <p>Comunicação dos resultados</p>
-                <h6>7 a 21 de outubro</h6>
-                <p>Residência no Presídio da Trafaria e espaços adjacentes</p>
-                <h6>8, 9 e 10 de novembro</h6>
-                <p>Apresentação pública no Festival de Arte Digital da Trafaria</p>
-
+            <div class="logo-box">
+                <img src="/images/logotipos/eidd.jpeg" alt="Design 4 All">
             </div>
-
-    
-            <div class="information">
-
-                <h6>Para mais informações:</h6>
-                <p><a href="mailto:trafariacriativa@gmail.com" class="email-link">trafariacriativa@gmail.com</a></p>
-
-
-
-                <div class="pdf-section">
-                    <h4><a href="images/Regulamento.pdf" target="_blank" class="pdf-link">Regulamento</h4></a>
-                </div>
-
-
-
-                <div class="insta">
-                    <p><a href="https://www.instagram.com/trafariacriativa/">
-                        <img src="images/insta.png" alt="" width="50px" height="50px"></p>
-                </div>
-
-
+            <div class="logo-box">
+                <img src="/images/logotipos/MadaliaLogoBlack.png" alt="Madalia">
+            </div>
+            <div class="logo-box">
+                <img src="/images/logotipos/novalincs.png" alt="Novalincs">
+            </div>
+            <div class="logo-box">
+                <img src="/images/logotipos/exec.png" alt="Nova Executive Education">
+            </div>
+            <div class="logo-box">
+                <img src="/images/logotipos/vicarte.png" alt="Vicarte">
             </div>
 
         </div>
+    </div>
+</div>
 
-
-            <div id="footer">
-                <img class="apoios" src="images/logotipos.png" alt="Apoios">
-            </div>
-
-
-
+   
+        <script src="js/contador.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/slideshow.js"></script>
 </body>
-
-
 </html>
