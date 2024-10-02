@@ -515,7 +515,7 @@ h1 {
   flex-direction: row; /* Alinhar itens lado a lado */
   align-items: center;
   justify-content: space-between; /* Espaço entre os elementos */
-  padding: 0px; /* Adiciona espaçamento interno */
+  padding: 20px; /* Adiciona espaçamento interno */
   gap: 20px; /* Espaço entre os itens */
 }
 
