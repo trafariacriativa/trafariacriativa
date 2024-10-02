@@ -92,36 +92,6 @@
   
   
 
-  
-  @media only screen and (min-width: 961px) and (max-width: 1200px) {
-
-
-
-
-        .white-section {
-            flex-direction: column; /* Elementos em coluna */
-            align-items: center;
-        }
-        
-        .white-section .text-info,
-        .white-section .image-side,
-        .white-section .support-logos {
-            width: 100%; /* Ocupar 100% da largura no modo responsivo */
-            text-align: center;
-            font-size: 14px;
-            padding: 0 20px;
-        }
-        
-        .white-section .image-side {
-            margin-bottom: 20px; /* Espaço entre a imagem e a seção de logotipos */
-        }
-        
-        .white-section .support-logos {
-            margin-top: 0; /* Remover margem no topo */
-        }
-        
-
-  }
 
 
 
@@ -129,35 +99,13 @@
 
 
 
-.white-section {
-    flex-direction: column; /* Elementos em coluna */
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
+
+  
+  .white-section .logo-box {
+    width: 60px; /* Largura fixa da caixa */
+    height: 60px; /* Altura fixa da caixa */
   }
-  
-  .white-section .text-info,
-  .white-section .image-side,
-  .white-section .support-logos {
-    width: 100%; /* Ocupar 100% da largura no modo responsivo */
-    text-align: center;
-    font-size: 12px;
-    padding: 0 20px;
-    box-sizing: border-box; /* Garante que padding esteja dentro da largura */
-  
-  }
-  
-  
-  .white-section .image-side {
-    max-width: 100%; /* Limita a largura máxima ao viewport */
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-    margin-bottom: 20px; /* Espaço entre a imagem e a seção de logotipos */
-    overflow: hidden; /* Evita que o conteúdo exceda o container */
-    height: auto; /* A altura será definida pelo conteúdo */
-    box-sizing: border-box;
-  }
+
   
   .white-section .image-side img {
     width: auto; /* A largura será ajustada automaticamente */
@@ -166,11 +114,6 @@
     object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
   }
   
-  .white-section .support-logos {
-    margin-top: 0;
-    width: 100%;
-    box-sizing: border-box;
-  }
   
 
   }
@@ -181,43 +124,20 @@
 
 
 
-  /* apoios */
-  .white-section {
-    box-sizing: border-box;
-    width: 100%;
-    flex-direction: column; /* Alinha texto e imagem verticalmente */
-    height: auto; /* Ajusta a altura automaticamente */
-  }
-
-  .white-section .text-info {
-    width: 100%; /* Ocupa a largura total */
-    padding: 15px 0 25px 0; /* Ajusta o padding */
-    text-align: center; /* Centraliza o texto */
-  }
-
-  .white-section .text-info p {
-    font-size: 13px; /* Ajusta o tamanho da fonte */
-  }
-
-  .white-section .image-side {
-    box-sizing: border-box;
-    width: 100%; /* Ocupa a largura total */
-    padding-right: 0; /* Remove o padding */
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-  }
-
-  .white-section .image-side img {
-    width: 100%; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+  
+  .white-section .logo-box {
+    width: 60px; /* Largura fixa da caixa */
+    height: 60px; /* Altura fixa da caixa */
   }
 
   
-.white-section .support-logos {
-  margin-top: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
+  .white-section .image-side img {
+    width: auto; /* A largura será ajustada automaticamente */
+    max-width: 100%; /* Limita a largura ao container */
+    max-height: 100%; /* Evita que a altura ultrapasse o container */
+    object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
+  }
+  
+  
 
 }
