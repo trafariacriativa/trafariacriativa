@@ -204,6 +204,7 @@ h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
     font-size: 6vh;
+    hyphens: auto;
 
 }
 
@@ -758,44 +759,23 @@ p {
 }
 
 
-/* residencias */
 
+/* residencias */
 
 .yellow-content {
     width: 100%;
-    height: 450px;
+    height: 370px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FFD700; /* Fundo amarelo */
+    gap: 60px;
 }
 
-
-.yellow-content .text-side {
-    flex: 2; /* Ocupa mais espaço para o texto */
-    padding-left: 0px; /* Mantém o espaçamento igual ao das outras divs */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    color: rgb(56, 56, 56); /* Texto em preto */
-    height: 100%;
-}
-
-.text-side-yellow h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-size: 6vh;
-    text-decoration-line: underline;
-    color: rgb(56, 56, 56);
-}
-
-
-.text-side-yellow {
-    /* width: 50%; */
-    flex: 1;
-    padding: 40px;
+.yellow-content .text-side-yellow {
+    width: 75%;
+    flex: 3; /* 75% do espaço para o texto */
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -814,9 +794,8 @@ p {
     text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
 
-
 .yellow-content .image-side {
-    flex: 1; /* Ocupa menos espaço para a imagem */
+    flex: 1; /* 25% do espaço para a imagem */
     height: 100%;
     display: flex;
     justify-content: flex-end; /* Alinha a imagem à direita */
@@ -825,12 +804,18 @@ p {
 }
 
 .yellow-content .image-side img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover; /* Garante que a imagem fique dentro da área disponível */
+    width: 100%; /* Ajuste a largura da imagem para preencher os 25% da div pai */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem fique dentro da área disponível */
 }
 
 
+
+
+.yellow-content .text-side-yellow {
+    padding: 40px;
+
+    }
 
   
 
@@ -945,6 +930,7 @@ p {
 
 
 /* residências */
+
 .text-side-yellow h3 {
     font-size: 4vh; /* Tamanho reduzido do título */
 }
@@ -1120,6 +1106,9 @@ p {
     height: auto; /* Ajusta a altura automaticamente */
 }
 
+.yellow-content .text-side-yellow {
+    padding: 0 40px;
+}
 
 }
 
@@ -1346,8 +1335,14 @@ p {
 }
 
      
+.yellow-content .text-side-yellow {
+    padding: 0 20px;
+} 
 
- 
+.yellow-content .image-side {
+    display: none; /* Esconde a div da imagem */
+}
+
 
 
 }
@@ -1582,6 +1577,14 @@ text-align: center;
            height: 200px; /* Define uma altura fixa para a imagem */
        }
    
+       .yellow-content .text-side-yellow {
+        padding: 0 20px;
+       }
+
+    .yellow-content .image-side {
+        display: none; /* Esconde a div da imagem */
+    }
+   
  
 
    }
@@ -1801,22 +1804,24 @@ text-align: center;
         width: 100%; /* Ocupa a largura total */
     }
 
-    .text-side-yellow h3 {
-        font-size: 2.75vh; /* Tamanho reduzido do título */
-    }
 
     .text-side-yellow p {
         font-size: 1.75vh; /* Tamanho reduzido do texto */
     }
 
-    .text-side-yellow {
-        padding: 20px; /* Ajusta o padding para telas menores */
+    .yellow-content .text-side-yellow {
+        padding: 0 20px; /* Ajusta o padding para telas menores */
     }
 
     .yellow-content .image-side img {
         height: 200px; /* Define uma altura fixa para a imagem */
     }
 
+
+
+    .yellow-content .image-side {
+        display: none; /* Esconde a div da imagem */
+    }
    
 
 }
