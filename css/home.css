@@ -821,7 +821,7 @@ p {
 
 
 
-@media only screen and (min-width: 1780px) {
+@media only screen and (min-width: 1366px) {
 
 
     .slider {
@@ -932,11 +932,11 @@ p {
 /* residências */
 
 .text-side-yellow h3 {
-    font-size: 4vh; /* Tamanho reduzido do título */
+    font-size: 4vw; /* Tamanho reduzido do título */
 }
 
 .text-side-yellow p {
-    font-size: 2vh; /* Tamanho reduzido do título */
+    font-size: 2vw; /* Tamanho reduzido do texto */
 }
 
 
@@ -944,6 +944,18 @@ p {
 
 }
 
+
+
+
+@media only screen and (min-width: 1728px) {
+
+
+    .text-side-yellow p{
+        font-size: 2vh;
+        
+    }
+
+}
 
 
 @media only screen and (min-width: 760px) and (max-width: 1023px) {
