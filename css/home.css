@@ -936,7 +936,7 @@ p {
 }
 
 .text-side-yellow p {
-    font-size: 2vw; /* Tamanho reduzido do texto */
+    font-size: 2.25vh; /* Tamanho reduzido do texto */
 }
 
 
