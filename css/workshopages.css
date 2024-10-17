@@ -437,7 +437,7 @@ font-weight: 500;
 font-size: 2vh;
 }
 
-a {
+.section-text a  {
   background-color: rgba(139, 0, 0);
   color: white;
   text-decoration: none;
@@ -445,7 +445,7 @@ a {
   
 }
 
-a:hover {
+.section-text a:hover {
   background-color: transparent;
   color: rgba(139, 0, 0);
 
