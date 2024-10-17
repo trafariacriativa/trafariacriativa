@@ -432,6 +432,25 @@ p, li {
     margin-bottom: 20px;
 }
 
+.section-subtitle span {
+font-weight: 500;
+font-size: 2vh;
+}
+
+a {
+  background-color: rgba(139, 0, 0);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+a:hover {
+  background-color: transparent;
+  color: rgba(139, 0, 0);
+
+}
+
 .section-note {
   padding-top: 20px;
   font-size: 2.25vh;
