@@ -483,6 +483,15 @@ h1 {
   font-size: 18px;
 }
 
+
+.speaker-info h4 {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(139, 0, 0, 0.8);
+  text-align: left;
+}
+
 /* Efeito ao passar o mouse sobre a caixa toda */
 .speaker:hover {
   transform: scale(1.05); /* Aumenta levemente o tamanho da caixa ao passar o mouse */
