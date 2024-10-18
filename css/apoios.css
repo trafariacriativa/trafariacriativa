@@ -63,6 +63,12 @@
     color: rgb(56, 56, 56);
   }
   
+
+  h3:nth-of-type(2) {
+    margin-top: 60px; /* margem superior do segundo */
+  }
+  
+
   /* Container para os logotipos */
   .white-section .logos-container {
     display: flex;
@@ -74,8 +80,8 @@
   
   /* Estilo fixo para a caixa de cada logotipo */
   .white-section .logo-box {
-    width: 100px; /* Largura fixa da caixa */
-    height: 100px; /* Altura fixa da caixa */
+    width: 115px; /* Largura fixa da caixa */
+    height: 80px; /* Altura fixa da caixa */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,6 +89,20 @@
     overflow: hidden; /* Garante que o conteúdo se encaixe na caixa */
   }
   
+
+  /* Estilo fixo para a caixa de cada logotipo este não é necessário se entrar um logotipo da altura dos parceiros */
+  .white-section .logo-boxmedia {
+    width: 150px; /* Largura fixa da caixa */
+    height: 40px; /* Altura fixa da caixa - substitui se entrar novos logotipos com a alt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Fundo claro para padronizar os logotipos */
+    overflow: hidden; /* Garante que o conteúdo se encaixe na caixa */
+  }
+  
+
+
   .white-section .logos-container img {
     max-height: 100%; /* A imagem não pode ultrapassar a altura da caixa */
     max-width: 100%; /* A imagem não pode ultrapassar a largura da caixa */
