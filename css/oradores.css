@@ -413,6 +413,10 @@ h1 {
   padding-bottom: 20px;
 }
 
+h1:nth-of-type(2) {
+  margin-top: 60px; /* margem superior do segundo */
+}
+
 /* Layout da galeria */
 .gallery {
   display: grid;
