@@ -663,6 +663,7 @@ h3{
 
 .container h3{
     text-align: center; /* Centraliza o conteúdo do contêiner */
+    margin-top: 60px;
         margin-bottom: 40px;
 }
 
