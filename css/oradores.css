@@ -414,7 +414,7 @@ h1 {
 }
 
 h1:nth-of-type(2) {
-  margin-top: 80px; /* margem superior do segundo */
+  margin-top: 60px; /* margem superior do segundo */
 }
 
 /* Layout da galeria */
@@ -541,12 +541,19 @@ h1:nth-of-type(2) {
     font-size: 24px;
   }
 
+
+
   }
 
   
 
 @media only screen and (min-width: 1201px) and (max-width: 1780px) {
 
+
+  h1:nth-of-type(2) {
+    margin-top: 60px; /* margem superior do segundo */
+  }
+  
 
 /* Layout da galeria */
 .gallery {
