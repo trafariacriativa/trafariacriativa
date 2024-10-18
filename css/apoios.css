@@ -135,6 +135,14 @@
   }
   
   
+  /* Estilo fixo para a caixa de cada logotipo este não é necessário se entrar um logotipo da altura dos parceiros */
+  .white-section .logo-boxmedia {
+    width: 100px; /* Largura fixa da caixa */
+    height: 30px; /* Altura fixa da caixa - substitui se entrar novos logotipos com a alt */
+    
+  }
+  
+
 
   }
 
@@ -158,6 +166,13 @@
     object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
   }
   
+  
+  /* Estilo fixo para a caixa de cada logotipo este não é necessário se entrar um logotipo da altura dos parceiros */
+  .white-section .logo-boxmedia {
+    width: 100px; /* Largura fixa da caixa */
+    height: 30px; /* Altura fixa da caixa - substitui se entrar novos logotipos com a alt */
+    
+  }
   
 
 }
