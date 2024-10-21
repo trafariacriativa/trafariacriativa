@@ -111,6 +111,23 @@
   }
   
   
+  .insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .insta p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o texto e a imagem */
+  }
+  
+  .insta img {
+    vertical-align: middle; /* Alinha a imagem no centro verticalmente com o texto */
+  }
+  
 
 
 
