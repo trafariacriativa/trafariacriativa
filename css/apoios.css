@@ -126,10 +126,42 @@
   
   .insta img {
     vertical-align: middle; /* Alinha a imagem no centro verticalmente com o texto */
+    max-width: 40px;
+    height: auto;
   }
   
+/* Seção do Instagram */
+.insta-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  z-index: 2; /* Garante que a seção do Instagram fique acima dos outros elementos */
+}
 
 
+
+.insta a {
+  pointer-events: auto; /* Garante que o link do Instagram seja clicável */
+}
+
+/* Desabilitar cliques nos elementos abaixo do Instagram */
+.white-section {
+  pointer-events: none; /* Desativa cliques em toda a seção abaixo */
+}
+
+.insta-container {
+  pointer-events: auto; /* Reativa cliques no container do Instagram */
+}
+
+.insta a {
+  pointer-events: auto; /* Mantém o link do Instagram clicável */
+}
+
+
+.white-section h3 a {
+  text-decoration: none;
+}
 
 
   @media only screen and (min-width: 480px) and (max-width: 960px) {
