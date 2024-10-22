@@ -213,7 +213,7 @@ p {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 500;
     font-size: 2.5vh;
-    color: rgb(255, 255, 255, 0.7);
+
 
 }
 
@@ -630,9 +630,19 @@ h3{
     border-bottom: 1px solid #ddd; /* Linha separadora opcional */
 }
 
+.session a{
+  text-decoration: none;
+  color: rgb(139, 0, 0);
+  cursor: pointer;
+}
+
 .time {
     font-weight: bold;
     margin-right: 20px; /* Espaçamento entre a hora e a descrição */
+}
+
+.time span{
+  color: transparent;
 }
 
 .description {
