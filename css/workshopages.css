@@ -424,6 +424,10 @@ p, li {
   background-color: rgb(139, 0, 0, 0.5);
 }
 
+.section-name + .section-name {
+  margin-top: -50px; /* Ajuste o valor para o espaçamento desejado */
+}
+
 .section-subtitle {
     margin-top: 75px;
     font-family: "IBM Plex Mono", monospace, serif;
@@ -718,6 +722,8 @@ video {
   font-size: 2vh;
   
 }
+
+
 
 
 
