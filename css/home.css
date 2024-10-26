@@ -409,7 +409,7 @@ p {
 .box-date {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
+    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
     line-height: 0.2em;
     color: #ffffff; /* Cor do texto */
     margin-top: 64px; /* Espaço abaixo do subtítulo */
@@ -1024,7 +1024,7 @@ p {
 }
 
 .box-date {
-    font-size: 3.5vmin; /* Tamanho reduzido da data */
+    font-size: 1.25rem; /* Tamanho reduzido da data */
     margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
     margin-bottom: 1.5rem;
 }
@@ -1207,7 +1207,7 @@ p {
 }
 
 .box-date {
-    font-size: 3.5vmin; /* Tamanho reduzido da data */
+    font-size: 1.25rem; /* Tamanho reduzido da data */
     margin-top: 48px; /* Reduz o espaço abaixo do subtítulo */
     margin-bottom: 24px;
 }
