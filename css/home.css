@@ -412,7 +412,8 @@ p {
     font-size: 2rem; /* Ajuste o tamanho conforme necessário */
     line-height: 0.2em;
     color: #ffffff; /* Cor do texto */
-    margin-top: 68px; /* Espaço abaixo do subtítulo */
+    margin-top: 64px; /* Espaço abaixo do subtítulo */
+    margin-bottom: 24px;
 }
 
 
@@ -1207,8 +1208,8 @@ p {
 
 .box-date {
     font-size: 3.5vmin; /* Tamanho reduzido da data */
-    margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-    margin-bottom: 1.5rem;
+    margin-top: 48px; /* Reduz o espaço abaixo do subtítulo */
+    margin-bottom: 24px;
 }
 
 .cta-button {
@@ -1453,8 +1454,8 @@ p {
    
        .box-date {
            font-size: 2.5vmax; /* Tamanho reduzido da data */
-           margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-           margin-bottom: 1rem;
+           margin-top: 46px; /* Reduz o espaço abaixo do subtítulo */
+           margin-bottom: 18px;
        }
    
        .cta-button {
@@ -1494,7 +1495,7 @@ text-align: center;
 
        
        .indicators {
-           bottom: 25%;
+           bottom: 22%;
        }
    
        .indicator {
@@ -1692,8 +1693,8 @@ text-align: center;
 
     .box-date {
         font-size: 2vmax; /* Tamanho reduzido da data */
-        margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-        margin-bottom: 1rem;
+        margin-top: 42px; /* Reduz o espaço abaixo do subtítulo */
+        margin-bottom: 18px;
     }
 
     .cta-button {
@@ -1733,7 +1734,7 @@ text-align: center;
     }
 
     .indicators {
-        bottom: 25%;
+        bottom: 22%;
     }
 
     .indicator {
