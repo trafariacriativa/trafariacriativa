@@ -393,7 +393,17 @@ h3{
 }
 
 
+
+
 /* texto */
+
+
+.content-wrapper {
+  width: 960px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+
 .text-present {
   width: 960px;
   height: auto;
@@ -404,12 +414,11 @@ h3{
 .text-present p {
   font-weight: 400;
   font-size: 2.5vh;
-  margin-bottom: 40px; /* Espaçamento entre o texto e o slideshow */
+  margin-bottom: 20px; /* Espaçamento entre o texto e o slideshow */
   color: rgba(18, 18, 18);
   line-height: 2;
+  text-align: left;
 }
-
-
 
 .text-present a{
   text-decoration: none;
@@ -417,6 +426,37 @@ h3{
   color: white;
 
 }
+
+
+
+.button-wrapper {
+  text-align: center; /* Centraliza o botão dentro deste contêiner */
+  margin-bottom: 50px; /* Adiciona espaço acima do botão */
+}
+
+.cta-button {
+  display: inline-block;
+  width: 390px; /* Largura específica do botão */
+  height: 56px;
+  background-color: rgb(139, 0, 0);
+  color: white;
+  text-align: center;
+  line-height: 56px; /* Centraliza verticalmente o texto */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem; /* Ajuste conforme necessário */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+
+
+.cta-button:hover{
+  background-color: rgba(18, 18, 18, 0.2);
+  color:  rgb(139, 0, 0);
+  
+}
+
 
 
 /* Grelha Locais */
