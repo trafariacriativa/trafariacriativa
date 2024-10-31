@@ -923,7 +923,7 @@ h3{
   }
 
   .cta-button {
-    width: 100%;
+    width: 350px;
     height: 40px; /* Altura reduzida do botão */
     line-height: 2.5rem; /* Centraliza verticalmente o texto */
     font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
@@ -1065,7 +1065,7 @@ font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
 
 
 .cta-button {
-  width: 100%;
+  width: 325px;
   height: 40px; /* Altura reduzida do botão */
   line-height: 2.5rem; /* Centraliza verticalmente o texto */
   font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
@@ -1164,7 +1164,7 @@ font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
       }
 
       .cta-button {
-        width: 100%;
+        width: 300px;
         height: 40px; /* Altura reduzida do botão */
         line-height: 2.5rem; /* Centraliza verticalmente o texto */
         font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
@@ -1313,7 +1313,7 @@ font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
 
 
 .cta-button {
-  width: 100%;
+  width: 250px;
   height: 50%; /* Altura reduzida do botão */
   line-height: 36px; /* Centraliza verticalmente o texto */
   font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
