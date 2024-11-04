@@ -851,7 +851,7 @@ h2 {
   
 
 .gallery {
-  grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas na galeria em telas menores */
 }
 
 .dashboard {
@@ -983,7 +983,7 @@ h2 {
   
 .gallery {
   max-width: 100%;
-    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+    grid-template-columns: repeat(1, 1fr); /* Reduz para 2 colunas */
     grid-gap: 5px; /* Reduz o espaço entre as imagens */
     margin: 0;
   
