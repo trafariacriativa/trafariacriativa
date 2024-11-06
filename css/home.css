@@ -1730,7 +1730,7 @@ text-align: center;
     
 
     .shuttle-info {
-        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
+        font-size: 3vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
         padding: 8px 0; /* Reduz o espaçamento interno */
     }
 
