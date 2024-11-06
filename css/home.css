@@ -1488,7 +1488,12 @@ p {
         padding: 8px 0; /* Reduz o espaçamento interno */
     }
 
-    
+
+    .shuttle-time {
+        display: block; /* Força a quebra de linha */
+        margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
+    }
+
        /* slides */
    
        
@@ -1731,13 +1736,18 @@ text-align: center;
 
     .shuttle-info {
         font-size: 3vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
-        padding: 8px 0; /* Reduz o espaçamento interno */
+
     }
 
     .shuttle-time {
         display: block; /* Força a quebra de linha */
         margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
     }
+    .shuttle-local {
+        display: block; /* Força a quebra de linha */
+        margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
+    }
+
 
     /* slides */
 
