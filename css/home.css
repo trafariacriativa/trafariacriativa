@@ -1734,6 +1734,10 @@ text-align: center;
         padding: 8px 0; /* Reduz o espaçamento interno */
     }
 
+    .shuttle-time {
+        display: block; /* Força a quebra de linha */
+        margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
+    }
 
     /* slides */
 
