@@ -548,7 +548,7 @@ p {
 
 
 .shuttle-info {
-    background-color: rgba(139, 0, 0); /* Fundo vermelho escuro */
+    background-color: rgb(195, 2, 2); /* Fundo vermelho escuro */
     color: white; /* Texto branco */
     font-family: "Poppins", sans-serif;
     font-size: 4vh; /* Ajuste de tamanho da fonte */
@@ -1790,7 +1790,7 @@ text-align: center;
     /* notícias */
     .content-section {
         height: 260px; /* Altura reduzida da seção de notícias */
-        padding: 15px 0;
+        padding: 10px 0;
         margin-bottom: 25px;
     }
 
