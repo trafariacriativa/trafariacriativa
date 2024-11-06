@@ -547,6 +547,16 @@ p {
 }
 
 
+.shuttle-info {
+    background-color: rgba(139, 0, 0); /* Fundo vermelho escuro */
+    color: white; /* Texto branco */
+    font-family: "Poppins", sans-serif;
+    font-size: 4vh; /* Ajuste de tamanho da fonte */
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 0; /* Espaçamento interno */
+    margin: 40px 0; /* Espaçamento em cima e embaixo */
+}
 
 
 /* notícias */
@@ -1072,6 +1082,10 @@ p {
         font-size: 1.6vh;
     }
 
+    .shuttle-info {
+        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas menores */
+        padding: 10px 0; /* Reduz o espaçamento interno */
+    }
 
 /* imersão */
 
@@ -1179,7 +1193,10 @@ p {
     }
 
 
-
+.shuttle-info {
+        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas menores */
+        padding: 10px 0; /* Reduz o espaçamento interno */
+    }
 
   /* programa */
 
@@ -1465,6 +1482,13 @@ p {
            font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
        }
    
+
+       .shuttle-info {
+        font-size: 3vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
+        padding: 8px 0; /* Reduz o espaçamento interno */
+    }
+
+
        /* slides */
    
        
@@ -1703,6 +1727,13 @@ text-align: center;
         line-height: 36px; /* Centraliza verticalmente o texto */
         font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
     }
+    
+
+    .shuttle-info {
+        font-size: 2vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
+        padding: 8px 0; /* Reduz o espaçamento interno */
+    }
+
 
     /* slides */
 
