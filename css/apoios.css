@@ -69,6 +69,11 @@
   }
   
 
+  h3:nth-of-type(3) {
+    margin-top: 60px; /* margem superior do segundo */
+  }
+
+
   /* Container para os logotipos */
   .white-section .logos-container {
     display: flex;
@@ -101,6 +106,8 @@
     overflow: hidden; /* Garante que o conteúdo se encaixe na caixa */
   }
   
+  
+
 
 
   .white-section .logos-container img {
