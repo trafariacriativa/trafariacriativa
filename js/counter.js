@@ -22,7 +22,7 @@ const countdownFunction = setInterval(function() {
     // Se a contagem terminar, exiba uma mensagem
     if (timeLeft < 0) {
         clearInterval(countdownFunction);
-        document.getElementById("countdown").innerHTML = "Event started";
+        document.getElementById("countdown").innerHTML = "";
     }
 }, 1000);
 
