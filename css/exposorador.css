@@ -205,28 +205,13 @@ body, html {
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 5vh;
-
 }
 
-
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 3.5vh;
-
-}
 
 p, li {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 3vh;
- 
-
 }
-
-
 
 
 /* navbar */
@@ -282,6 +267,17 @@ p, li {
 }
 
 
+.countdown {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
+  right: 230px;
+  transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
+}
+
 
 .logo:hover {
   font-size: calc(1.5rem + 3px); /* Aumenta em 3px ao passar o mouse */
@@ -330,6 +326,7 @@ p, li {
     display: flex; /* Exibe o menu ao clicar no burger */
 }
 
+
 .menu a {
   color: rgb(56, 56, 56);
   text-decoration: none;
@@ -349,6 +346,7 @@ p, li {
 .menu a.active {
   color: rgba(18, 18, 18, 0.6); /* Cor para o link da página atual */
 }
+
 
 /*imagem topo*/
 
@@ -394,6 +392,116 @@ p, li {
     padding: 0 0; /* Adiciona espaçamento lateral se necessário */
 }
 
+
+
+
+/* texto */
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto; /* Centraliza o container */
+  padding-top: 50px;
+}
+
+/* Estilo para o título */
+h1 {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  padding-bottom: 20px;
+}
+
+h1:nth-of-type(2) {
+  margin-top: 60px; /* margem superior do segundo */
+}
+
+/* Layout da galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+  gap: 40px; /* Espaço entre os itens */
+}
+
+/* Estilo para cada orador */
+.speaker {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  overflow: hidden;
+  text-decoration: none; /* Remove sublinhado dos links */
+  transition: transform 0.3s;
+  position: relative;
+}
+
+/* Envolvente da imagem */
+.image-wrapper {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+/* Estilo para as imagens */
+.speaker img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Suaviza a transição do overlay */
+}
+
+/* Overlay vermelho sobre a imagem */
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5); /* Overlay vermelho com 50% de opacidade */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Suaviza a transição do overlay */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.image-wrapper:hover::before {
+  opacity: 1; /* Torna o overlay visível ao passar o mouse */
+}
+
+/* Informações do orador */
+.speaker-info {
+  padding: 20px;
+  flex: 1; /* Permite que o texto ocupe o espaço restante */
+  color: rgb(56, 56, 56);
+  z-index: 1; /* Garante que o texto fique acima do overlay */
+  hyphens: auto;
+}
+
+.speaker-info h2 {
+  font-size: 24px;
+  margin: 0;
+
+}
+
+.speaker-info p {
+  font-size: 18px;
+}
+
+
+.speaker-info h4 {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(139, 0, 0, 0.8);
+  text-align: left;
+}
+
+/* Efeito ao passar o mouse sobre a caixa toda */
+.speaker:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho da caixa ao passar o mouse */
+}
+
+
 .section-information {
     text-align: center;
     margin: 50px;
@@ -403,62 +511,8 @@ p, li {
 
 
 
-/* texto */
 
-
-.container-imersao {
-  width: 960px;
-  margin: 50px auto 0 auto; /* Centraliza o conteúdo na página */
-  display: flex;
-  position: relative;
-}
-
-.text-section {
-  margin-top: 100px;
-  width: 60%; /* O texto ocupa 60% da largura do container */
-  padding: 0 30px 20px 30px;
-  position: relative;
-  z-index: 2; /* Garante que o texto se sobrepõe à imagem */
-  background-color: rgba(139, 0, 0, 0.7); /* Fundo semi-transparente para o texto */
-  color: white;
-}
-
-.image-container-imersao {
-  width: 100%; /* A imagem ocupa 40% da largura do container */
-  position: relative;
-}
-
-.image-container-imersao img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover; /* Garante que a imagem cubra toda a área */
-  position: relative;
-  z-index: 1;
-}
-
-/* Sobreposição parcial do texto sobre a imagem */
-.text-section {
-  margin-right: -150px; /* Ajuste o valor para controlar quanto do texto sobrepõe a imagem */
-}
-
-
-.reverse .text-section {
-  margin-left: -150px; /* Ajuste o valor para controlar quanto do texto sobrepõe a imagem */
-  margin-right: 0; /* Remove margem direita para alinhar corretamente */
-}
-
-
-.text-section-link {
-  text-decoration: none;
-  color: inherit; /* Mantém a cor original do texto */
-  display: block; /* Faz o link se comportar como um bloco */
-}
-
-.text-section-link:hover {
-  cursor: pointer; /* Adiciona o cursor de link ao passar o mouse */
-}
-
+/* linha final */
 
 .final-line {
   border: none;
@@ -473,36 +527,54 @@ p, li {
 
 
 
-
-
-
-
-
-
-@media only screen and (min-width: 1780px) {
-
- 
+@media only screen and (min-width: 1781px) {
 
   .image-title {
     font-size: 5vh;
   }
   
-
-h2 {
-    font-size: 3vh;
+  .section-title {
+    font-size: 3.5vh;
   }
   
-h3 {
-  font-size: 2.1vh;
+
+  .speaker-info h2 {
+    font-size: 28px;
+    margin: 0;
+  
+  }
+  
+  .speaker-info p {
+    font-size: 24px;
+  }
+
+
+
+  }
+
+  
+
+@media only screen and (min-width: 1201px) and (max-width: 1780px) {
+
+
+  h1:nth-of-type(2) {
+    margin-top: 60px; /* margem superior do segundo */
+  }
+  
+
+/* Layout da galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+  gap: 30px; /* Espaço entre os itens */
 }
 
-p {
-    font-size: 2vh;
-  }
-  
-  }
 
 
+
+
+
+}
 
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
@@ -541,39 +613,42 @@ p {
  
   /* texto */
 
-.content-container{
+.container{
   width: 960px;
   padding: 20px; /* Ajusta o padding */
   box-sizing: border-box;
 }
 
 
-h2 {
-  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+h1:nth-of-type(2) {
+  margin-top: 60px; /* margem superior do segundo */
 }
 
 
-.text-section {
-  padding: 40px;
-  
-}
-
-
-.text-section p, li{
-  font-size: 2vh;
-  
+/* Layout da galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 colunas de largura igual */
+  gap: 30px; /* Espaço entre os itens */
 }
 
 
 
-.text-section h3{
-font-size: 2.5vh;
+.speaker-info h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.speaker-info p {
+  font-size: 120x;
 }
 
 
 
-
 }
+
+
+
 
 
 
@@ -640,44 +715,41 @@ font-size: 2.5vh;
   
   /* texto */
 
-.container-imersao{
+.container{
   width: 100%;
   padding: 40px; /* Ajusta o padding */
   box-sizing: border-box;
 }
 
 
-
-.text-section p, li{
-  font-size: 2vh;
   
+
+.gallery {
+  grid-template-columns: repeat(2, 1fr); /* 1 coluna na galeria em telas muito pequenas */
+  gap: 25px;
 }
 
 
 
-.text-section h3{
-font-size: 2.5vh;
+.speaker-info h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.speaker-info p {
+  font-size: 20px;
+}
+
+
+/* Efeito ao passar o mouse sobre a caixa toda */
+.speaker:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho da caixa ao passar o mouse */
 }
 
 
 
-  h2 {
-    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
-  }
 
 }
-
-
-  
-
-.white-section .text-info p {
-  font-size: 14px; /* Ajusta o tamanho da fonte */
-}
-
-
-
-  
-  
 
 
 
@@ -747,82 +819,34 @@ font-size: 2.5vh;
   }
 
 
-  .text-section{
-    padding: 20px;
-    width: 100%;
-  }
-
-
-  .text-section p, li{
-       font-size: 1.75vh;
-
-  }
-  
-
-
-  .text-section h3{
-    font-size: 2vh;
-}
-
-
-
-
   /* texto */
 
-  .container-imersao{
+  .container{
     width: 100%;
-    padding: 20px; /* Ajusta o padding */
     box-sizing: border-box;
   }
   
+
+  h1{
+    font-size: 1.75em;
+  }
   
-    h2 {
-      font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+    h3{
+      font-size: 2vh;
     }
 
-  
+
+
+   /* Informações do orador */
 
 
 
-
-  /* apoios */
-  .white-section {
-    box-sizing: border-box;
-    width: 100%;
-    flex-direction: column; /* Alinha texto e imagem verticalmente */
-    height: auto; /* Ajusta a altura automaticamente */
-  }
-
-  .white-section .text-info {
-    width: 100%; /* Ocupa a largura total */
-    padding: 15px 0 25px 0; /* Ajusta o padding */
-    text-align: center; /* Centraliza o texto */
-  }
-
-  .white-section .text-info p {
-    font-size: 13px; /* Ajusta o tamanho da fonte */
-  }
-
-  .white-section .image-side {
-    box-sizing: border-box;
-    width: 100%; /* Ocupa a largura total */
-    padding-right: 0; /* Remove o padding */
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-  }
-
-  .white-section .image-side img {
-    width: 100%; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-
-  
-.white-section .support-logos {
-  margin-top: 0;
-  width: 100%;
-  box-sizing: border-box;
+.gallery {
+  grid-template-columns: 1fr; /* 1 coluna na galeria em telas muito pequenas */
+  gap: 20px;
+  padding: 0 20px 20px 20px;
 }
+
 
 
 

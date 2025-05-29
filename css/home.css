@@ -371,7 +371,7 @@ p {
 
 .box {
     width: 390px;
-    height: 250px;
+    height: 190px; /*alterar para 250px quando se tiver o programa */
     background: rgba(18, 18, 18, 0.5); /* Cor com transparência */
     position: absolute; /* Necessário para o z-index */
     right: 32px;
@@ -439,7 +439,7 @@ p {
 .slider {
     width: 100%;
     height: 450px; /* Altura ajustada para 450px */
-    background-color: darkred;
+    background-color: darkred; /* não está ativo */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -523,7 +523,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(139, 0, 0, 0.8); /* Cor com transparência */
+    background: rgba(30, 72, 143, 0.6); /* Cor com transparência */
     pointer-events: none; /* Permite interação com os elementos abaixo */
 }
 
@@ -667,7 +667,7 @@ p {
     width: 100%;
     height: 450px;
     display: flex;
-    background-color: rgb(245, 245, 220);
+    background-color: rgba(116, 195, 101, 0.3);
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     /*align-items: center;  Centraliza o conteúdo verticalmente */
 }
@@ -725,7 +725,7 @@ p {
     width: 100%;
     height: 450px;
     display: flex;
-    background-color: rgb(255, 235, 205);
+    background-color: rgb(246, 247, 237);
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
 
 }
@@ -786,7 +786,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFD700; /* Fundo amarelo */
+    background-color: #dbe64c; /* #f6f7ed  #74c365*/
     gap: 60px;
 }
 

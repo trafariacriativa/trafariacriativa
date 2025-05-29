@@ -380,7 +380,7 @@ p, li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(139, 0, 0, 0.8); /* Cor com transparência */
+    background: rgba(30, 72, 143, 0.6); /* Cor com transparência */
     pointer-events: none; /* Permite interação com os elementos abaixo */
 }
 

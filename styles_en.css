@@ -12,7 +12,7 @@ body {
 
 
 .scrolling-bar {
-    background-color:rgb(139, 0, 0);
+    background-color: rgba(30, 72, 143);
     position: relative;
     margin: 0;
     width: 100%;
@@ -197,7 +197,7 @@ p {
 }
 
 .date h2 {
-    font-size: 4em;
+    font-size: 3.8em;
     word-spacing: -15px;
     margin-bottom: -20px;
 }
@@ -347,7 +347,7 @@ p {
 
 .text-paragraph a{
     text-decoration: none;
-    background-color: rgb(139, 0, 0);
+    background-color: rgba(30, 72, 143);
     color: white;
 
 }
