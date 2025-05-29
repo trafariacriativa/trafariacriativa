@@ -1,0 +1,801 @@
+/* .ibm-plex-mono-thin {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+  bottom: 0;
+}
+
+h2 {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 700;
+    font-size: 4vw;
+
+}
+
+
+p, li {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+
+}
+
+
+/* navbar */
+
+/* Ícone rotativo */
+.rotating-icon {
+  display: inline-block;
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+  vertical-align: middle; /* Alinha verticalmente ao meio */
+  animation: rotateBackAndForth 2s ease-in-out infinite;
+}
+
+.rotating-icon img {
+  width: 40px; /* Ajuste o tamanho do SVG conforme necessário */
+  height: 40px;
+}
+
+/* Animação de rotação vai e volta */
+@keyframes rotateBackAndForth {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(45deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: rgba(18, 18, 18, 0.3); /* Cor com transparência */
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  color: #fff;
+  position: fixed; /* Torna a barra de navegação fixa no topo */
+  top: 0; /* Posiciona a barra no topo da página */
+  left: 0;
+  z-index: 1000; /* Garante que a barra de navegação fique acima de outros elementos */
+}
+
+.navbar .logo {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 500;
+  font-size: 24px;
+  padding-left: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.countdown {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
+  right: 230px;
+  transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
+}
+
+
+.logo:hover {
+  font-size: calc(1.5rem + 3px); /* Aumenta em 3px ao passar o mouse */
+  text-decoration: none; /* Mantém sem sublinhado */
+}
+
+
+.burger {
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  z-index: 1200;
+  position: relative; /* Mantém o ícone de menu na posição correta */
+  right: 32px; /* Ajusta o ícone de menu para a posição desejada */
+}
+
+
+/* menu */
+
+.menu {
+    width: 300px;
+    height: 208px;
+    background: rgba(210, 209, 209, 0.8); /* Cor com transparência */
+    position: absolute;
+    top: 100px;
+    right: 36px;
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    z-index: 1900;
+}
+
+
+/* Estilo do menu quando a rolagem atinge 450px */
+.menu.sticky {
+  position: fixed;
+  top: 100px; /* Ou outro valor conforme necessário */
+  right: 36px;
+  background: rgba(210, 209, 209, 0.9); /* Pode ajustar a cor conforme necessário */
+  
+}
+
+.menu.active {
+    display: flex; /* Exibe o menu ao clicar no burger */
+}
+
+
+.menu a {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem; /* Tamanho da fonte para os links */
+  transition: color 0.3s;
+}
+
+
+.menu a:hover {
+    color: rgba(18, 18, 18, 0.3); /* Cor de destaque ao passar o mouse */
+}
+
+
+/* Estilo para o link ativo */
+.menu a.active {
+  color: rgba(18, 18, 18, 0.6); /* Cor para o link da página atual */
+}
+
+/*imagem topo*/
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área da div */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.8); /* Cor com transparência */
+    pointer-events: none; /* Permite interação com os elementos abaixo */
+}
+
+.image-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+    font-size: 3.5vw;
+    color: white; /* Cor do texto do subtítulo */
+    position: absolute;
+    bottom: 75px; /* Coloca o título colado na margem de baixo */
+}
+
+.title-container {
+    position: absolute;
+    bottom: 0; /* Coloca a div de título na parte inferior da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para centralizar */
+    width: 960px; /* Largura máxima do título */
+    text-align: left; /* Centraliza o texto */
+    padding: 0 20px; /* Adiciona espaçamento lateral se necessário */
+}
+
+/* texto */
+.content-container {
+    width: 960px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0px 0px; /* Adiciona espaçamento ao redor do conteúdo */
+}
+
+.text-section {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin-bottom: 40px; /* Espaçamento entre o texto e o slideshow */
+}
+
+.section-title {
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    margin-top: 50px;
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 700;
+    font-size: 2vw; /* Ajuste conforme necessário */
+    margin-bottom: 20px;
+}
+
+.section-text {
+    line-height: 2;
+}
+
+
+/* slideshow */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura ajustável conforme necessário */
+    overflow: hidden;
+}
+
+.slideshow-slide {
+    display: none; /* Inicialmente escondido */
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área da div */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-container {
+    margin-top: 40px; /* Espaçamento entre o slideshow e o vídeo */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 960px; /* Largura máxima do vídeo */
+    height: auto;
+}
+
+.final-line {
+    border: none;
+    height: 2px; /* Espessura da linha */
+    background-color: rgb(56, 56, 56); /* Cor da linha */
+    margin-top: 50px; /* Espaçamento acima da linha */
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1780px) {
+
+  .image-title {
+    font-size: 5vh;
+  }
+  
+h2 {
+  margin-top: 60px;
+  font-size: 4vh;
+}
+
+  h3 {
+    font-size: 2.5vh;
+  }
+  
+p, li {
+    font-size: 2vh;
+  }
+  
+  }
+
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+
+  /* navbar */
+  .navbar {
+    height: 100px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 90%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+ 
+  /* texto */
+
+.content-container{
+  width: 100%;
+  padding: 20px; /* Ajusta o padding */
+  box-sizing: border-box;
+}
+
+
+h2 {
+  font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+}
+
+
+.text-section {
+  padding: 40px;
+  
+}
+
+
+.text-section p, li{
+  font-size: 1.5vh;
+  
+}
+
+
+
+.text-section h3{
+font-size: 2vh;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+
+  /* navbar */
+  .navbar {
+    height: 90px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .navbar .logo {
+    font-size: 20px; /* Aumenta o tamanho do logo */
+    padding-left: 20px; /* Ajusta o padding à esquerda */
+  }
+
+  .rotating-icon img {
+    width: 35px; /* Ajusta o tamanho do ícone */
+    height: 35px;
+  }
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      width: 240px;
+      height: 200px;
+      top: 90px;
+
+  }
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 85%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+
+
+  .image-title {
+    font-size: 3.5vw; /* Ajusta o tamanho do título */
+    bottom: 30px; /* Ajusta o alinhamento */
+  }
+
+  
+  /* texto */
+
+.content-container{
+  width: 100%;
+  padding: 40px; /* Ajusta o padding */
+  box-sizing: border-box;
+}
+
+
+
+.text-section p, li{
+  font-size: 1.5vh;
+  
+}
+
+
+
+.text-section h3{
+font-size: 2vh;
+}
+
+
+
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
+}
+
+
+  
+
+.gallery {
+  grid-template-columns: repeat(3, 1fr); /* 2 colunas na galeria em telas menores */
+}
+
+
+.white-section .text-info p {
+  font-size: 1.25vmax; /* Ajusta o tamanho da fonte */
+}
+
+
+@media only screen and (max-width: 479px) {
+
+  /* navbar */
+  .navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar .logo {
+      font-size: 18px; /* Tamanho reduzido do logo */
+      padding-left: 10px; /* Remove padding à esquerda */
+  }
+
+  .rotating-icon img {
+      width: 30px; /* Reduz o tamanho do ícone */
+      height: 30px;
+  }
+
+  .burger {
+      font-size: 28px; /* Tamanho reduzido do ícone do menu */
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      top: 80px;
+      width: 100%;
+      left: 0;
+      background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .menu.active, .menu.sticky {
+      right: 0; /* Ajusta o menu para a posição visível */
+
+  }
+
+
+
+
+  .image-container {
+      height: 250px; /* Reduzido para telas menores */
+      padding: 0; /* Remove qualquer padding */
+      box-sizing: border-box; /* Garante que padding não afete a largura total */
+  }
+
+  .title-container {
+      width: 90%; /* Ajustado para largura menor em telas pequenas */
+      padding: 0 10px; /* Adicionado padding lateral para ajuste */
+      text-align: center; /* Centraliza o texto para telas menores */
+      margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+  .image-title {
+      font-size: 8vw; /* Ajustado para maior responsividade em telas menores */
+      bottom: 20px; /* Ajustado para melhor alinhamento em telas menores */
+  }
+
+
+
+  .text-section p, li{
+       font-size: 1.5vh;
+
+  }
+  
+
+
+  .text-section h3{
+    font-size: 2vh;
+}
+
+
+
+
+  /* texto */
+
+  .content-container{
+    width: 100%;
+    padding: 20px; /* Ajusta o padding */
+    box-sizing: border-box;
+  }
+  
+  
+    h2 {
+      font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+    }
+
+  
+  
+.gallery {
+  max-width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+    grid-gap: 5px; /* Reduz o espaço entre as imagens */
+    margin: 0;
+  
+}
+
+
+
+
+
+}

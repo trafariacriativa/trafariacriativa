@@ -1,0 +1,1405 @@
+/* .ibm-plex-mono-thin {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+h2 {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 700;
+    font-size: 4vh;
+}
+
+
+p {
+    margin-bottom: 30px;
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+
+
+h3{
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 700;
+  font-size: 3vh;
+}
+
+/* navbar */
+
+/* Ícone rotativo */
+.rotating-icon {
+  display: inline-block;
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+  vertical-align: middle; /* Alinha verticalmente ao meio */
+  animation: rotateBackAndForth 2s ease-in-out infinite;
+}
+
+.rotating-icon img {
+  width: 40px; /* Ajuste o tamanho do SVG conforme necessário */
+  height: 40px;
+}
+
+/* Animação de rotação vai e volta */
+@keyframes rotateBackAndForth {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(45deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: rgba(18, 18, 18, 0.3); /* Cor com transparência */
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  color: #fff;
+  position: fixed; /* Torna a barra de navegação fixa no topo */
+  top: 0; /* Posiciona a barra no topo da página */
+  left: 0;
+  z-index: 1000; /* Garante que a barra de navegação fique acima de outros elementos */
+}
+
+.navbar .logo {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 500;
+  font-size: 24px;
+  padding-left: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+.logo:hover {
+  font-size: calc(1.5rem + 3px); /* Aumenta em 3px ao passar o mouse */
+  text-decoration: none; /* Mantém sem sublinhado */
+}
+
+
+.burger {
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  z-index: 1200;
+  position: relative; /* Mantém o ícone de menu na posição correta */
+  right: 32px; /* Ajusta o ícone de menu para a posição desejada */
+}
+
+
+/* menu */
+
+.menu {
+    width: 300px;
+    height: 208px;
+    background: rgba(210, 209, 209, 0.8); /* Cor com transparência */
+    position: absolute;
+    top: 100px;
+    right: 36px;
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    z-index: 1900;
+}
+
+
+/* Estilo do menu quando a rolagem atinge 450px */
+.menu.sticky {
+  position: fixed;
+  top: 100px; /* Ou outro valor conforme necessário */
+  right: 36px;
+  background: rgba(210, 209, 209, 0.9); /* Pode ajustar a cor conforme necessário */
+  
+}
+
+.menu.active {
+    display: flex; /* Exibe o menu ao clicar no burger */
+}
+
+
+.menu a {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem; /* Tamanho da fonte para os links */
+  transition: color 0.3s;
+}
+
+
+.menu a:hover {
+    color: #ddd; /* Cor de destaque ao passar o mouse */
+}
+
+
+/* Estilo para o link ativo */
+.menu a.active {
+  color: rgba(18, 18, 18, 0.6); /* Cor para o link da página atual */
+}
+
+
+/*imagem topo*/
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área da div */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.8); /* Cor com transparência */
+    pointer-events: none; /* Permite interação com os elementos abaixo */
+}
+
+
+.title-container {
+  position: absolute;
+  bottom: 0; /* Coloca a div de título na parte inferior da imagem */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para centralizar */
+  width: 960px; /* Largura máxima do título */
+  text-align: left; /* Centraliza o texto */
+  padding: 0 0; /* Adiciona espaçamento lateral se necessário */
+}
+
+
+.image-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3.5vw;
+    color: white; /* Cor do texto do subtítulo */
+    position: absolute;
+    bottom: 75px; /* Coloca o título colado na margem de baixo */
+}
+
+
+
+
+/* texto */
+
+
+.content-wrapper {
+  width: 960px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+
+.text-present {
+  width: 960px;
+  height: auto;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 60px 0px; /* Adiciona espaçamento ao redor do conteúdo */
+}
+
+.text-present p {
+  font-weight: 400;
+  font-size: 2.5vh;
+  margin-bottom: 20px; /* Espaçamento entre o texto e o slideshow */
+  color: rgba(18, 18, 18);
+  line-height: 2;
+  text-align: left;
+}
+
+.text-present a{
+  text-decoration: none;
+  background-color: rgb(139, 0, 0);
+  color: white;
+
+}
+
+
+
+.button-wrapper {
+  text-align: center; /* Centraliza o botão dentro deste contêiner */
+  margin-bottom: 50px; /* Adiciona espaço acima do botão */
+}
+
+.cta-button {
+  display: inline-block;
+  width: 390px; /* Largura específica do botão */
+  height: 56px;
+  background-color: rgb(139, 0, 0);
+  color: white;
+  text-align: center;
+  line-height: 56px; /* Centraliza verticalmente o texto */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem; /* Ajuste conforme necessário */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+
+
+.cta-button:hover{
+  background-color: rgba(18, 18, 18, 0.2);
+  color:  rgb(139, 0, 0);
+  
+}
+
+
+
+/* Grelha Locais */
+.local-container {
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 700;
+  font-size: 2.75vh;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: relative; /* Necessário para posicionamento absoluto da caixa expansível */
+  margin-bottom: 100px;
+}
+
+.coluna {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.coluna-1 {
+  background-color: rgba(139, 0, 0, 0.2);
+}
+
+.coluna-2 {
+  background-color: rgba(139, 0, 0, 0.4);
+}
+
+.coluna-3 {
+  background-color: rgba(139, 0, 0, 0.6);
+}
+
+
+/* Estilo para a coluna selecionada */
+.coluna.selected {
+  background-color: rgba(139, 0, 0);
+  color: white; /* Cor do texto para contraste */
+}
+
+
+/* Ajuste o posicionamento da caixa expansível */
+.conteudo-expansivel {
+  display: none;
+  background-color:white;
+  padding: 20px;
+  width: 920px; /* Ocupa toda a largura do container */
+  transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 100%; /* Posiciona a caixa expansível abaixo da linha de colunas */
+  left: 0;
+  z-index: 1;
+}
+
+
+/* Adiciona margem superior ao tab-wrapper quando a caixa expansível está visível */
+.tab-wrapper.tab-shift {
+  margin-top: 200px; /* Desloca o tab-wrapper para baixo */
+  transition: margin-top 0.5s ease; /* Suaviza a transição do deslocamento */
+}
+
+
+
+
+.conteudo-expansivel table {
+  width: 100%;
+  border-collapse: collapse; /* Remove espaços entre bordas das células */
+}
+
+.conteudo-expansivel th, .conteudo-expansivel td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Define a largura das colunas */
+.conteudo-expansivel td:first-child,
+.conteudo-expansivel th:first-child {
+    width: 30%; /* 30% de largura para a primeira coluna */
+}
+
+/* Margem específica para a segunda coluna */
+.conteudo-expansivel td:nth-child(2),
+.conteudo-expansivel th:nth-child(2) {
+  width: 70%; /* 70% de largura para a segunda coluna */
+  padding-left: 20px; /* Margem maior à esquerda para a segunda coluna */
+  font-size: 2.5vh;
+  font-weight: 400;
+}
+
+
+/* Ajuste o padding conforme necessário para espaçamento */
+.conteudo-expansivel td:first-child {
+  padding-left: 5px; /* Menor margem à esquerda para a primeira coluna */
+}
+
+.conteudo-expansivel td:nth-child(2) {
+  padding-left: 20px; /* Maior margem à esquerda para a segunda coluna */
+}
+
+.conteudo-expansivel th {
+  padding-left: 5px;
+  font-size: 3vh;
+}
+
+.tab-wrapper {
+  transition: transform 0.3s ease-in-out; /* Transição suave para o deslocamento */
+  transform: translateY(0); /* Posição inicial */
+}
+
+.tab-wrapper.tab-shift {
+  transform: translateY(100%); /* Desloca o tab-wrapper para baixo quando .tab-shift for aplicada */
+}
+
+
+
+
+
+
+/* Estilo das abas */
+.tab {
+    width: 100%; /* Abas ocupam 100% da largura da página */
+    height: 150px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 5rem; /* Tamanho XXL para o texto */
+    color: rgb(56, 56, 56);
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.tab-day1 {
+    background-color: rgb(245, 245, 220);
+}
+
+.tab-day2 {
+    background-color: rgb(255, 235, 205);
+}
+
+.tab-day3 {
+    background-color: #FFD700; /* Fundo amarelo */
+}
+
+.tab:hover {
+    background-color: rgba(139, 0, 0, 0.5);
+}
+
+.tab.active {
+    background-color: rgba(139, 0, 0);
+    color: white;
+}
+
+/* Estilo do conteúdo das abas */
+.tab-content {
+    display: none; /* Inicialmente escondido */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.day1-content {
+    background-color: rgb(245, 245, 220);
+}
+
+.day2-content {
+    background-color: rgb(255, 235, 205);
+}
+
+.day3-content {
+    background-color: #FFD700;
+}
+
+.content-wrapper {
+    width: 960px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: inherit; /* Usa a cor do tab-content */
+    padding: 20px;
+
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 5vh;
+}
+
+
+/* Estilo para o conteúdo dos dias */
+.schedule {
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-weight: 400;
+    font-size: 2.5vh;
+
+}
+
+
+.session {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Espaçamento entre as sessões */
+    padding: 10px 0; /* Espaçamento interno para melhor visualização */
+    border-bottom: 1px solid #ddd; /* Linha separadora opcional */
+}
+
+.session a{
+  text-decoration: none;
+  color: rgb(139, 0, 0);
+  cursor: pointer;
+}
+
+.time {
+    font-weight: bold;
+    margin-right: 20px; /* Espaçamento entre a hora e a descrição */
+}
+
+.time span{
+  color: transparent;
+}
+
+.description {
+    flex: 1; /* Usa o espaço restante */
+    margin-left: 20px; /* Espaçamento à esquerda da descrição */
+}
+
+
+
+.map-container {
+  text-align: center; /* Centraliza o conteúdo do contêiner */
+  margin-top: 100px; /* Espaço acima do mapa, ajuste conforme necessário */
+  margin-bottom: 60px;
+}
+
+.map-container iframe {
+  display: inline-block; /* Faz com que o iframe se comporte como um bloco inline */
+  max-width: 100%; /* Garante que o iframe não exceda a largura do contêiner */
+}
+
+ /* Centralizar o conteúdo e limitar a largura a 960px */
+        .container {
+          max-width: 960px;
+          margin: 0 auto; /* Centraliza o container horizontalmente */
+          padding: 0 20px; /* Pequeno padding para evitar que o conteúdo encoste nas laterais */
+      }
+
+
+.container h3{
+    text-align: center; /* Centraliza o conteúdo do contêiner */
+    margin-top: 60px;
+        margin-bottom: 40px;
+}
+
+
+
+
+/* Container para as imagens */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.image-row img {
+  width: 100%;
+  height: auto;
+}
+
+
+ /* Container para as imagens */
+.image-col {
+  position: relative; /* Necessário para posicionar o overlay */
+  flex: 1;
+  margin: 5px;
+  max-width: 30%;
+  height: 250px;
+  overflow: hidden;
+}
+
+/* Estilo das imagens com cover */
+.image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease; /* Transição suave na imagem ao hover */
+}
+
+/* Efeito hover para zoom suave na imagem */
+.image-col:hover img {
+  transform: scale(1.1); /* Leve zoom na imagem ao passar o mouse */
+}
+
+/* Overlay que será visível ao hover */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(139, 0, 0, 0.5); /* Fundo semi-transparente escuro */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transição suave do overlay */
+  font-family: "IBM Plex Mono", monospace, serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* Exibir o overlay ao passar o rato */
+.image-col:hover .image-overlay {
+  opacity: 1; /* Torna o overlay visível */
+}
+
+
+
+/* linha final */
+
+.final-line {
+    border: none;
+    height: 2px; /* Espessura da linha */
+    background-color: rgb(56, 56, 56); /* Cor da linha */
+    width: 100%; /* Ocupa toda a largura da página */
+    margin-top: 50px;
+  }
+  
+ 
+
+
+
+@media only screen and (min-width: 1780px) {
+
+  .image-title {
+    font-size: 5vh;
+  }
+    
+  .text-present p {
+    font-size: 2vh;
+  }
+
+  .local-container{
+    font-size: 2.25vh;
+  }
+
+  .conteudo-expansivel th {
+    font-size: 2.5vh;
+  }
+
+  .conteudo-expansivel td:first-child {
+    font-size: 2vh;
+  }
+
+
+  .conteudo-expansivel td:nth-child(2), .conteudo-expansivel th:nth-child(2) {
+    font-size: 2vh;
+  }
+
+  h2 {
+    font-size: 2.5vh;
+  }
+
+  .schedule {
+    font-size: 2vh;
+  }
+  
+  
+
+  }
+
+
+
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+
+  /* navbar */
+  .navbar {
+    height: 100px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 90%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+
+
+
+ 
+  /* texto */
+  .text-present {
+    width: 100%;
+    padding: 40px 30px; /* Ajusta o padding */
+    box-sizing: border-box;
+  }
+
+  .text-present p {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+    margin: 0;
+    padding: 20px;
+  }
+
+
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
+
+ h3{
+  font-size: 2.5vh;
+ }
+
+
+
+  /* Estilo das abas */
+  .tab {
+    width: 100%; /* Abas ocupam 100% da largura da página */
+    height: 120px; /* Ajusta a altura das abas */
+    font-size: 6.5vh; /* Ajusta o tamanho do texto */
+  }
+
+  .arrow {
+    font-size: 4vh; /* Ajusta o tamanho da seta */
+  }
+
+
+  .schedule {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+  }
+
+  .session {
+    margin-bottom: 15px; /* Ajusta o espaçamento entre as sessões */
+    padding: 10px 0; /* Ajusta o padding */
+  }
+
+  .cta-button {
+    width: 350px;
+    height: 40px; /* Altura reduzida do botão */
+    line-height: 2.5rem; /* Centraliza verticalmente o texto */
+    font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
+}
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+
+  /* navbar */
+  .navbar {
+    height: 90px; /* Ajusta a altura da navbar */
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .navbar .logo {
+    font-size: 20px; /* Aumenta o tamanho do logo */
+    padding-left: 20px; /* Ajusta o padding à esquerda */
+  }
+
+  .rotating-icon img {
+    width: 35px; /* Ajusta o tamanho do ícone */
+    height: 35px;
+  }
+
+  .burger {
+    font-size: 32px; /* Ajusta o tamanho do ícone do menu */
+    right: 15px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      width: 240px;
+      height: 200px;
+      top: 90px;
+
+  }
+
+  .menu.active, .menu.sticky {
+    right: 20px; /* Ajusta o menu para a posição visível */
+  }
+
+  .image-container {
+    height: 400px; /* Ajusta a altura da imagem */
+  }
+
+  .title-container {
+    width: 85%; /* Ajusta a largura da container */
+    padding: 0 10px; /* Ajusta o padding lateral */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+
+  .image-title {
+    font-size: 3.5vw;
+    bottom: 30px;
+}
+
+
+
+
+
+
+
+  .local-container {
+    width: 100%; /* Ocupa a largura total da tela */
+    flex-direction: column; /* Alinha as colunas verticalmente */
+    margin-bottom: 60px;
+    font-size: 2.5vh;
+  }
+
+  .coluna {
+    width: 90%; /* Reduz a largura das colunas para criar margens laterais */
+    margin: 0 auto; /* Centraliza as colunas */
+    padding: 8px;
+  }
+
+
+
+  .conteudo-expansivel {
+    box-sizing: border-box;
+    width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
+    padding: 20px 0;
+    position: static; /* Altera para posição estática em vez de absoluta */
+    margin: 0 auto; /* Centraliza o conteúdo expansível */
+  }
+
+
+
+  .conteudo-expansivel th {
+    font-size: 2.25vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px 8px;
+    
+  }
+
+  .conteudo-expansivel td {
+    font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
+  }
+
+
+  .tab-wrapper.tab-shift {
+    margin-top: 60px; /* Ajusta a margem superior para mobile */
+  }
+
+
+
+.conteudo-expansivel th, .conteudo-expansivel td {
+display: block; /* Cada célula se torna um bloco completo */
+width: 100%; /* As células ocupam 100% da largura */
+box-sizing: border-box; /* Para garantir que padding e largura funcionem bem */
+}
+
+.conteudo-expansivel td:first-child, .conteudo-expansivel th:first-child {
+padding-left: 5px; /* Mantém o padding para a primeira célula */
+box-sizing: border-box;
+width: 100%;
+margin-top: 5px;
+}
+
+.conteudo-expansivel td:nth-child(2), .conteudo-expansivel th:nth-child(2) {
+padding-left: 5px; /* Reduz o padding para a segunda célula */
+box-sizing: border-box;
+width: 100%;
+font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
+}
+
+
+
+.cta-button {
+  width: 325px;
+  height: 40px; /* Altura reduzida do botão */
+  line-height: 2.5rem; /* Centraliza verticalmente o texto */
+  font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
+}
+
+
+
+  /* texto */
+  .text-present {
+    width: 100%;
+    padding: 40px 20px; /* Ajusta o padding */
+    box-sizing: border-box;
+  }
+
+  .text-present p {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+    margin: 0;
+    padding: 20px;
+  }
+
+
+  h2 {
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
+  }
+
+
+
+
+  /* Estilo das abas */
+  .tab {
+    width: 100%; /* Abas ocupam 100% da largura da página */
+    height: 120px; /* Ajusta a altura das abas */
+    font-size: 6.5vh; /* Ajusta o tamanho do texto */
+  }
+
+  .arrow {
+    font-size: 4vh; /* Ajusta o tamanho da seta */
+  }
+
+
+
+  
+  /* Estilo do conteúdo das abas */
+  .tab-content {
+    padding: 15px; /* Ajusta o padding */
+  }
+
+  .content-wrapper {
+    box-sizing: border-box;
+    width: 100%; /* Ajusta a largura */
+    padding: 15px; /* Ajusta o padding */
+  }
+
+  .schedule {
+    font-size: 2vh; /* Ajusta o tamanho da fonte */
+  }
+
+  .session {
+    margin-bottom: 15px; /* Ajusta o espaçamento entre as sessões */
+    padding: 10px 0; /* Ajusta o padding */
+  }
+
+
+
+}
+
+
+
+
+
+  
+    /* Responsividade: Empilhar imagens em telas pequenas */
+    @media (max-width: 768px) {
+      .image-col {
+          max-width: 100%; /* Imagens ocupam 100% da largura em telas menores */
+          height: auto; /* Define a altura automática */
+      }
+  
+        
+      .image-row {
+        flex-direction: column;
+    }
+
+
+      .image-col img {
+          width: 100%; /* Garante que as imagens ocupem toda a largura do container */
+          height: 250px; /* Define uma altura fixa consistente */
+          object-fit: cover; /* Assegura que a imagem cubra todo o espaço */
+          object-position: center; /* Centraliza a imagem */
+      }
+
+
+      .white-section .logo-box {
+        width: 80px;
+        height: 80px;
+      }
+
+      .cta-button {
+        width: 300px;
+        height: 40px; /* Altura reduzida do botão */
+        line-height: 2.5rem; /* Centraliza verticalmente o texto */
+        font-size: 1.75rem; /* Tamanho reduzido da fonte do botão */
+    }
+  }
+
+
+@media only screen and (max-width: 479px) {
+
+  /* navbar */
+  .navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar .logo {
+      font-size: 18px; /* Tamanho reduzido do logo */
+      padding-left: 10px; /* Remove padding à esquerda */
+  }
+
+  .rotating-icon img {
+      width: 30px; /* Reduz o tamanho do ícone */
+      height: 30px;
+  }
+
+  .burger {
+      font-size: 28px; /* Tamanho reduzido do ícone do menu */
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* menu */
+  .menu {
+      top: 80px;
+      width: 100%;
+      left: 0;
+      background: rgba(210, 209, 209, 0.95); /* Cor com transparência */
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .menu.active, .menu.sticky {
+      right: 0; /* Ajusta o menu para a posição visível */
+
+  }
+
+
+  .image-container {
+      height: 250px; /* Reduzido para telas menores */
+      padding: 0; /* Remove qualquer padding */
+      box-sizing: border-box; /* Garante que padding não afete a largura total */
+  }
+
+  .title-container {
+      width: 90%; /* Ajustado para largura menor em telas pequenas */
+      padding: 0 10px; /* Adicionado padding lateral para ajuste */
+      text-align: center; /* Centraliza o texto para telas menores */
+      margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+  .image-title {
+      font-size: 8vw; /* Ajustado para maior responsividade em telas menores */
+      bottom: 20px; /* Ajustado para melhor alinhamento em telas menores */
+  }
+
+
+
+  /* locais */
+
+
+  .local-container {
+    width: 100%; /* Ocupa a largura total da tela */
+    flex-direction: column; /* Alinha as colunas verticalmente */
+    margin-bottom: 60px;
+    font-size: 2.25vh;
+  }
+
+  .coluna {
+    width: 80%; /* Reduz a largura das colunas para criar margens laterais */
+    margin: 0 auto; /* Centraliza as colunas */
+    padding: 8px;
+  }
+
+
+
+  .conteudo-expansivel {
+    box-sizing: border-box;
+    width: 90%; /* Reduz a largura do conteúdo expansível para criar margens laterais */
+    padding: 20px 40px;
+    position: static; /* Altera para posição estática em vez de absoluta */
+    margin: 0 auto; /* Centraliza o conteúdo expansível */
+  }
+
+
+
+  .conteudo-expansivel th {
+    font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
+  }
+
+  .conteudo-expansivel td {
+    font-size: 1.75vh; /* Ajusta o tamanho da fonte para mobile */
+    padding: 4px;
+  }
+
+
+  .tab-wrapper.tab-shift {
+    margin-top: 60px; /* Ajusta a margem superior para mobile */
+  }
+
+
+
+  .conteudo-expansivel table {
+    display: block; /* Faz com que a tabela se comporte como um bloco em telas pequenas */
+}
+
+.conteudo-expansivel tr {
+  display: block; /* Cada linha se tornará um bloco separado */
+}
+
+
+.conteudo-expansivel th, .conteudo-expansivel td {
+  display: block; /* Cada célula se torna um bloco completo */
+  width: 100%; /* As células ocupam 100% da largura */
+  box-sizing: border-box; /* Para garantir que padding e largura funcionem bem */
+}
+
+.conteudo-expansivel td:first-child, .conteudo-expansivel th:first-child {
+  padding-left: 5px; /* Mantém o padding para a primeira célula */
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.conteudo-expansivel td:nth-child(2), .conteudo-expansivel th:nth-child(2) {
+  padding-left: 5px; /* Reduz o padding para a segunda célula */
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.75vh; /* Ajusta o tamanho da fonte para mobile */
+}
+
+
+.cta-button {
+  width: 250px;
+  height: 50%; /* Altura reduzida do botão */
+  line-height: 36px; /* Centraliza verticalmente o texto */
+  font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
+}
+
+
+/* texto */
+.text-present {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+
+h2{
+  font-size: 2vh;
+}
+
+
+.text-present p {
+  font-size: 1.75vh;
+  margin: 0;
+}
+
+
+/* Estilo das abas */
+.tab {
+  width: 100%; /* Abas ocupam 100% da largura da página */
+  height: 100px;
+  font-size: 5.5vh; /* Tamanho XXL para o texto */
+}
+
+
+.arrow {
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 3vh;
+}
+
+
+ /* Estilo do conteúdo das abas */
+ .tab-content {
+  display: none; /* Inicialmente escondido */
+  width: 100%;
+  padding: 10px; /* Reduzido o padding para telas menores */
+  box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.day1-content {
+  background-color: rgb(245, 245, 220);
+}
+
+.day2-content {
+  background-color: rgb(255, 235, 205);
+}
+
+.day3-content {
+  background-color: #FFD700;
+}
+
+.content-wrapper {
+  width: 100%; /* Ajustado para ocupar 100% da largura disponível */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  background-color: inherit; /* Usa a cor do tab-content */
+  box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.schedule {
+  font-size: 1.75vh;
+  box-sizing: border-box;
+}
+
+
+.session {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  margin-bottom: 20px; /* Espaçamento entre as sessões */
+  padding: 0; /* Espaçamento interno para melhor visualização */
+  }
+
+
+ 
+
+
+}
+
