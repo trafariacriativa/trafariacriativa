@@ -17,7 +17,7 @@ const countdownFunction = setInterval(function() {
 
     // Exiba o resultado no elemento com id "countdown"
     document.getElementById("countdown").innerHTML = 
-        days + "d:" + hours + "h:" + minutes + "m:" + seconds + "s";
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 
     // Se a contagem terminar, exiba uma mensagem
     if (timeLeft < 0) {
