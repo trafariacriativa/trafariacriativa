@@ -2,7 +2,7 @@
         // contador
 
             // Defina a data e hora do evento
-const eventDate = new Date("November 8, 2024 09:00:00").getTime();
+const eventDate = new Date("November 14, 2025 09:00:00").getTime();
 
 // Atualize o contador a cada segundo
 const countdownFunction = setInterval(function() {
