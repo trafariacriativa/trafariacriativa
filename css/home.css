@@ -1003,7 +1003,7 @@ p {
 
 
 .countdown {
-    font-size: 3.5vw;
+    font-size: 3.25vw;
     color: #fff;
     padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
     right: 15%;
@@ -1038,6 +1038,7 @@ p {
 .box-subtitle {
     font-size: 6vmin; /* Tamanho reduzido do subtítulo */
     margin-top: 15px; /* Reduz o espaço entre as linhas */
+    margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
 }
 
 .box-date {
@@ -1186,7 +1187,7 @@ p {
 
 
 .countdown {
-    font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
+    font-size: 4vh; /* Tamanho reduzido da fonte do countdown */
     position: static; /* Remove o posicionamento absoluto */
     transform: none; /* Remove a transformação de centralização */
     margin-right: 15px;
@@ -1239,6 +1240,7 @@ p {
 .box-subtitle {
     font-size: 6vmin; /* Tamanho reduzido do subtítulo */
     margin-top: 15px; /* Reduz o espaço entre as linhas */
+    margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
 }
 
 .box-date {
@@ -1427,7 +1429,7 @@ p {
    }
    
    .countdown {
-       font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
+       font-size: 4vh; /* Tamanho reduzido da fonte do countdown */
        position: static; /* Remove o posicionamento absoluto */
        transform: none; /* Remove a transformação de centralização */
        padding: 0;
@@ -1463,12 +1465,12 @@ p {
    
        
        .box-content {
-           
+
            text-align: center;
        }
    
        .box {
-           width: 75%;
+           width: 50%;
            height: auto; /* Altura reduzida da caixa */
            left: 50%;
            transform: translateX(-50%);
@@ -1479,12 +1481,13 @@ p {
    
        
        .box-title {
-           font-size: 4.5vmax; /* Tamanho reduzido do título */
+           font-size: 6vmax; /* Tamanho reduzido do título */
        }
    
        .box-subtitle {
-           font-size: 5vmax; /* Tamanho reduzido do subtítulo */
+           font-size: 6vmax; /* Tamanho reduzido do subtítulo */
            margin-top: 1rem; /* Reduz o espaço entre as linhas */
+           margin-bottom: 15px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
        }
    
        .box-date {
@@ -1686,7 +1689,7 @@ text-align: center;
     }
 
     .countdown {
-        font-size: 2.5vmax; /* Tamanho reduzido da fonte do countdown */
+        font-size: 4vmax; /* Tamanho reduzido da fonte do countdown */
         position: static; /* Remove o posicionamento absoluto */
         transform: none; /* Remove a transformação de centralização */
         padding: 0;
@@ -1725,7 +1728,7 @@ text-align: center;
     }
 
     .box {
-        width: 80%;
+        width: 65%;
         height: auto; /* Altura reduzida da caixa */
         left: 50%;
         transform: translateX(-50%);
@@ -1739,8 +1742,9 @@ text-align: center;
     }
 
     .box-subtitle {
-        font-size: 10vmin; /* Tamanho reduzido do subtítulo */
+        font-size: 9.5vmin; /* Tamanho reduzido do subtítulo */
         margin-top: 1rem; /* Reduz o espaço entre as linhas */
+        margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
     }
 
     .box-date {
