@@ -193,7 +193,7 @@ p {
 
 
 .date {
-    text-align: justify;
+    text-align: center;
 }
 
 .date h2 {
@@ -751,7 +751,7 @@ p {
 
 }
 
-
+  }
 
 @media (max-width: 480px) {
     .image {
@@ -817,6 +817,12 @@ p {
         font-size: 55%;
         z-index: 0;
     }
+
+ h4 {
+ font-size: 3.8em;
+ line-height: 1.6em;
+
+ } 
 
 .text {
     padding-left: 25px;
@@ -899,6 +905,6 @@ p {
 
 }
 
-  }
+  
 
 
