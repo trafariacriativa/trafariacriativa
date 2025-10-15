@@ -399,6 +399,17 @@ p, li {
     margin-bottom: 80px; /* Espaçamento entre o texto e o slideshow */
 }
 
+
+.text-section a{
+  text-decoration: none;
+  background-color: rgb(30, 72, 143);
+  color: white;
+
+}
+
+
+
+
 .section-title {
   margin-top: 60px;
     margin-bottom: 10px;
