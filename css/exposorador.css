@@ -197,7 +197,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(219, 230, 76, 0.2);
+    background-color: rgb(246, 247, 237);
 
 }
 
@@ -458,9 +458,9 @@ h1:nth-of-type(2) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 0, 0, 0.5); /* Overlay vermelho com 50% de opacidade */
+  background-color: rgba(30, 72, 143, 0.5); /* Overlay vermelho com 50% de opacidade */
   opacity: 0;
-  transition: opacity 0.3s ease; /* Suaviza a transição do overlay */
+  transition: opacity 0.3s ease; /*Suaviza a transição do overlay */
 }
 
 /* Efeito ao passar o mouse sobre a imagem */
@@ -492,7 +492,7 @@ h1:nth-of-type(2) {
   font-family: "IBM Plex Mono", monospace, serif;
   font-size: 20px;
   font-weight: 700;
-  color: rgba(139, 0, 0, 0.8);
+  color: rgba(30, 72, 143);
   text-align: left;
 }
 

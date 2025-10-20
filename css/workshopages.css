@@ -362,7 +362,7 @@ p, li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(139, 0, 0, 0.8); /* Cor com transparência */
+    background: rgba(30, 72, 143, 0.6); /* Cor com transparência */
     pointer-events: none; /* Permite interação com os elementos abaixo */
 }
 
@@ -414,14 +414,14 @@ p, li {
 
 .section-name a{
   text-decoration: none;
-  background-color: rgb(139, 0, 0);
+  background-color:  rgb(30, 92, 143);
   color: white;
 }
 
 
 .section-name a:hover{
   text-decoration: none;
-  background-color: rgb(139, 0, 0, 0.5);
+  background-color: rgb(0,31,63);
 }
 
 .section-name + .section-name {
@@ -442,7 +442,7 @@ font-size: 2vh;
 }
 
 .section-text a  {
-  background-color: rgba(139, 0, 0);
+  background-color: rgb(30, 92, 143);
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -451,7 +451,7 @@ font-size: 2vh;
 
 .section-text a:hover {
   background-color: transparent;
-  color: rgba(139, 0, 0);
+  color: rgb(0,31,63);
 
 }
 
@@ -627,13 +627,13 @@ video {
 
 .counter i {
   font-size: 28px;
-  color: rgba(139, 0, 0, 0.8);
+  color: rgb(30, 92, 143, 0.8);
   margin-bottom: 10px;
 }
 
 
 .custom-button {
-  background-color: rgba(139, 0, 0, 0.8); /* Cor de fundo */
+  background-color: rgb(30, 92, 143, 0.8); /* Cor de fundo */
   border: none;              /* Remove borda */
   color: white;              /* Cor do texto */
   padding: 15px 32px;        /* Espaçamento interno */
@@ -648,7 +648,7 @@ video {
 }
 
 .custom-button:hover {
-  background-color: rgba(139, 0, 0, 0.5); /* Cor ao passar o mouse */
+  background-color: rgb(30, 92, 143, 0.5); /* Cor ao passar o mouse */
   color: black;
 }
 

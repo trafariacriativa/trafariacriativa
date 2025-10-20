@@ -13,7 +13,7 @@
     justify-content: space-between; /* Espaço entre os elementos */
     padding: 20px; /* Adiciona espaçamento interno */
     gap: 20px; /* Espaço entre os itens */
-    
+   
   }
   
   /* Textos informativos na esquerda */
@@ -54,6 +54,7 @@
     text-align: right;
     margin-top: 20px;
     margin-bottom: 40px;
+    
   }
   
   .white-section .support-logos h3 {
@@ -62,6 +63,7 @@
     text-align: center;
     margin-bottom: 20px;
     color: rgb(56, 56, 56);
+
   }
   
 
