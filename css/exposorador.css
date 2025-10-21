@@ -474,7 +474,7 @@ h1:nth-of-type(2) {
   flex: 1; /* Permite que o texto ocupe o espaço restante */
   color: rgb(56, 56, 56);
   z-index: 1; /* Garante que o texto fique acima do overlay */
-  hyphens: auto;
+  hyphens: none;
 }
 
 .speaker-info h2 {
