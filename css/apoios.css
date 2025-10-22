@@ -43,11 +43,9 @@
   }
   
   .white-section .image-side img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+    width: auto;
+    max-height: 250px; /* Limita a altura da imagem */
     object-fit: contain;
-    display: block;
   }
   
   /* Seção de apoios */
@@ -175,14 +173,6 @@
   text-decoration: none;
 }
 
-@media only screen and (min-width: 961px) {
-  .white-section .image-side img {
-    width: 100%;
-    height: auto;
-    max-height: none; /* remove a limitação */
-  }
-}
-
 
   @media only screen and (min-width: 480px) and (max-width: 960px) {
 
@@ -195,6 +185,14 @@
     height: 60px; /* Altura fixa da caixa */
   }
 
+  
+  .white-section .image-side img {
+    width: auto; /* A largura será ajustada automaticamente */
+    max-width: 100%; /* Limita a largura ao container */
+    max-height: 100%; /* Evita que a altura ultrapasse o container */
+    object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
+  }
+  
   
   /* Estilo fixo para a caixa de cada logotipo este não é necessário se entrar um logotipo da altura dos parceiros */
   .white-section .logo-boxmedia {
@@ -219,12 +217,12 @@
     height: 60px; /* Altura fixa da caixa */
   }
 
-  /*
+  
   .white-section .image-side img {
-    width: auto;  A largura será ajustada automaticamente */
-   /*  max-width: 100%; Limita a largura ao container */
-   /*  max-height: 100%; Evita que a altura ultrapasse o container */
-   /* object-fit: contain;  Mantém a proporção da imagem sem cortá-la 
+    width: auto; /* A largura será ajustada automaticamente */
+    max-width: 100%; /* Limita a largura ao container */
+    max-height: 100%; /* Evita que a altura ultrapasse o container */
+    object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
   }
   
   
