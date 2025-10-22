@@ -44,10 +44,13 @@
   
   .white-section .image-side img {
     width: auto;
+    max-width: 100%; /* Limita a largura ao container */
     max-height: 250px; /* Limita a altura da imagem */
     object-fit: contain;
   }
   
+
+
   /* Seção de apoios */
   .white-section .support-logos {
     width: auto; /* Ocupar 30% da largura */
