@@ -203,7 +203,7 @@ body, html {
 h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
-    font-size: 6vh;
+    font-size: 3rem; /* estava 6vh */
     hyphens: auto;
 
 }
@@ -211,13 +211,13 @@ h2 {
 h3 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 800;
-    font-size: 3vh;
+    font-size: 1.5rem;  /* estava 3vh */
 }
 
 p {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 2.25vw;
+    font-size: 1.25rem;  /* estava 2.25vw */
 
 }
 
@@ -275,7 +275,7 @@ p {
 .countdown {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 800;
-    font-size: 3vw;
+    font-size: 1.5rem;  /* estava 3vw */
     color: #fff;
     position: absolute;
     padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
@@ -472,7 +472,7 @@ p {
 .title {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
-    font-size: 8vh;
+    font-size: 4rem;  /* estava 8vh */
     letter-spacing: 0.05em;
     color: white; /* Cor do texto do título */
     margin: 0;
@@ -487,7 +487,7 @@ p {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vh;
+    font-size: 2rem;  /* estava 4vh */
     color: white; /* Cor do texto do subtítulo */
 
 }
@@ -551,7 +551,7 @@ p {
     background-color: rgb(195, 2, 2); /* Fundo vermelho escuro */
     color: white; /* Texto branco */
     font-family: "Poppins", sans-serif;
-    font-size: 4vh; /* Ajuste de tamanho da fonte */
+    font-size: 2rem; /* Ajuste de tamanho da fonte   estava 4vh */
     font-weight: 600;
     text-align: center;
     padding: 15px 0; /* Espaçamento interno */
@@ -562,7 +562,7 @@ p {
 .shuttle-station {
     display: block; /* Força a quebra de linha */
     margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
-    font-size: 3.25vh;
+    font-size: 1.75rem;  /* estava 3.25vh */
 
 }
 
@@ -578,7 +578,7 @@ p {
 }
 
 .content-section h2 {
-    font-size: 3.5vh;
+    font-size: 1.5rem;  /* estava 3.5vh */
     color: rgb(56, 56, 56);
     margin-top: 20px;
     margin-bottom: 40px;
@@ -849,7 +849,7 @@ p {
     }
 
     .countdown {
-        font-size: 2vw;
+        font-size: 2rem;  /* estava 2vh */
     }
     
 
@@ -862,12 +862,12 @@ p {
      }
 
      .title {
-        font-size: 7vh; /* Tamanho do título */
+        font-size: 5rem; /* Tamanho do título */  /* estava 7vh */
     }
 
     .subtitle {
         line-height: 1.5em;
-        font-size: 4vh; /* Tamanho do subtítulo */
+        font-size: 3rem; /* Tamanho do subtítulo */  /* estava 4vh */
     }
 
 
@@ -882,7 +882,7 @@ p {
 }
 
 .content-section h2 {
-    font-size: 3.5vh;
+    font-size: 2rem;  /* estava 3.5vh */
     color: rgb(56, 56, 56);
     margin-top: 20px;
     margin-bottom: 40px;
@@ -890,11 +890,11 @@ p {
 
 
 .overlay-section h3 {
-    font-size: 2.5vh;
+    font-size: 1.25rem;  /* estava 2.5vh */
 }
 
 .overlay-section p {
-    font-size: 2vh;
+    font-size: 1.25rem;  /* estava 2vh */
 }
 
 
@@ -921,12 +921,12 @@ p {
 
 
 .left-side h2 {
-    font-size: 5vh; /* Tamanho reduzido do título */
+    font-size: 3rem; /* Tamanho reduzido do título */  /* estava 5vh */
 }
 
 
 .left-side p {
-    font-size: 2vh; /* Tamanho reduzido do título */
+    font-size: 1.25rem; /* Tamanho reduzido do título */  /* estava 2vh */
 }
 
 .split-section-yellow {
@@ -934,12 +934,12 @@ p {
 }
 
 .text-side h2 {
-    font-size: 5vh; /* Tamanho reduzido do título */
+    font-size: 3rem; /* Tamanho reduzido do título */  /* estava 5vh */
 }
 
 
 .text-side p {
-    font-size: 2vh; /* Tamanho reduzido do título */
+    font-size: 1.25rem; /* Tamanho reduzido do título */  /* estava 2vh */
 }
 
 
@@ -950,11 +950,11 @@ p {
 /* residências */
 
 .text-side-yellow h3 {
-    font-size: 4vw; /* Tamanho reduzido do título */
+    font-size: 3rem; /* Tamanho reduzido do título */  /* estava 4vw */
 }
 
 .text-side-yellow p {
-    font-size: 2.25vh; /* Tamanho reduzido do texto */
+    font-size: 1.25rem; /* Tamanho reduzido do título */  /* estava 2vh */
 }
 
 
@@ -962,18 +962,6 @@ p {
 
 }
 
-
-
-
-@media only screen and (min-width: 1728px) {
-
-
-    .text-side-yellow p{
-        font-size: 2vh;
-        
-    }
-
-}
 
 
 @media only screen and (min-width: 760px) and (max-width: 1023px) {
@@ -1003,7 +991,7 @@ p {
 
 
 .countdown {
-    font-size: 3.25vw;
+    font-size: 1.5rem; /* estava 3.25vw */
     color: #fff;
     padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
     right: 15%;
@@ -1032,11 +1020,11 @@ p {
 
 
 .box-title {
-    font-size: 6vmin; /* Tamanho reduzido do título */
+    font-size: 3rem; /* Tamanho reduzido do título */ /* estava 6vmin */
 }
 
 .box-subtitle {
-    font-size: 6vmin; /* Tamanho reduzido do subtítulo */
+    font-size: erem; /* Tamanho reduzido do subtítulo */ /* estava 6vmin */
     margin-top: 15px; /* Reduz o espaço entre as linhas */
     margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
 }
@@ -1067,67 +1055,60 @@ p {
     }
 
     .title{
-        font-size: 5.25vh;
+        font-size: 3rem; /* estava 5.25vh */
     }
    
     .subtitle {
-        font-size: 3vh;
+        font-size: 1.6rem; /* estava 6vmin */
 
     }
 
 
     .content-section h2 {
-        font-size: 3vh;
+        font-size: 1.9rem; /* estava 5vh*/
 
     }
 
 
     .overlay-section h3{
-        font-size: 2.5vh;
+        font-size: 1.5rem; /* estava 5vh*/
     }
 
     .overlay-section p{
-        font-size: 1.6vh;
+        font-size: 1.5rem;  /* estava 1.6vh*/
     }
 
     .shuttle-info {
-        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas menores */
+        font-size: 2rem; /* Aumenta o tamanho da fonte em telas menores */  /* estava 2.5vh*/
         padding: 10px 0; /* Reduz o espaçamento interno */
     }
 
     
 .shuttle-station {
-    font-size: 2.25vh;
+    font-size: 1.8rem; /* estava 2.25vh*/
 
 }
 
 /* imersão */
 
-.left-side h2{
-    font-size: 4vh;
+.left-side h2,
+.text-side h2 {
+    font-size: 3rem; /* estava 4vh*/
 }
 
-.left-side p {
-    font-size: 1.75vh; /* Tamanho reduzido do texto */
+.left-side p,
+.text-side p,
+.text-side-yellow p {
+    font-size: 1.25rem; /* Tamanho reduzido do texto */
 }
 
-/* talks */
-
-
-.text-side h2{
-    font-size: 4vh;
-}
-
-.text-side p {
-    font-size: 1.75vh; /* Tamanho reduzido do texto */
-}
 
 /* residências */
 
 
 
 .text-side-yellow h3 {
-    font-size: 3.5vh; /* Tamanho reduzido do título */
+    font-size: 2.5rem; /* Tamanho reduzido do título */
 }
 
 
@@ -1135,10 +1116,6 @@ p {
     height: 300px; /* Define uma altura fixa para a imagem */
 }
 
-
-.text-side-yellow p {
-    font-size: 1.6vh; /* Tamanho reduzido do texto */
-}
 
      
 
@@ -1187,7 +1164,7 @@ p {
 
 
 .countdown {
-    font-size: 4vh; /* Tamanho reduzido da fonte do countdown */
+    font-size: 1.5rem; /* Tamanho reduzido da fonte do countdown */
     position: static; /* Remove o posicionamento absoluto */
     transform: none; /* Remove a transformação de centralização */
     margin-right: 15px;
@@ -1208,13 +1185,13 @@ p {
 
 
 .shuttle-info {
-        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas menores */
+        font-size: 1.8rem; /* Aumenta o tamanho da fonte em telas menores */
         padding: 10px 0; /* Reduz o espaçamento interno */
     }
     
     
 .shuttle-station {
-    font-size: 2.25vh;
+    font-size: 1.5rem;
 
 }
   /* programa */
@@ -1272,33 +1249,33 @@ p {
 
    
     .title{
-        font-size: 4.25vh;
+        font-size: 3rem;
     }
    
     .subtitle {
-        font-size: 2.5vh;
+        font-size: 1.4rem;
 
     }
 
 
     .content-section h2 {
-        font-size: 3vh;
+        font-size: 2rem;
 
     }
 
 
     .overlay-section h3{
-        font-size: 2.5vh;
+        font-size: 2rem;
     }
 
     .overlay-section p{
-        font-size: 1.6vh;
+        font-size: 1.5rem;
     }
 
 
 
     .subtitle-container {
-        font-size: 5vh;
+        font-size: 2remvh;
 
     }
 
@@ -1315,7 +1292,7 @@ p {
 }
 
 .content-section h2 {
-    font-size: 3vh; /* Tamanho reduzido do título das notícias */
+    font-size: 1.8rem; /* Tamanho reduzido do título das notícias */
 
 }
 
@@ -1324,11 +1301,11 @@ p {
 }
 
 .overlay-section h3 {
-    font-size: 1.75vh; /* Tamanho reduzido do título do overlay */
+    font-size: 1.3rem; /* Tamanho reduzido do título do overlay */
 }
 
 .overlay-section p {
-    font-size: 1.5vh; /* Tamanho reduzido do texto do overlay */
+    font-size: 1.3rem; /* Tamanho reduzido do texto do overlay */
 }
 
 /* imersão */
@@ -1336,12 +1313,15 @@ p {
     padding: 20px; /* Ajusta o padding para telas menores */
 }
 
-.left-side h2 {
-    font-size: 3vh; /* Tamanho reduzido do título */
+.left-side h2,
+.text-side h2 {
+    font-size: 2.5rem; /* Tamanho reduzido do título */
 }
 
-.left-side p {
-    font-size: 1.65vh; /* Tamanho reduzido do texto */
+.left-side p,
+.text-side p,
+.text-side-yellow p {
+    font-size: 1.3rem; /* Tamanho reduzido do texto */
 }
 
 /* talks */
@@ -1349,13 +1329,7 @@ p {
     padding: 20px;
 }
 
-.text-side h2 {
-    font-size: 3vh; /* Tamanho reduzido do título */
-}
 
-.text-side p {
-    font-size: 1.65vh; /* Tamanho reduzido do texto */
-}
 
 /* residências */
 .yellow-content {
@@ -1369,12 +1343,9 @@ p {
 }
 
 .text-side-yellow h3 {
-    font-size: 3vh; /* Tamanho reduzido do título */
+    font-size: 1.3rem; /* Tamanho reduzido do título */
 }
 
-.text-side-yellow p {
-    font-size: 1.6vh; /* Tamanho reduzido do texto */
-}
 
 .text-side-yellow {
     padding: 20px; /* Ajusta o padding para telas menores */
@@ -1429,7 +1400,7 @@ p {
    }
    
    .countdown {
-       font-size: 4vh; /* Tamanho reduzido da fonte do countdown */
+       font-size: 1.9rem; /* Tamanho reduzido da fonte do countdown */
        position: static; /* Remove o posicionamento absoluto */
        transform: none; /* Remove a transformação de centralização */
        padding: 0;
@@ -1533,17 +1504,17 @@ p {
        }
    
        .title, .subtitle {
-           margin: 0; /* Remove margens adicionais */
-text-align: center;
+            margin: 0; /* Remove margens adicionais */
+            text-align: center;
        }
    
        .title {
         margin: 0;
-           font-size: 6vmin; /* Tamanho do título */
+           font-size: 2.5rem; /* Tamanho do título */
        }
    
        .subtitle {
-           font-size: 1.75vh; /* Tamanho do subtítulo */
+           font-size: 1.2rem; /* Tamanho do subtítulo */
            letter-spacing: -0.025em;
        }
    
@@ -1567,7 +1538,7 @@ text-align: center;
        }
    
        .content-section h2 {
-           font-size: 3vh; /* Tamanho reduzido do título das notícias */
+           font-size: 2rem; /* Tamanho reduzido do título das notícias */
            margin-top: 10px;
            margin-bottom: 30px;
                }
@@ -1585,11 +1556,11 @@ text-align: center;
        }
    
        .overlay-section h3 {
-           font-size: 2vh; /* Tamanho reduzido do título do overlay */
+           font-size: 1rem; /* Tamanho reduzido do título do overlay */
        }
    
        .overlay-section p {
-           font-size: 1.5vh; /* Tamanho reduzido do texto do overlay */
+           font-size: 1.rem; /* Tamanho reduzido do texto do overlay */
        }
    
        /* imersão */
@@ -1597,12 +1568,15 @@ text-align: center;
            padding: 20px; /* Ajusta o padding para telas menores */
        }
    
-       .left-side h2 {
-           font-size: 3vh; /* Tamanho reduzido do título */
+       .left-side h2,
+       .text-side h2 {
+           font-size: 2rem; /* Tamanho reduzido do título */
        }
    
-       .left-side p {
-           font-size: 1.6vh; /* Tamanho reduzido do texto */
+       .left-side p,
+       .text-side p,
+       .text-side-yellow p {
+           font-size: 1.2rem; /* Tamanho reduzido do texto */
        }
    
        /* talks */
@@ -1610,15 +1584,7 @@ text-align: center;
            padding: 20px;
        }
    
-       .text-side h2 {
-           font-size: 3vh; /* Tamanho reduzido do título */
-       }
-   
-       .text-side p {
-           font-size: 1.6vh; /* Tamanho reduzido do texto */
-       }
-   
-       /* residências */
+           /* residências */
        .yellow-content {
            flex-direction: row; /* Alinha o conteúdo verticalmente */
            height: auto; /* Ajusta a altura automaticamente */
@@ -1630,13 +1596,10 @@ text-align: center;
        }
    
        .text-side-yellow h3 {
-           font-size: 2.75vh; /* Tamanho reduzido do título */
+           font-size: 2rem; /* Tamanho reduzido do título */
        }
    
-       .text-side-yellow p {
-           font-size: 1.5vh; /* Tamanho reduzido do texto */
-       }
-   
+       
        .text-side-yellow {
            padding: 20px; /* Ajusta o padding para telas menores */
        }
@@ -1689,7 +1652,7 @@ text-align: center;
     }
 
     .countdown {
-        font-size: 4vmax; /* Tamanho reduzido da fonte do countdown */
+        font-size: 1.7rem; /* Tamanho reduzido da fonte do countdown */
         position: static; /* Remove o posicionamento absoluto */
         transform: none; /* Remove a transformação de centralização */
         padding: 0;
@@ -1827,7 +1790,7 @@ text-align: center;
     }
 
     .content-section h2 {
-        font-size: 20px; /* Tamanho reduzido do título das notícias */
+        font-size: 1.5rem; /* Tamanho reduzido do título das notícias */
         margin-bottom: 25px;
         margin-top: 10px;
     }
@@ -1850,7 +1813,7 @@ text-align: center;
 
 
     .overlay-section h3 {
-        font-size: 1.5vh; /* Tamanho reduzido do título do overlay */
+        font-size: 1rem; /* Tamanho reduzido do título do overlay */
     }
 
     .overlay-section p {
@@ -1862,12 +1825,15 @@ text-align: center;
         padding: 20px; /* Ajusta o padding para telas menores */
     }
 
-    .left-side h2 {
-        font-size: 3.25vh; /* Tamanho reduzido do título */
+    .left-side h2,
+    .text-side h2 {
+        font-size: 1.5rem; /* Tamanho reduzido do título */
     }
 
-    .left-side p {
-        font-size: 1.75vh; /* Tamanho reduzido do texto */
+    .left-side p,
+    .text-side p,
+    .text-side-yellow p  {
+        font-size: 1rem; /* Tamanho reduzido do texto */
     }
 
     /* talks */
@@ -1875,14 +1841,7 @@ text-align: center;
         padding: 20px;
     }
 
-    .text-side h2 {
-        font-size: 3.25vh; /* Tamanho reduzido do título */
-    }
-
-    .text-side p {
-        font-size: 1.75vh; /* Tamanho reduzido do texto */
-    }
-
+ 
     /* residências */
     .yellow-content {
         flex-direction: row; /* Alinha o conteúdo verticalmente */
@@ -1894,10 +1853,6 @@ text-align: center;
         width: 100%; /* Ocupa a largura total */
     }
 
-
-    .text-side-yellow p {
-        font-size: 1.75vh; /* Tamanho reduzido do texto */
-    }
 
     .yellow-content .text-side-yellow {
         padding: 0 20px; /* Ajusta o padding para telas menores */
