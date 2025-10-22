@@ -964,7 +964,7 @@ p {
 
 
 
-@media only screen and (min-width: 760px) and (max-width: 1023px) {
+@media only screen and (min-width: 760px) and (max-width: 1080px) {
 
 
 
@@ -1099,7 +1099,7 @@ p {
 .left-side p,
 .text-side p,
 .text-side-yellow p {
-    font-size: 2rem; /* Tamanho reduzido do texto */
+    font-size: 1.25rem; /* Tamanho reduzido do texto */
 }
 
 

@@ -43,9 +43,11 @@
   }
   
   .white-section .image-side img {
-    width: auto;
-    max-height: 250px; /* Limita a altura da imagem */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
+    display: block;
   }
   
   /* Seção de apoios */
