@@ -1827,13 +1827,13 @@ p {
 
     .left-side h2,
     .text-side h2 {
-        font-size: 1.5rem; /* Tamanho reduzido do título */
+        font-size: 2rem; /* Tamanho reduzido do título */
     }
 
     .left-side p,
     .text-side p,
     .text-side-yellow p  {
-        font-size: 1rem; /* Tamanho reduzido do texto */
+        font-size: 1.5rem; /* Tamanho reduzido do texto */
     }
 
     /* talks */
