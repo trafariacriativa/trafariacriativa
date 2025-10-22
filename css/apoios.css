@@ -176,6 +176,8 @@
 }
 
 
+
+
   @media only screen and (min-width: 480px) and (max-width: 960px) {
 
 
@@ -211,12 +213,12 @@
     height: 60px; /* Altura fixa da caixa */
   }
 
-  
+  /*
   .white-section .image-side img {
-    width: auto; /* A largura será ajustada automaticamente */
-    max-width: 100%; /* Limita a largura ao container */
-    max-height: 100%; /* Evita que a altura ultrapasse o container */
-    object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
+    width: auto;  A largura será ajustada automaticamente */
+   /*  max-width: 100%; Limita a largura ao container */
+   /*  max-height: 100%; Evita que a altura ultrapasse o container */
+   /* object-fit: contain;  Mantém a proporção da imagem sem cortá-la 
   }
   
   
