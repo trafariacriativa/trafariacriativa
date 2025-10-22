@@ -1321,7 +1321,7 @@ p {
 .left-side p,
 .text-side p,
 .text-side-yellow p {
-    font-size: 1.3rem; /* Tamanho reduzido do texto */
+    font-size: 2rem; /* Tamanho reduzido do texto */
 }
 
 /* talks */
@@ -1576,7 +1576,7 @@ p {
        .left-side p,
        .text-side p,
        .text-side-yellow p {
-           font-size: 2rem; /* Tamanho reduzido do texto */
+           font-size: 1.2rem; /* Tamanho reduzido do texto */
        }
    
        /* talks */
