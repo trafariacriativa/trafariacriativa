@@ -204,6 +204,7 @@ h2 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 700;
     font-size: 6vh;
+    hyphens: auto;
 
 }
 
@@ -216,7 +217,7 @@ h3 {
 p {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 2.25vh;
+    font-size: 2.25vw;
 
 }
 
@@ -280,6 +281,29 @@ p {
     padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
     right: 230px;
     transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
+}
+
+
+
+
+.language-link {
+    font-family: "IBM Plex Mono", monospace, serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-right: 25px; /* Espaçamento de 20px entre o link e o burger */
+    position: absolute;
+    right: 52px; /* Ajuste conforme necessário para alinhar corretamente */
+    padding-top: 5px;
+}
+
+.language-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.language-link a:hover {
+    text-decoration: none;
 }
 
 .burger {
@@ -347,7 +371,7 @@ p {
 
 .box {
     width: 390px;
-    height: 300px;
+    height: 190px; /*alterar para 250px quando se tiver o programa */
     background: rgba(18, 18, 18, 0.5); /* Cor com transparência */
     position: absolute; /* Necessário para o z-index */
     right: 32px;
@@ -385,10 +409,11 @@ p {
 .box-date {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
+    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
     line-height: 0.2em;
     color: #ffffff; /* Cor do texto */
-    margin-top: 68px; /* Espaço abaixo do subtítulo */
+    margin-top: 64px; /* Espaço abaixo do subtítulo */
+    margin-bottom: 24px;
 }
 
 
@@ -414,7 +439,7 @@ p {
 .slider {
     width: 100%;
     height: 450px; /* Altura ajustada para 450px */
-    background-color: darkred;
+    background-color: darkred; /* não está ativo */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -498,7 +523,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(139, 0, 0, 0.8); /* Cor com transparência */
+    background: rgba(30, 72, 143, 0.6); /* Cor com transparência */
     pointer-events: none; /* Permite interação com os elementos abaixo */
 }
 
@@ -522,7 +547,24 @@ p {
 }
 
 
+.shuttle-info {
+    background-color: rgb(195, 2, 2); /* Fundo vermelho escuro */
+    color: white; /* Texto branco */
+    font-family: "Poppins", sans-serif;
+    font-size: 4vh; /* Ajuste de tamanho da fonte */
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 0; /* Espaçamento interno */
+    margin: 30px 0; /* Espaçamento em cima e embaixo */
+}
 
+
+.shuttle-station {
+    display: block; /* Força a quebra de linha */
+    margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
+    font-size: 3.25vh;
+
+}
 
 /* notícias */
 
@@ -532,14 +574,14 @@ p {
     background-color: #ffffff;
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .content-section h2 {
-    font-size: 4.5vh;
+    font-size: 3.5vh;
     color: rgb(56, 56, 56);
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .columns {
@@ -583,7 +625,7 @@ p {
 
 .overlay-section h3 {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     color: white;
     text-align: left;
 
@@ -616,7 +658,7 @@ p {
 }
 
 .column a:hover .image-wrapper::before {
-    background-color: rgba(139, 0, 0, 0.5)
+    background-color: rgba(255, 235, 205, 0.3)
 }
 
 /*imersão*/
@@ -625,7 +667,7 @@ p {
     width: 100%;
     height: 450px;
     display: flex;
-    background-color: rgb(245, 245, 220);
+    background-color: rgba(116, 195, 101, 0.3);
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     /*align-items: center;  Centraliza o conteúdo verticalmente */
 }
@@ -683,7 +725,7 @@ p {
     width: 100%;
     height: 450px;
     display: flex;
-    background-color: rgb(255, 235, 205);
+    background-color: rgb(246, 247, 237);
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
 
 }
@@ -735,44 +777,23 @@ p {
 }
 
 
-/* residencias */
 
+/* residencias */
 
 .yellow-content {
     width: 100%;
-    height: 450px;
+    height: 370px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFD700; /* Fundo amarelo */
+    background-color: #dbe64c; /* #f6f7ed  #74c365*/
+    gap: 60px;
 }
 
-
-.yellow-content .text-side {
-    flex: 2; /* Ocupa mais espaço para o texto */
-    padding-left: 0px; /* Mantém o espaçamento igual ao das outras divs */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    color: rgb(56, 56, 56); /* Texto em preto */
-    height: 100%;
-}
-
-.text-side-yellow h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-size: 6vh;
-    text-decoration-line: underline;
-    color: rgb(56, 56, 56);
-}
-
-
-.text-side-yellow {
-    /* width: 50%; */
-    flex: 1;
-    padding: 40px;
+.yellow-content .text-side-yellow {
+    width: 75%;
+    flex: 3; /* 75% do espaço para o texto */
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -791,9 +812,8 @@ p {
     text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
 
-
 .yellow-content .image-side {
-    flex: 1; /* Ocupa menos espaço para a imagem */
+    flex: 1; /* 25% do espaço para a imagem */
     height: 100%;
     display: flex;
     justify-content: flex-end; /* Alinha a imagem à direita */
@@ -802,62 +822,24 @@ p {
 }
 
 .yellow-content .image-side img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover; /* Garante que a imagem fique dentro da área disponível */
-}
-
-
-/* apoios */
-
-.white-section {
-    width: 100%;
-    height: 250px;
-    background-color: #FFF; /* Fundo branco */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.white-section .text-info {
-    width: 40%;
-    flex: 1;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left; /* Alinha o texto à esquerda */
-    color: rgb(56, 56, 56); /* Texto em preto */
-}
-
-.white-section .text-info p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    color: rgb(56, 56, 56);
-}
-
-.white-section .image-side {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    padding-right: 40px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.white-section .image-side img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain; /* A imagem se adapta ao tamanho da div */
+    width: 100%; /* Ajuste a largura da imagem para preencher os 25% da div pai */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem fique dentro da área disponível */
 }
 
 
 
 
-@media only screen and (min-width: 1780px) {
+.yellow-content .text-side-yellow {
+    padding: 40px;
+
+    }
+
+  
+
+
+
+@media only screen and (min-width: 1366px) {
 
 
     .slider {
@@ -902,8 +884,8 @@ p {
 .content-section h2 {
     font-size: 3.5vh;
     color: rgb(56, 56, 56);
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -966,24 +948,32 @@ p {
 
 
 /* residências */
+
 .text-side-yellow h3 {
-    font-size: 4vh; /* Tamanho reduzido do título */
+    font-size: 4vw; /* Tamanho reduzido do título */
 }
 
 .text-side-yellow p {
-    font-size: 2vh; /* Tamanho reduzido do título */
+    font-size: 2.25vh; /* Tamanho reduzido do texto */
 }
 
-/* apoios */
-
-.white-section {
-    height: 400px;
-}
 
 
 
 }
 
+
+
+
+@media only screen and (min-width: 1728px) {
+
+
+    .text-side-yellow p{
+        font-size: 2vh;
+        
+    }
+
+}
 
 
 @media only screen and (min-width: 760px) and (max-width: 1023px) {
@@ -1013,13 +1003,17 @@ p {
 
 
 .countdown {
-    font-size: 3.5vw;
+    font-size: 3.25vw;
     color: #fff;
     padding: 0 10px; /* Espaçamento interno para evitar que o texto encoste nas bordas */
     right: 15%;
     transform: translateY(-50%); /* Centraliza verticalmente dentro da navbar */
 }
 
+
+.indicators{
+    bottom: 65px;
+}
 
 /* programa */
 
@@ -1044,10 +1038,11 @@ p {
 .box-subtitle {
     font-size: 6vmin; /* Tamanho reduzido do subtítulo */
     margin-top: 15px; /* Reduz o espaço entre as linhas */
+    margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
 }
 
 .box-date {
-    font-size: 3.5vmin; /* Tamanho reduzido da data */
+    font-size: 1.25rem; /* Tamanho reduzido da data */
     margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
     margin-bottom: 1.5rem;
 }
@@ -1095,6 +1090,16 @@ p {
         font-size: 1.6vh;
     }
 
+    .shuttle-info {
+        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas menores */
+        padding: 10px 0; /* Reduz o espaçamento interno */
+    }
+
+    
+.shuttle-station {
+    font-size: 2.25vh;
+
+}
 
 /* imersão */
 
@@ -1142,7 +1147,12 @@ p {
     height: auto; /* Ajusta a altura automaticamente */
 }
 
+.yellow-content .text-side-yellow {
+    padding: 0 40px;
 }
+
+}
+
 
 
     @media only screen and (min-width: 640px) and (max-width: 759px) {
@@ -1177,7 +1187,7 @@ p {
 
 
 .countdown {
-    font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
+    font-size: 4vh; /* Tamanho reduzido da fonte do countdown */
     position: static; /* Remove o posicionamento absoluto */
     transform: none; /* Remove a transformação de centralização */
     margin-right: 15px;
@@ -1197,8 +1207,16 @@ p {
     }
 
 
+.shuttle-info {
+        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas menores */
+        padding: 10px 0; /* Reduz o espaçamento interno */
+    }
+    
+    
+.shuttle-station {
+    font-size: 2.25vh;
 
-
+}
   /* programa */
 
     
@@ -1222,12 +1240,13 @@ p {
 .box-subtitle {
     font-size: 6vmin; /* Tamanho reduzido do subtítulo */
     margin-top: 15px; /* Reduz o espaço entre as linhas */
+    margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
 }
 
 .box-date {
-    font-size: 3.5vmin; /* Tamanho reduzido da data */
-    margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-    margin-bottom: 1.5rem;
+    font-size: 1.25rem; /* Tamanho reduzido da data */
+    margin-top: 48px; /* Reduz o espaço abaixo do subtítulo */
+    margin-bottom: 24px;
 }
 
 .cta-button {
@@ -1284,14 +1303,20 @@ p {
     }
 
 
+    .indicators{
+        bottom: 75px;
+    }
+
 /* notícias */
 
 .content-section {
     margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .content-section h2 {
     font-size: 3vh; /* Tamanho reduzido do título das notícias */
+
 }
 
 .columns {
@@ -1360,36 +1385,14 @@ p {
 }
 
      
+.yellow-content .text-side-yellow {
+    padding: 0 20px;
+} 
 
- 
-     /* apoios */
-     .white-section {
-        flex-direction: column; /* Alinha texto e imagem verticalmente */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
+.yellow-content .image-side {
+    display: none; /* Esconde a div da imagem */
+}
 
-    .white-section .text-info {
-        width: 100%; /* Ocupa a largura total */
-        padding: 10px 0 20px 0;
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .white-section .text-info p {
-        font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
-    }
-
-    .white-section .image-side {
-        width: 100%; /* Ocupa a largura total */
-        padding-right: 0; /* Remove o padding */
-        display: flex;
-        justify-content: center; /* Centraliza a imagem horizontalmente */
-        align-items: center; /* Centraliza a imagem verticalmente */
-    }
-
-    .white-section .image-side img {
-        width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
-        height: auto; /* Mantém a proporção da imagem */
-    }
 
 
 }
@@ -1426,7 +1429,7 @@ p {
    }
    
    .countdown {
-       font-size: 3vh; /* Tamanho reduzido da fonte do countdown */
+       font-size: 4vh; /* Tamanho reduzido da fonte do countdown */
        position: static; /* Remove o posicionamento absoluto */
        transform: none; /* Remove a transformação de centralização */
        padding: 0;
@@ -1435,6 +1438,7 @@ p {
        text-align: center;
    }
    
+
    .burger {
        font-size: 28px; /* Tamanho reduzido do ícone do menu */
        position: fixed;
@@ -1461,12 +1465,12 @@ p {
    
        
        .box-content {
-           padding: 12px;
+
            text-align: center;
        }
    
        .box {
-           width: 75%;
+           width: 50%;
            height: auto; /* Altura reduzida da caixa */
            left: 50%;
            transform: translateX(-50%);
@@ -1477,18 +1481,19 @@ p {
    
        
        .box-title {
-           font-size: 4.5vmax; /* Tamanho reduzido do título */
+           font-size: 6vmax; /* Tamanho reduzido do título */
        }
    
        .box-subtitle {
-           font-size: 5vmax; /* Tamanho reduzido do subtítulo */
+           font-size: 6vmax; /* Tamanho reduzido do subtítulo */
            margin-top: 1rem; /* Reduz o espaço entre as linhas */
+           margin-bottom: 15px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
        }
    
        .box-date {
            font-size: 2.5vmax; /* Tamanho reduzido da data */
-           margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-           margin-bottom: 1rem;
+           margin-top: 46px; /* Reduz o espaço abaixo do subtítulo */
+           margin-bottom: 18px;
        }
    
        .cta-button {
@@ -1498,6 +1503,23 @@ p {
            font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
        }
    
+
+       .shuttle-info {
+        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
+        padding: 8px 0; /* Reduz o espaçamento interno */
+    }
+    
+.shuttle-station {
+    font-size: 2.25vh;
+
+}
+
+
+    .shuttle-time {
+        display: block; /* Força a quebra de linha */
+        margin-top: 2.5px; /* Opcional: adiciona espaço entre as linhas */
+    }
+
        /* slides */
    
        
@@ -1540,12 +1562,14 @@ text-align: center;
        /* notícias */
        .content-section {
            height: 230px; /* Altura reduzida da seção de notícias */
-           padding: 20px 0;
-           margin-bottom: 50px;
+           padding-bottom: 20px 0;
+           margin-bottom: 70px;
        }
    
        .content-section h2 {
            font-size: 3vh; /* Tamanho reduzido do título das notícias */
+           margin-top: 10px;
+           margin-bottom: 30px;
                }
    
        .columns {
@@ -1621,36 +1645,16 @@ text-align: center;
            height: 200px; /* Define uma altura fixa para a imagem */
        }
    
-       /* apoios */
-       .white-section {
-           flex-direction: column; /* Alinha texto e imagem verticalmente */
-           height: auto; /* Ajusta a altura automaticamente */
+       .yellow-content .text-side-yellow {
+        padding: 0 20px;
        }
+
+    .yellow-content .image-side {
+        display: none; /* Esconde a div da imagem */
+    }
    
-       .white-section .text-info {
-           width: 100%; /* Ocupa a largura total */
-           padding: 10px 0 20px 0;
-           text-align: center; /* Centraliza o texto */
-       }
-   
-       .white-section .text-info p {
-           font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
-       }
-   
-       .white-section .image-side {
-           width: 100%; /* Ocupa a largura total */
-           padding-right: 0; /* Remove o padding */
-           display: flex;
-           justify-content: center; /* Centraliza a imagem horizontalmente */
-           align-items: center; /* Centraliza a imagem verticalmente */
-       }
-   
-       .white-section .image-side img {
-           width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
-           height: auto; /* Mantém a proporção da imagem */
-       }
-   
-   
+ 
+
    }
    
 
@@ -1685,7 +1689,7 @@ text-align: center;
     }
 
     .countdown {
-        font-size: 2.5vmax; /* Tamanho reduzido da fonte do countdown */
+        font-size: 4vmax; /* Tamanho reduzido da fonte do countdown */
         position: static; /* Remove o posicionamento absoluto */
         transform: none; /* Remove a transformação de centralização */
         padding: 0;
@@ -1693,6 +1697,8 @@ text-align: center;
         margin-right: 15px;
         text-align: center;
     }
+
+
 
     .burger {
         font-size: 28px; /* Tamanho reduzido do ícone do menu */
@@ -1722,7 +1728,7 @@ text-align: center;
     }
 
     .box {
-        width: 80%;
+        width: 65%;
         height: auto; /* Altura reduzida da caixa */
         left: 50%;
         transform: translateX(-50%);
@@ -1736,14 +1742,15 @@ text-align: center;
     }
 
     .box-subtitle {
-        font-size: 10vmin; /* Tamanho reduzido do subtítulo */
+        font-size: 9.5vmin; /* Tamanho reduzido do subtítulo */
         margin-top: 1rem; /* Reduz o espaço entre as linhas */
+        margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
     }
 
     .box-date {
         font-size: 2vmax; /* Tamanho reduzido da data */
-        margin-top: 3rem; /* Reduz o espaço abaixo do subtítulo */
-        margin-bottom: 1rem;
+        margin-top: 42px; /* Reduz o espaço abaixo do subtítulo */
+        margin-bottom: 18px;
     }
 
     .cta-button {
@@ -1752,6 +1759,27 @@ text-align: center;
         line-height: 36px; /* Centraliza verticalmente o texto */
         font-size: 1.5rem; /* Tamanho reduzido da fonte do botão */
     }
+    
+
+    .shuttle-info {
+        font-size: 2.75vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
+
+    }
+
+    .shuttle-time {
+        display: block; /* Força a quebra de linha */
+        margin-top: 2.5px; /* Opcional: adiciona espaço entre as linhas */
+    }
+    .shuttle-local {
+        display: block; /* Força a quebra de linha */
+        margin-top: 2.5px; /* Opcional: adiciona espaço entre as linhas */
+    }
+
+    
+.shuttle-station {
+    font-size: 2.25vh;
+
+}
 
     /* slides */
 
@@ -1759,7 +1787,7 @@ text-align: center;
     /* Centralização do Título e Subtítulo */
     .title-container {
         position: absolute; /* Necessário para que o top funcione */
-        top: 375px; /* Ajusta a posição vertical do container */
+        top: 370px; /* Ajusta a posição vertical do container */
         display: flex; /* Usa Flexbox para layout horizontal */
         align-items: center; /* Alinha os itens no centro verticalmente */
         justify-content: center; /* Centraliza os itens horizontalmente */
@@ -1783,7 +1811,7 @@ text-align: center;
     }
 
     .indicators {
-        bottom: 20%;
+        bottom: 22%;
     }
 
     .indicator {
@@ -1794,11 +1822,14 @@ text-align: center;
     /* notícias */
     .content-section {
         height: 260px; /* Altura reduzida da seção de notícias */
-        padding: 20px 0;
+        padding: 10px 0;
+        margin-bottom: 25px;
     }
 
     .content-section h2 {
         font-size: 20px; /* Tamanho reduzido do título das notícias */
+        margin-bottom: 25px;
+        margin-top: 10px;
     }
 
     .columns {
@@ -1819,7 +1850,7 @@ text-align: center;
 
 
     .overlay-section h3 {
-        font-size: 1.75vh; /* Tamanho reduzido do título do overlay */
+        font-size: 1.5vh; /* Tamanho reduzido do título do overlay */
     }
 
     .overlay-section p {
@@ -1832,7 +1863,7 @@ text-align: center;
     }
 
     .left-side h2 {
-        font-size: 3.5vh; /* Tamanho reduzido do título */
+        font-size: 3.25vh; /* Tamanho reduzido do título */
     }
 
     .left-side p {
@@ -1845,7 +1876,7 @@ text-align: center;
     }
 
     .text-side h2 {
-        font-size: 3.5vh; /* Tamanho reduzido do título */
+        font-size: 3.25vh; /* Tamanho reduzido do título */
     }
 
     .text-side p {
@@ -1863,48 +1894,24 @@ text-align: center;
         width: 100%; /* Ocupa a largura total */
     }
 
-    .text-side-yellow h3 {
-        font-size: 2.75vh; /* Tamanho reduzido do título */
-    }
 
     .text-side-yellow p {
         font-size: 1.75vh; /* Tamanho reduzido do texto */
     }
 
-    .text-side-yellow {
-        padding: 20px; /* Ajusta o padding para telas menores */
+    .yellow-content .text-side-yellow {
+        padding: 0 20px; /* Ajusta o padding para telas menores */
     }
 
     .yellow-content .image-side img {
         height: 200px; /* Define uma altura fixa para a imagem */
     }
 
-    /* apoios */
-    .white-section {
-        flex-direction: column; /* Alinha texto e imagem verticalmente */
-        height: auto; /* Ajusta a altura automaticamente */
-    }
 
-    .white-section .text-info {
-        width: 100%; /* Ocupa a largura total */
-        padding: 10px 0 20px 0;
-        text-align: center; /* Centraliza o texto */
-    }
 
-    .white-section .text-info p {
-        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    .yellow-content .image-side {
+        display: none; /* Esconde a div da imagem */
     }
+   
 
-    .white-section .image-side {
-        width: 100%; /* Ocupa a largura total */
-        padding-right: 0; /* Remove o padding */
-        display: flex;
-        justify-content: center; /* Centraliza a imagem horizontalmente */
-        align-items: center; /* Centraliza a imagem verticalmente */
-    }
-
-    .white-section .image-side img {
-        width: 100%; /* Define a largura da imagem como porcentagem da largura da div */
-        height: auto; /* Mantém a proporção da imagem */
-    }
 }
