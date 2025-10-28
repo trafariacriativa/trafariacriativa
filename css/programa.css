@@ -430,7 +430,7 @@ h3{
 
 .text-present a{
   text-decoration: none;
-  background-color: rgb(139, 0, 0);
+  background-color: rgb(30,72,143);
   color: white;
 
 }
@@ -446,7 +446,7 @@ h3{
   display: inline-block;
   width: 390px; /* Largura específica do botão */
   height: 56px;
-  background-color: rgb(139, 0, 0);
+  background-color: rgb(30,72,143);
   color: white;
   text-align: center;
   line-height: 56px; /* Centraliza verticalmente o texto */
@@ -461,7 +461,7 @@ h3{
 
 .cta-button:hover{
   background-color: rgba(18, 18, 18, 0.2);
-  color:  rgb(139, 0, 0);
+  color:  rgb(30,72,143);
   
 }
 
@@ -489,21 +489,21 @@ h3{
 }
 
 .coluna-1 {
-  background-color: rgba(139, 0, 0, 0.2);
+  background-color: rgba(30, 72, 143, 0.2);
 }
 
 .coluna-2 {
-  background-color: rgba(139, 0, 0, 0.4);
+  background-color: rgba(30, 72, 143, 0.4);
 }
 
 .coluna-3 {
-  background-color: rgba(139, 0, 0, 0.6);
+  background-color: rgba(30, 72, 143, 0.6);
 }
 
 
 /* Estilo para a coluna selecionada */
 .coluna.selected {
-  background-color: rgba(139, 0, 0);
+  background-color: rgba(30, 72, 143,);
   color: white; /* Cor do texto para contraste */
 }
 
@@ -604,23 +604,23 @@ h3{
 }
 
 .tab-day1 {
-    background-color: rgb(245, 245, 220);
+    background-color: rgb(246, 247, 237);
 }
 
 .tab-day2 {
-    background-color: rgb(255, 235, 205);
+    background-color: rgb(116, 195, 101, 0.3);
 }
 
 .tab-day3 {
-    background-color: #FFD700; /* Fundo amarelo */
+    background-color: rgb(219, 230, 76); 
 }
 
 .tab:hover {
-    background-color: rgba(139, 0, 0, 0.5);
+    background-color: rgba(30, 72, 143, 0.5);
 }
 
 .tab.active {
-    background-color: rgba(139, 0, 0);
+    background-color: rgba(30, 72, 143,);
     color: white;
 }
 
@@ -633,21 +633,21 @@ h3{
 }
 
 .day1-content {
-    background-color: rgb(245, 245, 220);
+    background-color: rgb(246, 247, 237);
 }
 
 .day2-content {
-    background-color: rgb(255, 235, 205);
+    background-color: rgb(116, 195, 101, 0.3);
 }
 
 .day3-content {
-    background-color: #FFD700;
+    background-color: rgb(219, 230, 76); 
 }
 
 .content-wrapper {
     width: 960px;
     margin: 0 auto; /* Centraliza o conteúdo */
-    background-color: inherit; /* Usa a cor do tab-content */
+    /* background-color: inherit; /* Usa a cor do tab-content */
     padding: 20px;
 
 }
@@ -680,7 +680,7 @@ h3{
 
 .session a{
   text-decoration: none;
-  color: rgb(139, 0, 0);
+  color: rgb(30, 72, 143);
   cursor: pointer;
 }
 
@@ -774,7 +774,7 @@ h3{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(139, 0, 0, 0.5); /* Fundo semi-transparente escuro */
+  background-color: rgba(30, 72, 143, 0.5); /* Fundo semi-transparente escuro */
   color: white;
   display: flex;
   justify-content: center;
@@ -1375,15 +1375,15 @@ h2{
 }
 
 .day1-content {
-  background-color: rgb(245, 245, 220);
+    background-color: rgb(246, 247, 237);
 }
 
 .day2-content {
-  background-color: rgb(255, 235, 205);
+    background-color: rgb(116, 195, 101, 0.3);
 }
 
 .day3-content {
-  background-color: #FFD700;
+    background-color: rgb(219, 230, 76); 
 }
 
 .content-wrapper {
