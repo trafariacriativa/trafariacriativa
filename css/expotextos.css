@@ -579,7 +579,7 @@ video {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 4 colunas na galeria */
+  grid-template-columns: repeat(3, 1fr); /* 4 colunas na galeria */
   grid-gap: 10px; /* Espaço entre as imagens */
   max-width: 960px;
   margin: 0 auto; /* Centraliza a galeria na página */
