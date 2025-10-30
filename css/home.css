@@ -1055,23 +1055,23 @@ p {
     }
 
     .title{
-        font-size: 3rem; /* estava 5.25vh */
+        font-size: 3.5rem; /* estava 5.25vh */
     }
    
     .subtitle {
-        font-size: 1.6rem; /* estava 6vmin */
+        font-size: 1.8rem; /* estava 6vmin */
 
     }
 
 
     .content-section h2 {
-        font-size: 1.9rem; /* estava 5vh*/
+        font-size: 3rem; /* estava 5vh*/
 
     }
 
 
     .overlay-section h3{
-        font-size: 1.5rem; /* estava 5vh*/
+        font-size: 1.7rem; /* estava 5vh*/
     }
 
     .overlay-section p{
@@ -1079,13 +1079,13 @@ p {
     }
 
     .shuttle-info {
-        font-size: 2rem; /* Aumenta o tamanho da fonte em telas menores */  /* estava 2.5vh*/
+        font-size: 1.85rem; /* Aumenta o tamanho da fonte em telas menores */  /* estava 2.5vh*/
         padding: 10px 0; /* Reduz o espaçamento interno */
     }
 
     
 .shuttle-station {
-    font-size: 1.8rem; /* estava 2.25vh*/
+    font-size: 1.7rem; /* estava 2.25vh*/
 
 }
 
@@ -1099,7 +1099,7 @@ p {
 .left-side p,
 .text-side p,
 .text-side-yellow p {
-    font-size: 1.25rem; /* Tamanho reduzido do texto */
+    font-size: 1.7rem; /* Tamanho reduzido do texto */
 }
 
 
