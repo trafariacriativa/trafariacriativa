@@ -211,13 +211,13 @@ h2 {
 h3 {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 800;
-    font-size: 1.5rem;  /* estava 3vh */
+    font-size: 1.7rem;  /* estava 3vh */
 }
 
 p {
     font-family: "IBM Plex Mono", monospace, serif;
     font-weight: 400;
-    font-size: 1.25rem;  /* estava 2.25vw */
+    font-size: 1.5rem;  /* estava 2.25vw */
 
 }
 
@@ -409,7 +409,7 @@ p {
 .box-date {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+    font-size: 1.7rem; /* Ajuste o tamanho conforme necessário */
     line-height: 0.2em;
     color: #ffffff; /* Cor do texto */
     margin-top: 64px; /* Espaço abaixo do subtítulo */
@@ -551,7 +551,7 @@ p {
     background-color: rgb(216,230, 76, 0.8); /* Fundo verde */
     color: rgba(18, 18, 18, 0.8); /* Texto branco */
     font-family: "Poppins", sans-serif;
-    font-size: 1.8rem; /* Ajuste de tamanho da fonte   estava 4vh */
+    font-size: 2rem; /* Ajuste de tamanho da fonte   estava 4vh */
     font-weight: 500;
     text-align: center;
     padding: 15px 0; /* Espaçamento interno */
@@ -882,7 +882,7 @@ p {
 }
 
 .content-section h2 {
-    font-size: 2rem;  /* estava 3.5vh */
+    font-size: 2.2rem;  /* estava 3.5vh */
     color: rgb(56, 56, 56);
     margin-top: 20px;
     margin-bottom: 40px;
@@ -890,7 +890,7 @@ p {
 
 
 .overlay-section h3 {
-    font-size: 1.25rem;  /* estava 2.5vh */
+    font-size: 1.7rem;  /* estava 2.5vh */
 }
 
 .overlay-section p {
@@ -926,7 +926,7 @@ p {
 
 
 .left-side p {
-    font-size: 1.25rem; /* Tamanho reduzido do título */  /* estava 2vh */
+    font-size: 1.5rem; /* Tamanho reduzido do título */  /* estava 2vh */
 }
 
 .split-section-yellow {
@@ -939,7 +939,7 @@ p {
 
 
 .text-side p {
-    font-size: 1.25rem; /* Tamanho reduzido do título */  /* estava 2vh */
+    font-size: 1.5rem; /* Tamanho reduzido do título */  /* estava 2vh */
 }
 
 
@@ -954,7 +954,7 @@ p {
 }
 
 .text-side-yellow p {
-    font-size: 1.25rem; /* Tamanho reduzido do título */  /* estava 2vh */
+    font-size: 1.5rem; /* Tamanho reduzido do título */  /* estava 2vh */
 }
 
 
@@ -1024,7 +1024,7 @@ p {
 }
 
 .box-subtitle {
-    font-size: erem; /* Tamanho reduzido do subtítulo */ /* estava 6vmin */
+    font-size: 3.5rem; /* Tamanho reduzido do subtítulo */ /* estava 6vmin */
     margin-top: 15px; /* Reduz o espaço entre as linhas */
     margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
 }
@@ -1211,17 +1211,17 @@ p {
 
 
 .box-title {
-    font-size: 6vmin; /* Tamanho reduzido do título */
+    font-size: 2.5rem; /* Tamanho reduzido do título */
 }
 
 .box-subtitle {
-    font-size: 6vmin; /* Tamanho reduzido do subtítulo */
+    font-size: 3rem; /* Tamanho reduzido do subtítulo */
     margin-top: 15px; /* Reduz o espaço entre as linhas */
     margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
 }
 
 .box-date {
-    font-size: 1.25rem; /* Tamanho reduzido da data */
+    font-size: 1.5rem; /* Tamanho reduzido da data */
     margin-top: 48px; /* Reduz o espaço abaixo do subtítulo */
     margin-bottom: 24px;
 }
@@ -1301,11 +1301,11 @@ p {
 }
 
 .overlay-section h3 {
-    font-size: 1.3rem; /* Tamanho reduzido do título do overlay */
+    font-size: 1.6rem; /* Tamanho reduzido do título do overlay */
 }
 
 .overlay-section p {
-    font-size: 1.3rem; /* Tamanho reduzido do texto do overlay */
+    font-size: 1.5rem; /* Tamanho reduzido do texto do overlay */
 }
 
 /* imersão */
@@ -1315,13 +1315,13 @@ p {
 
 .left-side h2,
 .text-side h2 {
-    font-size: 2.5rem; /* Tamanho reduzido do título */
+    font-size: 3rem; /* Tamanho reduzido do título */
 }
 
 .left-side p,
 .text-side p,
 .text-side-yellow p {
-    font-size: 1.3rem; /* Tamanho reduzido do texto */
+    font-size: 1.7rem; /* Tamanho reduzido do texto */
 }
 
 /* talks */
@@ -1452,17 +1452,17 @@ p {
    
        
        .box-title {
-           font-size: 6vmax; /* Tamanho reduzido do título */
+           font-size: 2.5rem; /* Tamanho reduzido do título */
        }
    
        .box-subtitle {
-           font-size: 6vmax; /* Tamanho reduzido do subtítulo */
+           font-size: 3rem; /* Tamanho reduzido do subtítulo */
            margin-top: 1rem; /* Reduz o espaço entre as linhas */
            margin-bottom: 15px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
        }
    
        .box-date {
-           font-size: 2.5vmax; /* Tamanho reduzido da data */
+           font-size: 1.4rem; /* Tamanho reduzido da data */
            margin-top: 46px; /* Reduz o espaço abaixo do subtítulo */
            margin-bottom: 18px;
        }
@@ -1476,7 +1476,7 @@ p {
    
 
        .shuttle-info {
-        font-size: 2.5vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
+        font-size: 2.25vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
         padding: 8px 0; /* Reduz o espaçamento interno */
     }
     
@@ -1556,11 +1556,11 @@ p {
        }
    
        .overlay-section h3 {
-           font-size: 1rem; /* Tamanho reduzido do título do overlay */
+           font-size: 1.4rem; /* Tamanho reduzido do título do overlay */
        }
    
        .overlay-section p {
-           font-size: 1.rem; /* Tamanho reduzido do texto do overlay */
+           font-size: 1.2rem; /* Tamanho reduzido do texto do overlay */
        }
    
        /* imersão */
@@ -1570,13 +1570,13 @@ p {
    
        .left-side h2,
        .text-side h2 {
-           font-size: 2rem; /* Tamanho reduzido do título */
+           font-size: 2.5rem; /* Tamanho reduzido do título */
        }
    
        .left-side p,
        .text-side p,
        .text-side-yellow p {
-           font-size: 1.2rem; /* Tamanho reduzido do texto */
+           font-size: 1.75rem; /* Tamanho reduzido do texto */
        }
    
        /* talks */
@@ -1701,11 +1701,11 @@ p {
     
 
     .box-title {
-        font-size: 9.5vmin; /* Tamanho reduzido do título */
+        font-size: 2.5rem; /* Tamanho reduzido do título */
     }
 
     .box-subtitle {
-        font-size: 9.5vmin; /* Tamanho reduzido do subtítulo */
+        font-size: 3rem; /* Tamanho reduzido do subtítulo */
         margin-top: 1rem; /* Reduz o espaço entre as linhas */
         margin-bottom: 20px;  /* aumenta o espaço de 2024 para o fundo da caixa, retirar quando voltar ao programa */
     }
@@ -1725,7 +1725,7 @@ p {
     
 
     .shuttle-info {
-        font-size: 2.75vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
+        font-size: 1.8rem; /* Aumenta o tamanho da fonte em telas muito pequenas */
 
     }
 
@@ -1813,7 +1813,7 @@ p {
 
 
     .overlay-section h3 {
-        font-size: 1rem; /* Tamanho reduzido do título do overlay */
+        font-size: 1.25rem; /* Tamanho reduzido do título do overlay */
     }
 
     .overlay-section p {
@@ -1827,13 +1827,13 @@ p {
 
     .left-side h2,
     .text-side h2 {
-        font-size: 1.5rem; /* Tamanho reduzido do título */
+        font-size: 2rem; /* Tamanho reduzido do título */
     }
 
     .left-side p,
     .text-side p,
     .text-side-yellow p  {
-        font-size: 1rem; /* Tamanho reduzido do texto */
+        font-size: 1.5rem; /* Tamanho reduzido do texto */
     }
 
     /* talks */
