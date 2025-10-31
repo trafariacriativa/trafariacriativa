@@ -446,6 +446,7 @@ font-size: 2vh;
   color: white;
   text-decoration: none;
   cursor: pointer;
+  word-break: break-all;
   
 }
 
