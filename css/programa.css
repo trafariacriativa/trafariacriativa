@@ -672,7 +672,6 @@ h3{
 
 .session {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     margin-bottom: 10px; /* Espaçamento entre as sessões */
     padding: 10px 0; /* Espaçamento interno para melhor visualização */
@@ -910,6 +909,11 @@ h3{
   font-size: 2.5vh;
  }
 
+   .content-wrapper {
+    box-sizing: border-box;
+    width: 100%; /* Ajusta a largura */
+    padding: 15px; /* Ajusta o padding */
+  }
 
 
   /* Estilo das abas */
@@ -925,6 +929,7 @@ h3{
 
 
   .schedule {
+    flex: 1;
     font-size: 2vh; /* Ajusta o tamanho da fonte */
   }
 
