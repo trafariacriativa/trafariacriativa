@@ -672,6 +672,7 @@ h3{
 
 .session {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-bottom: 10px; /* Espaçamento entre as sessões */
     padding: 10px 0; /* Espaçamento interno para melhor visualização */
@@ -1098,7 +1099,7 @@ font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
 
 
   h2 {
-    font-size: vh; /* Ajusta o tamanho da fonte do h2 */
+    font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
   }
 
 
@@ -1108,7 +1109,7 @@ font-size: 2vh; /* Ajusta o tamanho da fonte para mobile */
   .tab {
     width: 100%; /* Abas ocupam 100% da largura da página */
     height: 120px; /* Ajusta a altura das abas */
-    font-size: 3rem; /* Ajusta o tamanho do texto */
+    font-size: 6.5vh; /* Ajusta o tamanho do texto */
   }
 
   .arrow {
