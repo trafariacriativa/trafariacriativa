@@ -1221,7 +1221,7 @@ p {
 }
 
 .box-date {
-    font-size: 1.5rem; /* Tamanho reduzido da data */
+    font-size: 1.25rem; /* Tamanho reduzido da data */
     margin-top: 48px; /* Reduz o espaço abaixo do subtítulo */
     margin-bottom: 24px;
 }
@@ -1275,7 +1275,7 @@ p {
 
 
     .subtitle-container {
-        font-size: 2remvh;
+        font-size: 2rem;
 
     }
 
@@ -1462,7 +1462,7 @@ p {
        }
    
        .box-date {
-           font-size: 1.4rem; /* Tamanho reduzido da data */
+           font-size: 1rem; /* Tamanho reduzido da data */
            margin-top: 46px; /* Reduz o espaço abaixo do subtítulo */
            margin-bottom: 18px;
        }
