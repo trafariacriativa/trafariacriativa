@@ -559,6 +559,19 @@ p {
 }
 
 
+
+
+.shuttle-info a{
+    color: rgb(30,72,143);
+    text-decoration: none;
+}
+
+.shuttle-info a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
 .shuttle-station {
     display: block; /* Força a quebra de linha */
     margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
