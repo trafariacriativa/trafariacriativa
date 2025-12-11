@@ -575,9 +575,22 @@ p {
 .shuttle-station {
     display: block; /* Força a quebra de linha */
     margin-top: 5px; /* Opcional: adiciona espaço entre as linhas */
-    font-size: 1.6rem;  /* estava 3.25vh */
-
+    font-size: 1.4rem;  /* estava 3.25vh */
 }
+
+
+.shuttle-station a {
+    background-color: firebrick;
+    padding: 7px;
+    color: white;
+    text-decoration: none;
+}
+
+.shuttle-station a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 
 /* notícias */
 

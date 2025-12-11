@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Obra de Bordalo II</h1>
+      <p class="subtitle">Adivinha o peixe que vai ser instalado na Junta de Freguesia da Trafaria! Acompanha aqui os diversos desenhos entregues</p>
+    </header>
+
+    <section class="gallery">
+      <!-- IMAGENS -->
+      <div class="item">
+        <img src="media/fish1.jpg" alt="fish1" class="open-media" />
+      </div>
+      <div class="item">
+        <img src="media/fish2.jpg" alt="fish2" class="open-media" />
+      </div>
+      <div class="item">
+        <img src="media/fish3.jpg" alt="fish3" class="open-media" />
+      </div>
+      <div class="item">
+        <img src="media/fish4.jpg" alt="fish4" class="open-media" />
+      </div>
+      <div class="item">
+        <img src="media/fish5.jpg" alt="fish5" class="open-media" />
+      </div>
+      <div class="item">
+        <img src="media/fish6.jpg" alt="fish6" class="open-media" />
+      </div>
+
+      <!-- VIDEO 
+      <div class="item">
+        <video class="open-media" muted>
+          <source src="media/fish6v.mp4" type="video/mp4" />
+        </video>
+      </div>-->
+    </section>
+
+        <!-- MODAL (LIGHTBOX COM SLIDESHOW) -->
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+
+      <!-- Botões do slideshow -->
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+
+      <div class="modal-content">
+        <img id="modal-img" style="display: none" />
+        <video id="modal-video" controls style="display: none"></video>
+      </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

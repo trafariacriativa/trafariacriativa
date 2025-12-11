@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #e3e3e6;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: #000;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  margin-top: -10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ================= Masonry Grid ================= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas no desktop */
+  grid-auto-rows: 10px; /* base mínima para calcular span */
+  gap: 20px;            /* mesmo espaçamento horizontal e vertical */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.item img,
+.item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item img:hover,
+.item video:hover {
+  transform: scale(1.03);
+}
+
+/* ================= Modal ================= */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.modal-content img,
+.modal-content video {
+  max-width: 100%;      /* nunca ultrapassa a largura do container */
+  max-height: 80vh;     /* altura máxima da tela */
+  width: auto;          /* largura automática para manter proporção */
+  height: auto;         /* altura automática */
+  display: block;
+  margin: 0 auto;       /* centraliza */
+}
+
+.modal-content video {
+  object-fit: contain;  /* mantém proporção do vídeo */
+}
+
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  color: #ccc;
+}
+
+
+/* ================= Responsivo ================= */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 coluna no mobile */
+  }
+}
