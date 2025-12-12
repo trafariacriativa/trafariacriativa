@@ -581,7 +581,7 @@ p {
 
 .shuttle-station a {
     background-color: firebrick;
-    padding: 7px;
+    padding: 5px 10px;
     color: white;
     text-decoration: none;
 }
@@ -1126,9 +1126,15 @@ p {
 
     
 .shuttle-station {
-    font-size: 1.7rem; /* estava 2.25vh*/
+    padding: 10px;
+    font-size: 1.6rem; /* estava 2.25vh*/
 
 }
+
+.btn-link {
+    margin-top: 0;
+}
+
 
 /* imersão */
 
@@ -1517,13 +1523,19 @@ p {
    
 
        .shuttle-info {
-        font-size: 2.25vh; /* Aumenta o tamanho da fonte em telas muito pequenas */
-        padding: 8px 0; /* Reduz o espaçamento interno */
+        font-size: 1.6rem; /* Aumenta o tamanho da fonte em telas muito pequenas */
+        padding: 8px 8px; /* Reduz o espaçamento interno */
     }
     
-.shuttle-station {
-    font-size: 2.25vh;
 
+.shuttle-station {
+    padding: 10px;
+    font-size: 1.4rem; /* estava 2.25vh*/
+
+}
+
+.btn-link {
+    margin-top: 0;
 }
 
 
@@ -1597,7 +1609,7 @@ p {
        }
    
        .overlay-section h3 {
-           font-size: 1.4rem; /* Tamanho reduzido do título do overlay */
+           font-size: 1.3rem; /* Tamanho reduzido do título do overlay */
        }
    
        .overlay-section p {
@@ -1611,13 +1623,13 @@ p {
    
        .left-side h2,
        .text-side h2 {
-           font-size: 2.5rem; /* Tamanho reduzido do título */
+           font-size: 2.25rem; /* Tamanho reduzido do título */
        }
    
        .left-side p,
        .text-side p,
        .text-side-yellow p {
-           font-size: 1.75rem; /* Tamanho reduzido do texto */
+           font-size: 1.5rem; /* Tamanho reduzido do texto */
        }
    
        /* talks */
@@ -1782,7 +1794,7 @@ p {
 
     
 .shuttle-station {
-    font-size: 2.25vh;
+    font-size: 1.25rem;
 
 }
 
