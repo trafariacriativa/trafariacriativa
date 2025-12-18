@@ -332,6 +332,7 @@ video {
   display: block;
 }
 
+
 /* Estilos para imagens com tamanhos e disposições variadas */
 .gallery-item.vertical {
   grid-column: span 1; /* Ocupa duas colunas */
