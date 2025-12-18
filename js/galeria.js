@@ -11,9 +11,9 @@ function loadImage(url) {
 
 // Array com fotógrafos e suas pastas
 const photographers = [
-  { nome: "Hugo Santos", pasta: "HugoSantos" },
-  { nome: "João Lima", pasta: "JoaoLima" },
-  { nome: "Alexandre Nobre", pasta: "AlexandreNobre" }
+  { nome: "Hugo Santos 2025", pasta: "HugoSantos" },
+  { nome: "João Lima 2025", pasta: "JoaoLima" },
+  { nome: "Alexandre Nobre 2024", pasta: "AlexandreNobre" }
 ];
 
 // Função para embaralhar arrays
