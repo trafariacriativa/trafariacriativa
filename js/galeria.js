@@ -57,7 +57,7 @@ function shuffleArray(array) {
       div.className = `gallery-item ${orientation}`;
 
       img.alt = ` ${photographer.nome}`;
-      img.title = ` ${photographer.nome}`; // tooltip
+      img.title = ` ©${photographer.nome}`; // tooltip
       img.loading = "lazy";
       img.decoding = "async";
 

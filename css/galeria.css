@@ -229,8 +229,11 @@ p, li {
 }
 
 .section-text {
+  margin-top: 50px;
+  font-size: 1rem;
     line-height: 2;
 }
+
 
 
 ul {
