@@ -1,4 +1,4 @@
-// js/galeria.js
+// galeria - js/galeria.js
 
 function loadImage(url) {
   return new Promise((resolve) => {
