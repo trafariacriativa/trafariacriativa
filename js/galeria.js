@@ -1,4 +1,4 @@
-// galeria - js/galeria.js
+// js/galeria.js
 
 function loadImage(url) {
   return new Promise((resolve) => {
@@ -16,6 +16,14 @@ const photographers = [
   { nome: "Alexandre Nobre", pasta: "AlexandreNobre" }
 ];
 
+// Função para embaralhar arrays
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 (async function initGallery() {
   const ext = "jpg";
   const start = 1;
@@ -25,13 +33,15 @@ const photographers = [
   const container = document.getElementById("gallery");
   if (!container) return;
 
+  // Array para armazenar todas as imagens antes de adicionar ao container
+  const allImages = [];
+
   for (const photographer of photographers) {
     let misses = 0;
 
     for (let i = start; i <= max; i++) {
-      // Caminho completo incluindo a pasta "galeria"
       const src = `galeria/${photographer.pasta}/${i}.${ext}`;
-      console.log("Tentando carregar:", src); // para depuração
+      console.log("Tentando carregar:", src); // depuração
 
       const img = await loadImage(src);
       if (!img) {
@@ -41,20 +51,26 @@ const photographers = [
       }
       misses = 0;
 
-      // Determinar orientação
       const orientation = img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
 
       const div = document.createElement("div");
       div.className = `gallery-item ${orientation}`;
 
-      // Configurar imagem
       img.alt = ` ${photographer.nome}`;
-      img.title = ` ${photographer.nome}`; // tooltip ao passar o mouse
+      img.title = ` ${photographer.nome}`; // tooltip
       img.loading = "lazy";
       img.decoding = "async";
 
       div.appendChild(img);
-      container.appendChild(div);
+
+      // Adiciona ao array, não diretamente ao container
+      allImages.push(div);
     }
   }
+
+  // Embaralhar todas as imagens
+  shuffleArray(allImages);
+
+  // Adicionar ao container em ordem random
+  allImages.forEach(div => container.appendChild(div));
 })();
