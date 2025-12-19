@@ -25,9 +25,9 @@ function shuffleArray(array) {
 }
 
 (async function initGallery() {
-  const ext = "jpg";
+  const ext = "webp";
   const start = 1;
-  const max = 5000;
+  const max = 400;
   const stopAfterMisses = 10;
 
   const container = document.getElementById("gallery");
