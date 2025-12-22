@@ -1,49 +1,100 @@
-// js/galeria.js
+// ===============================
+// AUTORES / ANOS
+// ===============================
+const photographers = [
+  { nome: "João Lima", pasta: "JoaoLima", ano: 2025 },
+  { nome: "Hugo Santos", pasta: "HugoSantos", ano: 2025 },
+  { nome: "Alexandre Nobre", pasta: "AlexandreNobre", ano: 2024 }
+];
 
-function loadImage(url) {
-  return new Promise((resolve) => {
+// ===============================
+// CONFIG
+// ===============================
+const ext = "webp";
+const start = 1;
+const max = 400;
+const stopAfterMisses = 10;
+
+const gallery = document.getElementById("gallery");
+if (!gallery) throw new Error("Elemento #gallery não encontrado");
+
+// ===============================
+// LIGHTBOX
+// ===============================
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox";
+lightbox.className = "hidden";
+lightbox.innerHTML = `
+  <button class="prev">‹</button>
+  <img>
+  <button class="next">›</button>
+  <button class="close">×</button>
+`;
+document.body.appendChild(lightbox);
+
+const lbImg = lightbox.querySelector("img");
+const btnPrev = lightbox.querySelector(".prev");
+const btnNext = lightbox.querySelector(".next");
+const btnClose = lightbox.querySelector(".close");
+
+let images = [];
+let currentIndex = 0;
+
+function openLightbox(index) {
+  currentIndex = index;
+  lbImg.src = images[currentIndex].dataset.full;
+  lightbox.classList.remove("hidden");
+}
+
+function closeLightbox() {
+  lightbox.classList.add("hidden");
+  lbImg.src = "";
+}
+
+btnNext.onclick = () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  lbImg.src = images[currentIndex].dataset.full;
+};
+btnPrev.onclick = () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  lbImg.src = images[currentIndex].dataset.full;
+};
+btnClose.onclick = closeLightbox;
+
+document.addEventListener("keydown", e => {
+  if (lightbox.classList.contains("hidden")) return;
+  if (e.key === "ArrowRight") btnNext.onclick();
+  if (e.key === "ArrowLeft") btnPrev.onclick();
+  if (e.key === "Escape") closeLightbox();
+});
+
+// ===============================
+// LOAD IMAGE (PROMISE ESTÁVEL)
+// ===============================
+function loadImage(src) {
+  return new Promise(resolve => {
     const img = new Image();
     img.onload = () => resolve(img);
     img.onerror = () => resolve(null);
-    img.src = url;
+    img.src = src;
   });
 }
 
-// Array com fotógrafos e suas pastas
-const photographers = [
-  { nome: "Hugo Santos 2025", pasta: "HugoSantos" },
-  { nome: "João Lima 2025", pasta: "JoaoLima" },
-  { nome: "Alexandre Nobre 2024", pasta: "AlexandreNobre" }
-];
-
-// Função para embaralhar arrays
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
+// ===============================
+// GALERIA COM ORIENTAÇÃO
+// ===============================
 (async function initGallery() {
-  const ext = "webp";
-  const start = 1;
-  const max = 400;
-  const stopAfterMisses = 10;
-
-  const container = document.getElementById("gallery");
-  if (!container) return;
-
-  // Array para armazenar todas as imagens antes de adicionar ao container
   const allImages = [];
 
   for (const photographer of photographers) {
     let misses = 0;
 
     for (let i = start; i <= max; i++) {
-      const src = `galeria/${photographer.pasta}/${i}.${ext}`;
-      console.log("Tentando carregar:", src); // depuração
+      const thumb = `/galeria/${photographer.pasta}/${photographer.ano}/thumbs/${i}.${ext}`;
+      const full  = `/galeria/${photographer.pasta}/${photographer.ano}/full/${i}.${ext}`;
 
-      const img = await loadImage(src);
+      const img = await loadImage(thumb);
+
       if (!img) {
         misses++;
         if (misses >= stopAfterMisses) break;
@@ -51,26 +102,30 @@ function shuffleArray(array) {
       }
       misses = 0;
 
+      img.loading = "lazy";
+      img.alt = photographer.nome;
+      img.title = `© ${photographer.nome} ${photographer.ano}`;
+      img.dataset.full = full;
+
+      // CALCULA ORIENTAÇÃO (layout original)
       const orientation = img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
+
+      img.addEventListener("click", () => {
+        openLightbox(images.indexOf(img));
+      });
 
       const div = document.createElement("div");
       div.className = `gallery-item ${orientation}`;
-
-      img.alt = ` ${photographer.nome}`;
-      img.title = ` ©${photographer.nome}`; // tooltip
-      img.loading = "lazy";
-      img.decoding = "async";
-
       div.appendChild(img);
 
-      // Adiciona ao array, não diretamente ao container
+      images.push(img);
       allImages.push(div);
     }
   }
 
-  // Embaralhar todas as imagens
-  shuffleArray(allImages);
+  // embaralhar
+  allImages.sort(() => Math.random() - 0.5);
 
-  // Adicionar ao container em ordem random
-  allImages.forEach(div => container.appendChild(div));
+  // inserir no DOM
+  allImages.forEach(div => gallery.appendChild(div));
 })();

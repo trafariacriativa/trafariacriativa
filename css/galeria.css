@@ -346,6 +346,39 @@ video {
 }
 
 
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#lightbox.hidden {
+  display: none;
+}
+
+#lightbox img {
+  max-width: 1600px;
+  max-height: 90vh;
+}
+
+#lightbox button {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#lightbox .prev { left: 30px; }
+#lightbox .next { right: 30px; }
+#lightbox .close { top: 20px; right: 30px; }
+
+
 /* linha final */
 
 .final-line {
