@@ -2,10 +2,13 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    let slides = document.getElementsByClassName("slideshow-slide");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; /* Esconde todas as imagens */
-    }
+let slides = document.getElementsByClassName("slideshow-slide");
+if (slides.length === 0) return; // <<< ADICIONADO: evita erro se não houver slides
+
+for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block"; /* Mostra a imagem atual */

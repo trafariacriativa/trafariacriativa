@@ -7,7 +7,7 @@ const photographers = [
 const ext = "webp";
 const start = 1;
 const max = 200; // número alto suficiente
-const stopAfterMisses = 5;
+const stopAfterMisses = 1;
 
 const gallery = document.getElementById("gallery");
 if (!gallery) throw new Error("Elemento #gallery não encontrado");
