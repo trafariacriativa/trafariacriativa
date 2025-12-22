@@ -314,6 +314,18 @@ video {
 
 /* galeria */
 
+#loading {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  z-index: 9999;
+}
+
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 4 colunas na galeria */

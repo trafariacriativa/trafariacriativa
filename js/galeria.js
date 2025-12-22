@@ -1,5 +1,5 @@
 const photographers = [
-  { nome: "João Lima", pasta: "JoaoLima", ano: 2025, ano: 2024 },
+  { nome: "João Lima", pasta: "JoaoLima", anos: [2024, 2025] },
   { nome: "Hugo Santos", pasta: "HugoSantos", ano: 2025 },
   { nome: "Alexandre Nobre", pasta: "AlexandreNobre", ano: 2024 },
   { nome: "WIP Trafaria Criativa", pasta: "WIPTrafariaCriativa", ano: 2024 }
@@ -7,15 +7,17 @@ const photographers = [
 
 const ext = "webp";
 const start = 1;
-const max = 140; // número arbitrário grande
-const batchSize = 30; // quantas thumbs carregar em paralelo
+const max = 140;
+const batchSize = 30;
+
 const gallery = document.getElementById("gallery");
+const loading = document.getElementById("loading");
 if (!gallery) throw new Error("Elemento #gallery não encontrado");
 
 let images = [];
 
 // -----------------------
-// LIGHTBOX
+// LIGHTBOX (igual ao teu)
 // -----------------------
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
@@ -85,39 +87,48 @@ function loadImage(src) {
   const allImages = [];
 
   for (const photographer of photographers) {
-    for (let startIndex = start; startIndex <= max; startIndex += batchSize) {
-      const promises = [];
-      for (let i = startIndex; i < startIndex + batchSize && i <= max; i++) {
-        const thumb = `/galeria/${photographer.pasta}/${photographer.ano}/thumbs/${i}.${ext}`;
-        promises.push(loadImage(thumb).then(img => ({ img, i })));
+    const anos = photographer.anos || [photographer.ano];
+
+    for (const ano of anos) {
+      for (let startIndex = start; startIndex <= max; startIndex += batchSize) {
+        const promises = [];
+
+        for (let i = startIndex; i < startIndex + batchSize && i <= max; i++) {
+          const thumb = `/galeria/${photographer.pasta}/${ano}/thumbs/${i}.${ext}`;
+          promises.push(loadImage(thumb).then(img => ({ img, i, ano })));
+        }
+
+        const results = await Promise.all(promises);
+
+        results.forEach(({ img, i, ano }) => {
+          if (!img) return;
+
+          const full = `/galeria/${photographer.pasta}/${ano}/full/${i}.${ext}`;
+          img.loading = "lazy";
+          img.alt = photographer.nome;
+          img.title = `© ${photographer.nome} ${ano}`;
+          img.dataset.full = full;
+
+          const orientation =
+            img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
+
+          const index = images.length;
+          images.push(img);
+          img.addEventListener("click", () => openLightbox(index));
+
+          const div = document.createElement("div");
+          div.className = `gallery-item ${orientation}`;
+          div.appendChild(img);
+
+          allImages.push(div);
+        });
       }
-
-      const results = await Promise.all(promises);
-
-      results.forEach(({ img, i }) => {
-        if (!img) return; // ignora thumbs inexistentes
-
-        const full = `/galeria/${photographer.pasta}/${photographer.ano}/full/${i}.${ext}`;
-        img.loading = "lazy";
-        img.alt = photographer.nome;
-        img.title = `© ${photographer.nome} ${photographer.ano}`;
-        img.dataset.full = full;
-
-        const orientation = img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
-
-        const index = images.length; // índice fixo
-        images.push(img);
-        img.addEventListener("click", () => openLightbox(index));
-
-        const div = document.createElement("div");
-        div.className = `gallery-item ${orientation}`;
-        div.appendChild(img);
-
-        allImages.push(div);
-      });
     }
   }
 
   allImages.sort(() => Math.random() - 0.5);
   allImages.forEach(div => gallery.appendChild(div));
+
+  // 🔥 ESCONDER LOADING QUANDO TUDO TERMINAR
+  if (loading) loading.style.display = "none";
 })();
