@@ -1,3 +1,6 @@
+// ===============================
+// CONFIGURAÇÃO DE AUTORES
+// ===============================
 const photographers = [
   { nome: "João Lima", pasta: "JoaoLima", ano: 2025 },
   { nome: "Hugo Santos", pasta: "HugoSantos", ano: 2025 },
@@ -6,15 +9,16 @@ const photographers = [
 
 const ext = "webp";
 const start = 1;
-const max = 200; // número alto suficiente
-const stopAfterMisses = 1;
-
+const max = 150; // número alto suficiente
+const batchSize = 20; // quantas thumbs carregar em paralelo por bloco
 const gallery = document.getElementById("gallery");
 if (!gallery) throw new Error("Elemento #gallery não encontrado");
 
 let images = [];
 
+// ===============================
 // LIGHTBOX
+// ===============================
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 lightbox.className = "hidden";
@@ -64,7 +68,9 @@ lightbox.addEventListener("click", e => {
   if (e.target === lightbox) closeLightbox();
 });
 
+// ===============================
 // FUNÇÃO PARA CARREGAR IMAGEM
+// ===============================
 function loadImage(src) {
   return new Promise(resolve => {
     const img = new Image();
@@ -74,45 +80,50 @@ function loadImage(src) {
   });
 }
 
-// GALERIA
+// ===============================
+// INICIALIZAÇÃO DA GALERIA COM BATCH
+// ===============================
 (async function initGallery() {
   const allImages = [];
 
   for (const photographer of photographers) {
-    let misses = 0;
-    for (let i = start; i <= max; i++) {
-      const thumb = `/galeria/${photographer.pasta}/${photographer.ano}/thumbs/${i}.${ext}`;
-      const full = `/galeria/${photographer.pasta}/${photographer.ano}/full/${i}.${ext}`;
-
-      const img = await loadImage(thumb);
-      if (!img) {
-        misses++;
-        if (misses >= stopAfterMisses) break;
-        continue;
+    for (let startIndex = start; startIndex <= max; startIndex += batchSize) {
+      // Cria promises para o bloco
+      const promises = [];
+      for (let i = startIndex; i < startIndex + batchSize && i <= max; i++) {
+        const thumb = `/galeria/${photographer.pasta}/${photographer.ano}/thumbs/${i}.${ext}`;
+        promises.push(loadImage(thumb).then(img => ({ img, i })));
       }
-      misses = 0;
 
-      img.loading = "lazy";
-      img.alt = photographer.nome;
-      img.title = `© ${photographer.nome} ${photographer.ano}`;
-      img.dataset.full = full;
+      const results = await Promise.all(promises);
 
-      const orientation = img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
+      results.forEach(({ img, i }) => {
+        if (!img) return; // ignora thumbs inexistentes
 
-      img.addEventListener("click", () => openLightbox(images.indexOf(img)));
+        const full = `/galeria/${photographer.pasta}/${photographer.ano}/full/${i}.${ext}`;
+        img.loading = "lazy";
+        img.alt = photographer.nome;
+        img.title = `© ${photographer.nome} ${photographer.ano}`;
+        img.dataset.full = full;
 
-      const div = document.createElement("div");
-      div.className = `gallery-item ${orientation}`;
-      div.appendChild(img);
+        const orientation = img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
 
-      images.push(img);
-      allImages.push(div);
+        const index = images.length; // índice fixo para lightbox
+        images.push(img);
+        img.addEventListener("click", () => openLightbox(index));
+
+        const div = document.createElement("div");
+        div.className = `gallery-item ${orientation}`;
+        div.appendChild(img);
+
+        allImages.push(div);
+      });
     }
   }
 
-  // Embaralhar
+  // Embaralhar todas as imagens
   allImages.sort(() => Math.random() - 0.5);
 
-  // Inserir no DOM
+  // Adicionar ao container
   allImages.forEach(div => gallery.appendChild(div));
 })();
