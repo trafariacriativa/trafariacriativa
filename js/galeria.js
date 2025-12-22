@@ -1,7 +1,8 @@
 const photographers = [
   { nome: "João Lima", pasta: "JoaoLima", ano: 2025, ano: 2024 },
   { nome: "Hugo Santos", pasta: "HugoSantos", ano: 2025 },
-  { nome: "Alexandre Nobre", pasta: "AlexandreNobre", ano: 2024 }
+  { nome: "Alexandre Nobre", pasta: "AlexandreNobre", ano: 2024 },
+  { nome: "WIP Trafaria Criativa", pasta: "WIPTrafariaCriativa", ano: 2024 }
 ];
 
 const ext = "webp";
