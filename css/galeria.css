@@ -481,6 +481,7 @@ video {
 
 .text-section {
   padding: 40px;
+  margin-bottom: 40px;
 
 
 }
@@ -599,6 +600,10 @@ h2 {
   font-size: 3vh; /* Ajusta o tamanho da fonte do h2 */
 }
 
+.text-section {
+  margin-bottom: 40px;
+
+}
 
 .text-section h3{
   font-size: 2.5vh;
