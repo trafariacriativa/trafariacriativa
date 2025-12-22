@@ -1,26 +1,20 @@
-// ===============================
-// AUTORES / ANOS
-// ===============================
 const photographers = [
   { nome: "João Lima", pasta: "JoaoLima", ano: 2025 },
   { nome: "Hugo Santos", pasta: "HugoSantos", ano: 2025 },
   { nome: "Alexandre Nobre", pasta: "AlexandreNobre", ano: 2024 }
 ];
 
-// ===============================
-// CONFIG
-// ===============================
 const ext = "webp";
 const start = 1;
-const max = 400;
-const stopAfterMisses = 10;
+const max = 200; // número alto suficiente
+const stopAfterMisses = 5;
 
 const gallery = document.getElementById("gallery");
 if (!gallery) throw new Error("Elemento #gallery não encontrado");
 
-// ===============================
+let images = [];
+
 // LIGHTBOX
-// ===============================
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 lightbox.className = "hidden";
@@ -36,8 +30,6 @@ const lbImg = lightbox.querySelector("img");
 const btnPrev = lightbox.querySelector(".prev");
 const btnNext = lightbox.querySelector(".next");
 const btnClose = lightbox.querySelector(".close");
-
-let images = [];
 let currentIndex = 0;
 
 function openLightbox(index) {
@@ -68,9 +60,11 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeLightbox();
 });
 
-// ===============================
-// LOAD IMAGE (PROMISE ESTÁVEL)
-// ===============================
+lightbox.addEventListener("click", e => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+// FUNÇÃO PARA CARREGAR IMAGEM
 function loadImage(src) {
   return new Promise(resolve => {
     const img = new Image();
@@ -80,21 +74,17 @@ function loadImage(src) {
   });
 }
 
-// ===============================
-// GALERIA COM ORIENTAÇÃO
-// ===============================
+// GALERIA
 (async function initGallery() {
   const allImages = [];
 
   for (const photographer of photographers) {
     let misses = 0;
-
     for (let i = start; i <= max; i++) {
       const thumb = `/galeria/${photographer.pasta}/${photographer.ano}/thumbs/${i}.${ext}`;
-      const full  = `/galeria/${photographer.pasta}/${photographer.ano}/full/${i}.${ext}`;
+      const full = `/galeria/${photographer.pasta}/${photographer.ano}/full/${i}.${ext}`;
 
       const img = await loadImage(thumb);
-
       if (!img) {
         misses++;
         if (misses >= stopAfterMisses) break;
@@ -107,12 +97,9 @@ function loadImage(src) {
       img.title = `© ${photographer.nome} ${photographer.ano}`;
       img.dataset.full = full;
 
-      // CALCULA ORIENTAÇÃO (layout original)
       const orientation = img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
 
-      img.addEventListener("click", () => {
-        openLightbox(images.indexOf(img));
-      });
+      img.addEventListener("click", () => openLightbox(images.indexOf(img)));
 
       const div = document.createElement("div");
       div.className = `gallery-item ${orientation}`;
@@ -123,9 +110,9 @@ function loadImage(src) {
     }
   }
 
-  // embaralhar
+  // Embaralhar
   allImages.sort(() => Math.random() - 0.5);
 
-  // inserir no DOM
+  // Inserir no DOM
   allImages.forEach(div => gallery.appendChild(div));
 })();
