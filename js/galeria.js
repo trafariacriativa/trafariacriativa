@@ -1,6 +1,3 @@
-// ===============================
-// CONFIGURAÇÃO DE AUTORES
-// ===============================
 const photographers = [
   { nome: "João Lima", pasta: "JoaoLima", ano: 2025 },
   { nome: "Hugo Santos", pasta: "HugoSantos", ano: 2025 },
@@ -9,16 +6,16 @@ const photographers = [
 
 const ext = "webp";
 const start = 1;
-const max = 150; // número alto suficiente
-const batchSize = 20; // quantas thumbs carregar em paralelo por bloco
+const max = 140; // número arbitrário grande
+const batchSize = 30; // quantas thumbs carregar em paralelo
 const gallery = document.getElementById("gallery");
 if (!gallery) throw new Error("Elemento #gallery não encontrado");
 
 let images = [];
 
-// ===============================
+// -----------------------
 // LIGHTBOX
-// ===============================
+// -----------------------
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 lightbox.className = "hidden";
@@ -68,9 +65,9 @@ lightbox.addEventListener("click", e => {
   if (e.target === lightbox) closeLightbox();
 });
 
-// ===============================
+// -----------------------
 // FUNÇÃO PARA CARREGAR IMAGEM
-// ===============================
+// -----------------------
 function loadImage(src) {
   return new Promise(resolve => {
     const img = new Image();
@@ -80,15 +77,14 @@ function loadImage(src) {
   });
 }
 
-// ===============================
-// INICIALIZAÇÃO DA GALERIA COM BATCH
-// ===============================
+// -----------------------
+// INICIALIZAÇÃO DA GALERIA
+// -----------------------
 (async function initGallery() {
   const allImages = [];
 
   for (const photographer of photographers) {
     for (let startIndex = start; startIndex <= max; startIndex += batchSize) {
-      // Cria promises para o bloco
       const promises = [];
       for (let i = startIndex; i < startIndex + batchSize && i <= max; i++) {
         const thumb = `/galeria/${photographer.pasta}/${photographer.ano}/thumbs/${i}.${ext}`;
@@ -108,7 +104,7 @@ function loadImage(src) {
 
         const orientation = img.naturalHeight > img.naturalWidth ? "vertical" : "horizontal";
 
-        const index = images.length; // índice fixo para lightbox
+        const index = images.length; // índice fixo
         images.push(img);
         img.addEventListener("click", () => openLightbox(index));
 
@@ -121,9 +117,6 @@ function loadImage(src) {
     }
   }
 
-  // Embaralhar todas as imagens
   allImages.sort(() => Math.random() - 0.5);
-
-  // Adicionar ao container
   allImages.forEach(div => gallery.appendChild(div));
 })();
