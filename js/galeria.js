@@ -17,7 +17,7 @@ if (!gallery) throw new Error("Elemento #gallery não encontrado");
 let images = [];
 
 // -----------------------
-// LIGHTBOX (igual ao teu)
+// LIGHTBOX
 // -----------------------
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
@@ -84,6 +84,10 @@ function loadImage(src) {
 // INICIALIZAÇÃO DA GALERIA
 // -----------------------
 (async function initGallery() {
+
+  // mostra loading local da galeria
+  if (loading) loading.style.display = "flex";
+
   const allImages = [];
 
   for (const photographer of photographers) {
@@ -126,9 +130,13 @@ function loadImage(src) {
     }
   }
 
+  // ordem aleatória
   allImages.sort(() => Math.random() - 0.5);
   allImages.forEach(div => gallery.appendChild(div));
 
-  // 🔥 ESCONDER LOADING QUANDO TUDO TERMINAR
-  if (loading) loading.style.display = "none";
+  // esconder loading com fade
+  if (loading) {
+    loading.style.opacity = "0";
+    setTimeout(() => loading.style.display = "none", 300);
+  }
 })();

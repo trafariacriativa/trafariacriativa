@@ -3,266 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/svg/favicon.svg" type="image/svg">
+    <link rel="icon" href="/images/SVG/favicon.svg" type="image/svg">
     <title>Periphera | Festival</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/galeria.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/apoios.css">
-
 </head>
 <body>
 
-    
-        <!-- barra de navegação -->
+    <div class="navbar">
+        <a href="/index.html" class="logo">
+            <div class="rotating-icon">
+                <img src="/images/SVG/engrena.svg" alt="Ícone Rotativo">
+            </div>
+            Periphera | Machina
+        </a>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+    </div>
 
-        <div class="navbar">
-            <a href="/periphera.html" class="logo">
-                <!-- Ícone SVG rotativo -->
-                <div class="rotating-icon">
-                    <img src="/images/SVG/engrena.svg" alt="Ícone Rotativo">
+    <div class="menu">
+        <a href="/periphera/festival.html">FESTIVAL</a>
+        <a href="/periphera/somos.html">QUEM SOMOS</a>
+        <a href="/periphera/programa.html">PROGRAMA</a>
+        <a href="/periphera/exposicao.html">EXPOSIÇÃO</a>
+        <a href="/periphera/oradores.html">PARTICIPANTES</a>
+        <a href="/periphera/oficinas.html">WORKSHOPS</a>
+    </div>
+
+    <div class="image-container">
+        <img src="/images/galeriafoto.jpg" alt="Descrição da Imagem">
+        <div class="overlay"></div>
+        <div class="title-container">
+            <h1 class="image-title">A GALERIA</h1>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="text-section"></div>
+
+        <div id="gallery-wrapper">
+            <div id="loading">A carregar…</div>
+            <div id="gallery" class="gallery"></div>
+        </div>
+
+        <p class="section-text"><strong>WIP Trafaria Criativa:</strong> Beth Walker, Francisco, João Cabral, João Diogo, José Taborda, Lua Carreira, Maria Henrique, Nuno, Robert Allison e Tiago Rorke.</p>
+    </div>
+
+    <hr class="final-line">
+
+    <div class="white-section">
+        <div class="insta">
+            <p>Siga-nos no <a href="https://www.instagram.com/trafariacriativa/">
+                <img src="/images/logotipos/Instagram-Icon.png" alt="" width="50px" height="50px"></a></p>
+        </div>
+
+        <div class="image-side">
+            <img src="/images/logotipos/logotipos.png" alt="Apoios principais">
+        </div>
+
+        <div class="support-logos">
+            <h3>Organização</h3>
+            <div class="logos-container">
+                <div class="logo-box">
+                    <img src="/images/logotipos/novalincs.png" alt="Novalincs">
                 </div>
-                Periphera | Machina
-            </a>
-
-    <!-- 
-            <div class="countdown-wrapper">
-                <div class="countdown" id="countdown"></div>
+                <div class="logo-box">
+                    <img src="/images/logotipos/vicarte.png" alt="Vicarte">
+                </div>
+                <div class="logo-box">
+                    <img src="/images/logotipos/exec.png" alt="Nova Executive Education">
+                </div>
             </div>
-       -->
 
-            <div class="burger" onclick="toggleMenu()">☰</div>
-        </div>
-
-        
-              <!-- 
-        <div class="navbar">
-            <a href="index.html" class="logo">Periphera | Machina</a>
-            <div class="countdown-wrapper">
-                <div class="countdown" id="countdown"></div>
+            <h3>Parceiros</h3>
+            <div class="logos-container">
+                <div class="logo-box">
+                    <img src="/images/logotipos/jftrafaria.png" alt="Junta de Freguesia da Caparica e Trafaria">
+                </div>
+                <div class="logo-box">
+                    <img src="/images/logotipos/fcsh.png" alt="Nova FCSH">
+                </div>
             </div>
-            <div class="burger" onclick="toggleMenu()">☰</div>
         </div>
-
-                -->
-        
-
-    
-            <!-- menu -->
-
-            <div class="menu">
-                <a href="/periphera/festival_en.html">FESTIVAL</a>
-                <a href="/periphera/are.html">WHO WE ARE</a>
-                <a href="/periphera/program.html">PROGRAM</a>
-                <a href="/periphera/exhibition.html">EXHIBITION</a>
-                <a href="/periphera/talks.html">PARTICIPANTS</a>
-                <a href="/periphera/workshops.html">WORKSHOPS</a>
-            </div>
-            
-            
-            
-
-
-            
-     <div class="image-container">
-          <img src="/images/galeriafoto.jpg" alt="Descrição da Imagem">
-          <div class="overlay"></div>
-          <div class="title-container">
-          <h1 class="image-title">THE GALLERY</h1>
-        </div>
-     </div>
-            
-            
- <!-- Secção de conteúdo -->
- <div class="content-container">
-    <div class="text-section">
-
-<!--
-        <div class="video-container">
-            <video width="640" height="360" autoplay muted loop>
-                <source src="/video/local.mp4" type="video/mp4" >
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-        </div>
-
-
-        <h2 class="section-title"></h2>
-<p class="section-text">From November 14th to 16th, the second edition of the Trafaria Art and Technology Festival, Periphera, will take place at the Convento dos Capuchos and in Trafaria. The festival proposes a reflection on the intersections between art and technology, promoting creativity and inclusion over three days of exhibitions, performances, talks, workshops, and demonstrations of innovative projects and companies.</p>
-
-<p class="section-text">The combination of experiences around the intersection of art and technology serves as a starting point for sharing creation processes, new working methods, and ways to have an impact on local and global communities. Technology offers new artistic possibilities, and art, in turn, can transcend the functionality of technological creations, provoking surprise, reflection, and opening new perspectives.</p>
-
-<p class="section-text">The talks and workshops will address topics ranging from the use of new technologies in creative contexts to how art can be a tool for social and cultural reflection. The festival is an opportunity for the public to experience these connections in an accessible and interactive way.</p>
-
-<p class="section-text">The demonstrations of projects and companies offer a practical perspective on ongoing innovations, focusing on initiatives that unite technological development with artistic practice.</p>
-
-<p class="section-text">Held in a historic setting like the Convento dos Capuchos, in harmony with the atmosphere of Trafaria, the festival creates a unique environment for these encounters. Through a diverse program, it aims to open space for new ideas and collaborations, reflecting on the impact of technology on the future of artistic practices and everyday life.</p>
-
-<p class="section-text">For more information about the first edition, visit the official website of <a href="/trafariacriativa2024/periphera.html" target="_blank" rel="noopener noreferrer">Periphera 2024</a>.</p>
-
-            <h3 class="section-subtitle">Próximo Periphera</h3>
-            <ul>
-                <li>Desenvolver a região e contribuir para o aumento do potencial criativo, tecnológico e inovador.</li>
-                <li>Permitir apresentar projetos de enorme relevância que possuem características ou potencial econômico.</li>
-            </ul><-->
-    
     </div>
 
-    <div id="loading">Loading...</div>
-
-    <div id="gallery" class="gallery">
-        
-        <!--<div class="gallery-item wide">
-            <img src="/images/festival_01.jpg" alt="Teatro da Trafaria">
-        </div>
-
-        <div class="gallery-item wide">
-            <img src="/images/festival_02.jpg" alt="Abertura Festival 2024">
-        </div>
-
-        <div class="gallery-item wide">
-            <img src="/images/festival_03.jpg" alt="Performance">
-        </div>
-
-
-        <div class="gallery-item large">
-            <img src="/images/convento.jpg" alt="Convento dos Capuchos">
-        </div>
-
-
-        <div class="gallery-item tall">
-            <img src="/images/presidio4.jpg" alt="Presídio da Trafaria">
-        </div>
-        
-
-        <div class="gallery-item large">
-            <img src="/images/convento2.jpg" alt="Convento dos Capuchos">
-        </div>
-
-
-
-        <div class="gallery-item tall">
-            <img src="/images/presidio3.jpg" alt="Presídio da Trafaria">
-        </div>
-
- 
-        <div class="gallery-item wide">
-            <img src="/images/presidio.png" alt="Presídio da Trafaria">
-        </div>-->
-
-
-
-
-    </div>
-    
-<!--
-
-    Slideshow 
-    <div class="slideshow-container">
-        <div class="slideshow-slide">
-            <img src="images/showcase.jpg" alt="Imagem 1">
-        </div>
-        <div class="slideshow-slide">
-            <img src="images/talks.jpg" alt="Imagem 2">
-        </div>
-        <div class="slideshow-slide">
-            <img src="images/header_image.jpg" alt="Imagem 2">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    Video 
-    <div class="video-container">
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-            Seu navegador não suporta o elemento de vídeo.
-        </video>
-    </div>
-
--->
-
-<p class="section-text"><Strong>WIP Trafaria Criativa:</Strong> Beth Walker, Francisco, João Cabral, João Diogo, José Taborda, Lua Carreira, Maria Henrique, Nuno, Robert Allison and Tiago Rorke.</p>
-
-
-</div>
-
-<hr class="final-line">
-
-
-    
-
-     <!-- apoios -->
-          
-<div class="white-section">
-   
-    <div class="insta">
-        <p>Follow us <a href="https://www.instagram.com/trafariacriativa/">
-            <img src="/images/logotipos/Instagram-Icon.png" alt="" width="50px" height="50px"></a></p>
-    </div>
-
-      <!-- <div class="text-info">
-        <p></p>
-        <p></p>
-    </div>-->
-    <div class="image-side">
-        <img src="/images/logotipos/logotipos.png" alt="Apoios principais">
-    </div>
-
-    <!-- Título e logotipos dentro da mesma div -->
-    <div class="support-logos">
-
-
-        <h3>Organization</h3>
-        <div class="logos-container">
-            <div class="logo-box">
-                <img src="/images/logotipos/novalincs.png" alt="Novalincs">
-            </div>
-            <div class="logo-box">
-                <img src="/images/logotipos/vicarte.png" alt="Vicarte">
-            </div>
-            <div class="logo-box">
-                <img src="/images/logotipos/exec.png" alt="Nova Executive Education">
-            </div>
-
-           
-        </div>
-
-        <h3>Partners</h3>
-        <div class="logos-container">
-            
-            <div class="logo-box">
-                <img src="/images/logotipos/jftrafaria.png" alt="Junta de Freguesia da Caparica e Trafaria">
-            </div>
-            
-            <div class="logo-box">
-                <img src="/images/logotipos/fcsh.png" alt="Nova FCSH">
-            </div>
-
-
-            
-
-        </div>
-
-        <!--<h3>Media Partners</h3>
-        <div class="logos-container">
-            <div class="logo-boxmedia">
-                <img src="/images/logotipos/empreendedor.png" alt="Empreendedor">
-            </div>
-         </div> -->
-</div>
-
-
-        
-   
-        <!--<script src="/js/contador.js"></script>
-        <script src="/js/dashboard.js"></script>
-        <script src="/js/galleryslides.js"></script>-->
-        <script src="/js/menu.js"></script>
-        <script src="js/galeria.js"></script>
-
-
+    <script src="js/menu.js"></script>
+    <script src="js/galeria.js"></script>
 
 </body>
 </html>

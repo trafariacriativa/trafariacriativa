@@ -313,17 +313,23 @@ video {
 
 
 /* galeria */
+#gallery-wrapper {
+  position: relative;
+  min-height: 300px; /* evita colapso antes das imagens */
+}
 
 #loading {
-  position: fixed;
+  position: absolute;
+  font-family: "IBM Plex Mono", monospace, serif;
   inset: 0;
-  background: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  z-index: 9999;
+  font-size: 1.2rem;
+  z-index: 10;
 }
+
+
 
 
 .gallery {
